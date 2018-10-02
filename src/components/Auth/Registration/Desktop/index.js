@@ -3,10 +3,10 @@ import withStyles from '@material-ui/core/styles/withStyles'
 
 import styles from './styles'
 
-const Games = ({ classes }) => (
+const Registration = ({ classes }) => (
   <div className={classes.root}>
-    Games
+    Registration
   </div>
 )
 
-export default withStyles(styles)(Games)
+export default withStyles(styles)(Registration)

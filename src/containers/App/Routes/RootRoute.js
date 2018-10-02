@@ -3,6 +3,7 @@ import compose from 'recompose/compose'
 import pure from 'recompose/compose'
 import { Route, Switch, withRouter } from 'react-router-dom'
 
+import AsyncRegistration from '../../../containers/Auth/Registration/AsyncRegistration'
 import AsyncDashboard from '../../../containers/Dashboard/AsyncDashboard'
 import AsyncWallet from '../../../containers/Wallet/AsyncWallet'
 import AsyncShop from '../../../containers/Shop/AsyncShop'
@@ -15,6 +16,10 @@ const RootRoute = props => {
 
   return (
     <Switch location={location}>
+      <Route
+        path={`/registration`}
+        component={AsyncRegistration}
+      />
       <Route
         path={`/settings`}
         component={AsyncSettings}
