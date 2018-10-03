@@ -1,4 +1,4 @@
-import Async from '../../Async'
+import Async from '../../App/components/Async'
 
 export const AsyncSettingsDesktop = Async({
   loader: () => import(/* webpackChunkName: "settings_desktop" */ './index')
