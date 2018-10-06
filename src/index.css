@@ -1,8 +1,40 @@
+@font-face {
+  font-family: ubRegular;
+  src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: ubMedium;
+  src: url("./assets/fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: ubBold;
+  src: url("./assets/fonts/Ubuntu-Bold.ttf");
+}
+
 body,
 html,
 #root {
-  height: 100%;
   margin: 0;
+}
+
+body{	
+	font-size: 15px;
+	font-weight: 300;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: none;
+	background: #f0f0f0;
+	color: #575757;
+}
+
+.container{
+	max-width: 2880px;
+}
+
+.containerMain{
+	width: 100%;
+	min-width: 70%;  /* test */
 }
 
 * {
@@ -16,3 +48,4 @@ a {
 * {
   -webkit-overflow-scrolling: touch;
 }
+

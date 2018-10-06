@@ -1,8 +1,9 @@
 import React from 'react'
 import compose from 'recompose/compose'
 import pure from 'recompose/compose'
-import { Route, Switch, withRouter } from 'react-router-dom'
+import { Switch, withRouter } from 'react-router-dom'
 
+import RoutePage from '../../../components/App/components/Routes/RoutePage'
 import AsyncRegistration from '../../../containers/Auth/Registration/AsyncRegistration'
 import AsyncDashboard from '../../../containers/Dashboard/AsyncDashboard'
 import AsyncWallet from '../../../containers/Wallet/AsyncWallet'
@@ -16,31 +17,31 @@ const RootRoute = props => {
 
   return (
     <Switch location={location}>
-      <Route
+      <RoutePage
         path={`/registration`}
         component={AsyncRegistration}
       />
-      <Route
+      <RoutePage
         path={`/settings`}
         component={AsyncSettings}
       />
-      <Route
+      <RoutePage
         path={`/friends`}
         component={AsyncFriends}
       />
-      <Route
+      <RoutePage
         path={`/games`}
         component={AsyncGames}
       />
-      <Route
+      <RoutePage
         path={`/shop`}
         component={AsyncShop}
       />
-      <Route
+      <RoutePage
         path={`/wallet`}
         component={AsyncWallet}
       />
-      <Route
+      <RoutePage
         path={`/`}
         component={AsyncDashboard}
       />
