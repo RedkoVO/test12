@@ -67,7 +67,7 @@ export default () => ({
   games: {
     backgroundImage: `url(${PlayLogo})`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '17px 17px',
+    backgroundSize: '22px 17px',
     backgroundPosition: 'center'
   },
   friends: {

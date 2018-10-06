@@ -1,18 +1,3 @@
-@font-face {
-  font-family: ubRegular;
-  src: url("./assets/fonts/Ubuntu-Regular.ttf");
-}
-
-@font-face {
-  font-family: ubMedium;
-  src: url("./assets/fonts/Ubuntu-Medium.ttf");
-}
-
-@font-face {
-  font-family: ubBold;
-  src: url("./assets/fonts/Ubuntu-Bold.ttf");
-}
-
 body,
 html,
 #root {
