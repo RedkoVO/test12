@@ -7,6 +7,6 @@ import AsyncRegistrationDesktop from '../../../components/Auth/Registration/Desk
 export default compose(
   pure,
   withProps({
-    isFastRegistration: false
+    isFastRegistration: true
   })
 )(AsyncRegistrationDesktop)

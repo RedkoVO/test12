@@ -1,7 +1,7 @@
 import React from 'react'
 import compose from 'recompose/compose'
 import pure from 'recompose/compose'
-import { Switch, withRouter } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 
 import RoutePage from '../../../components/App/components/Routes/RoutePage'
 import AsyncRegistration from '../../../containers/Auth/Registration/AsyncRegistration'
@@ -17,7 +17,7 @@ const RootRoute = props => {
 
   return (
     <Switch location={location}>
-      <RoutePage
+      <Route
         path={`/registration`}
         component={AsyncRegistration}
       />

@@ -11,7 +11,7 @@ import InputField from '../../../../App/components/Form/InputField'
 import styles from './styles'
 import './datePickerStyle.css'
 
-const KYCRegistration = ({ classes }) => (
+const Step2 = ({ classes }) => (
   <form>
     <div>KYCRegistration</div>
     <InputField   // <Field ... >
@@ -79,4 +79,4 @@ const KYCRegistration = ({ classes }) => (
   </form >
 )
 
-export default withStyles(styles)(KYCRegistration)
+export default withStyles(styles)(Step2)
