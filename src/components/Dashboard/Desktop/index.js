@@ -2,21 +2,32 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
+import Transaction from '../components/Transaction'
+import BestAd from '../components/BestAd'
+import Categories from '../components/Categories'
+
 import styles from './styles'
 
-const Dashboard = ({ classes }) => (
-  <div className={classes.root}>
-    <header className={classes.appHeader}>
-      <h1 className={classes.appTitle}>Welcome to React</h1>
-    </header>
-    <p className={classes.appIntro}>
-      To get started, edit <code>src/App.js</code> and save to reload.
-    </p>
-  </div>
-)
+const Dashboard = ({
+  classes,
+  transactions,
+  bestAds,
+  gameCategories
+}) => (
+    <main>
+      <div className={classes.root}>
+        <Transaction transactions={transactions} />
+        <BestAd bestAds={bestAds} />
+        <Categories categories={gameCategories} />
+      </div>
+    </main>
+  )
 
 Dashboard.propTypes = {
-  classes: PropTypes.object
+  classNamees: PropTypes.object,
+  transactions: PropTypes.array,
+  bestAds: PropTypes.array,
+  gameCategories: PropTypes.array
 }
 
 export default withStyles(styles)(Dashboard)

@@ -1,8 +1,9 @@
-// import Logo from '../../../assets/images/logo.svg'
-
 export default () => ({
   root: {
-    height: '400px',
-    // backgroundImage: `url(${Logo})`
+    display: 'flex',
+    flexDirection: 'column',
+    '-ms-align-items': 'center',
+    alignItems: 'center',
+    width: '810px'
   }
 })
