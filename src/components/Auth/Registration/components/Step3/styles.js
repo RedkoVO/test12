@@ -8,7 +8,7 @@ export default () => ({
     justifyContent: 'center',
     paddingTop: '50px'
   },
-  registrStep2: {
+  registrStep3: {
     position: 'relative',
     maxWidth: '525px',
     display: 'flex',
@@ -23,7 +23,7 @@ export default () => ({
     borderRadius: '23px',
     boxShadow: '0px 10px 20px 0px rgba(0,0,0,0.1)'
   },
-  step2Title: {
+  step3Title: {
     fontSize: '50px',
     fontWeight: 400,
     textAlign: 'center',
@@ -34,7 +34,7 @@ export default () => ({
     top: '35px',
     right: '35px'
   },
-  step2Label: {
+  step3Label: {
     fontSize: '15px',
     fontWeight: 400,
     textAlign: 'left',
@@ -47,95 +47,33 @@ export default () => ({
       margin: '15px 25px'
     }
   },
-  firstNameField: {
+  docField: {
     height: '46px',
-    width: '195px',
+    width: '150px',
     border: 'none',
     outline: 'none',
     borderRadius: '23px',
     paddingLeft: '25px',
+    boxSizing: 'border-box',
+    backgroundColor: 'rgba(	255, 255, 255, 0.61)',
     marginRight: '20px',
+
+    '&::before': {
+      display: 'none'
+    },
+    '&::after': {
+      display: 'none'
+    }
+  },
+  uploadField: {
+    height: '46px',
+    width: '235px',
+    border: 'none',
+    outline: 'none',
+    borderRadius: '23px',
+    paddingLeft: '25px',
     boxSizing: 'border-box',
     backgroundColor: 'rgba(	255, 255, 255, 0.61)'
-  },
-  lastNameField: {
-    height: '46px',
-    width: '195px',
-    border: 'none',
-    outline: 'none',
-    borderRadius: '23px',
-    paddingLeft: '25px',
-    boxSizing: 'border-box',
-    backgroundColor: 'rgba(255, 255, 255, 0.61)'
-  },
-  genderField: {
-    height: '46px',
-    width: '130px',
-    border: 'none',
-    outline: 'none',
-    borderRadius: '23px',
-    paddingLeft: '25px',
-    boxSizing: 'border-box',
-    backgroundColor: 'rgba(255, 255, 255, 0.61)',
-    marginRight: '25px',
-
-    '&::before': {
-      display: 'none'
-    },
-    '&::after': {
-      display: 'none'
-    }
-  },
-  birthWrap: {
-    display: 'flex',
-    width: '255px',
-    height: '46px',
-    border: 'none',
-    outline: 'none',
-    borderRadius: '23px',
-    boxSizing: 'border-box',
-    '-ms-align-items': 'center',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.61)'
-  },
-  countryField: {
-    height: '46px',
-    width: '130px',
-    border: 'none',
-    outline: 'none',
-    borderRadius: '23px',
-    paddingLeft: '25px',
-    boxSizing: 'border-box',
-    backgroundColor: 'rgba(255, 255, 255, 0.61)',
-    marginRight: '25px',
-
-    '&::before': {
-      display: 'none'
-    },
-    '&::after': {
-      display: 'none'
-    }
-  },
-  addressField: {
-    height: '46px',
-    width: '255px',
-    border: 'none',
-    outline: 'none',
-    borderRadius: '23px',
-    paddingLeft: '25px',
-    boxSizing: 'border-box',
-    backgroundColor: 'rgba(255, 255, 255, 0.61)'
-  },
-  phoneField: {
-    height: '46px',
-    width: '400px',
-    border: 'none',
-    outline: 'none',
-    borderRadius: '23px',
-    boxSizing: 'border-box',
-    backgroundColor: 'rgba(255, 255, 255, 0.61)',
-    paddingLeft: '25%'
   },
   step2BtnSkip: {
     fontSize: '20px',

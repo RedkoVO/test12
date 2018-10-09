@@ -5,6 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
 // import { Field, Form } from 'redux-form'
+import cn from 'classnames'
 
 import InputField from '../../../../App/components/Form/InputField'
 
@@ -12,71 +13,96 @@ import styles from './styles'
 import './datePickerStyle.css'
 
 const Step2 = ({ classes }) => (
-  <form>
-    <div>KYCRegistration</div>
-    <InputField   // <Field ... >
-      name="first_name"
-      type="text"
-      placeholder="First name"
-    />
+  <div className={classes.root}>
+    <form action="#" className={classes.registrStep2}>
+      <h1 className={classes.step2Title}>KYC Registration</h1>
+      <span className={classes.pageNum}>2 of 3</span>
+      <label htmlFor="firstName" className={classes.step2Label}>
+        <span>First Name</span>
+        <InputField
+          id="firstName"
+          className={classes.firstNameField}
+          name="fistName"
+          type="text"
+          placeholder="First name"
+        />
+      </label>
+      <label htmlFor="lastName" className={classes.step2Label}>
+        <span>Last Name</span>
+        <InputField
+          id="lastName"
+          className={classes.lastNameField}
+          name="lastName"
+          type="text"
+          placeholder="Last name"
+        />
+      </label>
+      <label className={classes.step2Label} htmlFor="gender">
+        <span>Gender</span>
 
-    <InputField   // <Field ... >
-      name="last_name"
-      type="text"
-      placeholder="Last name"
-    />
+        <Select
+          id="gender"
+          className={cn(classes.genderField, classes.dropdown)}
+          name="gender"
+          value={""}
+        // onChange={this.handleChange}
+        >
+          <MenuItem value="">None</MenuItem>
+          <MenuItem value={'male'}>Male</MenuItem>
+          <MenuItem value={'female'}>Female</MenuItem>
+        </Select>
+      </label>
+      <label className={classes.step2Label} htmlFor="birth">
+        <span>Date of Birth</span>
 
-    <Select
-      name="gender"
-      value={""}
-    // onChange={this.handleChange}
-    >
-      <MenuItem value="">None</MenuItem>
-      <MenuItem value={10}>Ten</MenuItem>
-      <MenuItem value={20}>Twenty</MenuItem>
-      <MenuItem value={30}>Thirty</MenuItem>
-    </Select>
+        <div className={classes.birthWrap}>
+          <DatePicker
+            selected={moment()}
+          // onChange={this.handleChange}
+          />
+        </div>
+      </label>
+      <label className={classes.step2Label} htmlFor="country">
+        <span>Country</span>
 
+        <Select
+          id="country"
+          className={cn(classes.countryField, classes.dropdown)}
+          name="dropdown"
+          value={"ukraine"}
+        // onChange={this.handleChange}
+        >
+          <MenuItem value={'ukraine'}>Ukraine</MenuItem>
+          <MenuItem value={'USA'}>USA</MenuItem>
+        </Select>
+      </label>
+      <label className={classes.step2Label} htmlFor="address">
+        <span>Country</span>
+        <InputField
+          id="address"
+          className={classes.addressField}
+          name="address"
+          type="text"
+          placeholder="34, street Palmova, Kyiv"
+        />
+      </label>
+      <label className={classes.step2Label} htmlFor="phone">
+        <span>Country</span>
+        <InputField
+          id="phone"
+          className={classes.phoneField}
+          name="lastName"
+          type="text"
+          placeholder="+380( _ _ ) - _ _ _ - _ _  - _ _"
+        />
+      </label>
 
-    <DatePicker
-      selected={moment()}
-    // onChange={this.handleChange}
-    />
-
-    <Select
-      name="country"
-      value={""}
-    // onChange={this.handleChange}
-    >
-      <MenuItem value="">None</MenuItem>
-      <MenuItem value={10}>Ten</MenuItem>
-      <MenuItem value={20}>Twenty</MenuItem>
-      <MenuItem value={30}>Thirty</MenuItem>
-    </Select>
-
-    <InputField   // <Field ... >
-      name="address"
-      type="text"
-      placeholder="Address"
-    />
-
-    <Select
-      name="document"
-      value={""}
-    // onChange={this.handleChange}
-    >
-      <MenuItem value="">None</MenuItem>
-      <MenuItem value={10}>Ten</MenuItem>
-      <MenuItem value={20}>Twenty</MenuItem>
-      <MenuItem value={30}>Thirty</MenuItem>
-    </Select>
-
-    <InputField   // <Field ... >
-      name="email"
-      type="email"
-      placeholder="e-mail"
-    />
-  </form >
+      <div className={classes.step2Btns}>
+        <input type="button" className={classes.step2BtnSkip} value="Skip" />
+        <input type="button" className={classes.step2BtnsNext} value="Next" />
+      </div>
+    </form>
+  </div>
 )
 
 export default withStyles(styles)(Step2)
