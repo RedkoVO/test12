@@ -7,13 +7,18 @@ import Main from '../components/Main'
 
 import styles from './styles'
 
-const Header = ({ classes }) => (
-  <header className={classes.root}>
-    <MenuNavigation />
+const Header = props => {
+  const { classes, onSubmit } = props
 
-    <Main />
-  </header>
-)
+  return (
+    <header className={classes.root}>
+      <MenuNavigation />
+      <Main
+        onSubmit={onSubmit}
+      />
+    </header>
+  )
+}
 
 Header.propTypes = {
   classes: PropTypes.object

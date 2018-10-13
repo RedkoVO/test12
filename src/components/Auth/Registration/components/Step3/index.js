@@ -12,7 +12,7 @@ const Step3 = ({ classes }) => (
       <h1 className={classes.step3Title}>KYC Registration</h1>
       <span className={classes.pageNum}>3 of 3</span>
 
-      <label className={classes.step3Label} for="document">
+      <label className={classes.step3Label} htmlFor="document">
         <span>Document</span>
         <Select
           id="document"
@@ -25,13 +25,13 @@ const Step3 = ({ classes }) => (
           <MenuItem value={'passport'}>Passport</MenuItem>
         </Select>
       </label>
-      <label className={classes.step3Label} for="upload">
+      <label className={classes.step3Label} htmlFor="upload">
         <span>Upload the photo</span>
         <input type="file" className={classes.uploadField} id="upload" />
       </label>
 
-      <input type="radio" className={classes.agreementField} id="agreement" />I agree with <a href="#">Terms&amp;Conditions</a> <br />
-      <input type="radio" className={classes.agreementField} id="agreement2" />I agree with <a href="#">Vault Personal Infortmation Policy</a>
+      <input type="radio" className={classes.agreementField} id="agreement" />I agree with <a href="/">Terms&amp;Conditions</a> <br />
+      <input type="radio" className={classes.agreementField} id="agreement2" />I agree with <a href="/">Vault Personal Infortmation Policy</a>
 
       <div className="step2Btns">
         <input type="button" className={classes.step2BtnSkip} value="Skip" />

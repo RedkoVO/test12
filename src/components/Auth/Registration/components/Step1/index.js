@@ -1,23 +1,27 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import withStyles from '@material-ui/core/styles/withStyles'
+import { Field, Form } from 'redux-form'
 
 import InputField from '../../../../App/components/Form/InputField'
 
 import styles from './styles'
 
-const Step1 = ({ classes }) => (
+const Step1 = ({ classes, onSubmit }) => (
   <div className={classes.root}>
-    <form action="/" className={classes.registrStep1}>
+    <Form className={classes.registrStep1} onSubmit={onSubmit}>
       <h1 className={classes.step1Title}>Registration</h1>
       <label htmlFor="email" className={classes.step1Label}>E-mail</label>
-      <InputField
+      <Field
         id="email"
-        className={classes.field}
         name="email"
         type="email"
+        className={classes.field}
+        component={InputField}
         placeholder="Enter E-mail"
       />
-      <label htmlFor="password" className={classes.step1Label}>Pass</label>
+      {/* <label htmlFor="password" className={classes.step1Label}>Pass</label>
       <InputField
         id="password"
         className={classes.field}
@@ -32,13 +36,18 @@ const Step1 = ({ classes }) => (
         name="psw"
         type="password"
         placeholder="Enter Password"
-      />
+      /> */}
       <div>
-        <button className={classes.step1BtnBack}>Back</button>
-        <button className={classes.step1BtnsRegister}>Register!</button>
+        <Link to={'/login'} className={classes.step1BtnBack}>Login</Link>
+        <button type="submit" className={classes.step1BtnsRegister}>Register!</button>
       </div>
-    </form>
+    </Form>
   </div>
 )
+
+Step1.propTypes = {
+  classNamees: PropTypes.object,
+  onSubmit: PropTypes.func
+}
 
 export default withStyles(styles)(Step1)

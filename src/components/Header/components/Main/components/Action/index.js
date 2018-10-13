@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
+import { Field, Form } from 'redux-form'
+
+import InputField from '../../../../../App/components/Form/InputField'
 
 import styles from './styles'
 
-const Action = ({ classes }) => (
+const Action = ({ classes, onSubmit }) => (
   <div className={classes.root}>
     <div className={classes.actionsStatistics}>
       <span className={classes.statisticsTitle}>Statistics</span>
@@ -15,14 +18,28 @@ const Action = ({ classes }) => (
       </div>
     </div>
     <div className={classes.actionsSend}>
-      <span className={classes.sendTitle}>Send now</span>
-      <div className={classes.sendAddress}>
-        <input type="text" className={classes.sendAddressField} placeholder="Put address you want to send the money" />
-      </div>
-      <div className={classes.sendAmmount}>
-        <input type="text" className={classes.sendAmmountField} placeholder="Set ammount" />
-      </div>
-      <a href="/" className={classes.sendBtn}>Send money</a>
+      <Form className={classes.form} onSubmit={onSubmit}>
+        <span className={classes.sendTitle}>Send now</span>
+        <div className={classes.sendAddress}>
+          <Field
+            name="addressKey"
+            type="text"
+            className={classes.sendAddressField}
+            component={InputField}
+            placeholder="Put address you want to send the money"
+          />
+        </div>
+        <div className={classes.sendAmmount}>
+          <Field
+            name="amount"
+            type="text"
+            className={classes.sendAmmountField}
+            component={InputField}
+            placeholder="Set ammount"
+          />
+        </div>
+        <button type="submit" className={classes.sendBtn}>Send money</button>
+      </Form>
     </div>
     <div className={classes.actionsInvoice}>
       <span className={classes.invoiceTitle}>Invoice</span>

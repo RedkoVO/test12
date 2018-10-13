@@ -20,6 +20,9 @@ export default () => ({
     '-ms-align-items': 'center',
     alignItems: 'center'
   },
+  form: {
+    textAlign: 'center'
+  },
   statisticsTitle: {
     position: 'relative',
     fontSize: '29px',

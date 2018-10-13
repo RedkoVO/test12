@@ -8,7 +8,7 @@ import Avatar from '../../../../assets/images/user_photo.png'
 
 import styles from './styles'
 
-const Main = ({ classes }) => (
+const Main = ({ classes, onSubmit }) => (
   <div className={classes.root}>
     <div className={classes.user}>
       <div className={classes.userBlock}>
@@ -44,7 +44,7 @@ const Main = ({ classes }) => (
       </ul>
     </div>
 
-    <Action />
+    <Action onSubmit={onSubmit} />
   </div>
 )
 
