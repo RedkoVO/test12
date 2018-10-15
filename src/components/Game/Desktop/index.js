@@ -5,16 +5,23 @@ import cn from 'classnames'
 
 import MenuNavigation from '../../Header/components/MenuNavigation'
 
-import GameRollImg from '../../../assets/images/gameRollImg.png'
-import SliderItemImg1 from '../../../assets/images/sliderItem1.png'
-import SliderItemImg2 from '../../../assets/images/sliderItem2.png'
-import SliderItemImg3 from '../../../assets/images/sliderItem3.png'
-import SliderItemImg4 from '../../../assets/images/sliderItem4.png'
+// import GameRollImg from '../../../assets/images/gameRollImg.png'
+// import SliderItemImg1 from '../../../assets/images/sliderItem1.png'
+// import SliderItemImg2 from '../../../assets/images/sliderItem2.png'
+// import SliderItemImg3 from '../../../assets/images/sliderItem3.png'
+// import SliderItemImg4 from '../../../assets/images/sliderItem4.png'
+import GameRollImg from '../../../assets/images/slider_slot_4clover_m.jpg'
+import SliderItemImg1 from '../../../assets/images/slider_slot_4clover.png'
+import SliderItemImg2 from '../../../assets/images/slider_slot_4clover_m.jpg'
+import SliderItemImg3 from '../../../assets/images/slider_slot_4clover_m.jpg'
+import SliderItemImg4 from '../../../assets/images/slider_slot_4clover_m.jpg'
 import UserImg from '../../../assets/images/user.png'
 
 import styles from './styles'
 
-const Game = ({ classes, handlePlayNow, isShowIframe }) => {
+const Game = ({ classes, handlePlayNow, isShowIframe, address }) => {
+  // const url = `http://34.212.109.62:3333/en/web/fourclover/?sid=${address}`
+  const url = "http://34.212.109.62:3333/en/web/fourclover/?sid=dcb_1y7u83jps7j1aqzgekqhwi6pr4z35dqz1icjegrkfcfqwmtzcrzk3abxgrdx#"
 
   return (
     <div className={classes.root}>
@@ -47,7 +54,7 @@ const Game = ({ classes, handlePlayNow, isShowIframe }) => {
                 <div className={classes.gameRollDescr}>
                   <div className={classes.gameRollDescrleft}>
                     <div className={classes.gameRollTitleBlock}>
-                      <p className={classes.gameRollTitle}>Rolled-Folled</p>
+                      <p className={classes.gameRollTitle}>4Clover</p>
                       <span className={classes.gameRollOnline}>online: 234</span><br />
                       <span className={classes.gameRollCompany}>by Fall Inc.</span>
                     </div>
@@ -175,7 +182,14 @@ const Game = ({ classes, handlePlayNow, isShowIframe }) => {
       {isShowIframe && (
         <div>
           <div className={classes.overlayIframe} onClick={() => handlePlayNow()} />
-          <div className={classes.wrIframe}></div>
+          <div className={classes.wrIframe}>
+            <iframe
+              id="gameFrame"
+              className={classes.gameIframe}
+              title="game"
+              src={url}
+            />
+          </div>
         </div>
       )}
     </div>

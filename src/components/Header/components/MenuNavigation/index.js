@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 import cn from 'classnames'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-
 import styles from './styles'
 
-const MenuNavigation = ({ classes, page }) => (
+const MenuNavigation = ({ classes, page, handleLogout }) => (
   <ul className={cn(classes.root, { game: page === 'game' })}>
     <li className={classes.logo}>
       {/* <img src={HouseLogo} alt="" /> */}
+      <div className={classes.logout} onClick={() => handleLogout()}>Logout</div>
     </li>
     <li>
       <Link to={'/'} className={classes.headerMenuItem}>
@@ -47,7 +47,8 @@ const MenuNavigation = ({ classes, page }) => (
 
 MenuNavigation.propTypes = {
   classes: PropTypes.object,
-  page: PropTypes.string
+  page: PropTypes.string,
+  handleLogout: PropTypes.func
 }
 
 export default withStyles(styles)(MenuNavigation)

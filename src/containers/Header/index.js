@@ -41,6 +41,16 @@ export default compose(
     validate
   }),
   withHandlers({
+    handleLogout: ({ history }) => () => {
+      localStorage.removeItem("address")
+      localStorage.removeItem("publicKey")
+      localStorage.removeItem("representative")
+      localStorage.removeItem("secretKey")
+      localStorage.removeItem("lastBlock")
+
+      history.push('/')
+    },
+
     onSubmit: ({ handleSubmit, dispatch, balance }) =>
       handleSubmit(variables => {
         dispatch(getWork({ hash: localStorage.getItem('lastBlock') }))

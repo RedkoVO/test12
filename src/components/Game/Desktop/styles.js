@@ -532,8 +532,8 @@ export default () => ({
 
   //Iframe
   wrIframe: {
-    width: '900px',
-    height: '500px',
+    width: '90%',
+    height: '90%',
     position: 'fixed',
     background: '#fff',
     top: 0,
@@ -549,6 +549,9 @@ export default () => ({
     left: 0,
     right: 0,
     background: 'rgba(0, 0, 0, 0.5)'
+  },
+  gameIframe: {
+    width: '100%',
+    height: '100%'
   }
-
 })

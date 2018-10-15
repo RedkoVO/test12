@@ -13,7 +13,7 @@ import GameLogo4 from '../../assets/images/funny-game.png'
 import GameLogo5 from '../../assets/images/loto-game.png'
 import GameLogo6 from '../../assets/images/word-game.png'
 
-// import CloverLogo1 from '../../assets/images/sim_game_icon_4clover.png'
+import CloverLogo1 from '../../assets/images/sim_game_icon_4clover.png'
 // import CloverLogo2 from '../../assets/images/slider_slot_4clover_m.png'
 // import CloverLogo3 from '../../assets/images/slider_slot_4clover.png'
 
@@ -38,7 +38,7 @@ const gameCategories = [
   {
     id: 1,
     game: [
-      { id: 1, title: 'Most popular', name: 'Loto games', img: GameLogo1, bundle: '4clover' },
+      { id: 1, title: 'Most popular', name: '4Clover', img: CloverLogo1, bundle: '4clover' },
       { id: 2, title: 'Most popular', name: 'Dice games', img: GameLogo2 },
       { id: 3, title: 'For children', name: 'Word games', img: GameLogo3 },
       { id: 4, title: 'For children', name: 'Funny games', img: GameLogo4 },

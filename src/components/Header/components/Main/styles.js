@@ -51,6 +51,7 @@ export default () => ({
     padding: 0,
     paddingLeft: '0',
     boxSizing: 'border-box',
+    textAlign: 'center',
 
     '&::before': {
       // position: 'absolute',

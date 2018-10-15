@@ -99,4 +99,9 @@ export default () => ({
     backgroundSize: '25px',
     backgroundPosition: 'center'
   },
+  logout: {
+    cursor: 'pointer',
+    display: 'block',
+    textAlign: 'center'
+  }
 })
