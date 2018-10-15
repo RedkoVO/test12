@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import withStyles from '@material-ui/core/styles/withStyles'
 
 import CategorieItem from './components/CategorieItem'
@@ -11,7 +12,7 @@ const Categories = ({ classes, categories }) => (
     {categories.map(item => (
       <div className={classes.categories} key={item.id}>
         <div className={classes.categTitleWrap}>
-          <a href="/" className={classes.categoriesTitle}>Categories:</a>
+          <Link to="/" className={classes.categoriesTitle}>Categories:</Link>
         </div>
 
         {item.game.map(itemGames => (

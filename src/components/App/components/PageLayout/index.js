@@ -7,7 +7,8 @@ export const PageLayout = ({
   header: Header,
   // footer: Footer,
   ...rest
-}) => (
+}) => {
+  return (
     <div className="container">
       <div className="containerMain">
         <Header {...rest} />
@@ -18,6 +19,7 @@ export const PageLayout = ({
       </div>
     </div>
   )
+}
 
 PageLayout.propTypes = {
   header: PropTypes.func.isRequired,

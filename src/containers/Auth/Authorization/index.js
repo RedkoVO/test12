@@ -29,15 +29,15 @@ export default compose(
           
           dispatch(getBalance(data))
           .then(res => {
-            localStorage.setItem("address", getCryptoInfo.address)
-            localStorage.setItem("publicKey", getCryptoInfo.publicKey)
-            localStorage.setItem("representative", getCryptoInfo.representative)
-            localStorage.setItem("secretKey", getCryptoInfo.secretKey)
-            localStorage.setItem("lastBlock", res.lastBlock)
-
-            history.push('/')
-
-            console.log('res balance', res)
+            if (!res.error) {
+              localStorage.setItem("address", getCryptoInfo.address)
+              localStorage.setItem("publicKey", getCryptoInfo.publicKey)
+              localStorage.setItem("representative", getCryptoInfo.representative)
+              localStorage.setItem("secretKey", getCryptoInfo.secretKey)
+              localStorage.setItem("lastBlock", res.lastBlock)
+  
+              history.push('/')
+            }
           })
           .catch(err => {
             console.log('Error get balance', err)

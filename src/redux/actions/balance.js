@@ -32,7 +32,9 @@ export const createGetBalanceSuccess = (data) => {
   return {
     type: GET_BALANCE,
     payload: {
-      success: data.success
+      balance: data.balance,
+      lastBlock: data.lastBlock,
+      shortBalance: data.shortBalance
     }
   }
 }

@@ -8,7 +8,7 @@ import Avatar from '../../../../assets/images/user_photo.png'
 
 import styles from './styles'
 
-const Main = ({ classes, onSubmit }) => (
+const Main = ({ classes, onSubmit, balance }) => (
   <div className={classes.root}>
     <div className={classes.user}>
       <div className={classes.userBlock}>
@@ -26,7 +26,7 @@ const Main = ({ classes, onSubmit }) => (
         <p>My btc wallet:</p>
       </div>
       <div className={classes.walletSum}>
-        <a href="/">2.3122</a>
+        <a href="/">{balance}</a>
       </div>
       <ul className={classes.walletNav}>
         <li>
@@ -49,7 +49,9 @@ const Main = ({ classes, onSubmit }) => (
 )
 
 Main.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  onSubmit: PropTypes.func,
+  balance: PropTypes.string
 }
 
 export default withStyles(styles)(Main)

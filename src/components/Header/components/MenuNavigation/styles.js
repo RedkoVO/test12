@@ -24,6 +24,23 @@ export default () => ({
       height: '65px',
       margin: 0,
       padding: 0
+    },
+
+    '&.game': {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      backgroundColor: 'rgba(0,0,0, 0.71)',
+
+      '& li': {
+        '& a': {
+          color: '#fff'
+        },
+
+        '&:hover': {
+          boxShadow: '10px 10px 20px 0px rgba(255,255,255,0.5)'
+        }
+      }
     }
   },
   headerMenuItem: {

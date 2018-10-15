@@ -38,6 +38,7 @@ export const createRegistrationEmailSuccess = (data) => {
 }
 /* ********** */
 
+/* TODO: move to another file */
 /* SEND MONEY */
 export const sendMoney = data => {
   data.action = 'process'

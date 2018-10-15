@@ -35,9 +35,10 @@ export default () => ({
     flexDirection: 'column',
     '-ms-align-items': 'stretch',
     alignItems: 'stretch',
-    width: '450px'
+    width: 'initial'
   },
   walletTitle: {
+    textAlign: 'center',
     fontSize: '39px',
     fontWeight: 400,
 
@@ -48,20 +49,20 @@ export default () => ({
   walletSum: {
     position: 'relative',
     padding: 0,
-    paddingLeft: '120px',
+    paddingLeft: '0',
     boxSizing: 'border-box',
 
     '&::before': {
-      position: 'absolute',
-      content: `""`,
-      width: '45px',
-      height: '45px',
-      bottom: '15px',
-      left: '50px',
-      backgroundImage: `url(${BitcoinLogo})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: '45px',
-      backgroundPosition: 'center'
+      // position: 'absolute',
+      // content: `""`,
+      // width: '45px',
+      // height: '45px',
+      // bottom: '15px',
+      // left: '50px',
+      // backgroundImage: `url(${BitcoinLogo})`,
+      // backgroundRepeat: 'no-repeat',
+      // backgroundSize: '45px',
+      // backgroundPosition: 'center'
     },
 
     '&::after': {
@@ -70,7 +71,7 @@ export default () => ({
       width: '30px',
       height: '30px',
       bottom: '25px',
-      right: '25px',
+      right: '-35px',
       backgroundImage: `url(${DownLogo})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: '30px',
@@ -93,6 +94,7 @@ export default () => ({
     listStyleType: 'none',
     margin: 0,
     width: '100%',
+    justifyContent: 'center'
   },
   walletNavItem: {
     textDecoration: 'none',

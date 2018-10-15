@@ -11,12 +11,13 @@ import AsyncDashboard from '../../../containers/Dashboard/AsyncDashboard'
 import AsyncWallet from '../../../containers/Wallet/AsyncWallet'
 import AsyncShop from '../../../containers/Shop/AsyncShop'
 import AsyncGames from '../../../containers/Games/AsyncGames'
+import AsyncGame from '../../../containers/Game/AsyncGame'
 import AsyncFriends from '../../../containers/Friends/AsyncFriends'
 import AsyncSettings from '../../../containers/Settings/AsyncSettings'
 
 const RootRoute = props => {
   const { location, keyAuth } = props
-  
+
   return (
     <Switch location={location}>
       {keyAuth ? (
@@ -57,6 +58,13 @@ const RootRoute = props => {
         <RoutePage
           path={`/games`}
           component={AsyncGames}
+        />
+      )}
+
+      {keyAuth && (
+        <Route
+          path={`/game/:bundle`}
+          component={AsyncGame}
         />
       )}
 

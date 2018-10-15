@@ -8,20 +8,23 @@ import Main from '../components/Main'
 import styles from './styles'
 
 const Header = props => {
-  const { classes, onSubmit } = props
+  const { classes, onSubmit, balance } = props
 
   return (
     <header className={classes.root}>
       <MenuNavigation />
       <Main
         onSubmit={onSubmit}
+        balance={balance && balance.shortBalance}
       />
     </header>
   )
 }
 
 Header.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  onSubmit: PropTypes.func,
+  balance: PropTypes.object
 }
 
 export default withStyles(styles)(Header)

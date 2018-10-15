@@ -7,9 +7,9 @@ const auth = (state = {}, action) => {
     case GET_BALANCE:
       return {
         ...state,
-        balance: {
-          success: payload.success
-        }
+        balance: payload.balance,
+        lastBlock: payload.lastBlock,
+        shortBalance: payload.shortBalance
       }
     case GET_WORK:
       return {
