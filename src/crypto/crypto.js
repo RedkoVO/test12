@@ -22,7 +22,7 @@ function hexToUint8(hexValue) {
 function uint4ToUint8(uintValue) {
   const length = uintValue.length / 2;
   const uint8 = new Uint8Array(length);
-  for (let i = 0; i < length; i++)	uint8[i] = uintValue[i*2] * 16 + uintValue[i*2+1];
+  for (let i = 0; i < length; i++)	uint8[i] = uintValue[i * 2] * 16 + uintValue[i * 2 + 1];
 
   return uint8;
 }
@@ -33,11 +33,11 @@ function uint4ToUint5(uintValue) {
   for (let i = 1; i <= length; i++) {
     let n = i - 1;
     let m = i % 4;
-    let z = n + ((i - m)/4);
+    let z = n + ((i - m) / 4);
     let right = uintValue[z] << m;
     let left;
-    if (((length - i) % 4) == 0)	left = uintValue[z-1] << 4;
-    else	left = uintValue[z+1] >> (4 - m);
+    if (((length - i) % 4) == 0) left = uintValue[z - 1] << 4;
+    else left = uintValue[z + 1] >> (4 - m);
     uint5[n] = (left + right) % 32;
   }
   return uint5;
@@ -65,8 +65,8 @@ function uint5ToUint4(uint5) {
   for (let i = 1; i <= length; i++) {
     let n = i - 1;
     let m = i % 5;
-    let z = n - ((i - m)/5);
-    let right = uint5[z-1] << (5 - m);
+    let z = n - ((i - m) / 5);
+    let right = uint5[z - 1] << (5 - m);
     let left = uint5[z] >> m;
     uint4[n] = (left + right) % 16;
   }
@@ -80,20 +80,20 @@ function uint8ToHex(uintValue) {
   let aux;
   for (let i = 0; i < uintValue.length; i++) {
     aux = uintValue[i].toString(16).toUpperCase();
-    if(aux.length == 1)
-      aux = '0'+aux;
+    if (aux.length == 1)
+      aux = '0' + aux;
     hex += aux;
     aux = '';
   }
 
-  return(hex);
+  return (hex);
 }
 
 function uint8ToUint4(uintValue) {
   const uint4 = new Uint8Array(uintValue.length * 2);
   for (let i = 0; i < uintValue.length; i++) {
-    uint4[i*2] = uintValue[i] / 16 | 0;
-    uint4[i*2+1] = uintValue[i] % 16;
+    uint4[i * 2] = uintValue[i] / 16 | 0;
+    uint4[i * 2 + 1] = uintValue[i] % 16;
   }
 
   return uint4;
@@ -103,27 +103,26 @@ function uint8ToUint4(uintValue) {
 /** Dec Functions **/
 function decToHex(decValue, bytes = null) {
   var dec = decValue.toString().split(''), sum = [], hex = '', hexArray = [], i, s
-  while(dec.length) {
+  while (dec.length) {
     s = 1 * dec.shift()
-    for(i = 0; s || i < sum.length; i++)
-    {
+    for (i = 0; s || i < sum.length; i++) {
       s += (sum[i] || 0) * 10
       sum[i] = s % 16
       s = (s - sum[i]) / 16
     }
   }
-  while(sum.length) {
+  while (sum.length) {
     hexArray.push(sum.pop().toString(16));
   }
 
   hex = hexArray.join('');
 
-  if(hex.length % 2 != 0)
+  if (hex.length % 2 != 0)
     hex = "0" + hex;
 
-  if(bytes > hex.length / 2) {
+  if (bytes > hex.length / 2) {
     var diff = bytes - hex.length / 2;
-    for(var j = 0; j < diff; j++)
+    for (var j = 0; j < diff; j++)
       hex = "00" + hex;
   }
 
@@ -189,7 +188,7 @@ function getPublicAccountID(accountPublicKeyBytes) {
 
 function getAccountPublicKey(account) {
   if ((!account.startsWith('dcb_1') && !account.startsWith('dcb_3')) || account.length !== 64) throw new Error(`Invalid NANO Account`);
-  const account_crop = account.substring(4,64);
+  const account_crop = account.substring(4, 64);
   const isValid = /^[13456789abcdefghijkmnopqrstuwxyz]+$/.test(account_crop);
   if (!isValid) throw new Error(`Invalid NANO account`);
 
@@ -208,7 +207,7 @@ function getAccountPublicKey(account) {
  */
 const mnano = 1000000000000000000000000000000;
 const knano = 1000000000000000000000000000;
-const nano  = 1000000000000000000000000;
+const nano = 1000000000000000000000000;
 function mnanoToRaw(value) {
   return new BigNumber(value).times(mnano);
 }
@@ -231,17 +230,17 @@ function rawToNano(value) {
 
 
 
-function array_crop (array) {
+function array_crop(array) {
   var length = array.length - 1;
   var cropped_array = new Uint8Array(length);
   for (let i = 0; i < length; i++)
-    cropped_array[i] = array[i+1];
+    cropped_array[i] = array[i + 1];
   return cropped_array;
 }
 
-function equal_arrays (array1, array2) {
+function equal_arrays(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
-    if (array1[i] != array2[i])	return false;
+    if (array1[i] != array2[i]) return false;
   }
   return true;
 }
@@ -251,39 +250,39 @@ function generateSeedBytes() {
   return nacl.randomBytes(32);
 }
 
-const fromUint8 =  uint8ToHex;
+const fromUint8 = uint8ToHex;
 const toUint8 = hexToUint8;
 
 /**
  * Registration
  */
 
-function generateNewAccount(){
-    const seedBytes = generateSeedBytes();
-    const secretKeyBytes = generateAccountSecretKeyBytes(seedBytes, 0);
-    const keyPair = generateAccountKeyPair(secretKeyBytes);
-    const publicKeyBytes = keyPair.publicKey; 
-    const address = getPublicAccountID(publicKeyBytes);
-  
-    //const seedHex = fromUint8(seedBytes);
-    const secretKeyHex = fromUint8(secretKeyBytes);
-    //const publicKeyHex = fromUint8(publicKeyBytes);
-    
-    const newAccount = {
-      address: address,
-      secretKey: secretKeyHex,
-    }
-  
-    return newAccount  
+function generateNewAccount() {
+  const seedBytes = generateSeedBytes();
+  const secretKeyBytes = generateAccountSecretKeyBytes(seedBytes, 0);
+  const keyPair = generateAccountKeyPair(secretKeyBytes);
+  const publicKeyBytes = keyPair.publicKey;
+  const address = getPublicAccountID(publicKeyBytes);
+
+  //const seedHex = fromUint8(seedBytes);
+  const secretKeyHex = fromUint8(secretKeyBytes);
+  //const publicKeyHex = fromUint8(publicKeyBytes);
+
+  const newAccount = {
+    address: address,
+    secretKey: secretKeyHex,
+  }
+
+  return newAccount
 }
 
 /**
  * Login functions
  */
 
-function accountFromSecret(secretKey){
+function accountFromSecret(secretKey) {
   const pair = generateAccountKeyPair(toUint8(secretKey));
-  const publicKey = fromUint8(pair.publicKey); 
+  const publicKey = fromUint8(pair.publicKey);
   const address = getPublicAccountID(pair.publicKey);
 
   // TODO request balance and last block
@@ -302,7 +301,7 @@ function accountFromSecret(secretKey){
  */
 
 const STATE_BLOCK_PREAMBLE_STR = '0000000000000000000000000000000000000000000000000000000000000006';
-const STATE_BLOCK_PREAMBLE =  toUint8(STATE_BLOCK_PREAMBLE_STR);
+const STATE_BLOCK_PREAMBLE = toUint8(STATE_BLOCK_PREAMBLE_STR);
 
 // acc = {
 //     publicKey: '01C35B728B16E78193D064389532E73EDC13A2696CBF787551AFFD1CDF89C806',
@@ -314,44 +313,7 @@ const STATE_BLOCK_PREAMBLE =  toUint8(STATE_BLOCK_PREAMBLE_STR);
 //   }
 
 
-function formSendBlock(account, toAddress, amount, work){
-    // TODO check amount < balance 
-
-    // calc new balance 
-    const newBalance = account.balance.minus(amount)
-    const newBalance10 = newBalance.toString(10);
-    console.log(newBalance10);
-    let newBalance16 = newBalance.toString(16);
-    while (newBalance16.length < 32) newBalance16 = '0' + newBalance16; // Left pad with 0's
-
-    // calc hash of block data
-    const context = blake.blake2bInit(32, null);
-    blake.blake2bUpdate(context, STATE_BLOCK_PREAMBLE);
-    blake.blake2bUpdate(context, toUint8(account.publicKey));
-    blake.blake2bUpdate(context, toUint8(account.lastBlock));
-    blake.blake2bUpdate(context, toUint8(getAccountPublicKey(account.representative)));
-    blake.blake2bUpdate(context, toUint8(newBalance16));
-    blake.blake2bUpdate(context, toUint8(getAccountPublicKey(toAddress)));
-    const hashBytes = blake.blake2bFinal(context);
-
-    // calc signature
-    const signed = nacl.sign.detached(hashBytes, toUint8(account.secretKey));
-    const signature = fromUint8(signed);
-
-    const sendBlock = {
-        type: 'state',
-        account: account.address,
-        previous: account.lastBlock,
-        representative: account.representative,
-        balance: newBalance10,
-        link: getAccountPublicKey(toAddress),
-        work: work,
-        signature: signature,       
-    }
-    return sendBlock;
-}
-
-function formReceiveBlock(account, toAddress, amount, work){
+function formSendBlock(account, toAddress, amount, work) {
   // TODO check amount < balance 
 
   // calc new balance 
@@ -376,16 +338,55 @@ function formReceiveBlock(account, toAddress, amount, work){
   const signature = fromUint8(signed);
 
   const sendBlock = {
-      type: 'state',
-      account: account.address,
-      previous: account.lastBlock,
-      representative: account.representative,
-      balance: newBalance10,
-      link: getAccountPublicKey(toAddress),
-      work: work,
-      signature: signature,       
+    type: 'state',
+    account: account.address,
+    previous: account.lastBlock,
+    representative: account.representative,
+    balance: newBalance10,
+    link: getAccountPublicKey(toAddress),
+    work: work,
+    signature: signature,
   }
   return sendBlock;
+}
+
+function formReceiveBlock(account, sourceBlockHash, amount, work) {
+
+  // calc new balance 
+  const newBalance = account.balance.plus(amount)
+  const newBalance10 = newBalance.toString(10);
+  console.log(newBalance10);
+  let newBalance16 = newBalance.toString(16);
+  while (newBalance16.length < 32) newBalance16 = '0' + newBalance16; // Left pad with 0's
+
+  // different algo for open blocks
+  let prevBlock = account.lastBlock;
+  //if (prevBlock == '0000000000000000000000000000000000000000000000000000000000000000') prevBlock = account.publicKey;
+
+  // calc hash of block data
+  const context = blake.blake2bInit(32, null);
+  blake.blake2bUpdate(context, STATE_BLOCK_PREAMBLE);
+  blake.blake2bUpdate(context, toUint8(account.publicKey));
+  blake.blake2bUpdate(context, toUint8(prevBlock));
+  blake.blake2bUpdate(context, toUint8(getAccountPublicKey(account.representative)));
+  blake.blake2bUpdate(context, toUint8(newBalance16));
+  blake.blake2bUpdate(context, toUint8(sourceBlockHash));
+  const hashBytes = blake.blake2bFinal(context);
+
+  // calc signature
+  const signed = nacl.sign.detached(hashBytes, toUint8(account.secretKey));
+  const signature = fromUint8(signed);
+  const receiveBlock = {
+    type: 'state',
+    account: account.address,
+    previous: account.lastBlock,
+    representative: account.representative,
+    balance: newBalance10,
+    link: sourceBlockHash,
+    work: work,
+    signature: signature,
+  }
+  return receiveBlock;
 }
 
 const crypto = {
@@ -420,6 +421,7 @@ const crypto = {
   },
   sign: {
     formSendBlock: formSendBlock,
+    formReceiveBlock: formReceiveBlock,
   },
   nano: {
     mnanoToRaw: mnanoToRaw,

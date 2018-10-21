@@ -69,6 +69,10 @@ export default () => ({
     width: '245px',
     borderRadius: '23px',
     marginTop: '50px',
-    cursor: 'pointer'
+    cursor: 'pointer',
+
+    '&.disabled': {
+      opacity: '0.5'
+    }
   }
 })

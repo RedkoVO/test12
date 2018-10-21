@@ -10,6 +10,9 @@ import styles from './styles'
 
 const Main = ({ classes, onSubmit, balance }) => (
   <div className={classes.root}>
+    <div className={classes.demoTitle}>
+      DEMO VERSION
+    </div>
     <div className={classes.user}>
       <div className={classes.userBlock}>
         <p className={classes.userHello}> Hello, Ben A <br />
@@ -23,7 +26,7 @@ const Main = ({ classes, onSubmit, balance }) => (
 
     <div className={classes.wallet}>
       <div className={classes.walletTitle}>
-        <p>My btc wallet:</p>
+        <p>My dcb wallet:</p>
       </div>
       <div className={classes.walletSum}>
         <a href="/">{balance}</a>

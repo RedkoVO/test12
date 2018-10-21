@@ -8,10 +8,10 @@ import Step1 from '../components/Step1/AsyncStep1'
 
 import styles from './styles'
 
-const Registration = ({ classes, onSubmit }) => (
+const Registration = ({ classes, onSubmit, isDisabledButton }) => (
   <div className={classes.root}>
     <div className={classes.containerRegistrat}>
-      <Step1 onSubmit={onSubmit} />
+      <Step1 onSubmit={onSubmit} isDisabledButton={isDisabledButton} />
       {/* <Step2 />
       <Step3 /> */}
 
@@ -27,7 +27,9 @@ const Registration = ({ classes, onSubmit }) => (
 )
 
 Registration.propTypes = {
-  classNamees: PropTypes.object
+  classNamees: PropTypes.object,
+  onSubmit: PropTypes.func,
+  isDisabledButton: PropTypes.bool
 }
 
 export default withStyles(styles)(Registration)

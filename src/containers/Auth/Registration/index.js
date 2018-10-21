@@ -1,5 +1,5 @@
 import compose from 'recompose/compose'
-import { withHandlers } from 'recompose'
+import { withHandlers, withState } from 'recompose'
 import { reduxForm } from 'redux-form'
 import validate from './validate'
 
@@ -14,18 +14,25 @@ export default compose(
     form: FORM_NAME,
     validate
   }),
+  withState('isDisabledButton', 'setDisabledButton', false),
   withHandlers({
-    onSubmit: ({ handleSubmit, dispatch }) =>
+    onSubmit: ({ handleSubmit, dispatch, history, setDisabledButton, isDisabledButton }) =>
       handleSubmit(variables => {
         const data = { email: variables.email }
 
-        dispatch(registrationEmail(data))
-          .then(res => {
-            console.log('res', res)
-          })
-          .catch(err => {
-            console.log('err registration:', err)
-          })
+        if (!isDisabledButton) {
+          setDisabledButton(!isDisabledButton)
+
+          dispatch(registrationEmail(data))
+            .then(res => {
+              if (res.success)
+                history.push('/confirmation-email')
+              console.log('res', res)
+            })
+            .catch(err => {
+              console.log('err registration:', err)
+            })
+        }
       })
   })
 )(AsyncRegistrationDesktop)

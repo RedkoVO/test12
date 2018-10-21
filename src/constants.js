@@ -1,4 +1,5 @@
 export default {
-  API_URL: 'http://34.212.109.62:80/api/web',
-  API_NODE_URL: 'http://34.212.109.62:80/api/node-api'
+  API_URL: 'https://node.diceybit.io/api/web',
+  API_NODE_URL: 'https://node.diceybit.io/api/node-api',
+  IFRAME_URL: 'https://node.diceybit.io:3333/en/web/fourclover/?sid='
 }

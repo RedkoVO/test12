@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { GET_BALANCE, GET_WORK } from './types'
+import { GET_BALANCE, GET_WORK, GET_INCOMING } from './types'
 import gC from '../../constants'
 
 /* GET BALANCE */
@@ -70,6 +70,41 @@ export const createGetWorkSuccess = (data) => {
     type: GET_WORK,
     payload: {
       success: data.success
+    }
+  }
+}
+/* ********** */
+
+/* GET INCOMING */
+export const getIncoming = data => {
+  data.action = 'incoming'
+
+  return (dispatch) => {
+    return axios({
+      method: 'post',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      data: JSON.stringify(data),
+      url: `${gC.API_URL}`
+    })
+      .then((response) => {
+        dispatch(createGetIncomingSuccess(response.data))
+
+        return response.data
+      })
+      .catch((error) => {
+        console.log('GET_INCOMING error', error)
+      })
+  }
+}
+
+export const createGetIncomingSuccess = (data) => {
+  return {
+    type: GET_INCOMING,
+    payload: {
+      blocks: data.blocks
     }
   }
 }

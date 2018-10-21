@@ -68,9 +68,11 @@ export default compose(
             const work = res.work
             const getCryptoBlock = Crypto.sign.formSendBlock(acc, toAddress, amount, work)
 
+            console.log('getBigNumberAmount(variables.amount)', getBigNumberAmount(variables.amount))
+
             /* TODO: WORKEROUND  remove this! */
-            getCryptoBlock.account = 'xrb' + getCryptoBlock.account.slice(3)
-            getCryptoBlock.representative = 'xrb' + getCryptoBlock.representative.slice(3)
+            // getCryptoBlock.account = 'xrb' + getCryptoBlock.account.slice(3)
+            // getCryptoBlock.representative = 'xrb' + getCryptoBlock.representative.slice(3)
 
             const data = {
               block: JSON.stringify(getCryptoBlock)

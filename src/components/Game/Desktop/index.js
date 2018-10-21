@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import withStyles from '@material-ui/core/styles/withStyles'
 import cn from 'classnames'
 
+import gC from '../../../constants'
+
 import MenuNavigation from '../../Header/components/MenuNavigation'
 
 // import GameRollImg from '../../../assets/images/gameRollImg.png'
@@ -11,23 +13,23 @@ import MenuNavigation from '../../Header/components/MenuNavigation'
 // import SliderItemImg3 from '../../../assets/images/sliderItem3.png'
 // import SliderItemImg4 from '../../../assets/images/sliderItem4.png'
 import GameRollImg from '../../../assets/images/slider_slot_4clover_m.jpg'
-import SliderItemImg1 from '../../../assets/images/slider_slot_4clover.png'
-import SliderItemImg2 from '../../../assets/images/slider_slot_4clover_m.jpg'
-import SliderItemImg3 from '../../../assets/images/slider_slot_4clover_m.jpg'
-import SliderItemImg4 from '../../../assets/images/slider_slot_4clover_m.jpg'
+import SliderItemImg1 from '../../../assets/images/sim_game_icon_4clover.png'
+import SliderItemImg2 from '../../../assets/images/sim_game_icon_4clover.png'
+import SliderItemImg3 from '../../../assets/images/sim_game_icon_4clover.png'
+import SliderItemImg4 from '../../../assets/images/sim_game_icon_4clover.png'
 import UserImg from '../../../assets/images/user.png'
 
 import styles from './styles'
 
-const Game = ({ classes, handlePlayNow, isShowIframe, address }) => {
-  // const url = `http://34.212.109.62:3333/en/web/fourclover/?sid=${address}`
-  const url = "http://34.212.109.62:3333/en/web/fourclover/?sid=dcb_1y7u83jps7j1aqzgekqhwi6pr4z35dqz1icjegrkfcfqwmtzcrzk3abxgrdx#"
+const Game = ({ classes, handlePlayNow, isShowIframe, address, handleLogout }) => {
+  const url = `${gC.IFRAME_URL}${address}`
+  // const url = "http://34.212.109.62:3333/en/web/fourclover/?sid=dcb_1y7u83jps7j1aqzgekqhwi6pr4z35dqz1icjegrkfcfqwmtzcrzk3abxgrdx#"
 
   return (
     <div className={classes.root}>
       <div className={classes.containerGame}>
         <header className={classes.headerGame}>
-          <MenuNavigation page="game" />
+          <MenuNavigation page="game" handleLogout={handleLogout} />
 
           <div className={classes.gameHeaderMain}>
             <div className={classes.gameRollTop}>
@@ -43,7 +45,7 @@ const Game = ({ classes, handlePlayNow, isShowIframe, address }) => {
                     <div className={classes.gameUserPhoto}>
                       <img src={UserImg} alt="" />
                     </div>
-                    <p className={classes.gameUserBallance}> 764.23 CPT <br />
+                    <p className={classes.gameUserBallance}> 764.23 DCB <br />
                       <span className={classes.gameUserBallDescr}>YOUR BALANCE</span>
                     </p>
                   </div>

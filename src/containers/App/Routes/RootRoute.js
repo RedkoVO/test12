@@ -7,6 +7,7 @@ import { Route, Redirect, Switch, withRouter } from 'react-router-dom'
 import RoutePage from '../../../components/App/components/Routes/RoutePage'
 import AsyncAuthorization from '../../../containers/Auth/Authorization/AsyncAuthorization'
 import AsyncRegistration from '../../../containers/Auth/Registration/AsyncRegistration'
+import AsyncConfirmEmail from '../../../containers/Auth/ConfirmEmail/AsyncConfirmEmail'
 import AsyncDashboard from '../../../containers/Dashboard/AsyncDashboard'
 import AsyncWallet from '../../../containers/Wallet/AsyncWallet'
 import AsyncShop from '../../../containers/Shop/AsyncShop'
@@ -21,10 +22,17 @@ const RootRoute = props => {
   return (
     <Switch location={location}>
       {keyAuth ? (
-        <Redirect exact from="/registration" to="/" />
+        <Redirect exact from="/login" to="/" />
       ) : (
-          <Redirect exact from="/" to="/registration" />
+          <Redirect exact from="/" to="/login" />
         )}
+
+      {!keyAuth && (
+        <Route
+          path={`/login`}
+          component={AsyncAuthorization}
+        />
+      )}
 
       {!keyAuth && (
         <Route
@@ -35,8 +43,8 @@ const RootRoute = props => {
 
       {!keyAuth && (
         <Route
-          path={`/login`}
-          component={AsyncAuthorization}
+          path={`/confirmation-email`}
+          component={AsyncConfirmEmail}
         />
       )}
 

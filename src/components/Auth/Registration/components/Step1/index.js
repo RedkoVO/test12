@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { Field, Form } from 'redux-form'
+import cn from 'classnames'
 
 import InputField from '../../../../App/components/Form/InputField'
 
 import styles from './styles'
 
-const Step1 = ({ classes, onSubmit }) => (
+const Step1 = ({ classes, onSubmit, isDisabledButton }) => (
   <div className={classes.root}>
     <Form className={classes.registrStep1} onSubmit={onSubmit}>
       <h1 className={classes.step1Title}>Registration</h1>
@@ -39,7 +40,7 @@ const Step1 = ({ classes, onSubmit }) => (
       /> */}
       <div>
         <Link to={'/login'} className={classes.step1BtnBack}>Login</Link>
-        <button type="submit" className={classes.step1BtnsRegister}>Register!</button>
+        <button type="submit" className={cn(classes.step1BtnsRegister, { disabled: isDisabledButton })}>Register!</button>
       </div>
     </Form>
   </div>
@@ -47,7 +48,8 @@ const Step1 = ({ classes, onSubmit }) => (
 
 Step1.propTypes = {
   classNamees: PropTypes.object,
-  onSubmit: PropTypes.func
+  onSubmit: PropTypes.func,
+  isDisabledButton: PropTypes.bool
 }
 
 export default withStyles(styles)(Step1)

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { REGISTRATION_USER, SEND_MONEY } from './types'
+import { REGISTRATION_USER, SEND_MONEY, GET_INCOMING } from './types'
 import gC from '../../constants'
 
 /* REGISTRATION */
@@ -41,9 +41,7 @@ export const createRegistrationEmailSuccess = (data) => {
 /* TODO: move to another file */
 /* SEND MONEY */
 export const sendMoney = data => {
-  data.action = 'process'
-
-  console.log('data', data)
+  data.action = 'submit'
 
   return (dispatch) => {
     return axios({
@@ -53,7 +51,7 @@ export const sendMoney = data => {
         'Content-Type': 'application/json',
       },
       data: JSON.stringify(data),
-      url: `${gC.API_NODE_URL}`
+      url: `${gC.API_URL}`
     })
       .then((response) => {
         dispatch(createSendMoneySuccess(response.data))

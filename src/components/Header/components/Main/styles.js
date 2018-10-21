@@ -106,5 +106,18 @@ export default () => ({
     padding: '5px 15px',
     borderRadius: '10px',
     margin: '0 5px'
+  },
+  demoTitle: {
+    fontWeight: 900,
+    position: 'absolute',
+    fontSize: '20px',
+    left: '154px',
+    width: '200px',
+    height: '50px',
+    textAlign: 'center',
+    background: '#f00',
+    borderRadius: '10px',
+    color: '#fff',
+    lineHeight: '49px'
   }
 })

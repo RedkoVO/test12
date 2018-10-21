@@ -1,4 +1,4 @@
-import { GET_BALANCE, GET_WORK } from '../actions/types'
+import { GET_BALANCE, GET_WORK, GET_INCOMING } from '../actions/types'
 
 const auth = (state = {}, action) => {
   const { payload, type } = action
@@ -16,6 +16,13 @@ const auth = (state = {}, action) => {
         ...state,
         getWork: {
           success: payload.success
+        }
+      }
+    case GET_INCOMING:
+      return {
+        ...state,
+        getIncomingResponse: {
+          blocks: payload.blocks
         }
       }
     default:
