@@ -84,7 +84,11 @@ export default () => ({
     margin: 0,
     marginTop: '7px',
     borderRadius: '15px',
-    fontSize: '9px'
+    fontSize: '9px',
+
+    '&.input-error': {
+      border: '1px solid red'
+    }
   },
   sendAmmountField: {
     width: '210px',
@@ -97,7 +101,11 @@ export default () => ({
     margin: 0,
     marginTop: '7px',
     borderRadius: '15px',
-    fontSize: '9px'
+    fontSize: '9px',
+
+    '&.input-error': {
+      border: '1px solid red'
+    }
   },
   invoiceAmmountField: {
     width: '210px',
@@ -120,7 +128,16 @@ export default () => ({
     backgroundColor: '#5e7cff',
     padding: '9px 20px',
     borderRadius: '15px',
-    marginTop: '10px'
+    marginTop: '10px',
+
+    '&.disabled': {
+      opacity: '0.5',
+      cursor: 'default'
+    },
+
+    '&:focus': {
+      outline: 'none'
+    }
   },
   invoiceBtn: {
     fontSize: '12px',

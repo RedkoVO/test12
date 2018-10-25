@@ -1,16 +1,16 @@
 import compose from 'recompose/compose'
 import { connect } from 'react-redux'
-import { withHandlers, lifecycle, pure } from 'recompose'
-import { reduxForm } from 'redux-form'
+import { withHandlers, withState, lifecycle, pure } from 'recompose'
+import { reduxForm, reset } from 'redux-form'
 import validate from './validate'
 import BigNumber from 'bignumber.js'
 
-import { sendMoney } from '../../redux/actions/auth'
-import { getWork, getBalance } from '../../redux/actions/balance'
+import { getWork, getBalance, sendMoney } from '../../redux/actions/balance'
 
 import Crypto from '../../crypto/crypto'
 
 import { getBigNumberAmount } from '../../utils/math'
+import { clearStorageForlogout } from '../../utils/localStorageUtils'
 
 import AsyncHeaderDesktop from '../../components/Header/Desktop/AsyncHeaderDesktop'
 
@@ -24,7 +24,6 @@ export default compose(
   connect(mapStateToProps),
   lifecycle({
     componentDidMount() {
-      /*TODO: code is repit */
       const isSecretKey = localStorage.getItem("secretKey")
       const getCryptoInfo = Crypto.account.accountFromSecret(isSecretKey)
 
@@ -40,70 +39,67 @@ export default compose(
     form: FORM_NAME,
     validate
   }),
+  withState('isDisabledButton', 'setDisabledButton', false),
   withHandlers({
     handleLogout: ({ history }) => () => {
-      localStorage.removeItem("address")
-      localStorage.removeItem("publicKey")
-      localStorage.removeItem("representative")
-      localStorage.removeItem("secretKey")
-      localStorage.removeItem("lastBlock")
-
+      clearStorageForlogout()
       history.push('/')
     },
 
-    onSubmit: ({ handleSubmit, dispatch, balance }) =>
+    onSubmit: ({ handleSubmit, setDisabledButton, isDisabledButton, dispatch, balance }) =>
       handleSubmit(variables => {
-        dispatch(getWork({ hash: localStorage.getItem('lastBlock') }))
-          .then(res => {
-            const acc = {
-              publicKey: localStorage.getItem('publicKey'),
-              secretKey: localStorage.getItem('secretKey'),
-              address: localStorage.getItem('address'),
-              representative: localStorage.getItem('representative'),
-              lastBlock: localStorage.getItem('lastBlock'),
-              balance: new BigNumber(balance.balance),
-            }
-            const toAddress = variables.addressKey
-            const amount = getBigNumberAmount(variables.amount)
-            const work = res.work
-            const getCryptoBlock = Crypto.sign.formSendBlock(acc, toAddress, amount, work)
+        if (!isDisabledButton) {
+          setDisabledButton(!isDisabledButton)
 
-            console.log('getBigNumberAmount(variables.amount)', getBigNumberAmount(variables.amount))
+          dispatch(getWork({ hash: localStorage.getItem('lastBlock') }))
+            .then(res => {
+              const acc = {
+                publicKey: localStorage.getItem('publicKey'),
+                secretKey: localStorage.getItem('secretKey'),
+                address: localStorage.getItem('address'),
+                representative: localStorage.getItem('representative'),
+                lastBlock: localStorage.getItem('lastBlock'),
+                balance: new BigNumber(balance.balance),
+              }
+              const toAddress = variables.addressKey
+              const amount = getBigNumberAmount(variables.amount)
+              const work = res.work
+              const getCryptoBlock = Crypto.sign.formSendBlock(acc, toAddress, amount, work)
 
-            /* TODO: WORKEROUND  remove this! */
-            // getCryptoBlock.account = 'xrb' + getCryptoBlock.account.slice(3)
-            // getCryptoBlock.representative = 'xrb' + getCryptoBlock.representative.slice(3)
+              /* TODO: WORKEROUND  remove this! */
+              // getCryptoBlock.account = 'xrb' + getCryptoBlock.account.slice(3)
+              // getCryptoBlock.representative = 'xrb' + getCryptoBlock.representative.slice(3)
 
-            const data = {
-              block: JSON.stringify(getCryptoBlock)
-            }
+              const data = {
+                block: JSON.stringify(getCryptoBlock)
+              }
 
-            dispatch(sendMoney(data))
-              .then(res => {
-                console.log('res', res)
-                if (res.hash) {
-                  /*TODO: code is repit. Move to handlers. */
-                  const isSecretKey = localStorage.getItem("secretKey")
-                  const getCryptoInfo = Crypto.account.accountFromSecret(isSecretKey)
+              dispatch(sendMoney(data))
+                .then(res => {
+                  if (res.hash) {
+                    const isSecretKey = localStorage.getItem("secretKey")
+                    const getCryptoInfo = Crypto.account.accountFromSecret(isSecretKey)
 
-                  if (isSecretKey) {
-                    const data = {
-                      address: getCryptoInfo.address
+                    if (isSecretKey) {
+                      const data = {
+                        address: getCryptoInfo.address
+                      }
+                      dispatch(getBalance(data))
                     }
-                    dispatch(getBalance(data))
+
+                    localStorage.setItem('lastBlock', res.hash)
+                    dispatch(reset('sendMoney'))
                   }
 
-                  localStorage.setItem('lastBlock', res.hash)
-                }
-
-              })
-              .catch(err => {
-                console.log('err registration:', err)
-              })
-          })
-          .catch(err => {
-            console.log('err registration:', err)
-          })
+                })
+                .catch(err => {
+                  console.log('err registration:', err)
+                })
+            })
+            .catch(err => {
+              console.log('err registration:', err)
+            })
+        }
       })
   }),
   pure

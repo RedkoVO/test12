@@ -1,9 +1,9 @@
-import DashboardLogo from '../../../../assets/images/svg/wallet.svg'
-import WalletLogo from '../../../../assets/images/svg/wallet.svg'
-import ShopdLogo from '../../../../assets/images/svg/shopBag.svg'
-import PlayLogo from '../../../../assets/images/svg/play.svg'
-import SocialLogo from '../../../../assets/images/svg/social.svg'
-import SettingsLogo from '../../../../assets/images/svg/settings.svg'
+import DashboardLogo from '../../assets/images/svg/wallet.svg'
+import WalletLogo from '../../assets/images/svg/wallet.svg'
+import ShopdLogo from '../../assets/images/svg/shopBag.svg'
+import PlayLogo from '../../assets/images/svg/play.svg'
+import SocialLogo from '../../assets/images/svg/social.svg'
+import SettingsLogo from '../../assets/images/svg/settings.svg'
 
 export default () => ({
   root: {

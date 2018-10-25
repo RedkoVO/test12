@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { GET_BALANCE, GET_WORK, GET_INCOMING } from './types'
+import { GET_BALANCE, GET_WORK, GET_INCOMING, SEND_MONEY } from './types'
 import gC from '../../constants'
 
 /* GET BALANCE */
@@ -105,6 +105,41 @@ export const createGetIncomingSuccess = (data) => {
     type: GET_INCOMING,
     payload: {
       blocks: data.blocks
+    }
+  }
+}
+/* ********** */
+
+/* SEND MONEY */
+export const sendMoney = data => {
+  data.action = 'submit'
+
+  return (dispatch) => {
+    return axios({
+      method: 'post',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      data: JSON.stringify(data),
+      url: `${gC.API_URL}`
+    })
+      .then((response) => {
+        dispatch(createSendMoneySuccess(response.data))
+
+        return response.data
+      })
+      .catch((error) => {
+        console.log('SEND_MONEY error', error)
+      })
+  }
+}
+
+export const createSendMoneySuccess = (data) => {
+  return {
+    type: SEND_MONEY,
+    payload: {
+      success: data.success
     }
   }
 }

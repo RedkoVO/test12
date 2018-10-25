@@ -1,6 +1,8 @@
 import React from 'react'
+import cn from 'classnames'
 
-const InputField = ({ input, id, className, type, name, placeholder}) => {
+const InputField = ({ input, id, className, type, name, placeholder, meta: { touched, error }}) => {
+  const wpInput = cn(className, { 'input-error': touched && error })
 
   return (
     <input
@@ -8,7 +10,7 @@ const InputField = ({ input, id, className, type, name, placeholder}) => {
       id={id}
       name={name}
       type={type}
-      className={className}
+      className={wpInput}
       placeholder={placeholder}
     />
   )

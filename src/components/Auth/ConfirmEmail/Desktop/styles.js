@@ -30,7 +30,6 @@ export default () => ({
     padding: '13px',
     width: '245px',
     borderRadius: '23px',
-    marginTop: '50px',
     cursor: 'pointer',
     textDecoration: 'none',
     display: 'block',

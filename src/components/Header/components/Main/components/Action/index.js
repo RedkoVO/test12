@@ -2,12 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { Field, Form } from 'redux-form'
+import cn from 'classnames'
 
 import InputField from '../../../../../App/components/Form/InputField'
 
 import styles from './styles'
 
-const Action = ({ classes, onSubmit }) => (
+const Action = ({ classes, onSubmit, isDisabledButton }) => (
   <div className={classes.root}>
     <div className={classes.actionsStatistics}>
       <span className={classes.statisticsTitle}>Statistics</span>
@@ -38,7 +39,7 @@ const Action = ({ classes, onSubmit }) => (
             placeholder="Set ammount"
           />
         </div>
-        <button type="submit" className={classes.sendBtn}>Send money</button>
+        <button type="submit" className={cn(classes.sendBtn, { disabled: isDisabledButton })}>Send money</button>
       </Form>
     </div>
     <div className={classes.actionsInvoice}>
@@ -52,7 +53,8 @@ const Action = ({ classes, onSubmit }) => (
 )
 
 Action.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  isDisabledButton: PropTypes.bool
 }
 
 export default withStyles(styles)(Action)

@@ -8,7 +8,7 @@ import Avatar from '../../../../assets/images/user_photo.png'
 
 import styles from './styles'
 
-const Main = ({ classes, onSubmit, balance }) => (
+const Main = ({ classes, onSubmit, balance, isDisabledButton }) => (
   <div className={classes.root}>
     <div className={classes.demoTitle}>
       DEMO VERSION
@@ -47,14 +47,15 @@ const Main = ({ classes, onSubmit, balance }) => (
       </ul>
     </div>
 
-    <Action onSubmit={onSubmit} />
+    <Action onSubmit={onSubmit} isDisabledButton={isDisabledButton} />
   </div>
 )
 
 Main.propTypes = {
   classes: PropTypes.object,
   onSubmit: PropTypes.func,
-  balance: PropTypes.string
+  balance: PropTypes.string,
+  isDisabledButton: PropTypes.bool
 }
 
 export default withStyles(styles)(Main)

@@ -2,15 +2,13 @@
 const blake = require('blakejs');
 
 (function (nacl) {
-  'use strict';
-
   // Ported in 2014 by Dmitry Chestnykh and Devi Mandiri.
   // Public domain.
   //
   // Implementation derived from TweetNaCl version 20140427.
   // See for details: http://tweetnacl.cr.yp.to/
 
-  var u64 = function (h, l) { this.hi = h | 0 >>> 0; this.lo = l | 0 >>> 0; };
+  var u64 = function (h, l) { this.hi = (h | 0) >>> 0; this.lo = (l | 0) >>> 0; };
   var gf = function (init) {
     var i, r = new Float64Array(16);
     if (init) for (i = 0; i < init.length; i++) r[i] = init[i];
@@ -707,7 +705,6 @@ const blake = require('blakejs');
   function crypto_sign_keypair(pk, sk, seeded) {
     var d = new Uint8Array(64);
     var p = [gf(), gf(), gf(), gf()];
-    var i;
 
     if (!seeded) randombytes(sk, 32);
 
@@ -728,7 +725,6 @@ const blake = require('blakejs');
   function derivePublicFromSecret(sk) {
     var d = new Uint8Array(64);
     var p = [gf(), gf(), gf(), gf()];
-    var i;
     var pk = new Uint8Array(32);
     var context = blake.blake2bInit(64);
     blake.blake2bUpdate(context, sk);

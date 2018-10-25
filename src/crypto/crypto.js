@@ -36,7 +36,7 @@ function uint4ToUint5(uintValue) {
     let z = n + ((i - m) / 4);
     let right = uintValue[z] << m;
     let left;
-    if (((length - i) % 4) == 0) left = uintValue[z - 1] << 4;
+    if (((length - i) % 4) === 0) left = uintValue[z - 1] << 4;
     else left = uintValue[z + 1] >> (4 - m);
     uint5[n] = (left + right) % 32;
   }
@@ -80,7 +80,7 @@ function uint8ToHex(uintValue) {
   let aux;
   for (let i = 0; i < uintValue.length; i++) {
     aux = uintValue[i].toString(16).toUpperCase();
-    if (aux.length == 1)
+    if (aux.length === 1)
       aux = '0' + aux;
     hex += aux;
     aux = '';
@@ -116,8 +116,7 @@ function decToHex(decValue, bytes = null) {
   }
 
   hex = hexArray.join('');
-
-  if (hex.length % 2 != 0)
+  if (hex.length % 2 !== 0)
     hex = "0" + hex;
 
   if (bytes > hex.length / 2) {
@@ -132,7 +131,7 @@ function decToHex(decValue, bytes = null) {
 
 /** String Functions **/
 function stringToUint5(string) {
-  var letter_list = letter_list = '13456789abcdefghijkmnopqrstuwxyz'.split('');
+  var letter_list  = '13456789abcdefghijkmnopqrstuwxyz'.split('');
   var length = string.length;
   var string_array = string.split('');
   var uint5 = new Uint8Array(length);
@@ -240,7 +239,7 @@ function array_crop(array) {
 
 function equal_arrays(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
-    if (array1[i] != array2[i]) return false;
+    if (array1[i] !== array2[i]) return false;
   }
   return true;
 }

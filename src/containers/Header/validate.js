@@ -9,6 +9,8 @@ const validate = values => {
 
   if (!values.amount) {
     errors.amount = 'error.required'
+  } else if (!/^[+-]?\d+(\.\d+)?$/.test(values.amount)) {
+    errors.amount = 'error.amount'
   }
 
   return errors

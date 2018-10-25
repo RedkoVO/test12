@@ -1,4 +1,4 @@
-import { REGISTRATION_USER, SEND_MONEY } from '../actions/types'
+import { REGISTRATION_USER } from '../actions/types'
 
 const auth = (state = {}, action) => {
   const { payload, type } = action
@@ -8,13 +8,6 @@ const auth = (state = {}, action) => {
       return {
         ...state,
         registrationEmail: {
-          success: payload.success
-        }
-      }
-    case SEND_MONEY:
-      return {
-        ...state,
-        sendMoneyResponse: {
           success: payload.success
         }
       }

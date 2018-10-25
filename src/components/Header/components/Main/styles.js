@@ -1,4 +1,4 @@
-import BitcoinLogo from '../../../../assets/images/svg/bitcoin.svg'
+// import BitcoinLogo from '../../../../assets/images/svg/bitcoin.svg'
 import DownLogo from '../../../../assets/images/svg/down.svg'
 
 export default () => ({
