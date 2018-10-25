@@ -1,4 +1,3 @@
-// import BitcoinLogo from '../../../../assets/images/svg/bitcoin.svg'
 import DownLogo from '../../../../assets/images/svg/down.svg'
 
 export default () => ({
@@ -52,19 +51,6 @@ export default () => ({
     paddingLeft: '0',
     boxSizing: 'border-box',
     textAlign: 'center',
-
-    '&::before': {
-      // position: 'absolute',
-      // content: `""`,
-      // width: '45px',
-      // height: '45px',
-      // bottom: '15px',
-      // left: '50px',
-      // backgroundImage: `url(${BitcoinLogo})`,
-      // backgroundRepeat: 'no-repeat',
-      // backgroundSize: '45px',
-      // backgroundPosition: 'center'
-    },
 
     '&::after': {
       position: 'absolute',
