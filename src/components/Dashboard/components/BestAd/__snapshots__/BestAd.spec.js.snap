@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="BestAd-root-1"
+>
+  <div
+    className="BestAd-bestItem-2"
+  >
+    <div
+      className="BestAd-titleWrap-3"
+    >
+      <a
+        className="BestAd-bestTitle-4"
+        href="/"
+      >
+        Games
+      </a>
+    </div>
+    <div
+      className="BestAd-bestContent-5"
+    >
+      <a
+        className="BestAd-bestImg-6"
+        href="/"
+      >
+        <img
+          alt=""
+          className="BestAd-bestItemImg-7"
+          src="best-game.png"
+        />
+      </a>
+      <a
+        className="BestAd-bestLink-8"
+        href="/"
+      >
+        Game of the day
+        : 
+        <br />
+        <span>
+          Smash Champs
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="BestAd-bestItem-2"
+  >
+    <div
+      className="BestAd-titleWrap-3"
+    >
+      <a
+        className="BestAd-bestTitle-4"
+        href="/"
+      >
+        Shop
+      </a>
+    </div>
+    <div
+      className="BestAd-bestContent-5"
+    >
+      <a
+        className="BestAd-bestImg-6"
+        href="/"
+      >
+        <img
+          alt=""
+          className="BestAd-bestItemImg-7"
+          src="best-game.png"
+        />
+      </a>
+      <a
+        className="BestAd-bestLink-8"
+        href="/"
+      >
+        Product of the day
+        : 
+        <br />
+        <span>
+          Blue cool Jelly
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

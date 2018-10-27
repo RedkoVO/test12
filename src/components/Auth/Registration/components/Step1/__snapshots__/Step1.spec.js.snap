@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Step1-root-1"
+>
+  <form
+    className="Step1-registrStep1-2"
+    onSubmit={[Function]}
+  >
+    <h1
+      className="Step1-step1Title-3"
+    >
+      Registration
+    </h1>
+    <label
+      className="Step1-step1Label-4"
+      htmlFor="email"
+    >
+      E-mail
+    </label>
+    <input
+      className="Step1-field-5"
+      id="email"
+      name={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      placeholder="Enter E-mail"
+      type="email"
+      value=""
+    />
+    <div>
+      <a
+        className="Step1-step1BtnBack-6"
+        href="/login"
+        onClick={[Function]}
+      >
+        Login
+      </a>
+      <button
+        className="Step1-step1BtnsRegister-7"
+        type="submit"
+      >
+        Register!
+      </button>
+    </div>
+  </form>
+</div>
+`;

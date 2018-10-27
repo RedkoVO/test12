@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="ConfirmEmail-root-1"
+>
+  <div
+    className="ConfirmEmail-message-2"
+  >
+    Fast registration completed. Please check your email
+    <a
+      className="ConfirmEmail-step1BtnsRegister-3"
+      href="/login"
+      onClick={[Function]}
+    >
+      Login!
+    </a>
+  </div>
+</div>
+`;

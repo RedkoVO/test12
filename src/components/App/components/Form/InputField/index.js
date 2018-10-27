@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import cn from 'classnames'
 
 const InputField = ({ input, id, className, type, name, placeholder, meta: { touched, error }}) => {
@@ -14,6 +15,14 @@ const InputField = ({ input, id, className, type, name, placeholder, meta: { tou
       placeholder={placeholder}
     />
   )
+}
+
+InputField.propTypes = {
+  classNamees: PropTypes.object,
+  id: PropTypes.string,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  placeholder: PropTypes.string
 }
 
 export default InputField

@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="GameCounter-root-1"
+>
+  <div
+    className="GameCounter-counterWins-4"
+  >
+    <p
+      className="GameCounter-counterBiggestWin-5"
+    >
+      <span
+        className="GameCounter-counterValue-9"
+      >
+        4666.78 dcb
+      </span>
+       
+      <br />
+       BIGGEST WIN 
+      <br />
+       FOR ALL TIME
+    </p>
+  </div>
+  <div
+    className="GameCounter-counterHours-2"
+  >
+    <p
+      className="GameCounter-counterHoursVolume-6"
+    >
+      <span
+        className="GameCounter-counterValue-9"
+      >
+        167.12 dcb
+      </span>
+       
+      <br />
+       VOLUME OF 
+      <br />
+      24 HOURS
+    </p>
+  </div>
+  <div
+    className="GameCounter-counterContracts-3"
+  >
+    <p
+      className="GameCounter-counterContractsVolume-7"
+    >
+      <span
+        className="GameCounter-counterValue-9"
+      >
+        20243.12 dcb
+      </span>
+       
+      <br />
+       ALL VOLUME OF 
+      <br />
+       SMART CONTRACT
+    </p>
+    <br />
+    <a
+      className="GameCounter-counterContractsLink-8"
+      href="/"
+      onClick={[Function]}
+    >
+      0x7fdcd2a1e52f10c28cb7732f46393e297ecadda1
+    </a>
+  </div>
+</div>
+`;

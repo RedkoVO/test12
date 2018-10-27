@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Authorization-root-1"
+>
+  <div
+    className="Authorization-containerRegistrat-3"
+  >
+    <div
+      className="Authorization-containerRegistratStep1-2"
+    >
+      <form
+        className="Authorization-registrStep1-7"
+        onSubmit={[Function]}
+      >
+        <h1
+          className="Authorization-step1Title-8"
+        >
+          Login
+        </h1>
+        <label
+          className="Authorization-step1Label-9"
+          htmlFor="key"
+        >
+          Enter secret key from email
+        </label>
+        <input
+          className="Authorization-field-10"
+          id="key"
+          name={undefined}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Secret key"
+          type="text"
+          value=""
+        />
+        <div>
+          <a
+            className="Authorization-step1BtnBack-11"
+            href="/registration"
+            onClick={[Function]}
+          >
+            Registration
+          </a>
+          <button
+            className="Authorization-step1BtnsRegister-12"
+            type="submit"
+          >
+            Login!
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="Authorization-footer-4"
+    >
+      <span
+        className="Authorization-copyright-5"
+      >
+        Vault. All Rights Reserved 2018
+      </span>
+      <div>
+        <a
+          className="Authorization-footerLink-6"
+          href="/"
+        >
+          Privacy Policy
+        </a>
+        <a
+          className="Authorization-footerLink-6"
+          href="/"
+        >
+          Terms and conditions
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

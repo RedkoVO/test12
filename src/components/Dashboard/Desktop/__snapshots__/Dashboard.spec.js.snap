@@ -1,0 +1,899 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main>
+  <div
+    className="Dashboard-root-1"
+  >
+    <div
+      className="Transaction-root-2"
+    >
+      <div
+        className="Transaction-transactionsTitle-3"
+      >
+         Transactions
+      </div>
+      <div
+        className="Transaction-transactionsTable-4"
+      >
+        <div
+          className="Transaction-tableHead-7 Transaction-tableRow-6"
+        >
+          <div
+            className="Transaction-tableData-5 Transaction-col1-12"
+          >
+            to address:
+          </div>
+          <div
+            className="Transaction-tableData-5 Transaction-col2-13"
+          >
+            ammount:
+          </div>
+          <div
+            className="Transaction-tableData-5 Transaction-col3-14"
+          >
+            status:
+          </div>
+          <div
+            className="Transaction-tableData-5 Transaction-col4-15"
+          >
+            date/time:
+          </div>
+        </div>
+        <div
+          className="Transaction-tableWrapper-16"
+          id="table-scroll"
+          tabIndex="5000"
+        >
+          <div
+            className="Transaction-tableContentWrap-17"
+          >
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+            <div
+              className="Transaction-tableRow-6"
+            >
+              <div
+                className="Transaction-tableData-5 Transaction-col1-12 Transaction-icon1-8"
+              >
+                <span>
+                  0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col2-13 Transaction-icon2-9"
+              >
+                <span>
+                  0.1221 DCB
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col3-14 Transaction-icon3-10"
+              >
+                <span>
+                  DEMO
+                </span>
+              </div>
+              <div
+                className="Transaction-tableData-5 Transaction-col4-15 Transaction-icon4-11"
+              >
+                <time
+                  dateTime="2018-02-12 13:30"
+                >
+                  01:30 PM 12.02.2018
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Transaction-tableBtns-18"
+      >
+        <a
+          className="Transaction-receivedBtn-19"
+          href="/"
+        >
+          Received
+        </a>
+        <a
+          className="Transaction-sentBtn-20"
+          href="/"
+        >
+          Sent
+        </a>
+      </div>
+    </div>
+    <div
+      className="BestAd-root-21"
+    >
+      <div
+        className="BestAd-bestItem-22"
+      >
+        <div
+          className="BestAd-titleWrap-23"
+        >
+          <a
+            className="BestAd-bestTitle-24"
+            href="/"
+          >
+            Games
+          </a>
+        </div>
+        <div
+          className="BestAd-bestContent-25"
+        >
+          <a
+            className="BestAd-bestImg-26"
+            href="/"
+          >
+            <img
+              alt=""
+              className="BestAd-bestItemImg-27"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="BestAd-bestLink-28"
+            href="/"
+          >
+            Game of the day
+            : 
+            <br />
+            <span>
+              Smash Champs
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="BestAd-bestItem-22"
+      >
+        <div
+          className="BestAd-titleWrap-23"
+        >
+          <a
+            className="BestAd-bestTitle-24"
+            href="/"
+          >
+            Shop
+          </a>
+        </div>
+        <div
+          className="BestAd-bestContent-25"
+        >
+          <a
+            className="BestAd-bestImg-26"
+            href="/"
+          >
+            <img
+              alt=""
+              className="BestAd-bestItemImg-27"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="BestAd-bestLink-28"
+            href="/"
+          >
+            Product of the day
+            : 
+            <br />
+            <span>
+              Blue cool Jelly
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Categories-root-29"
+    >
+      <div
+        className="Categories-categories-30"
+      >
+        <div
+          className="Categories-categTitleWrap-31"
+        >
+          <a
+            className="Categories-categoriesTitle-32"
+            href="/"
+            onClick={[Function]}
+          >
+            Categories:
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            Most popular
+            : 
+            <br />
+             
+            <span>
+              4Clover
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            Most popular
+            : 
+            <br />
+             
+            <span>
+              Dice games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            For children
+            : 
+            <br />
+             
+            <span>
+              Word games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            For children
+            : 
+            <br />
+             
+            <span>
+              Funny games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            For children
+            : 
+            <br />
+             
+            <span>
+              Word games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            For children
+            : 
+            <br />
+             
+            <span>
+              Word games
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="Categories-categories-30"
+      >
+        <div
+          className="Categories-categTitleWrap-31"
+        >
+          <a
+            className="Categories-categoriesTitle-32"
+            href="/"
+            onClick={[Function]}
+          >
+            Categories:
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            Most popular
+            : 
+            <br />
+             
+            <span>
+              Loto games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            Most popular
+            : 
+            <br />
+             
+            <span>
+              Dice games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            For children
+            : 
+            <br />
+             
+            <span>
+              Word games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            For children
+            : 
+            <br />
+             
+            <span>
+              Funny games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            For children
+            : 
+            <br />
+             
+            <span>
+              Word games
+            </span>
+          </a>
+        </div>
+        <div
+          className="CategorieItem-root-33"
+        >
+          <a
+            className="CategorieItem-gameImg-34"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              className="CategorieItem-gameImgLink-35"
+              src="CloverLogo1"
+            />
+          </a>
+          <a
+            className="CategorieItem-gameLink-36"
+            href="/game/4clover"
+            onClick={[Function]}
+          >
+            For children
+            : 
+            <br />
+             
+            <span>
+              Word games
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;

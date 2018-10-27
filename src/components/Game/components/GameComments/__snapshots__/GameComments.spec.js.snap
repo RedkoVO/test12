@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="GameComments-root-1"
+>
+  <div
+    className="GameComments-commentItem-2 GameComments-comment1-3"
+  >
+    <a
+      className="GameComments-commentUser-4"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        className="GameComments-commentUserPhoto-5"
+        src="UserImg"
+      />
+    </a>
+    <div
+      className="GameComments-commentTitle-6"
+    >
+      <span
+        className="GameComments-commentTitleText-7"
+      >
+        Ben F.
+         says:
+      </span>
+      <time
+        className="GameComments-commentDate-8"
+        dateTime="2018-05-22 13:30"
+      >
+        22 May 2018 12:03
+      </time>
+    </div>
+    <p
+      className={undefined}
+    >
+      Curabitur tincidunt orci quis odio aliquet placerat. Nullam laoreet justo eros, quis semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank. s semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank.
+    </p>
+    <a
+      className="GameComments-commentLike-10"
+      href="/"
+      onClick={[Function]}
+    >
+       
+      <span
+        className="GameComments-likeValue-11"
+      >
+        5
+      </span>
+       Like
+    </a>
+    <a
+      className="GameComments-subComment-9"
+      href="/"
+      onClick={[Function]}
+    >
+      <span
+        className="GameComments-commentValue-12"
+      >
+        7
+      </span>
+       Comment
+    </a>
+  </div>
+  <div
+    className="GameComments-commentItem-2 GameComments-comment2-13"
+  >
+    <a
+      className="GameComments-commentUser-4"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        className="GameComments-commentUserPhoto-5"
+        src="UserImg"
+      />
+    </a>
+    <div
+      className="GameComments-commentTitle-6"
+    >
+      <span
+        className="GameComments-commentTitleText-7"
+      >
+        Thomas D.
+         says:
+      </span>
+      <time
+        className="GameComments-commentDate-8"
+        dateTime="2018-05-22 13:30"
+      >
+        22 May 2018 12:03
+      </time>
+    </div>
+    <p
+      className={undefined}
+    >
+      Nulla non pellentesque sem, sed aliquet justo. Praesent egestas purus et bibendum tempus.Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    </p>
+    <a
+      className="GameComments-commentLike-10"
+      href="/"
+      onClick={[Function]}
+    >
+       
+      <span
+        className="GameComments-likeValue-11"
+      >
+        5
+      </span>
+       Like
+    </a>
+    <a
+      className="GameComments-subComment-9"
+      href="/"
+      onClick={[Function]}
+    >
+      <span
+        className="GameComments-commentValue-12"
+      >
+        7
+      </span>
+       Comment
+    </a>
+  </div>
+</div>
+`;

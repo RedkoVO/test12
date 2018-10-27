@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Main-root-1"
+>
+  <div
+    className="Main-demoTitle-11"
+  >
+    DEMO VERSION
+  </div>
+  <div
+    className="Main-user-2"
+  >
+    <div
+      className="Main-userBlock-3"
+    >
+      <p
+        className="Main-userHello-4"
+      >
+         Hello, Ben A 
+        <br />
+        <span
+          className="Main-userVerification-5"
+        >
+          KYC VERIFICATED
+        </span>
+      </p>
+      <div
+        className={undefined}
+      >
+        <img
+          alt=""
+          src="user_photo.png"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="Main-wallet-6"
+  >
+    <div
+      className="Main-walletTitle-7"
+    >
+      <p>
+        My dcb wallet:
+      </p>
+    </div>
+    <div
+      className="Main-walletSum-8"
+    >
+      <a
+        href="/"
+      >
+        00000
+      </a>
+    </div>
+    <ul
+      className="Main-walletNav-9"
+    >
+      <li>
+        <a
+          className="Main-walletNavItem-10"
+          href="/"
+        >
+          Send Money
+        </a>
+      </li>
+      <li>
+        <a
+          className="Main-walletNavItem-10"
+          href="/"
+        >
+          Tranfer Money
+        </a>
+      </li>
+      <li>
+        <a
+          className="Main-walletNavItem-10"
+          href="/"
+        >
+          Invoice
+        </a>
+      </li>
+      <li>
+        <a
+          className="Main-walletNavItem-10"
+          href="/"
+        >
+          Cashout
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="Action-root-12"
+  >
+    <div
+      className="Action-actionsStatistics-13"
+    >
+      <span
+        className="Action-statisticsTitle-15"
+      >
+        Statistics
+      </span>
+      <div
+        className={undefined}
+      >
+        <canvas
+          height="90"
+          id="cvs"
+          width="200"
+        >
+          [No canvas support]
+        </canvas>
+      </div>
+    </div>
+    <div
+      className="Action-actionsSend-16"
+    >
+      <form
+        className="Action-form-14"
+        onSubmit={[Function]}
+      >
+        <span
+          className="Action-sendTitle-17"
+        >
+          Send now
+        </span>
+        <div
+          className={undefined}
+        >
+          <input
+            className="Action-sendAddressField-18"
+            id={undefined}
+            name={undefined}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            placeholder="Put address you want to send the money"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className={undefined}
+        >
+          <input
+            className="Action-sendAmmountField-19"
+            id={undefined}
+            name={undefined}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            placeholder="Set ammount"
+            type="text"
+            value=""
+          />
+        </div>
+        <button
+          className="Action-sendBtn-21"
+          type="submit"
+        >
+          Send money
+        </button>
+      </form>
+    </div>
+    <div
+      className="Action-actionsInvoice-23"
+    >
+      <span
+        className="Action-invoiceTitle-24"
+      >
+        Invoice
+      </span>
+      <div
+        className={undefined}
+      >
+        <input
+          className="Action-invoiceAmmountField-20"
+          placeholder="Set ammount you need to receive"
+          type="text"
+        />
+      </div>
+      <a
+        className="Action-invoiceBtn-22"
+        href="/"
+      >
+        Generate link
+      </a>
+    </div>
+  </div>
+</div>
+`;

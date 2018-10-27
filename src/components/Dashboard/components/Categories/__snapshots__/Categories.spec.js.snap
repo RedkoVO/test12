@@ -1,0 +1,374 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Categories-root-1"
+>
+  <div
+    className="Categories-categories-2"
+  >
+    <div
+      className="Categories-categTitleWrap-3"
+    >
+      <a
+        className="Categories-categoriesTitle-4"
+        href="/"
+        onClick={[Function]}
+      >
+        Categories:
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        Most popular
+        : 
+        <br />
+         
+        <span>
+          4Clover
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        Most popular
+        : 
+        <br />
+         
+        <span>
+          Dice games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        For children
+        : 
+        <br />
+         
+        <span>
+          Word games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        For children
+        : 
+        <br />
+         
+        <span>
+          Funny games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        For children
+        : 
+        <br />
+         
+        <span>
+          Word games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        For children
+        : 
+        <br />
+         
+        <span>
+          Word games
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="Categories-categories-2"
+  >
+    <div
+      className="Categories-categTitleWrap-3"
+    >
+      <a
+        className="Categories-categoriesTitle-4"
+        href="/"
+        onClick={[Function]}
+      >
+        Categories:
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        Most popular
+        : 
+        <br />
+         
+        <span>
+          Loto games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        Most popular
+        : 
+        <br />
+         
+        <span>
+          Dice games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        For children
+        : 
+        <br />
+         
+        <span>
+          Word games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        For children
+        : 
+        <br />
+         
+        <span>
+          Funny games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        For children
+        : 
+        <br />
+         
+        <span>
+          Word games
+        </span>
+      </a>
+    </div>
+    <div
+      className="CategorieItem-root-5"
+    >
+      <a
+        className="CategorieItem-gameImg-6"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CategorieItem-gameImgLink-7"
+          src="CloverLogo1"
+        />
+      </a>
+      <a
+        className="CategorieItem-gameLink-8"
+        href="/game/4clover"
+        onClick={[Function]}
+      >
+        For children
+        : 
+        <br />
+         
+        <span>
+          Word games
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="Header-root-1"
+>
+  <ul
+    className="MenuNavigation-root-2"
+  >
+    <li
+      className={undefined}
+    >
+      <div
+        className="MenuNavigation-logout-11"
+        onClick={[Function]}
+      >
+        Logout
+      </div>
+    </li>
+    <li>
+      <a
+        className="MenuNavigation-headerMenuItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-4 MenuNavigation-dashboard-5"
+        />
+        <br />
+         Dashboard
+      </a>
+    </li>
+    <li>
+      <a
+        className="MenuNavigation-headerMenuItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-4 MenuNavigation-walletIcon-6"
+        />
+        <br />
+         Wallet
+      </a>
+    </li>
+    <li>
+      <a
+        className="MenuNavigation-headerMenuItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-4 MenuNavigation-shop-7"
+        />
+        <br />
+         Shop
+      </a>
+    </li>
+    <li>
+      <a
+        className="MenuNavigation-headerMenuItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-4 MenuNavigation-games-8"
+        />
+        <br />
+         Games
+      </a>
+    </li>
+    <li>
+      <a
+        className="MenuNavigation-headerMenuItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-4 MenuNavigation-friends-9"
+        />
+        <br />
+         Friends
+      </a>
+    </li>
+    <li>
+      <a
+        className="MenuNavigation-headerMenuItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-4 MenuNavigation-settings-10"
+        />
+        <br />
+         Settings
+      </a>
+    </li>
+  </ul>
+  <div
+    className="Main-root-12"
+  >
+    <div
+      className="Main-demoTitle-22"
+    >
+      DEMO VERSION
+    </div>
+    <div
+      className="Main-user-13"
+    >
+      <div
+        className="Main-userBlock-14"
+      >
+        <p
+          className="Main-userHello-15"
+        >
+           Hello, Ben A 
+          <br />
+          <span
+            className="Main-userVerification-16"
+          >
+            KYC VERIFICATED
+          </span>
+        </p>
+        <div
+          className={undefined}
+        >
+          <img
+            alt=""
+            src="user_photo.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="Main-wallet-17"
+    >
+      <div
+        className="Main-walletTitle-18"
+      >
+        <p>
+          My dcb wallet:
+        </p>
+      </div>
+      <div
+        className="Main-walletSum-19"
+      >
+        <a
+          href="/"
+        />
+      </div>
+      <ul
+        className="Main-walletNav-20"
+      >
+        <li>
+          <a
+            className="Main-walletNavItem-21"
+            href="/"
+          >
+            Send Money
+          </a>
+        </li>
+        <li>
+          <a
+            className="Main-walletNavItem-21"
+            href="/"
+          >
+            Tranfer Money
+          </a>
+        </li>
+        <li>
+          <a
+            className="Main-walletNavItem-21"
+            href="/"
+          >
+            Invoice
+          </a>
+        </li>
+        <li>
+          <a
+            className="Main-walletNavItem-21"
+            href="/"
+          >
+            Cashout
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="Action-root-23"
+    >
+      <div
+        className="Action-actionsStatistics-24"
+      >
+        <span
+          className="Action-statisticsTitle-26"
+        >
+          Statistics
+        </span>
+        <div
+          className={undefined}
+        >
+          <canvas
+            height="90"
+            id="cvs"
+            width="200"
+          >
+            [No canvas support]
+          </canvas>
+        </div>
+      </div>
+      <div
+        className="Action-actionsSend-27"
+      >
+        <form
+          className="Action-form-25"
+          onSubmit={[Function]}
+        >
+          <span
+            className="Action-sendTitle-28"
+          >
+            Send now
+          </span>
+          <div
+            className={undefined}
+          >
+            <input
+              className="Action-sendAddressField-29"
+              id={undefined}
+              name={undefined}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              onFocus={[Function]}
+              placeholder="Put address you want to send the money"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            className={undefined}
+          >
+            <input
+              className="Action-sendAmmountField-30"
+              id={undefined}
+              name={undefined}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              onFocus={[Function]}
+              placeholder="Set ammount"
+              type="text"
+              value=""
+            />
+          </div>
+          <button
+            className="Action-sendBtn-32"
+            type="submit"
+          >
+            Send money
+          </button>
+        </form>
+      </div>
+      <div
+        className="Action-actionsInvoice-34"
+      >
+        <span
+          className="Action-invoiceTitle-35"
+        >
+          Invoice
+        </span>
+        <div
+          className={undefined}
+        >
+          <input
+            className="Action-invoiceAmmountField-31"
+            placeholder="Set ammount you need to receive"
+            type="text"
+          />
+        </div>
+        <a
+          className="Action-invoiceBtn-33"
+          href="/"
+        >
+          Generate link
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+`;

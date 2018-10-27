@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Registration-root-1"
+>
+  <div
+    className="Registration-containerRegistrat-2"
+  >
+    <div
+      className="Registration-footer-3"
+    >
+      <span
+        className="Registration-copyright-4"
+      >
+        Vault. All Rights Reserved 2018
+      </span>
+      <div>
+        <a
+          className="Registration-footerLink-5"
+          href="/"
+        >
+          Privacy Policy
+        </a>
+        <a
+          className="Registration-footerLink-5"
+          href="/"
+        >
+          Terms and conditions
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
