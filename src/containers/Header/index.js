@@ -89,6 +89,8 @@ export default compose(
 
                     localStorage.setItem('lastBlock', res.hash)
                     dispatch(reset('sendMoney'))
+
+                    setDisabledButton(false)
                   }
 
                 })

@@ -4,12 +4,11 @@ import { withHandlers, withState } from 'recompose'
 import { reduxForm } from 'redux-form'
 import validate from './validate'
 import BigNumber from 'bignumber.js'
+import sequential from 'promise-sequential'
 
 import { getBalance, getIncoming } from '../../../redux/actions/balance'
-
-import Crypto from '../../../crypto/crypto'
-
 import { receiveFromFaucet } from '../../../requests/receiveFromFaucet'
+import Crypto from '../../../crypto/crypto'
 
 import AsyncAuthorizationDesktop from '../../../components/Auth/Authorization/Desktop/AsyncAuthorizationDesktop'
 
@@ -43,7 +42,7 @@ export default compose(
 
             dispatch(getBalance(data))
               .then(res => {
-                console.log('res BALANCE', res)
+                // console.log('res BALANCE', res)
                 if (!res.error) {
                   localStorage.setItem("address", getCryptoInfo.address)
                   localStorage.setItem("publicKey", getCryptoInfo.publicKey)
@@ -54,8 +53,7 @@ export default compose(
                   const dataForIncoming = { address: localStorage.getItem("address") }
                   dispatch(getIncoming(dataForIncoming))
                     .then(blocks => {
-                      console.log('blocks', blocks)
-
+                      const requestsArr = []
                       let userAccount = {
                         publicKey: localStorage.getItem('publicKey'),
                         secretKey: localStorage.getItem('secretKey'),
@@ -69,25 +67,21 @@ export default compose(
                         const sourceBlockHash = hash
                         const amountStr = blocks.blocks[hash].amount
 
-                        receiveFromFaucet(userAccount, sourceBlockHash, amountStr)
+                        requestsArr.push(() => receiveFromFaucet(userAccount, sourceBlockHash, amountStr))
                       })
 
-                      dispatch(getBalance(data))
-                        .then(() => {
-                          history.push('/')
-                        })
-                        .catch(err => {
-                          console.log('ERROR getBalance incoming', err)
-                        })
+                      sequential(requestsArr).then(() => {
+                        dispatch(getBalance(data))
+                          .then(() => {
+                            history.push('/')
+                          })
+                          .catch(err => { console.log('ERROR getBalance inside incoming', err) })
+                      })
                     })
-                    .catch(err => {
-                      console.log('Error get incoming', err)
-                    })
+                    .catch(err => { console.log('Error get incoming', err) })
                 }
               })
-              .catch(err => {
-                console.log('Error get balance', err)
-              })
+              .catch(err => { console.log('Error get balance', err) })
           }
         }
       })

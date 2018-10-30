@@ -354,7 +354,6 @@ function formReceiveBlock(account, sourceBlockHash, amount, work) {
   // calc new balance 
   const newBalance = account.balance.plus(amount)
   const newBalance10 = newBalance.toString(10);
-  console.log(newBalance10);
   let newBalance16 = newBalance.toString(16);
   while (newBalance16.length < 32) newBalance16 = '0' + newBalance16; // Left pad with 0's
 
