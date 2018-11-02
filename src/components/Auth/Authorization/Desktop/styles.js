@@ -4,6 +4,7 @@ export default () => ({
   root: {
     width: '100%',
     minHeight: '680px',
+    height: '100%',
     backgroundImage: `url(${BGLogo})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',

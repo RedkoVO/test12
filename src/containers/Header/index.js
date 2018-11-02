@@ -8,7 +8,6 @@ import BigNumber from 'bignumber.js'
 import { getWork, getBalance, sendMoney } from '../../redux/actions/balance'
 
 import Crypto from '../../crypto/crypto'
-
 import { getBigNumberAmount } from '../../utils/math'
 import { clearStorageForlogout } from '../../utils/localStorageUtils'
 
@@ -94,13 +93,9 @@ export default compose(
                   }
 
                 })
-                .catch(err => {
-                  console.log('err registration:', err)
-                })
+                .catch(err => { console.log('err registration:', err) })
             })
-            .catch(err => {
-              console.log('err registration:', err)
-            })
+            .catch(err => { console.log('err registration:', err) })
         }
       })
   }),
