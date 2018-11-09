@@ -1,10 +1,11 @@
+import gC from '../../../../constants'
 import TransactionLogo from '../../../../assets/images/svg/transactions.svg'
 import WalletLogo from '../../../../assets/images/svg/wallet.svg'
 import MoneyTransactLogo from '../../../../assets/images/svg/moneyTransact.svg'
 import StatusLogo from '../../../../assets/images/svg/status.svg'
 import TimeLogo from '../../../../assets/images/svg/time.svg'
 
-export default () => ({
+export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
@@ -12,7 +13,17 @@ export default () => ({
     alignItems: 'center',
     paddingTop: '60px',
     boxSizing: 'border-box',
-    marginBottom: '30px'
+    marginBottom: '30px',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      width: '510px'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+      width: '480px'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      width: '320px'
+    }
   },
   transactionsTitle: {
     position: 'relative',
@@ -42,13 +53,25 @@ export default () => ({
     flexDirection: 'column',
     '-ms-align-items': 'center',
     alignItems: 'center',
-    marginBottom: '11px'
+    marginBottom: '11px',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+      height: '165px'
+    }
   },
   tableData: {
     paddingLeft: '40px',
     fontSize: '14px',
     fontWeight: 400,
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+      paddingLeft: '35px'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      fontSize: '11px',
+      paddingLeft: '15px'
+    }
   },
   tableRow: {
     display: 'flex',
@@ -62,7 +85,25 @@ export default () => ({
     paddingRight: '25px',
     boxSizing: 'border-box',
     borderRadius: '15px',
-    width: '790px'
+    width: '790px',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+      paddingRight: '10px',
+      width: '765px'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      flexWrap: 'wrap',
+      minHeight: '50px',
+      width: '500px'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+      flexWrap: 'wrap',
+      minHeight: '50px',
+      width: '470px'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      width: '310px'
+    }
   },
   tableHead: {
     '-ms-align-items': 'flex-end',
@@ -74,6 +115,10 @@ export default () => ({
     '& $tableData': {
       fontSize: '10px',
       fontWeight: 700
+    },
+
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      display: 'none'
     }
   },
   icon1: {
@@ -89,7 +134,12 @@ export default () => ({
       backgroundImage: `url(${WalletLogo})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: '15px 12px',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+
+      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+        bottom: 0,
+        left: '15px'
+      }
     }
   },
   icon2: {
@@ -105,7 +155,12 @@ export default () => ({
       backgroundImage: `url(${MoneyTransactLogo})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: '12px',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+
+      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+        bottom: 0,
+        left: '15px'
+      }
     }
   },
   icon3: {
@@ -121,7 +176,12 @@ export default () => ({
       backgroundImage: `url(${StatusLogo})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'contain',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+
+      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+        bottom: 0,
+        left: 0
+      }
     }
   },
   icon4: {
@@ -137,22 +197,54 @@ export default () => ({
       backgroundImage: `url(${TimeLogo})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: '12px',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+
+      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+        bottom: 0,
+        left: 0
+      }
     }
   },
   col1: {
     width: '48%',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      flexBasis: '100%'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      paddingLeft: '30px'
+    }
   },
   col2: {
     width: '15%',
-    paddingLeft: '40px'
+    paddingLeft: '40px',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      flexBasis: '30%'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      flexBasis: '32%',
+      paddingLeft: '30px'
+    }
   },
   col3: {
     width: '12%',
-    paddingLeft: '35px'
+    paddingLeft: '35px',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      flexBasis: '30%'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      flexBasis: '26%',
+      paddingLeft: '30px'
+    }
   },
   col4: {
-    width: '23%'
+    width: '23%',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      flexBasis: '40%'
+    }
   },
   tableWrapper: {
     position: 'relative',
@@ -173,7 +265,11 @@ export default () => ({
     flexDirection: 'column',
     '-ms-align-items': 'center',
     paddingRight: '20px',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      paddingRight: '5px'
+    }
   },
   tableBtns: {
     display: 'flex',

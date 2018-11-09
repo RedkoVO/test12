@@ -63,7 +63,7 @@ const RootRoute = props => {
       )}
 
       {keyAuth && (
-        <RoutePage
+        <Route
           path={`/games`}
           component={AsyncGames}
         />

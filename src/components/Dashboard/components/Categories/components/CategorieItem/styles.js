@@ -1,4 +1,6 @@
-export default () => ({
+import gC from '../../../../../../constants'
+
+export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
@@ -7,11 +9,17 @@ export default () => ({
     '-ms-align-items': 'center'
   },
   gameImg: {
-    display: 'block'
+    display: 'block',
+    borderRadius: '10px',
+    width: '150px',
+    height: '100px',
+    boxShadow: '0px 10px 20px 0px rgba(0,0,0,0.2)',
+    marginBottom: '13px'
   },
   gameImgLink: {
     width: '150px',
-    height: '100px'
+    height: '100px',
+    borderRadius: '10px'
   },
   gameLink: {
     fontSize: '14px',
@@ -23,7 +31,11 @@ export default () => ({
     margin: '0 auto',
 
     '& span': {
-      fontSize: '23px'
+      fontSize: '23px',
+
+      [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+        fontSize: '20px'
+      }
     }
   }
 })

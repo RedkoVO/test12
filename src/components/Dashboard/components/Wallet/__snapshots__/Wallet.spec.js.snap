@@ -2,52 +2,20 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Main-root-1"
+  className="Wallet-root-1"
 >
   <div
-    className="Main-demoTitle-11"
-  >
-    DEMO VERSION
-  </div>
-  <div
-    className="Main-user-2"
+    className="Wallet-wallet-2"
   >
     <div
-      className="Main-userBlock-3"
-    >
-      <p
-        className="Main-userHello-4"
-      >
-         Hello, Ben A 
-        <br />
-        <span
-          className="Main-userVerification-5"
-        >
-          KYC VERIFICATED
-        </span>
-      </p>
-      <div
-        className={undefined}
-      >
-        <img
-          alt=""
-          src="user_photo.png"
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="Main-wallet-6"
-  >
-    <div
-      className="Main-walletTitle-7"
+      className="Wallet-walletTitle-3"
     >
       <p>
         My dcb wallet:
       </p>
     </div>
     <div
-      className="Main-walletSum-8"
+      className="Wallet-walletSum-4"
     >
       <a
         href="/"
@@ -56,11 +24,11 @@ exports[`renders correctly 1`] = `
       </a>
     </div>
     <ul
-      className="Main-walletNav-9"
+      className="Wallet-walletNav-5"
     >
       <li>
         <a
-          className="Main-walletNavItem-10"
+          className="Wallet-walletNavItem-6"
           href="/"
         >
           Send Money
@@ -68,7 +36,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Main-walletNavItem-10"
+          className="Wallet-walletNavItem-6"
           href="/"
         >
           Tranfer Money
@@ -76,7 +44,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Main-walletNavItem-10"
+          className="Wallet-walletNavItem-6"
           href="/"
         >
           Invoice
@@ -84,7 +52,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Main-walletNavItem-10"
+          className="Wallet-walletNavItem-6"
           href="/"
         >
           Cashout
@@ -93,13 +61,13 @@ exports[`renders correctly 1`] = `
     </ul>
   </div>
   <div
-    className="Action-root-12"
+    className="Action-root-7"
   >
     <div
-      className="Action-actionsStatistics-13"
+      className="Action-actionsStatistics-8"
     >
       <span
-        className="Action-statisticsTitle-15"
+        className="Action-statisticsTitle-10"
       >
         Statistics
       </span>
@@ -116,14 +84,14 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="Action-actionsSend-16"
+      className="Action-actionsSend-11"
     >
       <form
-        className="Action-form-14"
+        className="Action-form-9"
         onSubmit={[Function]}
       >
         <span
-          className="Action-sendTitle-17"
+          className="Action-sendTitle-12"
         >
           Send now
         </span>
@@ -131,7 +99,7 @@ exports[`renders correctly 1`] = `
           className={undefined}
         >
           <input
-            className="Action-sendAddressField-18"
+            className="Action-sendAddressField-13"
             id={undefined}
             name={undefined}
             onBlur={[Function]}
@@ -148,7 +116,7 @@ exports[`renders correctly 1`] = `
           className={undefined}
         >
           <input
-            className="Action-sendAmmountField-19"
+            className="Action-sendAmmountField-14"
             id={undefined}
             name={undefined}
             onBlur={[Function]}
@@ -162,7 +130,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <button
-          className="Action-sendBtn-21"
+          className="Action-sendBtn-16"
           type="submit"
         >
           Send money
@@ -170,10 +138,10 @@ exports[`renders correctly 1`] = `
       </form>
     </div>
     <div
-      className="Action-actionsInvoice-23"
+      className="Action-actionsInvoice-18"
     >
       <span
-        className="Action-invoiceTitle-24"
+        className="Action-invoiceTitle-19"
       >
         Invoice
       </span>
@@ -181,13 +149,13 @@ exports[`renders correctly 1`] = `
         className={undefined}
       >
         <input
-          className="Action-invoiceAmmountField-20"
+          className="Action-invoiceAmmountField-15"
           placeholder="Set ammount you need to receive"
           type="text"
         />
       </div>
       <a
-        className="Action-invoiceBtn-22"
+        className="Action-invoiceBtn-17"
         href="/"
       >
         Generate link

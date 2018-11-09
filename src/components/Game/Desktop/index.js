@@ -20,7 +20,7 @@ const Game = ({ classes, handlePlayNow, isShowIframe, address, slider, comments,
     <div className={classes.root}>
       <div className={classes.containerGame}>
         <header className={classes.headerGame}>
-          <MenuNavigation page="game" handleLogout={handleLogout} />
+          <MenuNavigation page="dark" handleLogout={handleLogout} />
 
           <div className={classes.gameHeaderMain}>
             <RollTop />

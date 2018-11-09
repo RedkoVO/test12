@@ -4,26 +4,10 @@ import withStyles from '@material-ui/core/styles/withStyles'
 
 import Action from './components/Action'
 
-import Avatar from '../../../../assets/images/user_photo.png'
-
 import styles from './styles'
 
-const Main = ({ classes, onSubmit, balance, isDisabledButton }) => (
+const Wallet = ({ classes, onSubmit, balance, isDisabledButton }) => (
   <div className={classes.root}>
-    <div className={classes.demoTitle}>
-      DEMO VERSION
-    </div>
-    <div className={classes.user}>
-      <div className={classes.userBlock}>
-        <p className={classes.userHello}> Hello, Ben A <br />
-          <span className={classes.userVerification}>KYC VERIFICATED</span>
-        </p>
-        <div className={classes.userPhoto}>
-          <img src={Avatar} alt="" />
-        </div>
-      </div>
-    </div>
-
     <div className={classes.wallet}>
       <div className={classes.walletTitle}>
         <p>My dcb wallet:</p>
@@ -51,11 +35,11 @@ const Main = ({ classes, onSubmit, balance, isDisabledButton }) => (
   </div>
 )
 
-Main.propTypes = {
+Wallet.propTypes = {
   classes: PropTypes.object,
   onSubmit: PropTypes.func,
   balance: PropTypes.string,
   isDisabledButton: PropTypes.bool
 }
 
-export default withStyles(styles)(Main)
+export default withStyles(styles)(Wallet)

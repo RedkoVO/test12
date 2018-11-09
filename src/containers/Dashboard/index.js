@@ -1,21 +1,22 @@
 import compose from 'recompose/compose'
-import withProps from 'recompose/withProps'
+import { withProps, withHandlers, withState, pure } from 'recompose'
+import { connect } from 'react-redux'
+import { reduxForm, reset } from 'redux-form'
+import BigNumber from 'bignumber.js'
+
+import { getWork, getBalance, sendMoney } from '../../redux/actions/balance'
+
+import Crypto from '../../crypto/crypto'
+import validate from './validate'
+import { getBigNumberAmount } from '../../utils/math'
+import { clearStorageForlogout } from '../../utils/localStorageUtils'
 
 import AsyncDashboardDesktop from '../../components/Dashboard/Desktop/AsyncDashboardDesktop'
 
-import BestGameLogo from '../../assets/images/best-game.png'
-import BestShopLogo from '../../assets/images/dice-game.png'
-
-import GameLogo1 from '../../assets/images/funny-game2.png'
-import GameLogo2 from '../../assets/images/word-game2.png'
-import GameLogo3 from '../../assets/images/dice-game.png'
-import GameLogo4 from '../../assets/images/funny-game.png'
-import GameLogo5 from '../../assets/images/loto-game.png'
-import GameLogo6 from '../../assets/images/word-game.png'
-
-import CloverLogo1 from '../../assets/images/sim_game_icon_4clover.png'
-// import CloverLogo2 from '../../assets/images/slider_slot_4clover_m.png'
-// import CloverLogo3 from '../../assets/images/slider_slot_4clover.png'
+import BestGameLogo from '../../assets/images/best-shop.png'
+import BestShopLogo from '../../assets/images/best-shop.png'
+import GameLogo from '../../assets/images/loto-game.png'
+import CloverLogo from '../../assets/images/sim_game_icon_4clover.png'
 
 const tmpTransactionCollection = [
   { id: 1, address: '0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1', amount: '0.1221 DCB', status: 'DEMO', time: '01:30 PM 12.02.2018' },
@@ -38,53 +39,104 @@ const gameCategories = [
   {
     id: 1,
     game: [
-      { id: 1, title: 'Most popular', name: '4Clover', img: CloverLogo1, bundle: '4clover' },
-      { id: 2, title: 'Most popular', name: 'Dice games', img: GameLogo2, bundle: '4clover' },
-      { id: 3, title: 'For children', name: 'Word games', img: GameLogo3, bundle: '4clover' },
-      { id: 4, title: 'For children', name: 'Funny games', img: GameLogo4, bundle: '4clover' },
-      { id: 5, title: 'For children', name: 'Word games', img: GameLogo5, bundle: '4clover' },
-      { id: 6, title: 'For children', name: 'Word games', img: GameLogo6, bundle: '4clover' }
+      { id: 1, title: 'Most popular', name: '4Clover', img: CloverLogo, bundle: '4clover' },
+      { id: 2, title: 'Most popular', name: 'Dice games', img: GameLogo, bundle: '4clover' },
+      { id: 3, title: 'For children', name: 'Word games', img: GameLogo, bundle: '4clover' },
+      { id: 4, title: 'For children', name: 'Funny games', img: GameLogo, bundle: '4clover' },
+      { id: 5, title: 'For children', name: 'Word games', img: GameLogo, bundle: '4clover' },
+      { id: 6, title: 'For children', name: 'Word games', img: GameLogo, bundle: '4clover' }
     ]
   },
   {
     id: 2,
     game: [
-      { id: 1, title: 'Most popular', name: 'Loto games', img: GameLogo1, bundle: '4clover' },
-      { id: 2, title: 'Most popular', name: 'Dice games', img: GameLogo2, bundle: '4clover' },
-      { id: 3, title: 'For children', name: 'Word games', img: GameLogo3, bundle: '4clover' },
-      { id: 4, title: 'For children', name: 'Funny games', img: GameLogo4, bundle: '4clover' },
-      { id: 5, title: 'For children', name: 'Word games', img: GameLogo5, bundle: '4clover' },
-      { id: 6, title: 'For children', name: 'Word games', img: GameLogo6, bundle: '4clover' }
-    ]
-  },
-  {
-    id: 3,
-    game: [
-      { id: 1, title: 'Most popular', name: 'Loto games', img: GameLogo1, bundle: '4clover' },
-      { id: 2, title: 'Most popular', name: 'Dice games', img: GameLogo2, bundle: '4clover' },
-      { id: 3, title: 'For children', name: 'Word games', img: GameLogo3, bundle: '4clover' },
-      { id: 4, title: 'For children', name: 'Funny games', img: GameLogo4, bundle: '4clover' },
-      { id: 5, title: 'For children', name: 'Word games', img: GameLogo5, bundle: '4clover' },
-      { id: 6, title: 'For children', name: 'Word games', img: GameLogo6, bundle: '4clover' }
-    ]
-  },
-  {
-    id: 4,
-    game: [
-      { id: 1, title: 'Most popular', name: 'Loto games', img: GameLogo1, bundle: '4clover' },
-      { id: 2, title: 'Most popular', name: 'Dice games', img: GameLogo2, bundle: '4clover' },
-      { id: 3, title: 'For children', name: 'Word games', img: GameLogo3, bundle: '4clover' },
-      { id: 4, title: 'For children', name: 'Funny games', img: GameLogo4, bundle: '4clover' },
-      { id: 5, title: 'For children', name: 'Word games', img: GameLogo5, bundle: '4clover' },
-      { id: 6, title: 'For children', name: 'Word games', img: GameLogo6, bundle: '4clover' }
+      { id: 1, title: 'Most popular', name: 'Loto games', img: GameLogo, bundle: '4clover' },
+      { id: 2, title: 'Most popular', name: 'Dice games', img: GameLogo, bundle: '4clover' },
+      { id: 3, title: 'For children', name: 'Word games', img: GameLogo, bundle: '4clover' },
+      { id: 4, title: 'For children', name: 'Funny games', img: GameLogo, bundle: '4clover' },
+      { id: 5, title: 'For children', name: 'Word games', img: GameLogo, bundle: '4clover' },
+      { id: 6, title: 'For children', name: 'Word games', img: GameLogo, bundle: '4clover' }
     ]
   }
 ]
 
+const FORM_NAME = 'sendMoney'
+
+const mapStateToProps = state => ({
+  balance: state.balance
+})
+
 export default compose(
+  connect(mapStateToProps),
+  reduxForm({
+    form: FORM_NAME,
+    validate
+  }),
+  withState('isDisabledButton', 'setDisabledButton', false),
+  withHandlers({
+    handleLogout: ({ history }) => () => {
+      clearStorageForlogout()
+      history.push('/')
+    },
+
+    onSubmit: ({ handleSubmit, setDisabledButton, isDisabledButton, dispatch, balance }) =>
+      handleSubmit(variables => {
+        if (!isDisabledButton) {
+          setDisabledButton(!isDisabledButton)
+
+          dispatch(getWork({ hash: localStorage.getItem('lastBlock') }))
+            .then(res => {
+              const acc = {
+                publicKey: localStorage.getItem('publicKey'),
+                secretKey: localStorage.getItem('secretKey'),
+                address: localStorage.getItem('address'),
+                representative: localStorage.getItem('representative'),
+                lastBlock: localStorage.getItem('lastBlock'),
+                balance: new BigNumber(balance.balance),
+              }
+              const toAddress = variables.addressKey
+              const amount = getBigNumberAmount(variables.amount)
+              const work = res.work
+              const getCryptoBlock = Crypto.sign.formSendBlock(acc, toAddress, amount, work)
+
+              /* TODO: WORKEROUND  remove this! */
+              // getCryptoBlock.account = 'xrb' + getCryptoBlock.account.slice(3)
+              // getCryptoBlock.representative = 'xrb' + getCryptoBlock.representative.slice(3)
+
+              const data = {
+                block: JSON.stringify(getCryptoBlock)
+              }
+
+              dispatch(sendMoney(data))
+                .then(res => {
+                  if (res.hash) {
+                    const isSecretKey = localStorage.getItem("secretKey")
+                    const getCryptoInfo = Crypto.account.accountFromSecret(isSecretKey)
+
+                    if (isSecretKey) {
+                      const data = {
+                        address: getCryptoInfo.address
+                      }
+                      dispatch(getBalance(data))
+                    }
+
+                    localStorage.setItem('lastBlock', res.hash)
+                    dispatch(reset('sendMoney'))
+
+                    setDisabledButton(false)
+                  }
+
+                })
+                .catch(err => { console.log('err registration:', err) })
+            })
+            .catch(err => { console.log('err registration:', err) })
+        }
+      })
+  }),
   withProps({
     transactions: tmpTransactionCollection,
     bestAds: tmpBestAdsCollection,
     gameCategories: gameCategories
-  })
+  }),
+  pure
 )(AsyncDashboardDesktop)

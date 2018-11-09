@@ -108,7 +108,6 @@ export default () => ({
       position: 'absolute',
       width: '10px',
       height: '10px',
-      background: 'url(../img/svg / like.svg) 0 0 no-repeat',
       backgroundImage: `url(${CommentIcon})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '0 0',

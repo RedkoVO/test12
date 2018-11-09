@@ -1,8 +1,9 @@
+import gC from '../../../../../../constants'
 import GraphLogo from '../../../../../../assets/images/svg/graph.svg'
 import SendLogo from '../../../../../../assets/images/svg/sendIcon.svg'
 import MoneyLogo from '../../../../../../assets/images/svg/money.svg'
 
-export default () => ({
+export default theme => ({
   root: {
     width: '870px',
     height: '230px',
@@ -11,6 +12,15 @@ export default () => ({
     justifyContent: 'space-between',
     '-ms-align-items': 'flex-end',
     alignItems: 'flex-end',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+      width: '100%',
+      justifyContent: 'center',
+      flexWrap: 'wrap'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      height: '100%'
+    },
   },
   actionsStatistics: {
     width: '260px',
@@ -18,7 +28,13 @@ export default () => ({
     display: 'flex',
     flexDirection: 'column',
     '-ms-align-items': 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+      width: '230px',
+      height: '175px',
+      marginTop: '15px'
+    }
   },
   form: {
     textAlign: 'center'
@@ -50,7 +66,13 @@ export default () => ({
     display: 'flex',
     flexDirection: 'column',
     '-ms-align-items': 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+      width: '230px',
+      height: '175px',
+      marginTop: '15px'
+    }
   },
   sendTitle: {
     position: 'relative',
@@ -58,7 +80,6 @@ export default () => ({
     fontWeight: 700,
     color: '#5e7cff',
     textAlign: 'center',
-    marginBottom: '20px',
 
     '&::before': {
       position: 'absolute',
@@ -72,6 +93,9 @@ export default () => ({
       backgroundSize: '16px',
       backgroundPosition: 'center'
     }
+  },
+  sendAddress: {
+    marginTop: '20px',
   },
   sendAddressField: {
     width: '210px',
@@ -155,7 +179,13 @@ export default () => ({
     display: 'flex',
     flexDirection: 'column',
     '-ms-align-items': 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+      width: '230px',
+      height: '175px',
+      marginTop: '15px'
+    }
   },
   invoiceTitle: {
     position: 'relative',

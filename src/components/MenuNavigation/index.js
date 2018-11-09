@@ -7,7 +7,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import styles from './styles'
 
 const MenuNavigation = ({ classes, page, handleLogout }) => (
-  <ul className={cn(classes.root, { game: page === 'game' })}>
+  <ul className={cn(classes.root, { dark: page === 'dark' })}>
     <li className={classes.logo}>
       {/* <img src={HouseLogo} alt="" /> */}
       <div className={classes.logout} onClick={() => handleLogout()}>Logout</div>
@@ -28,7 +28,7 @@ const MenuNavigation = ({ classes, page, handleLogout }) => (
         </Link>
     </li>
     <li>
-      <Link to={'/'} className={classes.headerMenuItem}>
+      <Link to={'/games'} className={classes.headerMenuItem}>
         <i className={cn(classes.menuIcon, classes.games)}></i><br /> Games
         </Link>
     </li>

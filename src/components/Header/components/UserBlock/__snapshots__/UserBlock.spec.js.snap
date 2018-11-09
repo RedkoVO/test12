@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="UserBlock-root-1"
+>
+  <div
+    className="UserBlock-demoTitle-9"
+  >
+    DEMO VERSION
+  </div>
+  <div
+    className="UserBlock-user-2"
+  >
+    <div
+      className="UserBlock-userBlock-3"
+    >
+      <p
+        className="UserBlock-userHello-4"
+      >
+         Hello, Ben A 
+        <br />
+        <span
+          className="UserBlock-userVerification-5"
+        >
+          KYC VERIFICATED
+        </span>
+      </p>
+      <div
+        className="UserBlock-userPhoto-6"
+      >
+        <img
+          alt=""
+          src="user.png"
+        />
+      </div>
+      <p
+        className="UserBlock-userBallance-7"
+      >
+        0000
+         dcb
+        <br />
+        <span
+          className="UserBlock-userBallDescr-8"
+        >
+          YOUR BALANCE
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

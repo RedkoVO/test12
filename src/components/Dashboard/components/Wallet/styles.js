@@ -1,6 +1,7 @@
+import gC from '../../../../constants'
 import DownLogo from '../../../../assets/images/svg/down.svg'
 
-export default () => ({
+export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
@@ -8,33 +9,30 @@ export default () => ({
     alignItems: 'center',
     padding: '30px 25px 0 25px',
     width: '100%',
-    boxSizing: 'border-box'
-  },
-  user: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    width: '100%'
-  },
-  userBlock: {
-    display: 'flex',
-    '-ms-align-items': 'center',
-    alignItems: 'center'
-  },
-  userHello: {
-    fontSize: '18px',
-    margin: '0 0 20px 0',
-  },
-  userVerification: {
-    fontSize: '10px',
-    fontWeight: '500'
+    boxSizing: 'border-box',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+      padding: 0
+    }
   },
   wallet: {
     display: 'flex',
     flexDirection: 'column',
     '-ms-align-items': 'stretch',
     alignItems: 'stretch',
-    width: 'initial'
+    width: 'initial',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      marginBottom: '20px',
+      paddingBottom: '20px'
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      width: '320px',
+      '-ms-align-items': 'center',
+      alignItems: 'center',
+      paddingBottom: '20px',
+      marginBottom: '20px'
+    }
   },
   walletTitle: {
     textAlign: 'center',
@@ -81,7 +79,11 @@ export default () => ({
     listStyleType: 'none',
     margin: 0,
     width: '100%',
-    justifyContent: 'center'
+    justifyContent: 'center',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      padding: 0
+    }
   },
   walletNavItem: {
     textDecoration: 'none',
@@ -91,19 +93,17 @@ export default () => ({
     fontSize: '10px',
     padding: '5px 15px',
     borderRadius: '10px',
-    margin: '0 5px'
-  },
-  demoTitle: {
-    fontWeight: 900,
-    position: 'absolute',
-    fontSize: '20px',
-    left: '154px',
-    width: '200px',
-    height: '50px',
-    textAlign: 'center',
-    background: '#f00',
-    borderRadius: '10px',
-    color: '#fff',
-    lineHeight: '49px'
+    margin: '0 5px',
+
+    '&:hover': {
+      backgroundColor: '#76bff7'
+    },
+    '&:active': {
+      backgroundColor: '#054677'
+    },
+
+    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      padding: '5px 7px'
+    }
   }
 })

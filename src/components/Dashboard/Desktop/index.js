@@ -5,6 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import Transaction from '../components/Transaction'
 import BestAd from '../components/BestAd'
 import Categories from '../components/Categories'
+import Wallet from '../components/Wallet'
 
 import styles from './styles'
 
@@ -12,10 +13,18 @@ const Dashboard = ({
   classes,
   transactions,
   bestAds,
-  gameCategories
+  gameCategories,
+  balance,
+  isDisabledButton,
+  onSubmit
 }) => (
     <main>
       <div className={classes.root}>
+        <Wallet
+          onSubmit={onSubmit}
+          isDisabledButton={isDisabledButton}
+          balance={balance && balance.shortBalance}
+        />
         <Transaction transactions={transactions} />
         <BestAd bestAds={bestAds} />
         <Categories categories={gameCategories} />
