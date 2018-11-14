@@ -18,6 +18,9 @@ export default theme => ({
       justifyContent: 'center',
       flexWrap: 'wrap'
     },
+    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+      height: '100%'
+    },
     [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
       height: '100%'
     },

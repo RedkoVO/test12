@@ -16,6 +16,9 @@ import AsyncGame from '../../../containers/Game/AsyncGame'
 import AsyncFriends from '../../../containers/Friends/AsyncFriends'
 import AsyncSettings from '../../../containers/Settings/AsyncSettings'
 
+// import whyDidYouUpdate from 'why-did-you-update'
+// whyDidYouUpdate(React)
+
 const RootRoute = props => {
   const { location, keyAuth } = props
 

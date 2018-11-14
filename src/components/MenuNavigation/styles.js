@@ -40,11 +40,21 @@ export default theme => ({
       '& li': {
         '& a': {
           color: '#fff'
-        },
-
-        '&:hover': {
-          boxShadow: '10px 10px 20px 0px rgba(255,255,255,0.5)'
         }
+      },
+
+      [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+        position: 'relative',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        width: '500px',
+        height: '80px',
+        margin: 0,
+        padding: '0 0 10px 0',
+        borderBottomRightRadius: '25px',
+        borderBottomLeftRadius: '25px',
+        backgroundColor: 'rgba(0,0,0,0.74)',
+        order: 2,
       }
     },
 

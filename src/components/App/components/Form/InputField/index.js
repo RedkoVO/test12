@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 
-const InputField = ({ input, id, className, type, name, placeholder, meta: { touched, error }}) => {
+const InputField = ({ input, id, className, type, name, placeholder, meta: { touched, error } }) => {
   const wpInput = cn(className, { 'input-error': touched && error })
 
   return (
