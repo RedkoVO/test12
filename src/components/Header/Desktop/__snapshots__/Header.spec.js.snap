@@ -59,7 +59,7 @@ exports[`renders correctly 1`] = `
     <li>
       <a
         className="MenuNavigation-headerMenuItem-3"
-        href="/"
+        href="/games"
         onClick={[Function]}
       >
         <i

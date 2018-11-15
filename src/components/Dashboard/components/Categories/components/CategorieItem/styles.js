@@ -33,7 +33,7 @@ export default theme => ({
     '& span': {
       fontSize: '23px',
 
-      [theme.breakpoints.down('xs')]: {
+      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
         fontSize: '20px'
       }
     }

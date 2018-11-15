@@ -8,7 +8,7 @@ import Filters from '../Filters'
 
 import styles from './styles'
 
-const HeaderCatalog = ({ classes }) => (
+const HeaderCatalog = ({ classes, isDesktop }) => (
   <div className={classes.root}>
     <div className={classes.catalogUserBlock}>
       <p className={classes.catalogUserHello}> Hello, Ben A <br />
@@ -22,12 +22,13 @@ const HeaderCatalog = ({ classes }) => (
       </p>
     </div>
     
-    <Filters />
+    {isDesktop && <Filters />}
   </div>
 )
 
 HeaderCatalog.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  isDesktop: PropTypes.bool
 }
 
 export default withStyles(styles)(HeaderCatalog)

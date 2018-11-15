@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
+import { Link } from 'react-router-dom'
 
 import styles from './styles'
 
@@ -8,15 +9,15 @@ const FiltersDesktop = ({ classes }) => (
   <div className={classes.root}>
     <div className={classes.sortGenre}>
       <span className={classes.sortGenreName}>genre:</span>
-      <a href="#" className={classes.sortGenreItem}>
+      <Link to="/" className={classes.sortGenreItem}>
         dice games
-      </a>
+      </Link>
     </div>
     <div className={classes.sortRating}>
       <span className={classes.sortRatingName}>rating:</span>
-      <a href="#" className={classes.sortRatingItem}>
+      <Link to="/" className={classes.sortRatingItem}>
         more than 6 stars
-      </a>
+      </Link>
     </div>
     <div className={classes.sortSearch}>
       <input
@@ -29,9 +30,9 @@ const FiltersDesktop = ({ classes }) => (
       <span className={classes.sortContractName}>
         volume of smart contract:
       </span>
-      <a href="#" className={classes.sortContractItem}>
+      <Link to="/" className={classes.sortContractItem}>
         more than 10.000 CTP
-      </a>
+      </Link>
     </div>
   </div>
 )

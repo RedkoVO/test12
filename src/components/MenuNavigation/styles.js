@@ -48,13 +48,19 @@ export default theme => ({
         flexDirection: 'row',
         justifyContent: 'space-around',
         width: '500px',
-        height: '80px',
+        height: '112px',
         margin: 0,
         padding: '0 0 10px 0',
         borderBottomRightRadius: '25px',
         borderBottomLeftRadius: '25px',
         backgroundColor: 'rgba(0,0,0,0.74)',
-        order: 2,
+        order: 2
+      },
+      [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+        width: '100%',
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
+        margin: 0
       }
     },
 

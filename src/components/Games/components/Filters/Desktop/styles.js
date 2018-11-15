@@ -117,6 +117,10 @@ export default () => ({
     borderRadius: '20px',
     marginLeft: '5px',
     backgroundColor: 'rgba(255,255,255,0.25)',
-    color: '#fff'
+    color: '#fff',
+
+    '&::placeholder': {
+      color: '#fff'
+    }
   }
 })

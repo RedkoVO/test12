@@ -10,7 +10,7 @@ export default theme => ({
     width: '100%',
     '-ms-align-items': 'center',
 
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
       '-ms-align-items': 'flex-start',
       alignItems: 'flex-start',
       justifyContent: 'center',
@@ -24,7 +24,7 @@ export default theme => ({
     alignItems: 'center',
     '-ms-align-items': 'center',
 
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
       marginRight: '20px',
       marginBottom: '20px'
     }
@@ -34,7 +34,7 @@ export default theme => ({
     paddingLeft: '40px',
     boxSizing: 'border-box',
 
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
       display: 'flex',
       justifyContent: 'center',
       paddingLeft: 0

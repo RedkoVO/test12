@@ -1,8 +1,9 @@
 import gC from '../../../../../constants'
 
+import DownLogo from '../../../../../assets/images/svg/white-down.svg'
+
 export default theme => ({
   root: {
-    display: 'flex',
     flexDirection: 'row',
     '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
@@ -14,6 +15,9 @@ export default theme => ({
     [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
       display: 'flex',
       order: 3
+    },
+    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+      width: '100%'
     }
   },
   mobileSortSearchField: {
@@ -27,7 +31,11 @@ export default theme => ({
     marginRight: '20px',
     marginTop: '10px',
     backgroundColor: 'rgba(255,255,255,0.25)',
-    color: '#fff'
+    color: '#fff',
+
+    '&::placeholder': {
+      color: '#fff'
+    }
   },
   mobilleFilterBtn: {
     display: 'flex',
@@ -41,10 +49,10 @@ export default theme => ({
     textDecoration: 'none',
     color: '#fff',
     textAlign: 'center',
+    cursor: 'pointer',
 
     '& img': {
-      width: '100%',
-      height: '100%'
+      width: '100%'
     }
   },
   mobileSortItems: {
@@ -53,14 +61,18 @@ export default theme => ({
     '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     justifyContent: 'space-around',
-    display: 'none',
     position: 'absolute',
     width: '500px',
     backgroundColor: 'rgba(0,0,0,.74)',
     padding: '10px',
     boxDizing: 'border-box',
     zIndex: 20,
-    borderRadius: '25px'
+    borderRadius: '25px',
+
+    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+      width: '100%',
+      borderRadius: 0
+    }
   },
   mobileSortGenre: {
     display: 'flex',
@@ -109,21 +121,60 @@ export default theme => ({
     fontSize: '12px',
     fontWeight: 700,
     color: '#fff',
-    textDecoration: 'none'
+    textDecoration: 'none',
+
+    '&:after': {
+      content: `""`,
+      position: 'absolute',
+      top: '4px',
+      right: '-12px',
+      width: '8px',
+      height: '8px',
+      backgroundImage: `url(${DownLogo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0 0',
+      backgroundSize: '8px'
+    }
   },
   mobileSortRatingItem: {
     position: 'relative',
     fontSize: '12px',
     fontWeight: 700,
     color: '#fff',
-    textDecoration: 'none'
+    textDecoration: 'none',
+
+    '&:after': {
+      content: `""`,
+      position: 'absolute',
+      top: '4px',
+      right: '-12px',
+      width: '8px',
+      height: '8px',
+      backgroundImage: `url(${DownLogo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0 0',
+      backgroundSize: '8px'
+    }
   },
   mobileSortContractItem: {
     position: 'relative',
     fontSize: '12px',
     fontWeight: 700,
     color: '#fff',
-    textDecoration: 'none'
+    textDecoration: 'none',
+
+    '&:after': {
+      content: `""`,
+      position: 'absolute',
+      top: '4px',
+      right: '-12px',
+      width: '8px',
+      height: '8px',
+      backgroundImage: `url(${DownLogo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0 0',
+      backgroundSize: '8px'
+    }
   },
   mobileSortApplyBtn: {
     textDecoration: 'none',
@@ -143,6 +194,7 @@ export default theme => ({
     height: '20px',
     right: '10px',
     top: '10px',
+    cursor: 'pointer',
 
     '& img': {
       width: '100%',

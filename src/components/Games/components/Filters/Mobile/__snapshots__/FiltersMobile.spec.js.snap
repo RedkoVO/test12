@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly filters HIDDEN 1`] = `
+<div
+  className="FiltersMobile-root-1"
+>
+  <div
+    className={undefined}
+  >
+    <input
+      className="FiltersMobile-mobileSortSearchField-2"
+      placeholder="Search..."
+      type="text"
+    />
+  </div>
+  <div
+    className="FiltersMobile-mobilleFilterBtn-3"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      src="filter.svg"
+    />
+    <span>
+      Filters
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders correctly filters SHOW 1`] = `
+<div
+  className="FiltersMobile-root-1"
+>
+  <div
+    className={undefined}
+  >
+    <input
+      className="FiltersMobile-mobileSortSearchField-2"
+      placeholder="Search..."
+      type="text"
+    />
+  </div>
+  <div
+    className="FiltersMobile-mobilleFilterBtn-3"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      src="filter.svg"
+    />
+    <span>
+      Filters
+    </span>
+  </div>
+  <div
+    className="FiltersMobile-mobileSortItems-4"
+  >
+    <div
+      className="FiltersMobile-mobileSortGenre-5"
+    >
+      <span
+        className="FiltersMobile-mobileSortGenreName-8"
+      >
+         genre:
+      </span>
+      <a
+        className="FiltersMobile-mobileSortGenreItem-11"
+        href="/"
+        onClick={[Function]}
+      >
+        dice games
+      </a>
+    </div>
+    <div
+      className="FiltersMobile-mobileSortRating-6"
+    >
+      <span
+        className="FiltersMobile-mobileSortRatingName-9"
+      >
+         rating:
+      </span>
+      <a
+        className="FiltersMobile-mobileSortRatingItem-12"
+        href="/"
+        onClick={[Function]}
+      >
+        more than 6 stars
+      </a>
+    </div>
+    <div
+      className="FiltersMobile-mobileSortContract-7"
+    >
+      <span
+        className="FiltersMobile-mobileSortContractName-10"
+      >
+        volume of smart contract:
+      </span>
+      <a
+        className="FiltersMobile-mobileSortContractItem-13"
+        href="/"
+        onClick={[Function]}
+      >
+        more than 10.000 CTP
+      </a>
+    </div>
+    <a
+      className="FiltersMobile-mobileSortApplyBtn-14"
+      href="/"
+      onClick={[Function]}
+    >
+      APPLY
+    </a>
+    <div
+      className="FiltersMobile-mobileSortCloseBtn-15"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        src="close.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

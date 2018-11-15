@@ -96,10 +96,10 @@ exports[`renders correctly 1`] = `
           Send now
         </span>
         <div
-          className={undefined}
+          className="Action-sendAddress-13"
         >
           <input
-            className="Action-sendAddressField-13"
+            className="Action-sendAddressField-14"
             id={undefined}
             name={undefined}
             onBlur={[Function]}
@@ -116,7 +116,7 @@ exports[`renders correctly 1`] = `
           className={undefined}
         >
           <input
-            className="Action-sendAmmountField-14"
+            className="Action-sendAmmountField-15"
             id={undefined}
             name={undefined}
             onBlur={[Function]}
@@ -130,7 +130,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <button
-          className="Action-sendBtn-16"
+          className="Action-sendBtn-17"
           type="submit"
         >
           Send money
@@ -138,10 +138,10 @@ exports[`renders correctly 1`] = `
       </form>
     </div>
     <div
-      className="Action-actionsInvoice-18"
+      className="Action-actionsInvoice-19"
     >
       <span
-        className="Action-invoiceTitle-19"
+        className="Action-invoiceTitle-20"
       >
         Invoice
       </span>
@@ -149,13 +149,13 @@ exports[`renders correctly 1`] = `
         className={undefined}
       >
         <input
-          className="Action-invoiceAmmountField-15"
+          className="Action-invoiceAmmountField-16"
           placeholder="Set ammount you need to receive"
           type="text"
         />
       </div>
       <a
-        className="Action-invoiceBtn-17"
+        className="Action-invoiceBtn-18"
         href="/"
       >
         Generate link

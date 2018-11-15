@@ -1,9 +1,8 @@
-import compose from 'recompose/compose'
-import { withProps } from 'recompose'
+import * as React from 'react'
+import renderer from 'react-test-renderer'
+import { MemoryRouter } from 'react-router-dom'
 
-import withDeviceTarget from '../../hocs/withDeviceTarget'
-
-import AsyncGamesDesktop from '../../components/Games/Desktop/AsyncGamesDesktop'
+import Games from './'
 
 const games = [
   {
@@ -80,11 +79,13 @@ const games = [
   }
 ]
 
-export default compose(
-  withDeviceTarget,
-  withProps(() => {
-    return {
-      games
-    }
-  })
-)(AsyncGamesDesktop)
+it('renders correctly', () => {
+  const tree = renderer
+    .create(
+      <MemoryRouter keyLength={0}>
+        <Games handleLogout={() => {}} isDesktop={false} games={games} />
+      </MemoryRouter>
+    )
+    .toJSON()
+  expect(tree).toMatchSnapshot()
+})

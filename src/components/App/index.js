@@ -19,7 +19,12 @@ const App = props => {
     lg: gC.BRECKPOINT.LG,
     xl: gC.BRECKPOINT.XL
   }
-  const theme = createMuiTheme({ breakpoints: { values: breakpointValues } })
+  const theme = createMuiTheme({
+    breakpoints: { values: breakpointValues },
+    typography: {
+      useNextVariants: true
+    }
+  })
 
   return (
     <Provider store={store}>

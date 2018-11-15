@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="FiltersDesktop-root-1"
+>
+  <div
+    className="FiltersDesktop-sortGenre-2"
+  >
+    <span
+      className="FiltersDesktop-sortGenreName-3"
+    >
+      genre:
+    </span>
+    <a
+      className="FiltersDesktop-sortGenreItem-4"
+      href="/"
+      onClick={[Function]}
+    >
+      dice games
+    </a>
+  </div>
+  <div
+    className="FiltersDesktop-sortRating-5"
+  >
+    <span
+      className="FiltersDesktop-sortRatingName-6"
+    >
+      rating:
+    </span>
+    <a
+      className="FiltersDesktop-sortRatingItem-7"
+      href="/"
+      onClick={[Function]}
+    >
+      more than 6 stars
+    </a>
+  </div>
+  <div
+    className="FiltersDesktop-sortSearch-11"
+  >
+    <input
+      className="FiltersDesktop-sortSearchField-12"
+      placeholder="Search..."
+      type="text"
+    />
+  </div>
+  <div
+    className="FiltersDesktop-sortContract-8"
+  >
+    <span
+      className="FiltersDesktop-sortContractName-9"
+    >
+      volume of smart contract:
+    </span>
+    <a
+      className="FiltersDesktop-sortContractItem-10"
+      href="/"
+      onClick={[Function]}
+    >
+      more than 10.000 CTP
+    </a>
+  </div>
+</div>
+`;

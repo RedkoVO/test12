@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       className="Game-headerGame-3"
     >
       <ul
-        className="MenuNavigation-root-9 game"
+        className="MenuNavigation-root-9 dark"
       >
         <li
           className={undefined}
@@ -65,7 +65,7 @@ exports[`renders correctly 1`] = `
         <li>
           <a
             className="MenuNavigation-headerMenuItem-10"
-            href="/"
+            href="/games"
             onClick={[Function]}
           >
             <i

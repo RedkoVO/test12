@@ -168,14 +168,6 @@ export default () => ({
     fontSize: '11px',
     fontWeight: 700
   },
-  catalogCounterValue: {
-    fontSize: '11px',
-    fontWeight: 700
-  },
-  catalogCounterValue: {
-    fontSize: '11px',
-    fontWeight: 700
-  },
   catalogItemBtn: {
     position: 'relative',
     display: 'block',
@@ -203,11 +195,6 @@ export default () => ({
       backgroundPosition: '0 0',
       backgroundSize: '15px'
     }
-  },
-  catalogItemNext: {
-    fontSize: '10px',
-    fontWeight: 700,
-    color: '#fff'
   },
   catalogItemNext: {
     fontSize: '10px',

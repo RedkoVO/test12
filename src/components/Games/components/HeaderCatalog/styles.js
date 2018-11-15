@@ -22,8 +22,8 @@ export default theme => ({
     },
     [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
       minWidth: '500px',
-      paddingTop: '20px',
-      height: '74px',
+      paddingTop: '14px',
+      height: '107px',
       paddingBottom: 0,
       borderBottomLeftRadius: '0px',
       borderBottomRightRadius: '0px'
