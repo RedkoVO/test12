@@ -5,6 +5,7 @@ import { reduxForm, reset } from 'redux-form'
 import BigNumber from 'bignumber.js'
 
 import { getWork, getBalance, sendMoney } from '../../redux/actions/balance'
+import { getBalanceSelector } from '../../selectors/balance'
 
 import Crypto from '../../crypto/crypto'
 import validate from './validate'
@@ -63,7 +64,8 @@ const gameCategories = [
 const FORM_NAME = 'sendMoney'
 
 const mapStateToProps = state => ({
-  balance: state.balance
+  // balance: state.balance
+  balance: getBalanceSelector(state)
 })
 
 export default compose(
@@ -98,10 +100,6 @@ export default compose(
               const amount = getBigNumberAmount(variables.amount)
               const work = res.work
               const getCryptoBlock = Crypto.sign.formSendBlock(acc, toAddress, amount, work)
-
-              /* TODO: WORKEROUND  remove this! */
-              // getCryptoBlock.account = 'xrb' + getCryptoBlock.account.slice(3)
-              // getCryptoBlock.representative = 'xrb' + getCryptoBlock.representative.slice(3)
 
               const data = {
                 block: JSON.stringify(getCryptoBlock)

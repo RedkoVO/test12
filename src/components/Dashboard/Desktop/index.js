@@ -17,7 +17,10 @@ const Dashboard = ({
   balance,
   isDisabledButton,
   onSubmit
-}) => (
+}) => {
+  console.log('balance', balance)
+
+  return (
     <main>
       <div className={classes.root}>
         <Wallet
@@ -31,6 +34,7 @@ const Dashboard = ({
       </div>
     </main>
   )
+}
 
 Dashboard.propTypes = {
   classNamees: PropTypes.object,
