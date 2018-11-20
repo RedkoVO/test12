@@ -15,7 +15,7 @@ export const registrationEmail = data => {
         'Content-Type': 'application/json',
       },
       data: JSON.stringify(data),
-      url: `${gC.API_URL}`
+      url: `${gC.API_URL}/registration/`
     })
       .then((response) => {
         dispatch(createRegistrationEmailSuccess(response.data))

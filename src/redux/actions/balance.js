@@ -5,7 +5,7 @@ import gC from '../../constants'
 
 /* GET BALANCE */
 export const getBalance = data => {
-  data.action = 'account_info'
+  data.action = 'address_info'
 
   return (dispatch) => {
     return axios({
@@ -15,7 +15,7 @@ export const getBalance = data => {
         'Content-Type': 'application/json',
       },
       data: JSON.stringify(data),
-      url: `${gC.API_URL}`
+      url: `${gC.API_URL}/address_info/`
     })
       .then((response) => {
         dispatch(createGetBalanceSuccess(response.data))
@@ -52,7 +52,7 @@ export const getWork = data => {
         'Content-Type': 'application/json',
       },
       data: JSON.stringify(data),
-      url: `${gC.API_URL}`
+      url: `${gC.API_URL}/work/`
     })
       .then((response) => {
         dispatch(createGetWorkSuccess(response.data))
@@ -87,7 +87,7 @@ export const getIncoming = data => {
         'Content-Type': 'application/json',
       },
       data: JSON.stringify(data),
-      url: `${gC.API_URL}`
+      url: `${gC.API_URL}/incoming/`
     })
       .then((response) => {
         dispatch(createGetIncomingSuccess(response.data))
@@ -122,7 +122,7 @@ export const sendMoney = data => {
         'Content-Type': 'application/json',
       },
       data: JSON.stringify(data),
-      url: `${gC.API_URL}`
+      url: `${gC.API_URL}/submit/`
     })
       .then((response) => {
         dispatch(createSendMoneySuccess(response.data))

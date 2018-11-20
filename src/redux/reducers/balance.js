@@ -1,4 +1,9 @@
-import { GET_BALANCE, GET_WORK, GET_INCOMING, SEND_MONEY } from '../actions/types'
+import {
+  GET_BALANCE,
+  GET_WORK,
+  GET_INCOMING,
+  SEND_MONEY
+} from '../actions/types'
 
 const auth = (state = {}, action) => {
   const { payload, type } = action
@@ -7,9 +12,11 @@ const auth = (state = {}, action) => {
     case GET_BALANCE:
       return {
         ...state,
-        balance: payload.balance,
-        lastBlock: payload.lastBlock,
-        shortBalance: payload.shortBalance
+        balance: {
+          balance: payload.balance,
+          lastBlock: payload.lastBlock,
+          shortBalance: payload.shortBalance
+        }
       }
     case GET_WORK:
       return {

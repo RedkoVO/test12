@@ -24,7 +24,7 @@ export const receiveFromFaucet = async (userAccount, sourceBlockHash, amountStr)
   }
 
   try {
-    const gateResponse = await axios({ method: 'post', headers: headers, data: myReq, url: `${gC.API_URL}` })
+    const gateResponse = await axios({ method: 'post', headers: headers, data: myReq, url: `${gC.API_URL}/work/` })
     work = gateResponse.data.work
   } catch (error) {
     console.log(error)
@@ -39,7 +39,7 @@ export const receiveFromFaucet = async (userAccount, sourceBlockHash, amountStr)
   myReq.block = JSON.stringify(receiveBlock)
 
   try {
-    const gateResponse = await axios({ method: 'post', headers: headers, data: myReq, url: `${gC.API_URL}` })
+    const gateResponse = await axios({ method: 'post', headers: headers, data: myReq, url: `${gC.API_URL}/submit/` })
 
     //update last block and balance if all good
     if (gateResponse.data.hash) {

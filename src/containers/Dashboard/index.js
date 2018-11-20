@@ -64,7 +64,6 @@ const gameCategories = [
 const FORM_NAME = 'sendMoney'
 
 const mapStateToProps = state => ({
-  // balance: state.balance
   balance: getBalanceSelector(state)
 })
 

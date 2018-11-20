@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { withHandlers, lifecycle, pure } from 'recompose'
 
 import { getBalance } from '../../redux/actions/balance'
+import { getBalanceSelector } from '../../selectors/balance'
 
 import Crypto from '../../crypto/crypto'
 import { clearStorageForlogout } from '../../utils/localStorageUtils'
@@ -10,7 +11,7 @@ import { clearStorageForlogout } from '../../utils/localStorageUtils'
 import AsyncHeaderDesktop from '../../components/Header/Desktop/AsyncHeaderDesktop'
 
 const mapStateToProps = state => ({
-  balance: state.balance
+  balance: getBalanceSelector(state)
 })
 
 export default compose(

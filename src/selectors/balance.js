@@ -1,12 +1,8 @@
 import { createSelector } from 'reselect'
 
-const getBalance = state => state.balance
+const getBalance = state => state.balance.balance
 
 export const getBalanceSelector = createSelector(
-  [getBalance],
-  balance => {
-    // console.log('balance selector', balance)
-
-    return balance
-  }
+  getBalance,
+  balance => balance
 )
