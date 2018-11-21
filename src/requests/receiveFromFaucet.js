@@ -5,8 +5,6 @@ import gC from '../constants'
 import Crypto from '../crypto/crypto'
 
 export const receiveFromFaucet = async (userAccount, sourceBlockHash, amountStr) => {
-  console.log('Started faucet accepting money by user---------------------------')
-
   const headers = {
     Accept: 'application/json',
     'Content-Type': 'application/json',

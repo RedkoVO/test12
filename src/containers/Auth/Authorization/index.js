@@ -4,7 +4,7 @@ import { withHandlers, withState } from 'recompose'
 import { reduxForm } from 'redux-form'
 import validate from './validate'
 import BigNumber from 'bignumber.js'
-import sequential from 'promise-sequential'
+import { sequential } from '../../../utils/promiseSequential'
 
 import { getBalance, getIncoming } from '../../../redux/actions/balance'
 import { getBalanceSelector } from '../../../selectors/balance'
