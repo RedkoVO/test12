@@ -8,7 +8,6 @@ import CatalogList from '../components/CatalogList'
 import HeaderCatalog from '../components/HeaderCatalog'
 
 import styles from './styles.js'
-import './styles.css'
 
 const Games = ({ classes, games, handleLogout, isDesktop }) => (
   <div className="mainWrapperCatalog">

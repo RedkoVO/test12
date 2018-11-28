@@ -2,15 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import GameRollImg from '../../../../assets/images/slider_slot_4clover_m.jpg'
 import UserImg from '../../../../assets/images/user.png'
 
 import styles from './styles'
 
-const RollTop = ({ classes }) => (
+const RollTop = ({ classes, imgMain }) => (
   <div className={classes.root}>
     <div className={classes.gameRollImg}>
-      <img src={GameRollImg} alt="" />
+      <img src={imgMain} alt="" />
     </div>
     <div className={classes.gameRollInf}>
       <div className={classes.gameUser}>
@@ -60,7 +59,8 @@ const RollTop = ({ classes }) => (
 )
 
 RollTop.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  imgMain: PropTypes.string
 }
 
 export default withStyles(styles)(RollTop)

@@ -17,24 +17,20 @@ const Dashboard = ({
   balance,
   isDisabledButton,
   onSubmit
-}) => {
-  console.log('balance', balance)
-
-  return (
-    <main>
-      <div className={classes.root}>
-        <Wallet
-          onSubmit={onSubmit}
-          isDisabledButton={isDisabledButton}
-          balance={balance && balance.shortBalance}
-        />
-        <Transaction transactions={transactions} />
-        <BestAd bestAds={bestAds} />
-        <Categories categories={gameCategories} />
-      </div>
-    </main>
-  )
-}
+}) => (
+  <main>
+    <div className={classes.root}>
+      <Wallet
+        onSubmit={onSubmit}
+        isDisabledButton={isDisabledButton}
+        balance={balance && balance.shortBalance}
+      />
+      <Transaction transactions={transactions} />
+      <BestAd bestAds={bestAds} />
+      <Categories categories={gameCategories} />
+    </div>
+  </main>
+)
 
 Dashboard.propTypes = {
   classNamees: PropTypes.object,

@@ -7,6 +7,8 @@ import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 
 import './index.css'
+import './stream.css'
+import './skins.css'
 
 const initApp = () => {
   const history = createBrowserHistory()

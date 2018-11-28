@@ -6,6 +6,7 @@ export default theme => ({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
+    flexWrap: 'wrap',
     marginTop: '40px',
     width: '100%',
     '-ms-align-items': 'center',

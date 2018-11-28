@@ -5,13 +5,30 @@ import { MemoryRouter } from 'react-router-dom'
 import Game from './'
 
 const slider = [
-  { id: 1, img: 'SliderItemImg1' },
-  { id: 2, img: 'SliderItemImg1' },
-  { id: 3, img: 'SliderItemImg1' },
-  { id: 4, img: 'SliderItemImg1' },
-  { id: 5, img: 'SliderItemImg1' },
-  { id: 6, img: 'SliderItemImg1' },
-  { id: 7, img: 'SliderItemImg1' }
+  {
+    id: 1,
+    slides: [
+      { id: 1, img: 'SliderItemImg1' },
+      { id: 2, img: 'SliderItemImg1' },
+      { id: 3, img: 'SliderItemImg1' },
+      { id: 4, img: 'SliderItemImg1' },
+      { id: 5, img: 'SliderItemImg1' },
+      { id: 6, img: 'SliderItemImg1' },
+      { id: 7, img: 'SliderItemImg1' }
+    ]
+  },
+  {
+    id: 2,
+    slides: [
+      { id: 1, img: 'JungleImg1' },
+      { id: 2, img: 'JungleImg3' },
+      { id: 3, img: 'JungleImg4' },
+      { id: 4, img: 'JungleImg5' },
+      { id: 5, img: 'JungleImg4' },
+      { id: 6, img: 'JungleImg3' },
+      { id: 7, img: 'JungleImg5' }
+    ]
+  }
 ]
 const comments = [
   {
@@ -40,8 +57,9 @@ it('renders correctly', () => {
       <Game
         handlePlayNow={() => {}}
         isShowIframe={false}
-        address={''}
         slider={slider}
+        url={'url'}
+        imgMain={'image'}
         comments={comments}
         handleLogouts={() => {}}
       />

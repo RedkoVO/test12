@@ -8,8 +8,12 @@ import styles from './styles'
 const RollBottom = ({ classes, handlePlayNow, slider }) => (
   <div className={classes.root}>
     <div className={classes.gameRollActions}>
-      <div className={classes.playNowBtn} onClick={() => handlePlayNow()}>Play Now</div>
-      <Link to="/" className={classes.addBtn}>Add to favorites</Link>
+      <div className={classes.playNowBtn} onClick={() => handlePlayNow()}>
+        Play Now
+      </div>
+      <Link to="/" className={classes.addBtn}>
+        Add to favorites
+      </Link>
     </div>
 
     <div className={classes.gameRollSlider} id="scrollSlider" tabIndex="5000">

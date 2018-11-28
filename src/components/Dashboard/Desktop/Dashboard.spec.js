@@ -91,6 +91,7 @@ const dataBestAds = [
     id: 1,
     title: 'Games',
     img: 'CloverLogo1',
+    link: '/games',
     titleLink: 'Game of the day',
     nameLink: 'Smash Champs'
   },
@@ -98,6 +99,7 @@ const dataBestAds = [
     id: 2,
     title: 'Shop',
     img: 'CloverLogo1',
+    link: '/stream',
     titleLink: 'Product of the day',
     nameLink: 'Blue cool Jelly'
   }

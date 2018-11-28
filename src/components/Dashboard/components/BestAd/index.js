@@ -1,26 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import withStyles from '@material-ui/core/styles/withStyles'
 
 import styles from './styles'
 
-const BestAd = ({ classes, bestAds }) => (
+const BestAd = ({ classes, bestAds }) => {
+  return(
   <div className={classes.root}>
     {bestAds.map(item => (
       <div className={classes.bestItem} key={item.id}>
         <div className={classes.titleWrap}>
-          <a href="/" className={classes.bestTitle}>{item.title}</a>
+          <Link to={item.link} className={classes.bestTitle}>{item.title}</Link>
         </div>
         <div className={classes.bestContent}>
-          <a href="/" className={classes.bestImg}>
+          <Link to={item.link} className={classes.bestImg}>
             <img src={item.img} alt="" className={classes.bestItemImg} />
-          </a>
-          <a href="/" className={classes.bestLink}>{item.titleLink}: <br /><span>{item.nameLink}</span></a>
+          </Link>
+          <Link to={item.link} className={classes.bestLink}>{item.titleLink}: <br /><span>{item.nameLink}</span></Link>
         </div>
       </div>
     ))}
   </div>
-)
+)}
 
 BestAd.propTypes = {
   classNamees: PropTypes.object,

@@ -613,7 +613,8 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="BestAd-bestTitle-44"
-            href="/"
+            href="/games"
+            onClick={[Function]}
           >
             Games
           </a>
@@ -623,7 +624,8 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="BestAd-bestImg-46"
-            href="/"
+            href="/games"
+            onClick={[Function]}
           >
             <img
               alt=""
@@ -633,7 +635,8 @@ exports[`renders correctly 1`] = `
           </a>
           <a
             className="BestAd-bestLink-48"
-            href="/"
+            href="/games"
+            onClick={[Function]}
           >
             Game of the day
             : 
@@ -652,7 +655,8 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="BestAd-bestTitle-44"
-            href="/"
+            href="/stream"
+            onClick={[Function]}
           >
             Shop
           </a>
@@ -662,7 +666,8 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="BestAd-bestImg-46"
-            href="/"
+            href="/stream"
+            onClick={[Function]}
           >
             <img
               alt=""
@@ -672,7 +677,8 @@ exports[`renders correctly 1`] = `
           </a>
           <a
             className="BestAd-bestLink-48"
-            href="/"
+            href="/stream"
+            onClick={[Function]}
           >
             Product of the day
             : 

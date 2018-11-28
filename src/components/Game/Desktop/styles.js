@@ -1,14 +1,4 @@
-import GraphLogo from '../../../assets/images/gamePageBg.png'
-
 export default () => ({
-  root: {
-    maxWidth: '2880px',
-    backgroundImage: `url(${GraphLogo})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: '0 0'
-  },
-
   containerGame: {
     position: 'relative',
     width: '100%',

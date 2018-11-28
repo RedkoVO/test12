@@ -51,6 +51,30 @@ main {
   box-sizing: border-box;
 }
 
+/*  Background for components  */
+.mainWrapperGame {
+  max-width: 2880px;
+  background: url("./assets/images/gamePageBg.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.mainWrapperTrade{
+	max-width: 2880px;
+	background: url("./assets/images/streamPageBg.jpg") 0 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.containerStreamWrap{
+	max-width: 2880px;
+	background: url("./assets/images/streamPageBg.jpg") 0 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.mainWrapperCatalog {
+  max-width: 2880px;
+  background: url("./assets/images/catalogPageBg.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   main {
     margin-left: 0;

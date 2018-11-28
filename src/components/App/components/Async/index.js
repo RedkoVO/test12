@@ -17,6 +17,7 @@ const Async = props =>
       }
 
       if (error) {
+        console.log('ERROR Async', error)
         return (
           <div>
             Sorry, there was a problem loading the page. Please refresh the page

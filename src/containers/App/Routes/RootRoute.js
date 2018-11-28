@@ -13,6 +13,8 @@ import AsyncWallet from '../../../containers/Wallet/AsyncWallet'
 import AsyncShop from '../../../containers/Shop/AsyncShop'
 import AsyncGames from '../../../containers/Games/AsyncGames'
 import AsyncGame from '../../../containers/Game/AsyncGame'
+import AsyncStream from '../../../containers/Stream/AsyncStream'
+import AsyncSkins from '../../../containers/Skins/AsyncSkins'
 import AsyncFriends from '../../../containers/Friends/AsyncFriends'
 import AsyncSettings from '../../../containers/Settings/AsyncSettings'
 
@@ -76,6 +78,20 @@ const RootRoute = props => {
         <Route
           path={`/game/:bundle`}
           component={AsyncGame}
+        />
+      )}
+
+      {keyAuth && (
+        <Route
+          path={`/stream`}
+          component={AsyncStream}
+        />
+      )}
+
+      {keyAuth && (
+        <Route
+          path={`/skins`}
+          component={AsyncSkins}
         />
       )}
 
