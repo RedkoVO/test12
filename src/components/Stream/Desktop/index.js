@@ -4,6 +4,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 
 import MenuNavigation from '../../MenuNavigation'
 import HeaderCatalog from '../components/HeaderCatalog'
+import Footer from '../../Footer/Desktop'
 
 import LeftTeamLogo from '../../../assets/images/leftTeamLogo.png'
 import LeftTeamFlag from '../../../assets/images/leftTeamFlag.png'
@@ -17,8 +18,8 @@ import styles from './styles'
 
 const Stream = ({ classes, handleLogout, isDesktop }) => (
   <div className="containerStreamWrap">
-    <div className="containerTradeWrap">
-      <div className="containerTrade">
+    <div className={classes.containerTradeWrap}>
+      <div className={classes.containerTrade}>
         <header className={classes.headerStream}>
           <MenuNavigation page="dark" handleLogout={handleLogout} />
           <HeaderCatalog isDesktop={isDesktop} />
@@ -95,43 +96,7 @@ const Stream = ({ classes, handleLogout, isDesktop }) => (
         </main>
       </div>
     </div>
-    <footer className="gameFooter">
-      <ul className="footerNav">
-        <li>
-          <a href="#" className="footerNavItem">
-            Dashboard
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footerNavItem">
-            Wallet
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footerNavItem">
-            Shop
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footerNavItem">
-            Games
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footerNavItem">
-            Friends
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footerNavItem footerNavSettings ">
-            Settings
-          </a>
-        </li>
-      </ul>
-      <span className="copyrightGameFooter">
-        Vault. All Rights Reserved 2018
-      </span>
-    </footer>
+    <Footer />
   </div>
 )
 
