@@ -77,8 +77,16 @@ const tmpArrSkins = [
     discountsCost: '$12.30'
   }
 ]
+const selectedItems = [
+  { id: 1, title: 'Good EWeapon 1.2', cost: '$12.20' },
+  { id: 2, title: 'Good EWeapon 1.2', cost: '$12.20' },
+  { id: 3, title: 'Good EWeapon 1.2', cost: '$12.20' },
+  { id: 4, title: 'Good EWeapon 1.2', cost: '$12.20' },
+  { id: 5, title: 'Good EWeapon 1.2', cost: '$12.20' },
+  { id: 6, title: 'Good EWeapon 1.2', cost: '$12.20' }
+]
 
 export default compose(
-  withProps(() => ({ skins: tmpArrSkins })),
+  withProps(() => ({ skins: tmpArrSkins, selectedItems: selectedItems })),
   pure
 )(AsyncSkinsDesktop)

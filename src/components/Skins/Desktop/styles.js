@@ -30,6 +30,7 @@ export default () => ({
     alignItems: 'center',
     justifyContent: 'center',
     flexWrap: 'wrap',
+    maxWidth: '1320px',
     width: '100%',
     height: '100%',
     color: '#fff'
