@@ -23,6 +23,7 @@ export default theme => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    paddingBottom: '40px',
     '-ms-align-items': 'center',
 
     [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
@@ -33,6 +34,7 @@ export default theme => ({
   titleWrap: {
     width: '100%',
     paddingLeft: '40px',
+    paddingBottom: '10px',
     boxSizing: 'border-box',
 
     [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {

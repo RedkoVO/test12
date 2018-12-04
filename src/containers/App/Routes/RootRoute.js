@@ -15,6 +15,7 @@ import AsyncGames from '../../../containers/Games/AsyncGames'
 import AsyncGame from '../../../containers/Game/AsyncGame'
 import AsyncStream from '../../../containers/Stream/AsyncStream'
 import AsyncSkins from '../../../containers/Skins/AsyncSkins'
+import AsyncCases from '../../../containers/Cases/AsyncCases'
 import AsyncFriends from '../../../containers/Friends/AsyncFriends'
 import AsyncSettings from '../../../containers/Settings/AsyncSettings'
 
@@ -92,6 +93,13 @@ const RootRoute = props => {
         <Route
           path={`/skins`}
           component={AsyncSkins}
+        />
+      )}
+
+      {keyAuth && (
+        <Route
+          path={`/cases`}
+          component={AsyncCases}
         />
       )}
 

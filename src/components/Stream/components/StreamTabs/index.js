@@ -6,23 +6,24 @@ import StreamTabsBottom from './components/StreamTabsBottom'
 
 import styles from './styles'
 
-const StreamTabs = ({ classes }) => (
+const StreamTabs = ({ classes, streamLive }) => (
   <div className={classes.root}>
-    <div className="streamTabsTop">
-      <a href="#" className="streamTabsUpcom">
+    <div className={classes.streamTabsTop}>
+      <div href="#" className={classes.streamTabsUpcom}>
         UPCOMING GAMES
-      </a>
-      <a href="#" className="streamTabsResult">
+      </div>
+      <div href="#" className={classes.streamTabsResult}>
         RESULTS
-      </a>
+      </div>
     </div>
 
-    <StreamTabsBottom />
+    <StreamTabsBottom streamLive={streamLive} />
   </div>
 )
 
 StreamTabs.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  streamLive: PropTypes.array,
 }
 
 export default withStyles(styles)(StreamTabs)

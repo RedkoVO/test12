@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="TradeTop-root-1"
+>
+  <div
+    className="TradeTop-tradeGame-2"
+  >
+    <div
+      className="TradeTop-tradeGameSelect-3"
+    >
+      Game:
+    </div>
+    <div
+      className="TradeTop-tradeGameItem-4"
+    >
+      CS:GO
+    </div>
+  </div>
+  <div
+    className="TradeTop-tradeStream-5"
+  >
+    <div
+      className="TradeTop-tradeStreamTitle-6"
+    >
+      Put your steam trade url: 
+    </div>
+    <div
+      className="TradeTop-tradeStreamUrlWrap-7"
+    >
+      <input
+        className="TradeTop-tradeStreamUrl-8"
+        placeholder="https://steamcommunity.com/groups/dota2lounge/discussions/0/558"
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;

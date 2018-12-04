@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="PaymentCard-root-1"
+>
+  <div
+    className="PaymentCard-paymentCardTitle-2"
+  >
+    Cashout on my Credit card:
+  </div>
+  <div
+    className="PaymentCard-paymentInputWrap-3"
+  >
+    <input
+      className="PaymentCard-paymentCardNum-5"
+      placeholder="Card Number"
+      type="text"
+    />
+  </div>
+  <div
+    className="PaymentCard-paymentInputWrap2-4"
+  >
+    <input
+      className="PaymentCard-paymentCardHolder-6"
+      placeholder="Card Holder"
+      type="text"
+    />
+  </div>
+  <a
+    className="PaymentCard-paymentCardMonth-7"
+    href="#"
+  >
+    MM
+  </a>
+  <a
+    className="PaymentCard-paymentCardYear-8"
+    href="#"
+  >
+    YYYY
+  </a>
+  <div
+    className="PaymentCard-paymentInputWrap3-9"
+  >
+    <input
+      className="PaymentCard-paymentCardCvc-10"
+      placeholder="CVC"
+      type="text"
+    />
+  </div>
+</div>
+`;

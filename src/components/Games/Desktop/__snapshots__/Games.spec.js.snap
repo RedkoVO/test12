@@ -105,131 +105,93 @@ exports[`renders correctly 1`] = `
             </a>
           </li>
         </ul>
-        <div
-          className="HeaderCatalog-root-14"
-        >
-          <div
-            className="HeaderCatalog-catalogUserBlock-15"
-          >
-            <p
-              className="HeaderCatalog-catalogUserHello-16"
-            >
-               Hello, Ben A 
-              <br />
-              <span
-                className="HeaderCatalog-catalogUserVerification-18"
-              >
-                KYC VERIFICATED
-              </span>
-            </p>
-            <div
-              className="HeaderCatalog-catalogUserPhoto-20"
-            >
-              <img
-                alt=""
-                src="user.png"
-              />
-            </div>
-            <p
-              className="HeaderCatalog-catalogUserBallance-17"
-            >
-               764.23 DCB 
-              <br />
-              <span
-                className="HeaderCatalog-catalogUserBallDescr-19"
-              >
-                YOUR BALANCE
-              </span>
-            </p>
-          </div>
-        </div>
       </header>
       <main>
         <div
-          className="CatalogList-catalogList-21"
+          className="CatalogList-catalogList-14"
         >
           <div
-            className="CatalogItem-catalogListItem-22"
+            className="CatalogItem-catalogListItem-15"
           >
             <div
-              className="CatalogItem-catalogItemTop-23"
+              className="CatalogItem-catalogItemTop-16"
             >
               <div
                 className={undefined}
               >
                 <p
-                  className="CatalogItem-catalogItemTitle-24"
+                  className="CatalogItem-catalogItemTitle-17"
                 >
                   Rolled-Folled
                 </p>
                 <span
-                  className="CatalogItem-catalogItemTitleComp-25"
+                  className="CatalogItem-catalogItemTitleComp-18"
                 >
                   by Fall Inc.
                 </span>
               </div>
               <div
-                className="CatalogItem-catalogItemRating-26"
+                className="CatalogItem-catalogItemRating-19"
               >
                 <p
-                  className="CatalogItem-catalogRatingValue-27"
+                  className="CatalogItem-catalogRatingValue-20"
                 >
                   <span
-                    className="CatalogItem-catalogRatingValueNum-28"
+                    className="CatalogItem-catalogRatingValueNum-21"
                   >
                     6.5
                   </span>
                   <span
-                    className="CatalogItem-catalogRatingValueFull-29"
+                    className="CatalogItem-catalogRatingValueFull-22"
                   >
                     /7
                   </span>
                 </p>
                 <div
-                  className="CatalogItem-catalogRatingStars-30"
+                  className="CatalogItem-catalogRatingStars-23"
                 >
                   <div
-                    className="CatalogItem-fullStars-31"
+                    className="CatalogItem-fullStars-24"
                   />
                   <div
-                    className="CatalogItem-halfStars-32"
+                    className="CatalogItem-halfStars-25"
                   />
                 </div>
                 <span
-                  className="CatalogItem-catalogRatingCategory-33"
+                  className="CatalogItem-catalogRatingCategory-26"
                 >
                   DICE CATEGORY
                 </span>
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemImg-34"
+              className="CatalogItem-catalogItemImg-27"
               href="/"
               onClick={[Function]}
             >
               <img
                 alt=""
-                className="CatalogItem-catalogItemImgGame-35"
+                className="CatalogItem-catalogItemImgGame-28"
                 src="catalogItem.png"
               />
               <div
-                className="CatalogItem-catalogItemOnline-36"
+                className="CatalogItem-catalogItemOnline-29"
               >
                 online: 
                 536
               </div>
             </a>
             <div
-              className="CatalogItem-catalogItemCounter-37"
+              className="CatalogItem-catalogItemCounter-30"
             >
               <div
-                className="CatalogItem-catalogCounterWins-38"
+                className="CatalogItem-catalogCounterWins-31"
               >
                 <p
-                  className="CatalogItem-catalogCounterBigstWin-41"
+                  className="CatalogItem-catalogCounterBigstWin-34"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     4666.78
                      dcb
@@ -242,13 +204,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterHours-39"
+                className="CatalogItem-catalogCounterHours-32"
               >
                 <p
-                  className="CatalogItem-catalogCounterHoursVolume-42"
+                  className="CatalogItem-catalogCounterHoursVolume-35"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     167.12
                      dcb
@@ -261,13 +223,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterContracts-40"
+                className="CatalogItem-catalogCounterContracts-33"
               >
                 <p
-                  className="CatalogItem-catalogCounterContractsVolume-43"
+                  className="CatalogItem-catalogCounterContractsVolume-36"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     20243.12
                      dcb
@@ -281,14 +243,14 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemBtn-45"
+              className="CatalogItem-catalogItemBtn-38"
               href="/"
               onClick={[Function]}
             >
               Play Now
             </a>
             <div
-              className="CatalogItem-catalogItemNext-46"
+              className="CatalogItem-catalogItemNext-39"
             >
               <p>
                 next roll in:
@@ -302,87 +264,87 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CatalogItem-catalogListItem-22"
+            className="CatalogItem-catalogListItem-15"
           >
             <div
-              className="CatalogItem-catalogItemTop-23"
+              className="CatalogItem-catalogItemTop-16"
             >
               <div
                 className={undefined}
               >
                 <p
-                  className="CatalogItem-catalogItemTitle-24"
+                  className="CatalogItem-catalogItemTitle-17"
                 >
                   Rolled-Folled-Rolled
                 </p>
                 <span
-                  className="CatalogItem-catalogItemTitleComp-25"
+                  className="CatalogItem-catalogItemTitleComp-18"
                 >
                   by Fall Fall Fall Fall Inc.
                 </span>
               </div>
               <div
-                className="CatalogItem-catalogItemRating-26"
+                className="CatalogItem-catalogItemRating-19"
               >
                 <p
-                  className="CatalogItem-catalogRatingValue-27"
+                  className="CatalogItem-catalogRatingValue-20"
                 >
                   <span
-                    className="CatalogItem-catalogRatingValueNum-28"
+                    className="CatalogItem-catalogRatingValueNum-21"
                   >
                     6.5
                   </span>
                   <span
-                    className="CatalogItem-catalogRatingValueFull-29"
+                    className="CatalogItem-catalogRatingValueFull-22"
                   >
                     /7
                   </span>
                 </p>
                 <div
-                  className="CatalogItem-catalogRatingStars-30"
+                  className="CatalogItem-catalogRatingStars-23"
                 >
                   <div
-                    className="CatalogItem-fullStars-31"
+                    className="CatalogItem-fullStars-24"
                   />
                   <div
-                    className="CatalogItem-halfStars-32"
+                    className="CatalogItem-halfStars-25"
                   />
                 </div>
                 <span
-                  className="CatalogItem-catalogRatingCategory-33"
+                  className="CatalogItem-catalogRatingCategory-26"
                 >
                   DICE DICE DICE CATEGORY
                 </span>
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemImg-34"
+              className="CatalogItem-catalogItemImg-27"
               href="/"
               onClick={[Function]}
             >
               <img
                 alt=""
-                className="CatalogItem-catalogItemImgGame-35"
+                className="CatalogItem-catalogItemImgGame-28"
                 src="catalogItem.png"
               />
               <div
-                className="CatalogItem-catalogItemOnline-36"
+                className="CatalogItem-catalogItemOnline-29"
               >
                 online: 
                 536
               </div>
             </a>
             <div
-              className="CatalogItem-catalogItemCounter-37"
+              className="CatalogItem-catalogItemCounter-30"
             >
               <div
-                className="CatalogItem-catalogCounterWins-38"
+                className="CatalogItem-catalogCounterWins-31"
               >
                 <p
-                  className="CatalogItem-catalogCounterBigstWin-41"
+                  className="CatalogItem-catalogCounterBigstWin-34"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     466603.782390328
                      dcb
@@ -395,13 +357,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterHours-39"
+                className="CatalogItem-catalogCounterHours-32"
               >
                 <p
-                  className="CatalogItem-catalogCounterHoursVolume-42"
+                  className="CatalogItem-catalogCounterHoursVolume-35"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     167434.1243434
                      dcb
@@ -414,13 +376,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterContracts-40"
+                className="CatalogItem-catalogCounterContracts-33"
               >
                 <p
-                  className="CatalogItem-catalogCounterContractsVolume-43"
+                  className="CatalogItem-catalogCounterContractsVolume-36"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     2024343.134342
                      dcb
@@ -434,14 +396,14 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemBtn-45"
+              className="CatalogItem-catalogItemBtn-38"
               href="/"
               onClick={[Function]}
             >
               Play Now
             </a>
             <div
-              className="CatalogItem-catalogItemNext-46"
+              className="CatalogItem-catalogItemNext-39"
             >
               <p>
                 next roll in:
@@ -455,87 +417,87 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CatalogItem-catalogListItem-22"
+            className="CatalogItem-catalogListItem-15"
           >
             <div
-              className="CatalogItem-catalogItemTop-23"
+              className="CatalogItem-catalogItemTop-16"
             >
               <div
                 className={undefined}
               >
                 <p
-                  className="CatalogItem-catalogItemTitle-24"
+                  className="CatalogItem-catalogItemTitle-17"
                 >
                   Rolled-Folled
                 </p>
                 <span
-                  className="CatalogItem-catalogItemTitleComp-25"
+                  className="CatalogItem-catalogItemTitleComp-18"
                 >
                   by Fall Inc.
                 </span>
               </div>
               <div
-                className="CatalogItem-catalogItemRating-26"
+                className="CatalogItem-catalogItemRating-19"
               >
                 <p
-                  className="CatalogItem-catalogRatingValue-27"
+                  className="CatalogItem-catalogRatingValue-20"
                 >
                   <span
-                    className="CatalogItem-catalogRatingValueNum-28"
+                    className="CatalogItem-catalogRatingValueNum-21"
                   >
                     6.5
                   </span>
                   <span
-                    className="CatalogItem-catalogRatingValueFull-29"
+                    className="CatalogItem-catalogRatingValueFull-22"
                   >
                     /7
                   </span>
                 </p>
                 <div
-                  className="CatalogItem-catalogRatingStars-30"
+                  className="CatalogItem-catalogRatingStars-23"
                 >
                   <div
-                    className="CatalogItem-fullStars-31"
+                    className="CatalogItem-fullStars-24"
                   />
                   <div
-                    className="CatalogItem-halfStars-32"
+                    className="CatalogItem-halfStars-25"
                   />
                 </div>
                 <span
-                  className="CatalogItem-catalogRatingCategory-33"
+                  className="CatalogItem-catalogRatingCategory-26"
                 >
                   DICE CATEGORY
                 </span>
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemImg-34"
+              className="CatalogItem-catalogItemImg-27"
               href="/"
               onClick={[Function]}
             >
               <img
                 alt=""
-                className="CatalogItem-catalogItemImgGame-35"
+                className="CatalogItem-catalogItemImgGame-28"
                 src="catalogItem.png"
               />
               <div
-                className="CatalogItem-catalogItemOnline-36"
+                className="CatalogItem-catalogItemOnline-29"
               >
                 online: 
                 536
               </div>
             </a>
             <div
-              className="CatalogItem-catalogItemCounter-37"
+              className="CatalogItem-catalogItemCounter-30"
             >
               <div
-                className="CatalogItem-catalogCounterWins-38"
+                className="CatalogItem-catalogCounterWins-31"
               >
                 <p
-                  className="CatalogItem-catalogCounterBigstWin-41"
+                  className="CatalogItem-catalogCounterBigstWin-34"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     4666.78
                      dcb
@@ -548,13 +510,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterHours-39"
+                className="CatalogItem-catalogCounterHours-32"
               >
                 <p
-                  className="CatalogItem-catalogCounterHoursVolume-42"
+                  className="CatalogItem-catalogCounterHoursVolume-35"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     167.12
                      dcb
@@ -567,13 +529,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterContracts-40"
+                className="CatalogItem-catalogCounterContracts-33"
               >
                 <p
-                  className="CatalogItem-catalogCounterContractsVolume-43"
+                  className="CatalogItem-catalogCounterContractsVolume-36"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     20243.12
                      dcb
@@ -587,14 +549,14 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemBtn-45"
+              className="CatalogItem-catalogItemBtn-38"
               href="/"
               onClick={[Function]}
             >
               Play Now
             </a>
             <div
-              className="CatalogItem-catalogItemNext-46"
+              className="CatalogItem-catalogItemNext-39"
             >
               <p>
                 next roll in:
@@ -608,87 +570,87 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CatalogItem-catalogListItem-22"
+            className="CatalogItem-catalogListItem-15"
           >
             <div
-              className="CatalogItem-catalogItemTop-23"
+              className="CatalogItem-catalogItemTop-16"
             >
               <div
                 className={undefined}
               >
                 <p
-                  className="CatalogItem-catalogItemTitle-24"
+                  className="CatalogItem-catalogItemTitle-17"
                 >
                   Rolled-Folled
                 </p>
                 <span
-                  className="CatalogItem-catalogItemTitleComp-25"
+                  className="CatalogItem-catalogItemTitleComp-18"
                 >
                   by Fall Inc.
                 </span>
               </div>
               <div
-                className="CatalogItem-catalogItemRating-26"
+                className="CatalogItem-catalogItemRating-19"
               >
                 <p
-                  className="CatalogItem-catalogRatingValue-27"
+                  className="CatalogItem-catalogRatingValue-20"
                 >
                   <span
-                    className="CatalogItem-catalogRatingValueNum-28"
+                    className="CatalogItem-catalogRatingValueNum-21"
                   >
                     6.5
                   </span>
                   <span
-                    className="CatalogItem-catalogRatingValueFull-29"
+                    className="CatalogItem-catalogRatingValueFull-22"
                   >
                     /7
                   </span>
                 </p>
                 <div
-                  className="CatalogItem-catalogRatingStars-30"
+                  className="CatalogItem-catalogRatingStars-23"
                 >
                   <div
-                    className="CatalogItem-fullStars-31"
+                    className="CatalogItem-fullStars-24"
                   />
                   <div
-                    className="CatalogItem-halfStars-32"
+                    className="CatalogItem-halfStars-25"
                   />
                 </div>
                 <span
-                  className="CatalogItem-catalogRatingCategory-33"
+                  className="CatalogItem-catalogRatingCategory-26"
                 >
                   DICE CATEGORY
                 </span>
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemImg-34"
+              className="CatalogItem-catalogItemImg-27"
               href="/"
               onClick={[Function]}
             >
               <img
                 alt=""
-                className="CatalogItem-catalogItemImgGame-35"
+                className="CatalogItem-catalogItemImgGame-28"
                 src="catalogItem.png"
               />
               <div
-                className="CatalogItem-catalogItemOnline-36"
+                className="CatalogItem-catalogItemOnline-29"
               >
                 online: 
                 536
               </div>
             </a>
             <div
-              className="CatalogItem-catalogItemCounter-37"
+              className="CatalogItem-catalogItemCounter-30"
             >
               <div
-                className="CatalogItem-catalogCounterWins-38"
+                className="CatalogItem-catalogCounterWins-31"
               >
                 <p
-                  className="CatalogItem-catalogCounterBigstWin-41"
+                  className="CatalogItem-catalogCounterBigstWin-34"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     6.78
                      dcb
@@ -701,13 +663,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterHours-39"
+                className="CatalogItem-catalogCounterHours-32"
               >
                 <p
-                  className="CatalogItem-catalogCounterHoursVolume-42"
+                  className="CatalogItem-catalogCounterHoursVolume-35"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     167.12
                      dcb
@@ -720,13 +682,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterContracts-40"
+                className="CatalogItem-catalogCounterContracts-33"
               >
                 <p
-                  className="CatalogItem-catalogCounterContractsVolume-43"
+                  className="CatalogItem-catalogCounterContractsVolume-36"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     20243.12
                      dcb
@@ -740,14 +702,14 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemBtn-45"
+              className="CatalogItem-catalogItemBtn-38"
               href="/"
               onClick={[Function]}
             >
               Play Now
             </a>
             <div
-              className="CatalogItem-catalogItemNext-46"
+              className="CatalogItem-catalogItemNext-39"
             >
               <p>
                 next roll in:
@@ -761,87 +723,87 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CatalogItem-catalogListItem-22"
+            className="CatalogItem-catalogListItem-15"
           >
             <div
-              className="CatalogItem-catalogItemTop-23"
+              className="CatalogItem-catalogItemTop-16"
             >
               <div
                 className={undefined}
               >
                 <p
-                  className="CatalogItem-catalogItemTitle-24"
+                  className="CatalogItem-catalogItemTitle-17"
                 >
                   Rolled-Folled
                 </p>
                 <span
-                  className="CatalogItem-catalogItemTitleComp-25"
+                  className="CatalogItem-catalogItemTitleComp-18"
                 >
                   by Fall Inc.
                 </span>
               </div>
               <div
-                className="CatalogItem-catalogItemRating-26"
+                className="CatalogItem-catalogItemRating-19"
               >
                 <p
-                  className="CatalogItem-catalogRatingValue-27"
+                  className="CatalogItem-catalogRatingValue-20"
                 >
                   <span
-                    className="CatalogItem-catalogRatingValueNum-28"
+                    className="CatalogItem-catalogRatingValueNum-21"
                   >
                     6.5
                   </span>
                   <span
-                    className="CatalogItem-catalogRatingValueFull-29"
+                    className="CatalogItem-catalogRatingValueFull-22"
                   >
                     /7
                   </span>
                 </p>
                 <div
-                  className="CatalogItem-catalogRatingStars-30"
+                  className="CatalogItem-catalogRatingStars-23"
                 >
                   <div
-                    className="CatalogItem-fullStars-31"
+                    className="CatalogItem-fullStars-24"
                   />
                   <div
-                    className="CatalogItem-halfStars-32"
+                    className="CatalogItem-halfStars-25"
                   />
                 </div>
                 <span
-                  className="CatalogItem-catalogRatingCategory-33"
+                  className="CatalogItem-catalogRatingCategory-26"
                 >
                   DICE CATEGORY
                 </span>
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemImg-34"
+              className="CatalogItem-catalogItemImg-27"
               href="/"
               onClick={[Function]}
             >
               <img
                 alt=""
-                className="CatalogItem-catalogItemImgGame-35"
+                className="CatalogItem-catalogItemImgGame-28"
                 src="catalogItem.png"
               />
               <div
-                className="CatalogItem-catalogItemOnline-36"
+                className="CatalogItem-catalogItemOnline-29"
               >
                 online: 
                 536
               </div>
             </a>
             <div
-              className="CatalogItem-catalogItemCounter-37"
+              className="CatalogItem-catalogItemCounter-30"
             >
               <div
-                className="CatalogItem-catalogCounterWins-38"
+                className="CatalogItem-catalogCounterWins-31"
               >
                 <p
-                  className="CatalogItem-catalogCounterBigstWin-41"
+                  className="CatalogItem-catalogCounterBigstWin-34"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     4666.78
                      dcb
@@ -854,13 +816,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterHours-39"
+                className="CatalogItem-catalogCounterHours-32"
               >
                 <p
-                  className="CatalogItem-catalogCounterHoursVolume-42"
+                  className="CatalogItem-catalogCounterHoursVolume-35"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     167.12
                      dcb
@@ -873,13 +835,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterContracts-40"
+                className="CatalogItem-catalogCounterContracts-33"
               >
                 <p
-                  className="CatalogItem-catalogCounterContractsVolume-43"
+                  className="CatalogItem-catalogCounterContractsVolume-36"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     20243.12
                      dcb
@@ -893,14 +855,14 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemBtn-45"
+              className="CatalogItem-catalogItemBtn-38"
               href="/"
               onClick={[Function]}
             >
               Play Now
             </a>
             <div
-              className="CatalogItem-catalogItemNext-46"
+              className="CatalogItem-catalogItemNext-39"
             >
               <p>
                 next roll in:
@@ -914,87 +876,87 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CatalogItem-catalogListItem-22"
+            className="CatalogItem-catalogListItem-15"
           >
             <div
-              className="CatalogItem-catalogItemTop-23"
+              className="CatalogItem-catalogItemTop-16"
             >
               <div
                 className={undefined}
               >
                 <p
-                  className="CatalogItem-catalogItemTitle-24"
+                  className="CatalogItem-catalogItemTitle-17"
                 >
                   Rolled-Folled
                 </p>
                 <span
-                  className="CatalogItem-catalogItemTitleComp-25"
+                  className="CatalogItem-catalogItemTitleComp-18"
                 >
                   by Fall Inc.
                 </span>
               </div>
               <div
-                className="CatalogItem-catalogItemRating-26"
+                className="CatalogItem-catalogItemRating-19"
               >
                 <p
-                  className="CatalogItem-catalogRatingValue-27"
+                  className="CatalogItem-catalogRatingValue-20"
                 >
                   <span
-                    className="CatalogItem-catalogRatingValueNum-28"
+                    className="CatalogItem-catalogRatingValueNum-21"
                   >
                     6.5
                   </span>
                   <span
-                    className="CatalogItem-catalogRatingValueFull-29"
+                    className="CatalogItem-catalogRatingValueFull-22"
                   >
                     /7
                   </span>
                 </p>
                 <div
-                  className="CatalogItem-catalogRatingStars-30"
+                  className="CatalogItem-catalogRatingStars-23"
                 >
                   <div
-                    className="CatalogItem-fullStars-31"
+                    className="CatalogItem-fullStars-24"
                   />
                   <div
-                    className="CatalogItem-halfStars-32"
+                    className="CatalogItem-halfStars-25"
                   />
                 </div>
                 <span
-                  className="CatalogItem-catalogRatingCategory-33"
+                  className="CatalogItem-catalogRatingCategory-26"
                 >
                   DICE CATEGORY
                 </span>
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemImg-34"
+              className="CatalogItem-catalogItemImg-27"
               href="/"
               onClick={[Function]}
             >
               <img
                 alt=""
-                className="CatalogItem-catalogItemImgGame-35"
+                className="CatalogItem-catalogItemImgGame-28"
                 src="catalogItem.png"
               />
               <div
-                className="CatalogItem-catalogItemOnline-36"
+                className="CatalogItem-catalogItemOnline-29"
               >
                 online: 
                 536
               </div>
             </a>
             <div
-              className="CatalogItem-catalogItemCounter-37"
+              className="CatalogItem-catalogItemCounter-30"
             >
               <div
-                className="CatalogItem-catalogCounterWins-38"
+                className="CatalogItem-catalogCounterWins-31"
               >
                 <p
-                  className="CatalogItem-catalogCounterBigstWin-41"
+                  className="CatalogItem-catalogCounterBigstWin-34"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     4666.78
                      dcb
@@ -1007,13 +969,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterHours-39"
+                className="CatalogItem-catalogCounterHours-32"
               >
                 <p
-                  className="CatalogItem-catalogCounterHoursVolume-42"
+                  className="CatalogItem-catalogCounterHoursVolume-35"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     167.12
                      dcb
@@ -1026,13 +988,13 @@ exports[`renders correctly 1`] = `
                 </p>
               </div>
               <div
-                className="CatalogItem-catalogCounterContracts-40"
+                className="CatalogItem-catalogCounterContracts-33"
               >
                 <p
-                  className="CatalogItem-catalogCounterContractsVolume-43"
+                  className="CatalogItem-catalogCounterContractsVolume-36"
                 >
                   <span
-                    className="CatalogItem-catalogCounterValue-44"
+                    className="CatalogItem-catalogCounterValue-37"
                   >
                     20243.12
                      dcb
@@ -1046,14 +1008,14 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className="CatalogItem-catalogItemBtn-45"
+              className="CatalogItem-catalogItemBtn-38"
               href="/"
               onClick={[Function]}
             >
               Play Now
             </a>
             <div
-              className="CatalogItem-catalogItemNext-46"
+              className="CatalogItem-catalogItemNext-39"
             >
               <p>
                 next roll in:

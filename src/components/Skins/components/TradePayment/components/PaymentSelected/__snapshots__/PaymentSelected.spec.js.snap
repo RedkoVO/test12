@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="PaymentSelected-root-1"
+>
+  <div
+    className="PaymentSelected-paymentSelectedTitle-2"
+  >
+    You selected 6 items:
+  </div>
+  <div
+    className="PaymentSelected-paymentSelectedItem-3"
+  >
+    <div
+      className={undefined}
+    >
+      0
+      ) 
+      Good EWeapon 1.2
+       ....
+    </div>
+    <div
+      className="PaymentSelected-selectedPrice-4"
+    >
+      $12.20
+    </div>
+    <a
+      className="PaymentSelected-selectedClose-5"
+      href="#"
+    />
+  </div>
+  <div
+    className="PaymentSelected-paymentSelectedItem-3"
+  >
+    <div
+      className={undefined}
+    >
+      1
+      ) 
+      Good EWeapon 1.2
+       ....
+    </div>
+    <div
+      className="PaymentSelected-selectedPrice-4"
+    >
+      $12.20
+    </div>
+    <a
+      className="PaymentSelected-selectedClose-5"
+      href="#"
+    />
+  </div>
+  <div
+    className="PaymentSelected-paymentSelectedItem-3"
+  >
+    <div
+      className={undefined}
+    >
+      2
+      ) 
+      Good EWeapon 1.2
+       ....
+    </div>
+    <div
+      className="PaymentSelected-selectedPrice-4"
+    >
+      $12.20
+    </div>
+    <a
+      className="PaymentSelected-selectedClose-5"
+      href="#"
+    />
+  </div>
+  <div
+    className="PaymentSelected-paymentSelectedItem-3"
+  >
+    <div
+      className={undefined}
+    >
+      3
+      ) 
+      Good EWeapon 1.2
+       ....
+    </div>
+    <div
+      className="PaymentSelected-selectedPrice-4"
+    >
+      $12.20
+    </div>
+    <a
+      className="PaymentSelected-selectedClose-5"
+      href="#"
+    />
+  </div>
+  <div
+    className="PaymentSelected-paymentSelectedItem-3"
+  >
+    <div
+      className={undefined}
+    >
+      4
+      ) 
+      Good EWeapon 1.2
+       ....
+    </div>
+    <div
+      className="PaymentSelected-selectedPrice-4"
+    >
+      $12.20
+    </div>
+    <a
+      className="PaymentSelected-selectedClose-5"
+      href="#"
+    />
+  </div>
+  <div
+    className="PaymentSelected-paymentSelectedItem-3"
+  >
+    <div
+      className={undefined}
+    >
+      5
+      ) 
+      Good EWeapon 1.2
+       ....
+    </div>
+    <div
+      className="PaymentSelected-selectedPrice-4"
+    >
+      $12.20
+    </div>
+    <a
+      className="PaymentSelected-selectedClose-5"
+      href="#"
+    />
+  </div>
+</div>
+`;

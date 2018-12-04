@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
 import MenuNavigation from '../../MenuNavigation'
-import HeaderCatalog from '../components/HeaderCatalog'
+import HeaderCatalog from '../../../containers/Header/AsyncHeader'
 import StreamBettingTop from '../components/StreamBettingTop'
 import StreamScreen from '../components/StreamScreen'
 import StreamDescription from '../components/StreamDescription'
@@ -13,20 +13,20 @@ import Footer from '../../Footer/Desktop'
 
 import styles from './styles'
 
-const Stream = ({ classes, handleLogout, isDesktop }) => (
+const Stream = ({ classes, handleLogout, isDesktop, streamLive }) => (
   <div className="containerStreamWrap">
     <div className={classes.containerTradeWrap}>
       <div className={classes.containerTrade}>
         <header className={classes.headerStream}>
           <MenuNavigation page="dark" handleLogout={handleLogout} />
-          <HeaderCatalog isDesktop={isDesktop} />
+          <HeaderCatalog isDesktop={isDesktop} type="catalog" />
         </header>
 
         <main className={classes.streamMain}>
           <StreamBettingTop />
           <StreamScreen />
           <StreamDescription />
-          <StreamTabs />
+          <StreamTabs streamLive={streamLive} />
         </main>
       </div>
     </div>
@@ -37,7 +37,8 @@ const Stream = ({ classes, handleLogout, isDesktop }) => (
 Stream.propTypes = {
   classes: PropTypes.object,
   handleLogout: PropTypes.func,
-  isDesktop: PropTypes.bool
+  isDesktop: PropTypes.bool,
+  streamLive: PropTypes.array
 }
 
 export default withStyles(styles)(Stream)

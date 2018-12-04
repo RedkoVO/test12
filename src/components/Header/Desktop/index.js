@@ -1,29 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../MenuNavigation'
-import UserBlock from '../components/UserBlock'
+import HeaderMain from '../components/HeaderMain/Desktop'
+import HeaderCatalog from '../components/HeaderCatalog/Desktop'
+import HeaderGames from '../components/HeaderGames/Desktop'
 
-import styles from './styles'
+const Header = ({ type, children }) => (
+  <React.Fragment>
+    {type === 'catalog' && <HeaderCatalog />}
 
-const Header = props => {
-  const { classes, balance, handleLogout } = props
+    {type === 'games' && <HeaderGames children={children} />}
 
-  return (
-    <header className={classes.root}>
-      <MenuNavigation handleLogout={handleLogout} />
-      <UserBlock
-        balance={balance && balance.shortBalance}
-      />
-    </header>
-  )
-}
+    {type === 'main' && <HeaderMain />}
+  </React.Fragment>
+)
 
 Header.propTypes = {
-  classes: PropTypes.object,
-  handleLogout: PropTypes.func,
-  balance: PropTypes.object
+  type: PropTypes.string,
+  children: PropTypes.node
 }
 
-export default withStyles(styles)(Header)
+export default Header

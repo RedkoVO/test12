@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="StreamTabsNav-root-1"
+>
+  <div
+    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-liveNow-3"
+  >
+    LIVE NOW 
+    <span
+      className={undefined}
+    >
+      2
+    </span>
+  </div>
+  <div
+    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-allGames-4"
+  >
+    ALL GAMES 
+    <span
+      className={undefined}
+    >
+      2
+    </span>
+  </div>
+  <div
+    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-dota2-5"
+  >
+    DOTA 2
+    <span
+      className={undefined}
+    >
+      2
+    </span>
+  </div>
+  <div
+    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-starcraft2-6"
+  >
+    STARCRAFT 2 
+    <span
+      className={undefined}
+    >
+      2
+    </span>
+  </div>
+  <div
+    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-overwatch-7"
+  >
+    OVERWATCH 
+    <span
+      className={undefined}
+    >
+      2
+    </span>
+  </div>
+  <div
+    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-rainbowSix-8"
+  >
+    RAINBOW SIX 
+    <span
+      className={undefined}
+    >
+      2
+    </span>
+  </div>
+  <div
+    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-csGo-10 StreamTabsNav-streamTabsNavActive-9"
+  >
+    CS:GO
+    <span
+      className={undefined}
+    >
+      2
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<footer
+  className="Footer-root-1"
+>
+  <ul
+    className="Footer-footerNav-2"
+  >
+    <li>
+      <a
+        className="Footer-footerNavItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        Dashboard
+      </a>
+    </li>
+    <li>
+      <a
+        className="Footer-footerNavItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        Wallet
+      </a>
+    </li>
+    <li>
+      <a
+        className="Footer-footerNavItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        Shop
+      </a>
+    </li>
+    <li>
+      <a
+        className="Footer-footerNavItem-3"
+        href="/games"
+        onClick={[Function]}
+      >
+        Games
+      </a>
+    </li>
+    <li>
+      <a
+        className="Footer-footerNavItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        Friends
+      </a>
+    </li>
+    <li>
+      <a
+        className="Footer-footerNavItem-3"
+        href="/"
+        onClick={[Function]}
+      >
+        Settings
+      </a>
+    </li>
+  </ul>
+  <span
+    className={undefined}
+  >
+    Vault. All Rights Reserved 2018
+  </span>
+</footer>
+`;

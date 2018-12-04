@@ -11,7 +11,7 @@ export const PageLayout = ({
   return (
     <div className="container">
       <div className="containerMain">
-        <Header {...rest} />
+        <Header type="main" {...rest} />
         <content>
           <Content {...rest} />
         </content>

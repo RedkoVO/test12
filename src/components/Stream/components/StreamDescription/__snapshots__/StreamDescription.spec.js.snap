@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="StreamDescription-root-1"
+>
+  <div
+    className="StreamDescription-streamDescriptionLeft-2"
+  >
+    <div
+      className="StreamDescription-streamDescriptionText-3"
+    >
+      Integer tempor semper sapien sit amet bibendum. Etiam ornare tellus at sapien vehicula, quis scelerisque turpis rokaste egestas quis botona.
+    </div>
+    <div
+      className="StreamDescription-streamHashTags-4"
+    >
+      #ROLLED #BESTCRYPTO #ETH
+       
+      <div
+        className="StreamDescription-streamAddHashTags-5"
+      >
+        +
+      </div>
+    </div>
+  </div>
+  <div
+    className="StreamDescription-streamDescriptionRight-6"
+  >
+    <div
+      className="StreamDescription-streamAddFavorites-7"
+    >
+      Add to favorites
+    </div>
+    <div
+      className="StreamDescription-streamShareSocial-8"
+    >
+      Share in social
+    </div>
+  </div>
+</div>
+`;

@@ -5,7 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import MenuNavigation from '../../MenuNavigation'
 import Filters from '../components/Filters'
 import CatalogList from '../components/CatalogList'
-import HeaderCatalog from '../components/HeaderCatalog'
+import Header from '../../../containers/Header/AsyncHeader'
 
 import styles from './styles.js'
 
@@ -15,7 +15,8 @@ const Games = ({ classes, games, handleLogout, isDesktop }) => (
       <div className={classes.containerCatalog}>
         <header className={classes.headerCatalog}>
           <MenuNavigation page="dark" handleLogout={handleLogout} />
-          <HeaderCatalog isDesktop={isDesktop} />
+          <Header type="games">{isDesktop && <Filters />}</Header>
+
           {!isDesktop && <Filters />}
         </header>
 

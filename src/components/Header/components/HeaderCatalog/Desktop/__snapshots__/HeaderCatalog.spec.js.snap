@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="HeaderCatalog-root-1"
+>
+  <div
+    className="HeaderCatalog-streamUserBlock-2"
+  >
+    <p
+      className="HeaderCatalog-streamUserHello-3"
+    >
+       Hello, Ben A 
+      <br />
+      <span
+        className="HeaderCatalog-streamUserVerification-5"
+      >
+        KYC VERIFICATED
+      </span>
+    </p>
+    <div
+      className="HeaderCatalog-streamUserPhoto-7"
+    >
+      <img
+        alt=""
+        src="user.png"
+      />
+    </div>
+    <p
+      className="HeaderCatalog-streamUserBallance-4"
+    >
+       764.23 DCB 
+      <br />
+      <span
+        className="HeaderCatalog-streamUserBallDescr-6"
+      >
+        YOUR BALANCE
+      </span>
+    </p>
+  </div>
+</div>
+`;

@@ -115,6 +115,14 @@ const tmpBestAdsCollection = [
     link: '/stream',
     titleLink: 'Stream of the day',
     nameLink: 'Blue cool Jelly'
+  },
+  {
+    id: 3,
+    title: 'Cases',
+    img: BestShopLogo,
+    link: '/cases',
+    titleLink: 'Cases of the day',
+    nameLink: 'Blue cool Jelly'
   }
 ]
 const gameCategories = [

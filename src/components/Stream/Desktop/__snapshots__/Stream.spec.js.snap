@@ -5,22 +5,22 @@ exports[`renders correctly 1`] = `
   className="containerStreamWrap"
 >
   <div
-    className="containerTradeWrap"
+    className="Stream-containerTradeWrap-2"
   >
     <div
-      className="containerTrade"
+      className="Stream-containerTrade-3"
     >
       <header
-        className="Stream-headerStream-2"
+        className="Stream-headerStream-1"
       >
         <ul
-          className="MenuNavigation-root-3 dark"
+          className="MenuNavigation-root-5 dark"
         >
           <li
             className={undefined}
           >
             <div
-              className="MenuNavigation-logout-12"
+              className="MenuNavigation-logout-14"
               onClick={[Function]}
             >
               Logout
@@ -28,12 +28,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-4"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-5 MenuNavigation-dashboard-6"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-dashboard-8"
               />
               <br />
                Dashboard
@@ -41,12 +41,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-4"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-5 MenuNavigation-walletIcon-7"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-walletIcon-9"
               />
               <br />
                Wallet
@@ -54,12 +54,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-4"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-5 MenuNavigation-shop-8"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-shop-10"
               />
               <br />
                Shop
@@ -67,12 +67,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-4"
+              className="MenuNavigation-headerMenuItem-6"
               href="/games"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-5 MenuNavigation-games-9"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-games-11"
               />
               <br />
                Games
@@ -80,12 +80,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-4"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-5 MenuNavigation-friends-10"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-friends-12"
               />
               <br />
                Friends
@@ -93,83 +93,45 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-4"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-5 MenuNavigation-settings-11"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-settings-13"
               />
               <br />
                Settings
             </a>
           </li>
         </ul>
-        <div
-          className="HeaderStream-root-13"
-        >
-          <div
-            className="HeaderStream-streamUserBlock-14"
-          >
-            <p
-              className="HeaderStream-streamUserHello-15"
-            >
-               Hello, Ben A 
-              <br />
-              <span
-                className="HeaderStream-streamUserVerification-17"
-              >
-                KYC VERIFICATED
-              </span>
-            </p>
-            <div
-              className="HeaderStream-streamUserPhoto-19"
-            >
-              <img
-                alt=""
-                src="user.png"
-              />
-            </div>
-            <p
-              className="HeaderStream-streamUserBallance-16"
-            >
-               764.23 DCB 
-              <br />
-              <span
-                className="HeaderStream-streamUserBallDescr-18"
-              >
-                YOUR BALANCE
-              </span>
-            </p>
-          </div>
-        </div>
       </header>
       <main
-        className="streamMain"
+        className="Stream-streamMain-4"
       >
         <div
-          className="streamBettingTop"
+          className="StreamBettingTop-root-15"
         >
           <div
-            className="streamLeftTeam"
+            className="StreamBettingTop-streamLeftTeam-16"
           >
             <div>
               <div
-                className="streamTeamName"
+                className="StreamBettingTop-streamTeamName-18"
               >
                 <img
                   alt=""
-                  className="streamLogo"
+                  className="StreamBettingTop-streamLeftLogo-17"
                   src="leftTeamLogo.png"
                 />
                 NRG
               </div>
               <div
-                className="streamCountry"
+                className="StreamBettingTop-streamCountry-19"
               >
                 <img
                   alt=""
-                  className="streamFlag"
+                  className="StreamBettingTop-streamFlag-20"
                   src="leftTeamFlag.png"
                 />
                 France
@@ -177,47 +139,47 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="streamCoef"
+            className="StreamBettingTop-streamCoef-21"
           >
             <div
-              className="streamCoefItem"
+              className="StreamBettingTop-streamCoefItem-22"
             >
               6.17
             </div>
             <div
-              className="streamVersus"
+              className="StreamBettingTop-streamVersus-23"
             >
               vs
             </div>
             <div
-              className="streamCoefItem"
+              className="StreamBettingTop-streamCoefItem-22"
             >
               1.25
             </div>
           </div>
           <div
-            className="streamRightTeam"
+            className="StreamBettingTop-streamRightTeam-24"
           >
             <div
-              className="streamRightTeam"
+              className="StreamBettingTop-streamRightTeam-24"
             >
               <div>
                 <div
-                  className="streamTeamName"
+                  className="StreamBettingTop-streamTeamName-18"
                 >
                   <img
                     alt=""
-                    className="streamLogo"
+                    className="StreamBettingTop-streamRightLogo-25"
                     src="rightTeamLogo.png"
                   />
                   LDLC
                 </div>
                 <div
-                  className="streamCountry"
+                  className="StreamBettingTop-streamCountry-19"
                 >
                   <img
                     alt=""
-                    className="streamFlag"
+                    className="StreamBettingTop-streamFlag-20"
                     src="rightTeamFlag.png"
                   />
                   Spain
@@ -225,22 +187,23 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="streamLive"
+              className="StreamBettingTop-streamLive-26"
             >
               Live
             </div>
           </div>
           <div
-            className="streamEvent"
+            className="StreamBettingTop-streamEvent-27"
           >
             Event:
             <img
+              alt=""
               src="streamEvent.png"
             />
           </div>
         </div>
         <div
-          className="streamContent"
+          className="StreamScreen-root-28"
         >
           <img
             alt=""
@@ -248,111 +211,846 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <div
-          className="streamDescription"
+          className="StreamDescription-root-29"
         >
           <div
-            className="streamDescriptionLeft"
+            className="StreamDescription-streamDescriptionLeft-30"
           >
             <div
-              className="streamDescriptionText"
+              className="StreamDescription-streamDescriptionText-31"
             >
               Integer tempor semper sapien sit amet bibendum. Etiam ornare tellus at sapien vehicula, quis scelerisque turpis rokaste egestas quis botona.
             </div>
             <div
-              className="streamHashTags"
+              className="StreamDescription-streamHashTags-32"
             >
               #ROLLED #BESTCRYPTO #ETH
                
               <div
-                className="streamAddHashTags"
+                className="StreamDescription-streamAddHashTags-33"
               >
                 +
               </div>
             </div>
           </div>
           <div
-            className="streamDescriptionRight"
+            className="StreamDescription-streamDescriptionRight-34"
           >
             <div
-              className="streamAddFavorites"
+              className="StreamDescription-streamAddFavorites-35"
             >
               Add to favorites
             </div>
             <div
-              className="streamShareSocial"
+              className="StreamDescription-streamShareSocial-36"
             >
               Share in social
             </div>
           </div>
         </div>
         <div
-          className="streamTmpTabs"
+          className="StreamTabs-root-37"
         >
-          <img
-            alt=""
-            src="tmp-stream-tabs.png"
-          />
+          <div
+            className="StreamTabs-streamTabsTop-38"
+          >
+            <div
+              className="StreamTabs-streamTabsUpcom-39"
+              href="#"
+            >
+              UPCOMING GAMES
+            </div>
+            <div
+              className="StreamTabs-streamTabsResult-40"
+              href="#"
+            >
+              RESULTS
+            </div>
+          </div>
+          <div
+            className="StreamTabsBottom-root-41"
+          >
+            <div
+              className="StreamTabsNav-root-42"
+            >
+              <div
+                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-liveNow-44"
+              >
+                LIVE NOW 
+                <span
+                  className={undefined}
+                >
+                  2
+                </span>
+              </div>
+              <div
+                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-allGames-45"
+              >
+                ALL GAMES 
+                <span
+                  className={undefined}
+                >
+                  2
+                </span>
+              </div>
+              <div
+                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-dota2-46"
+              >
+                DOTA 2
+                <span
+                  className={undefined}
+                >
+                  2
+                </span>
+              </div>
+              <div
+                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-starcraft2-47"
+              >
+                STARCRAFT 2 
+                <span
+                  className={undefined}
+                >
+                  2
+                </span>
+              </div>
+              <div
+                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-overwatch-48"
+              >
+                OVERWATCH 
+                <span
+                  className={undefined}
+                >
+                  2
+                </span>
+              </div>
+              <div
+                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-rainbowSix-49"
+              >
+                RAINBOW SIX 
+                <span
+                  className={undefined}
+                >
+                  2
+                </span>
+              </div>
+              <div
+                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-csGo-51 StreamTabsNav-streamTabsNavActive-50"
+              >
+                CS:GO
+                <span
+                  className={undefined}
+                >
+                  2
+                </span>
+              </div>
+            </div>
+            <div
+              className="StreamLive-root-52"
+            >
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  Live
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  12:30 PM
+                   
+                  <br />
+                  <span
+                    className="dateDay"
+                  >
+                    7/12/2018
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  Live
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  12:30 PM
+                   
+                  <br />
+                  <span
+                    className="dateDay"
+                  >
+                    7/12/2018
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  Live
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  12:30 PM
+                   
+                  <br />
+                  <span
+                    className="dateDay"
+                  >
+                    7/12/2018
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  Live
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  12:30 PM
+                   
+                  <br />
+                  <span
+                    className="dateDay"
+                  >
+                    7/12/2018
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  Live
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+              <div
+                className={undefined}
+              >
+                <div
+                  className=""
+                >
+                  12:30 PM
+                   
+                  <br />
+                  <span
+                    className="dateDay"
+                  >
+                    7/12/2018
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    NRG
+                  </div>
+                  <div
+                    className=""
+                  >
+                    France
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  6.14
+                </div>
+                <div
+                  className={undefined}
+                >
+                  VS
+                </div>
+                <div
+                  className={undefined}
+                >
+                  1.25
+                </div>
+                <div
+                  className=""
+                >
+                  <div
+                    className={undefined}
+                  >
+                    LDLC
+                  </div>
+                  <div
+                    className=""
+                  >
+                    Spain
+                  </div>
+                </div>
+                <div
+                  className={undefined}
+                >
+                  EVENT
+                </div>
+                <div
+                  className={undefined}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
   </div>
   <footer
-    className="gameFooter"
+    className="Footer-root-53"
   >
     <ul
-      className="footerNav"
+      className="Footer-footerNav-54"
     >
       <li>
         <a
-          className="footerNavItem"
-          href="#"
+          className="Footer-footerNavItem-55"
+          href="/"
+          onClick={[Function]}
         >
           Dashboard
         </a>
       </li>
       <li>
         <a
-          className="footerNavItem"
-          href="#"
+          className="Footer-footerNavItem-55"
+          href="/"
+          onClick={[Function]}
         >
           Wallet
         </a>
       </li>
       <li>
         <a
-          className="footerNavItem"
-          href="#"
+          className="Footer-footerNavItem-55"
+          href="/"
+          onClick={[Function]}
         >
           Shop
         </a>
       </li>
       <li>
         <a
-          className="footerNavItem"
-          href="#"
+          className="Footer-footerNavItem-55"
+          href="/games"
+          onClick={[Function]}
         >
           Games
         </a>
       </li>
       <li>
         <a
-          className="footerNavItem"
-          href="#"
+          className="Footer-footerNavItem-55"
+          href="/"
+          onClick={[Function]}
         >
           Friends
         </a>
       </li>
       <li>
         <a
-          className="footerNavItem footerNavSettings "
-          href="#"
+          className="Footer-footerNavItem-55"
+          href="/"
+          onClick={[Function]}
         >
           Settings
         </a>
       </li>
     </ul>
     <span
-      className="copyrightGameFooter"
+      className={undefined}
     >
       Vault. All Rights Reserved 2018
     </span>

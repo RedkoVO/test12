@@ -1,8 +1,93 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`renders catalog 1`] = `
+<div
+  className="HeaderCatalog-root-28"
+>
+  <div
+    className="HeaderCatalog-streamUserBlock-29"
+  >
+    <p
+      className="HeaderCatalog-streamUserHello-30"
+    >
+       Hello, Ben A 
+      <br />
+      <span
+        className="HeaderCatalog-streamUserVerification-32"
+      >
+        KYC VERIFICATED
+      </span>
+    </p>
+    <div
+      className="HeaderCatalog-streamUserPhoto-34"
+    >
+      <img
+        alt=""
+        src="user.png"
+      />
+    </div>
+    <p
+      className="HeaderCatalog-streamUserBallance-31"
+    >
+       764.23 DCB 
+      <br />
+      <span
+        className="HeaderCatalog-streamUserBallDescr-33"
+      >
+        YOUR BALANCE
+      </span>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders games 1`] = `
+<div
+  className="HeaderCatalog-root-21"
+>
+  <div
+    className="HeaderCatalog-catalogUserBlock-22"
+  >
+    <p
+      className="HeaderCatalog-catalogUserHello-23"
+    >
+       Hello, Ben A 
+      <br />
+      <span
+        className="HeaderCatalog-catalogUserVerification-25"
+      >
+        KYC VERIFICATED
+      </span>
+    </p>
+    <div
+      className="HeaderCatalog-catalogUserPhoto-27"
+    >
+      <img
+        alt=""
+        src="user.png"
+      />
+    </div>
+    <p
+      className="HeaderCatalog-catalogUserBallance-24"
+    >
+       764.23 DCB 
+      <br />
+      <span
+        className="HeaderCatalog-catalogUserBallDescr-26"
+      >
+        YOUR BALANCE
+      </span>
+    </p>
+  </div>
+  <div>
+    Test
+  </div>
+</div>
+`;
+
+exports[`renders main 1`] = `
 <header
-  className="Header-root-1"
+  className="HeaderMain-root-1"
 >
   <ul
     className="MenuNavigation-root-2"
