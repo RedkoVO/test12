@@ -26,7 +26,7 @@ const StreamLive = ({ classes, streamLive }) => (
         <div className={cn(classes.streamLiveItemTeam, classes.team1)}>
           <img src={item.image1} className={classes.teamImg} alt="" />
           <div className={classes.teamName}>{item.team1}</div>
-          <div className={cn(classes.teamCountry, classes.teamFrance)}>
+          <div className={cn(classes.teamCountry, classes.country1)}>
             <img
               src={item.imageCountry1}
               alt=""
@@ -41,7 +41,7 @@ const StreamLive = ({ classes, streamLive }) => (
         <div className={cn(classes.streamLiveItemTeam, classes.team2)}>
           <img src={item.image2} className={classes.teamImg} alt="" />
           <div className={classes.teamName}>{item.team2}</div>
-          <div className={cn(classes.teamCountry, classes.teamSpain)}>
+          <div className={cn(classes.teamCountry, classes.country2)}>
             <img
               src={item.imageCountry2}
               alt=""
