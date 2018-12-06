@@ -3,7 +3,8 @@ export default () => ({
     minWidth: '600px',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    marginLeft: '10px'
   },
   streamLiveItem: {
     display: 'flex',
@@ -66,7 +67,7 @@ export default () => ({
     top: '50%',
     transform: 'translateY(-50%)',
     maxWidth: '30px',
-    maxHeight: '25px'
+    maxHeight: '32px'
   },
   teamName: {
     fontSize: '23px',
@@ -90,14 +91,6 @@ export default () => ({
     left: 0,
     width: '11px',
     height: '8px'
-  },
-  streamLiveItemScore: {
-    padding: '6px 15px',
-    boxSizing: 'border-box',
-    fontSize: '26px',
-    fontWeight: 700,
-    backgroundColor: 'rgba(0,0,0,0.13)',
-    borderRadius: '26px'
   },
   streamLiveItemVs: {
     fontSize: '12px',

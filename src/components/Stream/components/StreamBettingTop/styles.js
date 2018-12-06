@@ -40,12 +40,6 @@ export default () => ({
     fontSize: '20px',
     fontWeight: 'bold'
   },
-  streamCoefItem: {
-    padding: '8px 15px',
-    fontSize: '30px',
-    background: 'rgba(0, 0, 0, 0.15)',
-    borderRadius: '15px'
-  },
   streamVersus: {
     padding: '0 15px'
   },

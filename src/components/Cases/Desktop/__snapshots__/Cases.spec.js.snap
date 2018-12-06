@@ -5,22 +5,22 @@ exports[`renders correctly 1`] = `
   className="mainWrapperTrade"
 >
   <div
-    className="containerTradeWrap"
+    className="Cases-containerTradeWrap-1"
   >
     <div
-      className="containerTrade"
+      className="Cases-containerTrade-2"
     >
       <header
-        className={undefined}
+        className="Cases-headerSkins-3"
       >
         <ul
-          className="MenuNavigation-root-2 dark"
+          className="MenuNavigation-root-5 dark"
         >
           <li
             className={undefined}
           >
             <div
-              className="MenuNavigation-logout-11"
+              className="MenuNavigation-logout-14"
               onClick={[Function]}
             >
               Logout
@@ -28,12 +28,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-3"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-4 MenuNavigation-dashboard-5"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-dashboard-8"
               />
               <br />
                Dashboard
@@ -41,12 +41,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-3"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-4 MenuNavigation-walletIcon-6"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-walletIcon-9"
               />
               <br />
                Wallet
@@ -54,12 +54,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-3"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-4 MenuNavigation-shop-7"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-shop-10"
               />
               <br />
                Shop
@@ -67,12 +67,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-3"
+              className="MenuNavigation-headerMenuItem-6"
               href="/games"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-4 MenuNavigation-games-8"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-games-11"
               />
               <br />
                Games
@@ -80,12 +80,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-3"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-4 MenuNavigation-friends-9"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-friends-12"
               />
               <br />
                Friends
@@ -93,12 +93,12 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigation-headerMenuItem-3"
+              className="MenuNavigation-headerMenuItem-6"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigation-menuIcon-4 MenuNavigation-settings-10"
+                className="MenuNavigation-menuIcon-7 MenuNavigation-settings-13"
               />
               <br />
                Settings
@@ -106,17 +106,567 @@ exports[`renders correctly 1`] = `
           </li>
         </ul>
       </header>
+      <main
+        className="Cases-cases-4"
+      >
+        <div
+          className="CasesFilter-root-15"
+        >
+          <input
+            className="CasesFilter-casesFilterSearch-16"
+            placeholder="Search"
+            type="text"
+          />
+          <div
+            className="CasesFilter-casesFilterOptions-17"
+          >
+            <div
+              className="CasesFilter-casesFilterType-18"
+            >
+              <div
+                className="CasesFilter-casesFilterItem-19"
+              >
+                less than $15&lt;
+              </div>
+              <div
+                className="CasesFilter-casesFilterItem-19"
+              >
+                $15-30
+              </div>
+              <div
+                className="CasesFilter-casesFilterItem-19 CasesFilter-selectedItem-21"
+              >
+                 $30-60
+              </div>
+              <div
+                className="CasesFilter-casesFilterItem-19"
+              >
+                $60-90
+              </div>
+              <div
+                className="CasesFilter-casesFilterItem-19"
+              >
+                less than $15&lt;
+              </div>
+            </div>
+            <div
+              className="CasesFilter-casesFilterType-18"
+            >
+              <div
+                className="CasesFilter-casesFilterItem-19"
+              >
+                CS:GO
+              </div>
+              <div
+                className="CasesFilter-casesFilterItem-19"
+              >
+                Dota 2
+              </div>
+              <div
+                className="CasesFilter-casesFilterItem-19 CasesFilter-selectedItem-21"
+              >
+                Starcraft 2
+              </div>
+              <div
+                className="CasesFilter-casesFilterItem-19"
+              >
+                 Maincraft
+              </div>
+              <div
+                className="CasesFilter-casesFilterItem-19"
+              >
+                Rainbow Six
+              </div>
+            </div>
+          </div>
+          <div
+            className="CasesFilter-casesFilterBtn-22"
+          />
+        </div>
+        <div
+          className="CasesList-root-23"
+        >
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+          <div
+            className="CasesList-casesListItem-24"
+          >
+            <div
+              className="CasesList-casesListItemImg-25"
+            >
+              <img
+                alt=""
+                src="caseX.png"
+              />
+            </div>
+            <div
+              className="CasesList-casesListItemName-26"
+            >
+              Case: 
+              <span>
+                Hello, buddy!
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemPrise-27"
+            >
+              Open for 
+              <span>
+                $34.20
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemGame-28"
+            >
+              Case: 
+              <span>
+                CS:GO
+              </span>
+            </div>
+            <div
+              className="CasesList-casesListItemMarker-29"
+            />
+          </div>
+        </div>
+      </main>
     </div>
   </div>
   <footer
-    className="Footer-root-12"
+    className="Footer-root-30"
   >
     <ul
-      className="Footer-footerNav-13"
+      className="Footer-footerNav-31"
     >
       <li>
         <a
-          className="Footer-footerNavItem-14"
+          className="Footer-footerNavItem-32"
           href="/"
           onClick={[Function]}
         >
@@ -125,7 +675,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-14"
+          className="Footer-footerNavItem-32"
           href="/"
           onClick={[Function]}
         >
@@ -134,7 +684,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-14"
+          className="Footer-footerNavItem-32"
           href="/"
           onClick={[Function]}
         >
@@ -143,7 +693,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-14"
+          className="Footer-footerNavItem-32"
           href="/games"
           onClick={[Function]}
         >
@@ -152,7 +702,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-14"
+          className="Footer-footerNavItem-32"
           href="/"
           onClick={[Function]}
         >
@@ -161,7 +711,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-14"
+          className="Footer-footerNavItem-32"
           href="/"
           onClick={[Function]}
         >

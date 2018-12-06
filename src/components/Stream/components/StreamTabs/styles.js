@@ -22,19 +22,9 @@ export default () => ({
     marginLeft: '80px',
     alignSelf: 'flex-start'
   },
-  streamTabsUpcom: {
+  streamTab: {
     marginRight: '10px',
-    backgroundColor: 'rgba(0,0,0,0.36)',
-    display: 'block',
-    color: '#fff',
-    textDecoration: 'none',
-    fontSize: '13px',
-    fontWeight: 700,
-    padding: '7px 15px',
-    boxSizing: 'border-box',
-    borderRadius: '15px'
-  },
-  streamTabsResult: {
+    backgroundColor: 'rgba(0,0,0,0.06)',
     display: 'block',
     color: '#fff',
     textDecoration: 'none',
@@ -43,6 +33,27 @@ export default () => ({
     padding: '7px 15px',
     boxSizing: 'border-box',
     borderRadius: '15px',
-    backgroundColor: 'rgba(0,0,0,0.06)'
+    cursor: 'pointer',
+
+    //backgroundColor: 'rgba(0,0,0,0.06)'
+
+    '&:focus': {
+      outline: 'none'
+    },
+
+    '&.react-tabs__tab--selected': {
+      backgroundColor: 'rgba(0,0,0,0.36)'
+    }
   }
+  // streamTabsResult: {
+  //   display: 'block',
+  //   color: '#fff',
+  //   textDecoration: 'none',
+  //   fontSize: '13px',
+  //   fontWeight: 700,
+  //   padding: '7px 15px',
+  //   boxSizing: 'border-box',
+  //   borderRadius: '15px',
+  //   backgroundColor: 'rgba(0,0,0,0.06)'
+  // }
 })

@@ -7,69 +7,108 @@ exports[`renders correctly 1`] = `
   <div
     className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-liveNow-3"
   >
-    LIVE NOW 
     <span
       className={undefined}
+    >
+      LIVE NOW
+    </span>
+    <span
+      className="StreamTabsNav-streamTabsWatch-5"
     >
       2
     </span>
   </div>
   <div
-    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-allGames-4"
+    className="StreamTabsNav-streamTabsNavItem-2"
   >
-    ALL GAMES 
+    <img
+      alt=""
+      className="StreamTabsNav-streamTabsNavImg-4"
+      src="gamepad.svg"
+    />
     <span
       className={undefined}
+    >
+      ALL GAMES
+    </span>
+    <span
+      className="StreamTabsNav-streamTabsWatch-5"
     >
       2
     </span>
   </div>
   <div
-    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-dota2-5"
+    className="StreamTabsNav-streamTabsNavItem-2"
   >
-    DOTA 2
+    <img
+      alt=""
+      className="StreamTabsNav-streamTabsNavImg-4"
+      src="starcraft.png"
+    />
     <span
       className={undefined}
+    >
+      STARCRAFT 2
+    </span>
+    <span
+      className="StreamTabsNav-streamTabsWatch-5"
     >
       2
     </span>
   </div>
   <div
-    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-starcraft2-6"
+    className="StreamTabsNav-streamTabsNavItem-2"
   >
-    STARCRAFT 2 
+    <img
+      alt=""
+      className="StreamTabsNav-streamTabsNavImg-4"
+      src="dota-2.svg"
+    />
     <span
       className={undefined}
+    >
+      DOTA 2
+    </span>
+    <span
+      className="StreamTabsNav-streamTabsWatch-5"
     >
       2
     </span>
   </div>
   <div
-    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-overwatch-7"
+    className="StreamTabsNav-streamTabsNavItem-2"
   >
-    OVERWATCH 
+    <img
+      alt=""
+      className="StreamTabsNav-streamTabsNavImg-4"
+      src="overwatch.png"
+    />
     <span
       className={undefined}
+    >
+      CS:GO
+    </span>
+    <span
+      className="StreamTabsNav-streamTabsWatch-5"
     >
       2
     </span>
   </div>
   <div
-    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-rainbowSix-8"
+    className="StreamTabsNav-streamTabsNavItem-2"
   >
-    RAINBOW SIX 
+    <img
+      alt=""
+      className="StreamTabsNav-streamTabsNavImg-4"
+      src="csgo.png"
+    />
     <span
       className={undefined}
     >
-      2
+      CS:GO
     </span>
-  </div>
-  <div
-    className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-csGo-10 StreamTabsNav-streamTabsNavActive-9"
-  >
-    CS:GO
     <span
-      className={undefined}
+      className="StreamTabsNav-streamTabsWatch-5"
     >
       2
     </span>

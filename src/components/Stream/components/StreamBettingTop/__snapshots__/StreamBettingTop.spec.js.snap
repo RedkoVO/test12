@@ -34,17 +34,17 @@ exports[`renders correctly 1`] = `
     className="StreamBettingTop-streamCoef-7"
   >
     <div
-      className="StreamBettingTop-streamCoefItem-8"
+      className="StreamBettingTop-streamCoefItem-9"
     >
       6.17
     </div>
     <div
-      className="StreamBettingTop-streamVersus-9"
+      className="StreamBettingTop-streamVersus-8"
     >
       vs
     </div>
     <div
-      className="StreamBettingTop-streamCoefItem-8"
+      className="StreamBettingTop-streamCoefItem-9"
     >
       1.25
     </div>

@@ -22,12 +22,8 @@ const PaymentCard = ({ classes }) => (
       />
     </div>
 
-    <a href="#" className={classes.paymentCardMonth}>
-      MM
-    </a>
-    <a href="#" className={classes.paymentCardYear}>
-      YYYY
-    </a>
+    <div className={classes.paymentCardMonth}>MM</div>
+    <div className={classes.paymentCardYear}>YYYY</div>
     <div className={classes.paymentInputWrap3}>
       <input type="text" className={classes.paymentCardCvc} placeholder="CVC" />
     </div>

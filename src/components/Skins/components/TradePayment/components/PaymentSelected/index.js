@@ -13,7 +13,7 @@ const PaymentSelected = ({ classes, selectedItems }) => (
           {index}) {item.title} ....
         </div>
         <div className={classes.selectedPrice}>{item.cost}</div>
-        <a href="#" className={classes.selectedClose} />
+        <div className={classes.selectedClose} />
       </div>
     ))}
   </div>

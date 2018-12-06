@@ -31,11 +31,8 @@ export default () => ({
     '&::before': {
       position: 'absolute',
       content: `''`,
-      width: '10px',
-      height: '10px',
       backgroundColor: '#ff2e2e',
       borderRadius: '50%',
-      left: '25px',
       top: '50%',
       transform: 'translateY(-50%)',
       left: '20px',

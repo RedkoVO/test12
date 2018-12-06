@@ -42,7 +42,7 @@ export default () => ({
   },
   streamAddFavorites: {
     position: 'relative',
-    marginBbottom: '8px',
+    marginBottom: '8px',
     width: '145px',
     padding: '6px 0',
     paddingLeft: '5px',

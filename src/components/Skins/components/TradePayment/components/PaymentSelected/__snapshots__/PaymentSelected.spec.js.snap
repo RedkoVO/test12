@@ -25,9 +25,8 @@ exports[`renders correctly 1`] = `
     >
       $12.20
     </div>
-    <a
+    <div
       className="PaymentSelected-selectedClose-5"
-      href="#"
     />
   </div>
   <div
@@ -46,9 +45,8 @@ exports[`renders correctly 1`] = `
     >
       $12.20
     </div>
-    <a
+    <div
       className="PaymentSelected-selectedClose-5"
-      href="#"
     />
   </div>
   <div
@@ -67,9 +65,8 @@ exports[`renders correctly 1`] = `
     >
       $12.20
     </div>
-    <a
+    <div
       className="PaymentSelected-selectedClose-5"
-      href="#"
     />
   </div>
   <div
@@ -88,9 +85,8 @@ exports[`renders correctly 1`] = `
     >
       $12.20
     </div>
-    <a
+    <div
       className="PaymentSelected-selectedClose-5"
-      href="#"
     />
   </div>
   <div
@@ -109,9 +105,8 @@ exports[`renders correctly 1`] = `
     >
       $12.20
     </div>
-    <a
+    <div
       className="PaymentSelected-selectedClose-5"
-      href="#"
     />
   </div>
   <div
@@ -130,9 +125,8 @@ exports[`renders correctly 1`] = `
     >
       $12.20
     </div>
-    <a
+    <div
       className="PaymentSelected-selectedClose-5"
-      href="#"
     />
   </div>
 </div>

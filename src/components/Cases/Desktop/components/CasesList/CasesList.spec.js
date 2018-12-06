@@ -1,9 +1,9 @@
-import compose from 'recompose/compose'
-import { withProps, pure } from 'recompose'
+import * as React from 'react'
+import renderer from 'react-test-renderer'
 
-import AsyncCasesDesktop from '../../components/Cases/Desktop/AsyncCasesDesktop'
+import CasesList from './'
 
-import CaseXIcon from '../../assets/images/caseX.png'
+import CaseXIcon from '../../../../../assets/images/caseX.png'
 
 const tmpCases = [
   {
@@ -92,7 +92,7 @@ const tmpCases = [
   }
 ]
 
-export default compose(
-  withProps(() => ({ cases: tmpCases })),
-  pure
-)(AsyncCasesDesktop)
+it('renders correctly', () => {
+  const tree = renderer.create(<CasesList cases={tmpCases} />).toJSON()
+  expect(tree).toMatchSnapshot()
+})

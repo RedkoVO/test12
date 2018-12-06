@@ -40,10 +40,10 @@ const TradePayment = ({ classes, selectedItems }) => (
         <div className={classes.paymentWayItemUnderline} />
       </div>
     </div>
-    
+
     <PaymentCard />
     <PaymentSelected selectedItems={selectedItems} />
-    
+
     <div className={classes.paymentAmmount}>
       <div className={classes.paymentAmmountText}>Total ammount: </div>
       <div className={classes.paymentAmmountFill} />
@@ -69,9 +69,7 @@ const TradePayment = ({ classes, selectedItems }) => (
         placeholder="Enter Your Bonus Code"
       />
     </div>
-    <a href="#" className={classes.paymentBtn}>
-      CASHOUT
-    </a>
+    <div className={classes.paymentBtn}>CASHOUT</div>
   </div>
 )
 

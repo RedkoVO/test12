@@ -27,18 +27,16 @@ exports[`renders correctly 1`] = `
       type="text"
     />
   </div>
-  <a
+  <div
     className="PaymentCard-paymentCardMonth-7"
-    href="#"
   >
     MM
-  </a>
-  <a
+  </div>
+  <div
     className="PaymentCard-paymentCardYear-8"
-    href="#"
   >
     YYYY
-  </a>
+  </div>
   <div
     className="PaymentCard-paymentInputWrap3-9"
   >

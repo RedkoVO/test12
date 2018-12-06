@@ -142,17 +142,17 @@ exports[`renders correctly 1`] = `
             className="StreamBettingTop-streamCoef-21"
           >
             <div
-              className="StreamBettingTop-streamCoefItem-22"
+              className="StreamBettingTop-streamCoefItem-23"
             >
               6.17
             </div>
             <div
-              className="StreamBettingTop-streamVersus-23"
+              className="StreamBettingTop-streamVersus-22"
             >
               vs
             </div>
             <div
-              className="StreamBettingTop-streamCoefItem-22"
+              className="StreamBettingTop-streamCoefItem-23"
             >
               1.25
             </div>
@@ -252,751 +252,540 @@ exports[`renders correctly 1`] = `
           className="StreamTabs-root-37"
         >
           <div
-            className="StreamTabs-streamTabsTop-38"
+            className="react-tabs"
+            data-tabs={true}
+            onClick={[Function]}
+            onKeyDown={[Function]}
           >
-            <div
-              className="StreamTabs-streamTabsUpcom-39"
-              href="#"
+            <ul
+              className="StreamTabs-streamTabsTop-38"
+              role="tablist"
             >
-              UPCOMING GAMES
-            </div>
+              <li
+                aria-controls="react-tabs-1"
+                aria-disabled="false"
+                aria-selected="true"
+                className="StreamTabs-streamTab-39 react-tabs__tab--selected"
+                id="react-tabs-0"
+                role="tab"
+                tabIndex="0"
+              >
+                UPCOMING GAMES
+              </li>
+              <li
+                aria-controls="react-tabs-3"
+                aria-disabled="false"
+                aria-selected="false"
+                className="StreamTabs-streamTab-39"
+                id="react-tabs-2"
+                role="tab"
+                tabIndex={null}
+              >
+                RESULTS
+              </li>
+            </ul>
             <div
-              className="StreamTabs-streamTabsResult-40"
-              href="#"
-            >
-              RESULTS
-            </div>
-          </div>
-          <div
-            className="StreamTabsBottom-root-41"
-          >
-            <div
-              className="StreamTabsNav-root-42"
-            >
-              <div
-                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-liveNow-44"
-              >
-                LIVE NOW 
-                <span
-                  className={undefined}
-                >
-                  2
-                </span>
-              </div>
-              <div
-                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-allGames-45"
-              >
-                ALL GAMES 
-                <span
-                  className={undefined}
-                >
-                  2
-                </span>
-              </div>
-              <div
-                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-dota2-46"
-              >
-                DOTA 2
-                <span
-                  className={undefined}
-                >
-                  2
-                </span>
-              </div>
-              <div
-                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-starcraft2-47"
-              >
-                STARCRAFT 2 
-                <span
-                  className={undefined}
-                >
-                  2
-                </span>
-              </div>
-              <div
-                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-overwatch-48"
-              >
-                OVERWATCH 
-                <span
-                  className={undefined}
-                >
-                  2
-                </span>
-              </div>
-              <div
-                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-rainbowSix-49"
-              >
-                RAINBOW SIX 
-                <span
-                  className={undefined}
-                >
-                  2
-                </span>
-              </div>
-              <div
-                className="StreamTabsNav-streamTabsNavItem-43 StreamTabsNav-csGo-51 StreamTabsNav-streamTabsNavActive-50"
-              >
-                CS:GO
-                <span
-                  className={undefined}
-                >
-                  2
-                </span>
-              </div>
-            </div>
-            <div
-              className="StreamLive-root-52"
+              aria-labelledby="react-tabs-0"
+              className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+              id="react-tabs-1"
+              role="tabpanel"
             >
               <div
-                className={undefined}
+                className="StreamTabsBottom-root-40"
               >
                 <div
-                  className=""
-                >
-                  Live
-                </div>
-                <div
-                  className=""
+                  className="StreamTabsNav-root-41"
                 >
                   <div
-                    className={undefined}
+                    className="StreamTabsNav-streamTabsNavItem-42 StreamTabsNav-liveNow-43"
                   >
-                    NRG
+                    <span
+                      className={undefined}
+                    >
+                      LIVE NOW
+                    </span>
+                    <span
+                      className="StreamTabsNav-streamTabsWatch-45"
+                    >
+                      2
+                    </span>
                   </div>
                   <div
-                    className=""
+                    className="StreamTabsNav-streamTabsNavItem-42"
                   >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
+                    <img
+                      alt=""
+                      className="StreamTabsNav-streamTabsNavImg-44"
+                      src="gamepad.svg"
+                    />
+                    <span
+                      className={undefined}
+                    >
+                      ALL GAMES
+                    </span>
+                    <span
+                      className="StreamTabsNav-streamTabsWatch-45"
+                    >
+                      2
+                    </span>
                   </div>
                   <div
-                    className=""
+                    className="StreamTabsNav-streamTabsNavItem-42"
                   >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  12:30 PM
-                   
-                  <br />
-                  <span
-                    className="dateDay"
-                  >
-                    7/12/2018
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    NRG
+                    <img
+                      alt=""
+                      className="StreamTabsNav-streamTabsNavImg-44"
+                      src="starcraft.png"
+                    />
+                    <span
+                      className={undefined}
+                    >
+                      STARCRAFT 2
+                    </span>
+                    <span
+                      className="StreamTabsNav-streamTabsWatch-45"
+                    >
+                      2
+                    </span>
                   </div>
                   <div
-                    className=""
+                    className="StreamTabsNav-streamTabsNavItem-42"
                   >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
+                    <img
+                      alt=""
+                      className="StreamTabsNav-streamTabsNavImg-44"
+                      src="dota-2.svg"
+                    />
+                    <span
+                      className={undefined}
+                    >
+                      DOTA 2
+                    </span>
+                    <span
+                      className="StreamTabsNav-streamTabsWatch-45"
+                    >
+                      2
+                    </span>
                   </div>
                   <div
-                    className=""
+                    className="StreamTabsNav-streamTabsNavItem-42"
                   >
-                    Spain
+                    <img
+                      alt=""
+                      className="StreamTabsNav-streamTabsNavImg-44"
+                      src="overwatch.png"
+                    />
+                    <span
+                      className={undefined}
+                    >
+                      CS:GO
+                    </span>
+                    <span
+                      className="StreamTabsNav-streamTabsWatch-45"
+                    >
+                      2
+                    </span>
+                  </div>
+                  <div
+                    className="StreamTabsNav-streamTabsNavItem-42"
+                  >
+                    <img
+                      alt=""
+                      className="StreamTabsNav-streamTabsNavImg-44"
+                      src="csgo.png"
+                    />
+                    <span
+                      className={undefined}
+                    >
+                      CS:GO
+                    </span>
+                    <span
+                      className="StreamTabsNav-streamTabsWatch-45"
+                    >
+                      2
+                    </span>
                   </div>
                 </div>
                 <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  Live
-                </div>
-                <div
-                  className=""
+                  className="StreamLive-root-46"
                 >
                   <div
-                    className={undefined}
+                    className="StreamLive-streamLiveItem-47"
                   >
-                    NRG
+                    <div
+                      className="StreamLive-streamLiveItemDate-48 StreamLive-itemDateLive-49"
+                    >
+                      Live
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team1-51"
+                    >
+                      <img
+                        alt=""
+                        className="StreamLive-teamImg-53"
+                        src="NRG+Logo+Light+Background.png"
+                      />
+                      <div
+                        className="StreamLive-teamName-54"
+                      >
+                        NRG
+                      </div>
+                      <div
+                        className="StreamLive-teamCountry-55 StreamLive-country1-56"
+                      >
+                        <img
+                          alt=""
+                          className="StreamLive-teamCountryImg-58"
+                          src="france.png"
+                        />
+                        France
+                      </div>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemScore-60"
+                    >
+                      6.14
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemVs-59"
+                    >
+                      VS
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemScore-60"
+                    >
+                      1.25
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team2-52"
+                    >
+                      <img
+                        alt=""
+                        className="StreamLive-teamImg-53"
+                        src="Team_LDLC_Logo.png"
+                      />
+                      <div
+                        className="StreamLive-teamName-54"
+                      >
+                        LDLC
+                      </div>
+                      <div
+                        className="StreamLive-teamCountry-55 StreamLive-country2-57"
+                      >
+                        <img
+                          alt=""
+                          className="StreamLive-teamCountryImg-58"
+                          src="spain.png"
+                        />
+                        Spain
+                      </div>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemEvent-61"
+                    >
+                      EVENT
+                      <img
+                        alt=""
+                        className="StreamLive-streamLiveItemEventImg-62"
+                        src="event.png"
+                      />
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemLink-63"
+                    />
                   </div>
                   <div
-                    className=""
+                    className="StreamLive-streamLiveItem-47"
                   >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
-                  </div>
-                  <div
-                    className=""
-                  >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  12:30 PM
-                   
-                  <br />
-                  <span
-                    className="dateDay"
-                  >
-                    7/12/2018
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    NRG
-                  </div>
-                  <div
-                    className=""
-                  >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
+                    <div
+                      className="StreamLive-streamLiveItemDate-48"
+                    >
+                      12:30 PM
+                       
+                      <br />
+                      <span
+                        className={undefined}
+                      >
+                        7/12/2018
+                      </span>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team1-51"
+                    >
+                      <img
+                        alt=""
+                        className="StreamLive-teamImg-53"
+                        src="NRG+Logo+Light+Background.png"
+                      />
+                      <div
+                        className="StreamLive-teamName-54"
+                      >
+                        NRG
+                      </div>
+                      <div
+                        className="StreamLive-teamCountry-55 StreamLive-country1-56"
+                      >
+                        <img
+                          alt=""
+                          className="StreamLive-teamCountryImg-58"
+                          src="france.png"
+                        />
+                        France
+                      </div>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemScore-60"
+                    >
+                      6.14
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemVs-59"
+                    >
+                      VS
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemScore-60"
+                    >
+                      1.25
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team2-52"
+                    >
+                      <img
+                        alt=""
+                        className="StreamLive-teamImg-53"
+                        src="Team_LDLC_Logo.png"
+                      />
+                      <div
+                        className="StreamLive-teamName-54"
+                      >
+                        LDLC
+                      </div>
+                      <div
+                        className="StreamLive-teamCountry-55 StreamLive-country2-57"
+                      >
+                        <img
+                          alt=""
+                          className="StreamLive-teamCountryImg-58"
+                          src="spain.png"
+                        />
+                        Spain
+                      </div>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemEvent-61"
+                    >
+                      EVENT
+                      <img
+                        alt=""
+                        className="StreamLive-streamLiveItemEventImg-62"
+                        src="event.png"
+                      />
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemLink-63"
+                    />
                   </div>
                   <div
-                    className=""
+                    className="StreamLive-streamLiveItem-47"
                   >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  Live
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    NRG
-                  </div>
-                  <div
-                    className=""
-                  >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
-                  </div>
-                  <div
-                    className=""
-                  >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  12:30 PM
-                   
-                  <br />
-                  <span
-                    className="dateDay"
-                  >
-                    7/12/2018
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    NRG
+                    <div
+                      className="StreamLive-streamLiveItemDate-48 StreamLive-itemDateLive-49"
+                    >
+                      Live
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team1-51"
+                    >
+                      <img
+                        alt=""
+                        className="StreamLive-teamImg-53"
+                        src="NRG+Logo+Light+Background.png"
+                      />
+                      <div
+                        className="StreamLive-teamName-54"
+                      >
+                        NRG
+                      </div>
+                      <div
+                        className="StreamLive-teamCountry-55 StreamLive-country1-56"
+                      >
+                        <img
+                          alt=""
+                          className="StreamLive-teamCountryImg-58"
+                          src="france.png"
+                        />
+                        France
+                      </div>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemScore-60"
+                    >
+                      6.14
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemVs-59"
+                    >
+                      VS
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemScore-60"
+                    >
+                      1.25
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team2-52"
+                    >
+                      <img
+                        alt=""
+                        className="StreamLive-teamImg-53"
+                        src="Team_LDLC_Logo.png"
+                      />
+                      <div
+                        className="StreamLive-teamName-54"
+                      >
+                        LDLC
+                      </div>
+                      <div
+                        className="StreamLive-teamCountry-55 StreamLive-country2-57"
+                      >
+                        <img
+                          alt=""
+                          className="StreamLive-teamCountryImg-58"
+                          src="spain.png"
+                        />
+                        Spain
+                      </div>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemEvent-61"
+                    >
+                      EVENT
+                      <img
+                        alt=""
+                        className="StreamLive-streamLiveItemEventImg-62"
+                        src="event.png"
+                      />
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemLink-63"
+                    />
                   </div>
                   <div
-                    className=""
+                    className="StreamLive-streamLiveItem-47"
                   >
-                    France
+                    <div
+                      className="StreamLive-streamLiveItemDate-48"
+                    >
+                      12:30 PM
+                       
+                      <br />
+                      <span
+                        className={undefined}
+                      >
+                        7/12/2018
+                      </span>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team1-51"
+                    >
+                      <img
+                        alt=""
+                        className="StreamLive-teamImg-53"
+                        src="NRG+Logo+Light+Background.png"
+                      />
+                      <div
+                        className="StreamLive-teamName-54"
+                      >
+                        NRG
+                      </div>
+                      <div
+                        className="StreamLive-teamCountry-55 StreamLive-country1-56"
+                      >
+                        <img
+                          alt=""
+                          className="StreamLive-teamCountryImg-58"
+                          src="france.png"
+                        />
+                        France
+                      </div>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemScore-60"
+                    >
+                      6.14
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemVs-59"
+                    >
+                      VS
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemScore-60"
+                    >
+                      1.25
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team2-52"
+                    >
+                      <img
+                        alt=""
+                        className="StreamLive-teamImg-53"
+                        src="Team_LDLC_Logo.png"
+                      />
+                      <div
+                        className="StreamLive-teamName-54"
+                      >
+                        LDLC
+                      </div>
+                      <div
+                        className="StreamLive-teamCountry-55 StreamLive-country2-57"
+                      >
+                        <img
+                          alt=""
+                          className="StreamLive-teamCountryImg-58"
+                          src="spain.png"
+                        />
+                        Spain
+                      </div>
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemEvent-61"
+                    >
+                      EVENT
+                      <img
+                        alt=""
+                        className="StreamLive-streamLiveItemEventImg-62"
+                        src="event.png"
+                      />
+                    </div>
+                    <div
+                      className="StreamLive-streamLiveItemLink-63"
+                    />
                   </div>
                 </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
-                  </div>
-                  <div
-                    className=""
-                  >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  Live
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    NRG
-                  </div>
-                  <div
-                    className=""
-                  >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
-                  </div>
-                  <div
-                    className=""
-                  >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  12:30 PM
-                   
-                  <br />
-                  <span
-                    className="dateDay"
-                  >
-                    7/12/2018
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    NRG
-                  </div>
-                  <div
-                    className=""
-                  >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
-                  </div>
-                  <div
-                    className=""
-                  >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  Live
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    NRG
-                  </div>
-                  <div
-                    className=""
-                  >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
-                  </div>
-                  <div
-                    className=""
-                  >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
-              </div>
-              <div
-                className={undefined}
-              >
-                <div
-                  className=""
-                >
-                  12:30 PM
-                   
-                  <br />
-                  <span
-                    className="dateDay"
-                  >
-                    7/12/2018
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    NRG
-                  </div>
-                  <div
-                    className=""
-                  >
-                    France
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  6.14
-                </div>
-                <div
-                  className={undefined}
-                >
-                  VS
-                </div>
-                <div
-                  className={undefined}
-                >
-                  1.25
-                </div>
-                <div
-                  className=""
-                >
-                  <div
-                    className={undefined}
-                  >
-                    LDLC
-                  </div>
-                  <div
-                    className=""
-                  >
-                    Spain
-                  </div>
-                </div>
-                <div
-                  className={undefined}
-                >
-                  EVENT
-                </div>
-                <div
-                  className={undefined}
-                />
               </div>
             </div>
+            <div
+              aria-labelledby="react-tabs-2"
+              className="react-tabs__tab-panel"
+              id="react-tabs-3"
+              role="tabpanel"
+            />
           </div>
         </div>
       </main>
     </div>
   </div>
   <footer
-    className="Footer-root-53"
+    className="Footer-root-64"
   >
     <ul
-      className="Footer-footerNav-54"
+      className="Footer-footerNav-65"
     >
       <li>
         <a
-          className="Footer-footerNavItem-55"
+          className="Footer-footerNavItem-66"
           href="/"
           onClick={[Function]}
         >
@@ -1005,7 +794,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-55"
+          className="Footer-footerNavItem-66"
           href="/"
           onClick={[Function]}
         >
@@ -1014,7 +803,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-55"
+          className="Footer-footerNavItem-66"
           href="/"
           onClick={[Function]}
         >
@@ -1023,7 +812,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-55"
+          className="Footer-footerNavItem-66"
           href="/games"
           onClick={[Function]}
         >
@@ -1032,7 +821,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-55"
+          className="Footer-footerNavItem-66"
           href="/"
           onClick={[Function]}
         >
@@ -1041,7 +830,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-55"
+          className="Footer-footerNavItem-66"
           href="/"
           onClick={[Function]}
         >

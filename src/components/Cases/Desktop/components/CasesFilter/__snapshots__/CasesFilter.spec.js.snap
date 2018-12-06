@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="CasesFilter-root-1"
+>
+  <input
+    className="CasesFilter-casesFilterSearch-2"
+    placeholder="Search"
+    type="text"
+  />
+  <div
+    className="CasesFilter-casesFilterOptions-3"
+  >
+    <div
+      className="CasesFilter-casesFilterType-4"
+    >
+      <div
+        className="CasesFilter-casesFilterItem-5"
+      >
+        less than $15&lt;
+      </div>
+      <div
+        className="CasesFilter-casesFilterItem-5"
+      >
+        $15-30
+      </div>
+      <div
+        className="CasesFilter-casesFilterItem-5 CasesFilter-selectedItem-7"
+      >
+         $30-60
+      </div>
+      <div
+        className="CasesFilter-casesFilterItem-5"
+      >
+        $60-90
+      </div>
+      <div
+        className="CasesFilter-casesFilterItem-5"
+      >
+        less than $15&lt;
+      </div>
+    </div>
+    <div
+      className="CasesFilter-casesFilterType-4"
+    >
+      <div
+        className="CasesFilter-casesFilterItem-5"
+      >
+        CS:GO
+      </div>
+      <div
+        className="CasesFilter-casesFilterItem-5"
+      >
+        Dota 2
+      </div>
+      <div
+        className="CasesFilter-casesFilterItem-5 CasesFilter-selectedItem-7"
+      >
+        Starcraft 2
+      </div>
+      <div
+        className="CasesFilter-casesFilterItem-5"
+      >
+         Maincraft
+      </div>
+      <div
+        className="CasesFilter-casesFilterItem-5"
+      >
+        Rainbow Six
+      </div>
+    </div>
+  </div>
+  <div
+    className="CasesFilter-casesFilterBtn-8"
+  />
+</div>
+`;

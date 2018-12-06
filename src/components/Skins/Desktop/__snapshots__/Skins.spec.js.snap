@@ -610,18 +610,16 @@ exports[`renders correctly 1`] = `
                 type="text"
               />
             </div>
-            <a
+            <div
               className="PaymentCard-paymentCardMonth-60"
-              href="#"
             >
               MM
-            </a>
-            <a
+            </div>
+            <div
               className="PaymentCard-paymentCardYear-61"
-              href="#"
             >
               YYYY
-            </a>
+            </div>
             <div
               className="PaymentCard-paymentInputWrap3-62"
             >
@@ -656,9 +654,8 @@ exports[`renders correctly 1`] = `
               >
                 $12.20
               </div>
-              <a
+              <div
                 className="PaymentSelected-selectedClose-68"
-                href="#"
               />
             </div>
             <div
@@ -677,9 +674,8 @@ exports[`renders correctly 1`] = `
               >
                 $12.20
               </div>
-              <a
+              <div
                 className="PaymentSelected-selectedClose-68"
-                href="#"
               />
             </div>
             <div
@@ -698,9 +694,8 @@ exports[`renders correctly 1`] = `
               >
                 $12.20
               </div>
-              <a
+              <div
                 className="PaymentSelected-selectedClose-68"
-                href="#"
               />
             </div>
             <div
@@ -719,9 +714,8 @@ exports[`renders correctly 1`] = `
               >
                 $12.20
               </div>
-              <a
+              <div
                 className="PaymentSelected-selectedClose-68"
-                href="#"
               />
             </div>
             <div
@@ -740,9 +734,8 @@ exports[`renders correctly 1`] = `
               >
                 $12.20
               </div>
-              <a
+              <div
                 className="PaymentSelected-selectedClose-68"
-                href="#"
               />
             </div>
             <div
@@ -761,9 +754,8 @@ exports[`renders correctly 1`] = `
               >
                 $12.20
               </div>
-              <a
+              <div
                 className="PaymentSelected-selectedClose-68"
-                href="#"
               />
             </div>
           </div>
@@ -808,12 +800,11 @@ exports[`renders correctly 1`] = `
               type="text"
             />
           </div>
-          <a
+          <div
             className="TradePayment-paymentBtn-53"
-            href="#"
           >
             CASHOUT
-          </a>
+          </div>
         </div>
       </main>
     </div>

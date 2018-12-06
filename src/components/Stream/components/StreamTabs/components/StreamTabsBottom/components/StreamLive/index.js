@@ -8,10 +8,10 @@ import styles from './styles'
 const StreamLive = ({ classes, streamLive }) => (
   <div className={classes.root}>
     {streamLive.map(item => (
-      <div className={classes.streamLiveItem}>
+      <div className={classes.streamLiveItem} key={item.id}>
         <div
           className={cn(classes.streamLiveItemDate, {
-            itemDateLive: !item.isLive
+            [classes.itemDateLive]: item.isLive
           })}
         >
           {item.isLive ? (
