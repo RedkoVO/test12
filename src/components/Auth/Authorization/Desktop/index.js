@@ -15,7 +15,9 @@ const Authorization = ({ classes, onSubmit, isDisabledButton }) => (
       <div className={classes.containerRegistratStep1}>
         <Form className={classes.registrStep1} onSubmit={onSubmit}>
           <h1 className={classes.step1Title}>Login</h1>
-          <label htmlFor="key" className={classes.step1Label}>Enter secret key from email</label>
+          <label htmlFor="key" className={classes.step1Label}>
+            Enter secret key from email
+          </label>
           <Field
             id="key"
             name="key"
@@ -26,17 +28,32 @@ const Authorization = ({ classes, onSubmit, isDisabledButton }) => (
           />
 
           <div>
-            <Link to={'/registration'} className={classes.step1BtnBack}>Registration</Link>
-            <button type="submit" className={cn(classes.step1BtnsRegister, { disabled: isDisabledButton })}>Login!</button>
+            <Link to={'/registration'} className={classes.step1BtnBack}>
+              Registration
+            </Link>
+            <button
+              type="submit"
+              className={cn(classes.step1BtnsRegister, {
+                disabled: isDisabledButton
+              })}
+            >
+              Login!
+            </button>
           </div>
         </Form>
       </div>
 
       <div className={classes.footer}>
-        <span className={classes.copyright}>Vault. All Rights Reserved 2018</span>
+        <span className={classes.copyright}>
+          Vault. All Rights Reserved 2018
+        </span>
         <div>
-          <a href="/" className={classes.footerLink}>Privacy Policy</a>
-          <a href="/" className={classes.footerLink}>Terms and conditions</a>
+          <a href="/" className={classes.footerLink}>
+            Privacy Policy
+          </a>
+          <a href="/" className={classes.footerLink}>
+            Terms and conditions
+          </a>
         </div>
       </div>
     </div>
@@ -46,7 +63,8 @@ const Authorization = ({ classes, onSubmit, isDisabledButton }) => (
 Authorization.propTypes = {
   classNamees: PropTypes.object,
   onSubmit: PropTypes.func,
-  isDisabledButton: PropTypes.bool
+  isDisabledButton: PropTypes.bool,
+  test_name: PropTypes.string
 }
 
 export default withStyles(styles)(Authorization)

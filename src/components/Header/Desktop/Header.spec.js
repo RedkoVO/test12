@@ -8,7 +8,7 @@ it('renders main', () => {
   const tree = renderer
     .create(
       <MemoryRouter keyLength={0}>
-        <Header type={'main'} />
+        <Header type={'main'} handleLogout={() => {}} />
       </MemoryRouter>
     )
     .toJSON()
@@ -17,12 +17,20 @@ it('renders main', () => {
 
 it('renders games', () => {
   const tree = renderer
-    .create(<Header type={'games'} children={<div>Test</div>} />)
+    .create(
+      <Header
+        type={'games'}
+        children={<div>Test</div>}
+        handleLogout={() => {}}
+      />
+    )
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 it('renders catalog', () => {
-  const tree = renderer.create(<Header type={'catalog'} />).toJSON()
+  const tree = renderer
+    .create(<Header type={'catalog'} handleLogout={() => {}} />)
+    .toJSON()
   expect(tree).toMatchSnapshot()
 })

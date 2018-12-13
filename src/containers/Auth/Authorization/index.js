@@ -1,6 +1,6 @@
 import compose from 'recompose/compose'
 import { connect } from 'react-redux'
-import { withHandlers, withState } from 'recompose'
+import { withHandlers, withState, withProps, pure } from 'recompose'
 import { reduxForm } from 'redux-form'
 import validate from './validate'
 import BigNumber from 'bignumber.js'
@@ -108,5 +108,7 @@ export default compose(
           }
         }
       })
-  })
+  }),
+  withProps(() => ({ test_name: 'Authorization' })),
+  pure
 )(AsyncAuthorizationDesktop)
