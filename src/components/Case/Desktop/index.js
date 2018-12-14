@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
 import MenuNavigation from '../../MenuNavigation'
-import Header from '../../../containers/Header/AsyncHeader'
 import Footer from '../../Footer/Desktop/'
 import CaseFilter from './components/CaseFilter'
 import CaseOpen from './components/CaseOpen'
 import CasesRelated from './components/CasesRelated'
+import Header from '../../../containers/Header/AsyncHeader'
 
-import styles from './styles'
+import styles from './styles.js'
 
 const Case = ({ classes, handleLogout, caseItems, relaredItems }) => (
   <div className="mainWrapperTrade">
@@ -33,6 +33,7 @@ const Case = ({ classes, handleLogout, caseItems, relaredItems }) => (
 
 Case.propTypes = {
   classes: PropTypes.object,
+  handleLogout: PropTypes.func,
   caseItems: PropTypes.array,
   relaredItems: PropTypes.array
 }

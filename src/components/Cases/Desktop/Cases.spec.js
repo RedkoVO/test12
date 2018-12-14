@@ -1,6 +1,8 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
 import { MemoryRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
 import Cases from './'
 
@@ -92,13 +94,16 @@ const tmpCases = [
     game: 'CS:GO'
   }
 ]
+const store = createStore(a => a, {})
 
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <MemoryRouter keyLength={0}>
-        <Cases cases={tmpCases} />
-      </MemoryRouter>
+      <Provider store={store}>
+        <MemoryRouter keyLength={0}>
+          <Cases cases={tmpCases} />
+        </MemoryRouter>
+      </Provider>
     )
     .toJSON()
   expect(tree).toMatchSnapshot()

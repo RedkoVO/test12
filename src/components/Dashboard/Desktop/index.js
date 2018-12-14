@@ -33,10 +33,13 @@ const Dashboard = ({
 )
 
 Dashboard.propTypes = {
-  classNamees: PropTypes.object,
+  classes: PropTypes.object,
   transactions: PropTypes.array,
   bestAds: PropTypes.array,
-  gameCategories: PropTypes.array
+  gameCategories: PropTypes.array,
+  balance: PropTypes.object,
+  isDisabledButton: PropTypes.bool,
+  onSubmit: PropTypes.func
 }
 
 export default withStyles(styles)(Dashboard)

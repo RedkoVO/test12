@@ -1,5 +1,6 @@
 import compose from 'recompose/compose'
-import { withProps, pure } from 'recompose'
+import { withProps, withHandlers, pure } from 'recompose'
+import { clearStorageForlogout } from '../../utils/localStorageUtils'
 
 import AsyncCaseDesktop from '../../components/Case/Desktop/AsyncCaseDesktop'
 
@@ -34,6 +35,12 @@ const relaredItems = [
 ]
 
 export default compose(
-  withProps(() => ({ caseItems: caseItems, relaredItems: relaredItems })),
+  withProps(() => ({ caseItems, relaredItems })),
+  withHandlers({
+    handleLogout: ({ history }) => () => {
+      clearStorageForlogout()
+      history.push('/')
+    }
+  }),
   pure
 )(AsyncCaseDesktop)

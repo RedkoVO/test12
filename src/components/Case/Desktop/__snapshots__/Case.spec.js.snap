@@ -578,7 +578,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="caseX.png"
+                src="CaseX.png"
               />
             </div>
             <div
@@ -598,7 +598,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="caseX.png"
+                src="CaseX.png"
               />
             </div>
             <div
@@ -618,7 +618,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="caseX.png"
+                src="CaseX.png"
               />
             </div>
             <div
@@ -638,7 +638,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="caseX.png"
+                src="CaseX.png"
               />
             </div>
             <div
@@ -658,7 +658,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="caseX.png"
+                src="CaseX.png"
               />
             </div>
             <div
@@ -678,7 +678,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="caseX.png"
+                src="CaseX.png"
               />
             </div>
             <div

@@ -82,9 +82,5 @@ const games = [
 
 export default compose(
   withDeviceTarget,
-  withProps(() => {
-    return {
-      games
-    }
-  })
+  withProps(() => ({ games }))
 )(AsyncGamesDesktop)

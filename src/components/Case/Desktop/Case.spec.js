@@ -1,5 +1,7 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
+// import { Provider } from 'react-redux'
+// import { createStore } from 'redux'
 import { MemoryRouter } from 'react-router-dom'
 
 import Case from './'
@@ -34,12 +36,16 @@ const relaredItems = [
   { id: 6, title: 'Good Weapon2 1.2', img: CaseX }
 ]
 
+// const store = createStore(a => a, {balance: 1212})
+
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <MemoryRouter keyLength={0}>
-        <Case caseItems={caseItems} relaredItems={relaredItems} />
-      </MemoryRouter>
+      // <Provider store={store}>
+        <MemoryRouter keyLength={0}>
+            <Case handleLogout={() => {}} caseItems={caseItems} relaredItems={relaredItems} />
+        </MemoryRouter>
+      // </Provider>
     )
     .toJSON()
   expect(tree).toMatchSnapshot()

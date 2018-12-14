@@ -3,11 +3,8 @@ import renderer from 'react-test-renderer'
 import { shallow, mount } from 'enzyme'
 import { MemoryRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { reduxForm, Field } from 'redux-form'
+import { reduxForm } from 'redux-form'
 import { createStore } from 'redux'
-
-import InputField from '../../../App/components/Form/InputField'
-import PageLayout from '../../../App/components/PageLayout'
 
 import Authorization from './'
 
@@ -31,41 +28,59 @@ describe('<Authorization />', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('consist InputField component', () => {
-    const tree = mount(
-      <Provider store={store}>
-        <MemoryRouter initialEntries={[ '/registration' ]}>
-          <Wrapper>
-            <Authorization onSubmit={() => {}} isDisabledButton={false} />
-          </Wrapper>
-        </MemoryRouter>
-      </Provider>
+  it('HTML: check input #key element', () => {
+    const tree = shallow(
+      <Authorization onSubmit={() => {}} isDisabledButton={false} />
     )
 
-    const input = tree.find('input#key')
-    input.simulate('change', {target: {value: '1212TESTTEST'}})
-
-    const form = tree.find('form').first()
-    form.simulate('submit')
-
-    tree.update()
-
-    console.log('----------', input.debug())
-    // console.log('----------', tree.find(InputField).debug())
-
-    expect(input.prop('value')).toBe('1212TESTTEST')
-    expect(tree.find(InputField)).toHaveLength(1)
+    expect(
+      tree
+        .dive()
+        .find('.Authorization-root-1')
+        .exists()
+    ).toEqual(true)
   })
-
-
 
   it('HTML: check input #key element', () => {
     const tree = shallow(
       <Authorization onSubmit={() => {}} isDisabledButton={false} />
     )
 
-    // console.log('----------', tree.dive().find('#key').debug())
+    const btnRegistre = tree.dive().find('.Authorization-step1BtnBack-11')
 
-    expect(tree.dive().find('#key').exists()).toEqual(true)
+    console.log('---1----', tree.dive().find('h1').debug())
+
+    btnRegistre.simulate('click')
+    // btnRegistre.prop('onClick')()
+
+    tree.update()
+
+    console.log('---2----', tree.dive().find('h1').debug())
+
+    expect(
+      tree
+        .dive()
+        .find('.Authorization-root-1')
+        .exists()
+    ).toEqual(true)
   })
+
+  // it('consist InputField component', () => {
+  //   const tree = mount(
+  //     <Provider store={store}>
+  //       <MemoryRouter keyLength={0}>
+  //         <Wrapper>
+  //           <Authorization onSubmit={() => {}} isDisabledButton={false} test />
+  //         </Wrapper>
+  //       </MemoryRouter>
+  //     </Provider>
+  //   )
+
+  //   const input = tree.find(Authorization)
+
+  //   console.log('---Mount---', input.props())
+
+  //   expect(tree.prop('test_name')).toBe('Authorization')
+  //   // expect(tree.find(InputField)).toHaveLength(1)
+  // })
 })

@@ -7,9 +7,9 @@ import HeaderGames from '../components/HeaderGames/Desktop'
 
 const Header = ({ type, children, handleLogout }) => (
   <React.Fragment>
-    {type === 'catalog' && <HeaderCatalog handleLogout={handleLogout} />}
+    {type === 'catalog' && <HeaderCatalog />}
 
-    {type === 'games' && <HeaderGames children={children} handleLogout={handleLogout} />}
+    {type === 'games' && <HeaderGames children={children} />}
 
     {type === 'main' && <HeaderMain handleLogout={handleLogout} />}
   </React.Fragment>
@@ -18,7 +18,7 @@ const Header = ({ type, children, handleLogout }) => (
 Header.propTypes = {
   type: PropTypes.string,
   children: PropTypes.node,
-  handleLogout:PropTypes.func
+  handleLogout: PropTypes.func
 }
 
 export default Header
