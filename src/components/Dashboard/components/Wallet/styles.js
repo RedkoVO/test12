@@ -11,7 +11,7 @@ export default theme => ({
     width: '100%',
     boxSizing: 'border-box',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       padding: 0
     }
   },
@@ -22,11 +22,11 @@ export default theme => ({
     alignItems: 'stretch',
     width: 'initial',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       marginBottom: '20px',
       paddingBottom: '20px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       width: '320px',
       '-ms-align-items': 'center',
       alignItems: 'center',
@@ -81,7 +81,7 @@ export default theme => ({
     width: '100%',
     justifyContent: 'center',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       padding: 0
     }
   },
@@ -102,7 +102,7 @@ export default theme => ({
       backgroundColor: '#054677'
     },
 
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       padding: '5px 7px'
     }
   }

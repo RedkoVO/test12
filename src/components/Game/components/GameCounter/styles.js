@@ -1,6 +1,7 @@
+import gC from '../../../../constants'
 import WinnerLogo from '../../../../assets/images/winner.png'
 
-export default () => ({
+export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
@@ -17,7 +18,46 @@ export default () => ({
     marginRight: '20px',
     textAlign: 'center',
     backgroundColor: 'rgba(0,0,0,0.26)',
-    borderRadius: '25px'
+    borderRadius: '25px',
+
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '0 5px',
+      marginRight: '10px',
+      minWidth: '95px',
+      boxSizing: 'border-box'
+    }
+  },
+  counterUsers: {
+    width: '250px',
+    height: '150px',
+    marginRight: '20px',
+    textAlign: 'center',
+    backgroundColor: 'rgba(0,0,0,0.26)',
+    borderRadius: '25px',
+
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '0 5px',
+      marginRight: '10px',
+      minWidth: '95px',
+      padding: '0 5px',
+      boxSizing: 'border-box'
+    }
+  },
+  counterUsersVolume: {
+    fontSize: '19px',
+    fontWeight: 700,
+    padding: 0,
+    marginBottom: 0,
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '15px'
+    }
   },
   counterContracts: {
     width: '600px',
@@ -32,7 +72,19 @@ export default () => ({
     boxSizing: 'border-box',
     textAlign: 'center',
     backgroundColor: 'rgba(0,0,0,0.26)',
-    borderRadius: '25px'
+    borderRadius: '25px',
+
+    [theme.breakpoints.down('lg')]: {
+      padding: '0 20px',
+      minWidth: '258px'
+    },
+    [theme.breakpoints.down('md')]: {
+      minWidth: '230px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '0 5px'
+    }
   },
   counterWins: {
     width: '420px',
@@ -45,25 +97,48 @@ export default () => ({
     backgroundPosition: '40px 10px',
     textAlign: 'center',
     backgroundColor: 'rgba(0,0,0,0.26)',
-    borderRadius: '25px'
+    borderRadius: '25px',
+
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '0 5px',
+      minWidth: '300px',
+      backgroundSize: '280px',
+      backgroundPosition: '10px 30px',
+      marginRight: '10px'
+    }
   },
   counterBiggestWin: {
     fontSize: '19px',
     fontWeight: 700,
     padding: 0,
-    marginBottom: 0
+    marginBottom: 0,
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '15px'
+    }
   },
   counterHoursVolume: {
     fontSize: '19px',
     fontWeight: 700,
     padding: 0,
-    marginBottom: 0
+    marginBottom: 0,
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '15px'
+    }
   },
   counterContractsVolume: {
     fontSize: '19px',
     fontWeight: 700,
     padding: 0,
-    marginBottom: 0
+    marginBottom: 0,
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '15px'
+    }
   },
   counterContractsLink: {
     fontSize: '9px',
@@ -72,6 +147,10 @@ export default () => ({
   },
   counterValue: {
     fontSize: '34px',
-    fontWeight: 700
+    fontWeight: 700,
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '28px'
+    }
   }
 })

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../MenuNavigation'
+import MenuNavigation from '../../MenuNavigation/Desktop/AsyncMenuNavigation'
 import Footer from '../../Footer/Desktop/'
 import CaseFilter from './components/CaseFilter'
 import CaseOpen from './components/CaseOpen'
@@ -16,7 +16,7 @@ const Case = ({ classes, handleLogout, caseItems, relaredItems }) => (
     <div className={classes.containerTradeWrap}>
       <div className={classes.containerTrade}>
         <header className={classes.headerCase}>
-          <MenuNavigation page="dark" handleLogout={handleLogout} />
+          <MenuNavigation type="main" page="dark" handleLogout={handleLogout} />
           <Header type="catalog" />
         </header>
         <main className={classes.case}>

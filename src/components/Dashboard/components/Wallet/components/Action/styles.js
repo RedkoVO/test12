@@ -13,15 +13,15 @@ export default theme => ({
     '-ms-align-items': 'flex-end',
     alignItems: 'flex-end',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       width: '100%',
       justifyContent: 'center',
       flexWrap: 'wrap'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       height: '100%'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       height: '100%'
     },
   },
@@ -33,7 +33,7 @@ export default theme => ({
     '-ms-align-items': 'center',
     alignItems: 'center',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       width: '230px',
       height: '175px',
       marginTop: '15px'
@@ -71,7 +71,7 @@ export default theme => ({
     '-ms-align-items': 'center',
     alignItems: 'center',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       width: '230px',
       height: '175px',
       marginTop: '15px'
@@ -184,7 +184,7 @@ export default theme => ({
     '-ms-align-items': 'center',
     alignItems: 'center',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       width: '230px',
       height: '175px',
       marginTop: '15px'

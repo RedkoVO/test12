@@ -2,24 +2,24 @@
 
 exports[`renders correctly DESKTOP 1`] = `
 <div
-  className="HeaderCatalog-root-1"
+  className="HeaderGames-root-1"
 >
   <div
-    className="HeaderCatalog-catalogUserBlock-2"
+    className="HeaderGames-catalogUserBlock-2"
   >
     <p
-      className="HeaderCatalog-catalogUserHello-3"
+      className="HeaderGames-catalogUserHello-3"
     >
        Hello, Ben A 
       <br />
       <span
-        className="HeaderCatalog-catalogUserVerification-5"
+        className="HeaderGames-catalogUserVerification-5"
       >
         KYC VERIFICATED
       </span>
     </p>
     <div
-      className="HeaderCatalog-catalogUserPhoto-7"
+      className="HeaderGames-catalogUserPhoto-7"
     >
       <img
         alt=""
@@ -27,12 +27,12 @@ exports[`renders correctly DESKTOP 1`] = `
       />
     </div>
     <p
-      className="HeaderCatalog-catalogUserBallance-4"
+      className="HeaderGames-catalogUserBallance-4"
     >
        764.23 DCB 
       <br />
       <span
-        className="HeaderCatalog-catalogUserBallDescr-6"
+        className="HeaderGames-catalogUserBallDescr-6"
       >
         YOUR BALANCE
       </span>
@@ -46,24 +46,24 @@ exports[`renders correctly DESKTOP 1`] = `
 
 exports[`renders correctly MOBILE 1`] = `
 <div
-  className="HeaderCatalog-root-1"
+  className="HeaderGames-root-1"
 >
   <div
-    className="HeaderCatalog-catalogUserBlock-2"
+    className="HeaderGames-catalogUserBlock-2"
   >
     <p
-      className="HeaderCatalog-catalogUserHello-3"
+      className="HeaderGames-catalogUserHello-3"
     >
        Hello, Ben A 
       <br />
       <span
-        className="HeaderCatalog-catalogUserVerification-5"
+        className="HeaderGames-catalogUserVerification-5"
       >
         KYC VERIFICATED
       </span>
     </p>
     <div
-      className="HeaderCatalog-catalogUserPhoto-7"
+      className="HeaderGames-catalogUserPhoto-7"
     >
       <img
         alt=""
@@ -71,12 +71,12 @@ exports[`renders correctly MOBILE 1`] = `
       />
     </div>
     <p
-      className="HeaderCatalog-catalogUserBallance-4"
+      className="HeaderGames-catalogUserBallance-4"
     >
        764.23 DCB 
       <br />
       <span
-        className="HeaderCatalog-catalogUserBallDescr-6"
+        className="HeaderGames-catalogUserBallDescr-6"
       >
         YOUR BALANCE
       </span>

@@ -41,26 +41,28 @@ exports[`renders catalog 1`] = `
 </div>
 `;
 
+exports[`renders game 1`] = `null`;
+
 exports[`renders games 1`] = `
 <div
-  className="HeaderCatalog-root-21"
+  className="HeaderGames-root-21"
 >
   <div
-    className="HeaderCatalog-catalogUserBlock-22"
+    className="HeaderGames-catalogUserBlock-22"
   >
     <p
-      className="HeaderCatalog-catalogUserHello-23"
+      className="HeaderGames-catalogUserHello-23"
     >
        Hello, Ben A 
       <br />
       <span
-        className="HeaderCatalog-catalogUserVerification-25"
+        className="HeaderGames-catalogUserVerification-25"
       >
         KYC VERIFICATED
       </span>
     </p>
     <div
-      className="HeaderCatalog-catalogUserPhoto-27"
+      className="HeaderGames-catalogUserPhoto-27"
     >
       <img
         alt=""
@@ -68,12 +70,12 @@ exports[`renders games 1`] = `
       />
     </div>
     <p
-      className="HeaderCatalog-catalogUserBallance-24"
+      className="HeaderGames-catalogUserBallance-24"
     >
        764.23 DCB 
       <br />
       <span
-        className="HeaderCatalog-catalogUserBallDescr-26"
+        className="HeaderGames-catalogUserBallDescr-26"
       >
         YOUR BALANCE
       </span>
@@ -89,125 +91,33 @@ exports[`renders main 1`] = `
 <header
   className="HeaderMain-root-1"
 >
-  <ul
-    className="MenuNavigation-root-2"
-  >
-    <li
-      className={undefined}
-    >
-      <div
-        className="MenuNavigation-logout-11"
-        onClick={[Function]}
-      >
-        Logout
-      </div>
-    </li>
-    <li>
-      <a
-        className="MenuNavigation-headerMenuItem-3"
-        href="/"
-        onClick={[Function]}
-      >
-        <i
-          className="MenuNavigation-menuIcon-4 MenuNavigation-dashboard-5"
-        />
-        <br />
-         Dashboard
-      </a>
-    </li>
-    <li>
-      <a
-        className="MenuNavigation-headerMenuItem-3"
-        href="/"
-        onClick={[Function]}
-      >
-        <i
-          className="MenuNavigation-menuIcon-4 MenuNavigation-walletIcon-6"
-        />
-        <br />
-         Wallet
-      </a>
-    </li>
-    <li>
-      <a
-        className="MenuNavigation-headerMenuItem-3"
-        href="/"
-        onClick={[Function]}
-      >
-        <i
-          className="MenuNavigation-menuIcon-4 MenuNavigation-shop-7"
-        />
-        <br />
-         Shop
-      </a>
-    </li>
-    <li>
-      <a
-        className="MenuNavigation-headerMenuItem-3"
-        href="/games"
-        onClick={[Function]}
-      >
-        <i
-          className="MenuNavigation-menuIcon-4 MenuNavigation-games-8"
-        />
-        <br />
-         Games
-      </a>
-    </li>
-    <li>
-      <a
-        className="MenuNavigation-headerMenuItem-3"
-        href="/"
-        onClick={[Function]}
-      >
-        <i
-          className="MenuNavigation-menuIcon-4 MenuNavigation-friends-9"
-        />
-        <br />
-         Friends
-      </a>
-    </li>
-    <li>
-      <a
-        className="MenuNavigation-headerMenuItem-3"
-        href="/"
-        onClick={[Function]}
-      >
-        <i
-          className="MenuNavigation-menuIcon-4 MenuNavigation-settings-10"
-        />
-        <br />
-         Settings
-      </a>
-    </li>
-  </ul>
   <div
-    className="UserBlock-root-12"
+    className="UserBlock-root-2"
   >
     <div
-      className="UserBlock-demoTitle-20"
+      className="UserBlock-demoTitle-10"
     >
       DEMO VERSION
     </div>
     <div
-      className="UserBlock-user-13"
+      className="UserBlock-user-3"
     >
       <div
-        className="UserBlock-userBlock-14"
+        className="UserBlock-userBlock-4"
       >
         <p
-          className="UserBlock-userHello-15"
+          className="UserBlock-userHello-5"
         >
            Hello, Ben A 
           <br />
           <span
-            className="UserBlock-userVerification-16"
+            className="UserBlock-userVerification-6"
           >
             KYC VERIFICATED
           </span>
         </p>
         <div
-          className="UserBlock-userPhoto-17"
+          className="UserBlock-userPhoto-7"
         >
           <img
             alt=""
@@ -215,12 +125,12 @@ exports[`renders main 1`] = `
           />
         </div>
         <p
-          className="UserBlock-userBallance-18"
+          className="UserBlock-userBallance-8"
         >
            dcb
           <br />
           <span
-            className="UserBlock-userBallDescr-19"
+            className="UserBlock-userBallDescr-9"
           >
             YOUR BALANCE
           </span>

@@ -12,126 +12,33 @@ exports[`renders correctly 1`] = `
     >
       <header
         className="Stream-headerStream-1"
-      >
-        <ul
-          className="MenuNavigation-root-5 dark"
-        >
-          <li
-            className={undefined}
-          >
-            <div
-              className="MenuNavigation-logout-14"
-              onClick={[Function]}
-            >
-              Logout
-            </div>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-dashboard-8"
-              />
-              <br />
-               Dashboard
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-walletIcon-9"
-              />
-              <br />
-               Wallet
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-shop-10"
-              />
-              <br />
-               Shop
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/games"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-games-11"
-              />
-              <br />
-               Games
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-friends-12"
-              />
-              <br />
-               Friends
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-settings-13"
-              />
-              <br />
-               Settings
-            </a>
-          </li>
-        </ul>
-      </header>
+      />
       <main
         className="Stream-streamMain-4"
       >
         <div
-          className="StreamBettingTop-root-15"
+          className="StreamBettingTop-root-5"
         >
           <div
-            className="StreamBettingTop-streamLeftTeam-16"
+            className="StreamBettingTop-streamLeftTeam-6"
           >
             <div>
               <div
-                className="StreamBettingTop-streamTeamName-18"
+                className="StreamBettingTop-streamTeamName-8"
               >
                 <img
                   alt=""
-                  className="StreamBettingTop-streamLeftLogo-17"
+                  className="StreamBettingTop-streamLeftLogo-7"
                   src="leftTeamLogo.png"
                 />
                 NRG
               </div>
               <div
-                className="StreamBettingTop-streamCountry-19"
+                className="StreamBettingTop-streamCountry-9"
               >
                 <img
                   alt=""
-                  className="StreamBettingTop-streamFlag-20"
+                  className="StreamBettingTop-streamFlag-10"
                   src="leftTeamFlag.png"
                 />
                 France
@@ -139,47 +46,47 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="StreamBettingTop-streamCoef-21"
+            className="StreamBettingTop-streamCoef-11"
           >
             <div
-              className="StreamBettingTop-streamCoefItem-23"
+              className="StreamBettingTop-streamCoefItem-13"
             >
               6.17
             </div>
             <div
-              className="StreamBettingTop-streamVersus-22"
+              className="StreamBettingTop-streamVersus-12"
             >
               vs
             </div>
             <div
-              className="StreamBettingTop-streamCoefItem-23"
+              className="StreamBettingTop-streamCoefItem-13"
             >
               1.25
             </div>
           </div>
           <div
-            className="StreamBettingTop-streamRightTeam-24"
+            className="StreamBettingTop-streamRightTeam-14"
           >
             <div
-              className="StreamBettingTop-streamRightTeam-24"
+              className="StreamBettingTop-streamRightTeam-14"
             >
               <div>
                 <div
-                  className="StreamBettingTop-streamTeamName-18"
+                  className="StreamBettingTop-streamTeamName-8"
                 >
                   <img
                     alt=""
-                    className="StreamBettingTop-streamRightLogo-25"
+                    className="StreamBettingTop-streamRightLogo-15"
                     src="rightTeamLogo.png"
                   />
                   LDLC
                 </div>
                 <div
-                  className="StreamBettingTop-streamCountry-19"
+                  className="StreamBettingTop-streamCountry-9"
                 >
                   <img
                     alt=""
-                    className="StreamBettingTop-streamFlag-20"
+                    className="StreamBettingTop-streamFlag-10"
                     src="rightTeamFlag.png"
                   />
                   Spain
@@ -187,13 +94,13 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="StreamBettingTop-streamLive-26"
+              className="StreamBettingTop-streamLive-16"
             >
               Live
             </div>
           </div>
           <div
-            className="StreamBettingTop-streamEvent-27"
+            className="StreamBettingTop-streamEvent-17"
           >
             Event:
             <img
@@ -203,7 +110,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="StreamScreen-root-28"
+          className="StreamScreen-root-18"
         >
           <img
             alt=""
@@ -211,45 +118,45 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <div
-          className="StreamDescription-root-29"
+          className="StreamDescription-root-19"
         >
           <div
-            className="StreamDescription-streamDescriptionLeft-30"
+            className="StreamDescription-streamDescriptionLeft-20"
           >
             <div
-              className="StreamDescription-streamDescriptionText-31"
+              className="StreamDescription-streamDescriptionText-21"
             >
               Integer tempor semper sapien sit amet bibendum. Etiam ornare tellus at sapien vehicula, quis scelerisque turpis rokaste egestas quis botona.
             </div>
             <div
-              className="StreamDescription-streamHashTags-32"
+              className="StreamDescription-streamHashTags-22"
             >
               #ROLLED #BESTCRYPTO #ETH
                
               <div
-                className="StreamDescription-streamAddHashTags-33"
+                className="StreamDescription-streamAddHashTags-23"
               >
                 +
               </div>
             </div>
           </div>
           <div
-            className="StreamDescription-streamDescriptionRight-34"
+            className="StreamDescription-streamDescriptionRight-24"
           >
             <div
-              className="StreamDescription-streamAddFavorites-35"
+              className="StreamDescription-streamAddFavorites-25"
             >
               Add to favorites
             </div>
             <div
-              className="StreamDescription-streamShareSocial-36"
+              className="StreamDescription-streamShareSocial-26"
             >
               Share in social
             </div>
           </div>
         </div>
         <div
-          className="StreamTabs-root-37"
+          className="StreamTabs-root-27"
         >
           <div
             className="react-tabs"
@@ -258,14 +165,14 @@ exports[`renders correctly 1`] = `
             onKeyDown={[Function]}
           >
             <ul
-              className="StreamTabs-streamTabsTop-38"
+              className="StreamTabs-streamTabsTop-28"
               role="tablist"
             >
               <li
                 aria-controls="react-tabs-1"
                 aria-disabled="false"
                 aria-selected="true"
-                className="StreamTabs-streamTab-39 react-tabs__tab--selected"
+                className="StreamTabs-streamTab-29 react-tabs__tab--selected"
                 id="react-tabs-0"
                 role="tab"
                 tabIndex="0"
@@ -276,7 +183,7 @@ exports[`renders correctly 1`] = `
                 aria-controls="react-tabs-3"
                 aria-disabled="false"
                 aria-selected="false"
-                className="StreamTabs-streamTab-39"
+                className="StreamTabs-streamTab-29"
                 id="react-tabs-2"
                 role="tab"
                 tabIndex={null}
@@ -291,13 +198,13 @@ exports[`renders correctly 1`] = `
               role="tabpanel"
             >
               <div
-                className="StreamTabsBottom-root-40"
+                className="StreamTabsBottom-root-30"
               >
                 <div
-                  className="StreamTabsNav-root-41"
+                  className="StreamTabsNav-root-31"
                 >
                   <div
-                    className="StreamTabsNav-streamTabsNavItem-42 StreamTabsNav-liveNow-43"
+                    className="StreamTabsNav-streamTabsNavItem-32 StreamTabsNav-liveNow-33"
                   >
                     <span
                       className={undefined}
@@ -305,17 +212,17 @@ exports[`renders correctly 1`] = `
                       LIVE NOW
                     </span>
                     <span
-                      className="StreamTabsNav-streamTabsWatch-45"
+                      className="StreamTabsNav-streamTabsWatch-35"
                     >
                       2
                     </span>
                   </div>
                   <div
-                    className="StreamTabsNav-streamTabsNavItem-42"
+                    className="StreamTabsNav-streamTabsNavItem-32"
                   >
                     <img
                       alt=""
-                      className="StreamTabsNav-streamTabsNavImg-44"
+                      className="StreamTabsNav-streamTabsNavImg-34"
                       src="gamepad.svg"
                     />
                     <span
@@ -324,17 +231,17 @@ exports[`renders correctly 1`] = `
                       ALL GAMES
                     </span>
                     <span
-                      className="StreamTabsNav-streamTabsWatch-45"
+                      className="StreamTabsNav-streamTabsWatch-35"
                     >
                       2
                     </span>
                   </div>
                   <div
-                    className="StreamTabsNav-streamTabsNavItem-42"
+                    className="StreamTabsNav-streamTabsNavItem-32"
                   >
                     <img
                       alt=""
-                      className="StreamTabsNav-streamTabsNavImg-44"
+                      className="StreamTabsNav-streamTabsNavImg-34"
                       src="starcraft.png"
                     />
                     <span
@@ -343,17 +250,17 @@ exports[`renders correctly 1`] = `
                       STARCRAFT 2
                     </span>
                     <span
-                      className="StreamTabsNav-streamTabsWatch-45"
+                      className="StreamTabsNav-streamTabsWatch-35"
                     >
                       2
                     </span>
                   </div>
                   <div
-                    className="StreamTabsNav-streamTabsNavItem-42"
+                    className="StreamTabsNav-streamTabsNavItem-32"
                   >
                     <img
                       alt=""
-                      className="StreamTabsNav-streamTabsNavImg-44"
+                      className="StreamTabsNav-streamTabsNavImg-34"
                       src="dota-2.svg"
                     />
                     <span
@@ -362,17 +269,17 @@ exports[`renders correctly 1`] = `
                       DOTA 2
                     </span>
                     <span
-                      className="StreamTabsNav-streamTabsWatch-45"
+                      className="StreamTabsNav-streamTabsWatch-35"
                     >
                       2
                     </span>
                   </div>
                   <div
-                    className="StreamTabsNav-streamTabsNavItem-42"
+                    className="StreamTabsNav-streamTabsNavItem-32"
                   >
                     <img
                       alt=""
-                      className="StreamTabsNav-streamTabsNavImg-44"
+                      className="StreamTabsNav-streamTabsNavImg-34"
                       src="overwatch.png"
                     />
                     <span
@@ -381,17 +288,17 @@ exports[`renders correctly 1`] = `
                       CS:GO
                     </span>
                     <span
-                      className="StreamTabsNav-streamTabsWatch-45"
+                      className="StreamTabsNav-streamTabsWatch-35"
                     >
                       2
                     </span>
                   </div>
                   <div
-                    className="StreamTabsNav-streamTabsNavItem-42"
+                    className="StreamTabsNav-streamTabsNavItem-32"
                   >
                     <img
                       alt=""
-                      className="StreamTabsNav-streamTabsNavImg-44"
+                      className="StreamTabsNav-streamTabsNavImg-34"
                       src="csgo.png"
                     />
                     <span
@@ -400,105 +307,105 @@ exports[`renders correctly 1`] = `
                       CS:GO
                     </span>
                     <span
-                      className="StreamTabsNav-streamTabsWatch-45"
+                      className="StreamTabsNav-streamTabsWatch-35"
                     >
                       2
                     </span>
                   </div>
                 </div>
                 <div
-                  className="StreamLive-root-46"
+                  className="StreamLive-root-36"
                 >
                   <div
-                    className="StreamLive-streamLiveItem-47"
+                    className="StreamLive-streamLiveItem-37"
                   >
                     <div
-                      className="StreamLive-streamLiveItemDate-48 StreamLive-itemDateLive-49"
+                      className="StreamLive-streamLiveItemDate-38 StreamLive-itemDateLive-39"
                     >
                       Live
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team1-51"
+                      className="StreamLive-streamLiveItemTeam-40 StreamLive-team1-41"
                     >
                       <img
                         alt=""
-                        className="StreamLive-teamImg-53"
+                        className="StreamLive-teamImg-43"
                         src="NRG+Logo+Light+Background.png"
                       />
                       <div
-                        className="StreamLive-teamName-54"
+                        className="StreamLive-teamName-44"
                       >
                         NRG
                       </div>
                       <div
-                        className="StreamLive-teamCountry-55 StreamLive-country1-56"
+                        className="StreamLive-teamCountry-45 StreamLive-country1-46"
                       >
                         <img
                           alt=""
-                          className="StreamLive-teamCountryImg-58"
+                          className="StreamLive-teamCountryImg-48"
                           src="france.png"
                         />
                         France
                       </div>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemScore-60"
+                      className="StreamLive-streamLiveItemScore-50"
                     >
                       6.14
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemVs-59"
+                      className="StreamLive-streamLiveItemVs-49"
                     >
                       VS
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemScore-60"
+                      className="StreamLive-streamLiveItemScore-50"
                     >
                       1.25
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team2-52"
+                      className="StreamLive-streamLiveItemTeam-40 StreamLive-team2-42"
                     >
                       <img
                         alt=""
-                        className="StreamLive-teamImg-53"
+                        className="StreamLive-teamImg-43"
                         src="Team_LDLC_Logo.png"
                       />
                       <div
-                        className="StreamLive-teamName-54"
+                        className="StreamLive-teamName-44"
                       >
                         LDLC
                       </div>
                       <div
-                        className="StreamLive-teamCountry-55 StreamLive-country2-57"
+                        className="StreamLive-teamCountry-45 StreamLive-country2-47"
                       >
                         <img
                           alt=""
-                          className="StreamLive-teamCountryImg-58"
+                          className="StreamLive-teamCountryImg-48"
                           src="spain.png"
                         />
                         Spain
                       </div>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemEvent-61"
+                      className="StreamLive-streamLiveItemEvent-51"
                     >
                       EVENT
                       <img
                         alt=""
-                        className="StreamLive-streamLiveItemEventImg-62"
+                        className="StreamLive-streamLiveItemEventImg-52"
                         src="event.png"
                       />
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemLink-63"
+                      className="StreamLive-streamLiveItemLink-53"
                     />
                   </div>
                   <div
-                    className="StreamLive-streamLiveItem-47"
+                    className="StreamLive-streamLiveItem-37"
                   >
                     <div
-                      className="StreamLive-streamLiveItemDate-48"
+                      className="StreamLive-streamLiveItemDate-38"
                     >
                       12:30 PM
                        
@@ -510,172 +417,172 @@ exports[`renders correctly 1`] = `
                       </span>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team1-51"
+                      className="StreamLive-streamLiveItemTeam-40 StreamLive-team1-41"
                     >
                       <img
                         alt=""
-                        className="StreamLive-teamImg-53"
+                        className="StreamLive-teamImg-43"
                         src="NRG+Logo+Light+Background.png"
                       />
                       <div
-                        className="StreamLive-teamName-54"
+                        className="StreamLive-teamName-44"
                       >
                         NRG
                       </div>
                       <div
-                        className="StreamLive-teamCountry-55 StreamLive-country1-56"
+                        className="StreamLive-teamCountry-45 StreamLive-country1-46"
                       >
                         <img
                           alt=""
-                          className="StreamLive-teamCountryImg-58"
+                          className="StreamLive-teamCountryImg-48"
                           src="france.png"
                         />
                         France
                       </div>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemScore-60"
+                      className="StreamLive-streamLiveItemScore-50"
                     >
                       6.14
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemVs-59"
+                      className="StreamLive-streamLiveItemVs-49"
                     >
                       VS
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemScore-60"
+                      className="StreamLive-streamLiveItemScore-50"
                     >
                       1.25
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team2-52"
+                      className="StreamLive-streamLiveItemTeam-40 StreamLive-team2-42"
                     >
                       <img
                         alt=""
-                        className="StreamLive-teamImg-53"
+                        className="StreamLive-teamImg-43"
                         src="Team_LDLC_Logo.png"
                       />
                       <div
-                        className="StreamLive-teamName-54"
+                        className="StreamLive-teamName-44"
                       >
                         LDLC
                       </div>
                       <div
-                        className="StreamLive-teamCountry-55 StreamLive-country2-57"
+                        className="StreamLive-teamCountry-45 StreamLive-country2-47"
                       >
                         <img
                           alt=""
-                          className="StreamLive-teamCountryImg-58"
+                          className="StreamLive-teamCountryImg-48"
                           src="spain.png"
                         />
                         Spain
                       </div>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemEvent-61"
+                      className="StreamLive-streamLiveItemEvent-51"
                     >
                       EVENT
                       <img
                         alt=""
-                        className="StreamLive-streamLiveItemEventImg-62"
+                        className="StreamLive-streamLiveItemEventImg-52"
                         src="event.png"
                       />
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemLink-63"
+                      className="StreamLive-streamLiveItemLink-53"
                     />
                   </div>
                   <div
-                    className="StreamLive-streamLiveItem-47"
+                    className="StreamLive-streamLiveItem-37"
                   >
                     <div
-                      className="StreamLive-streamLiveItemDate-48 StreamLive-itemDateLive-49"
+                      className="StreamLive-streamLiveItemDate-38 StreamLive-itemDateLive-39"
                     >
                       Live
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team1-51"
+                      className="StreamLive-streamLiveItemTeam-40 StreamLive-team1-41"
                     >
                       <img
                         alt=""
-                        className="StreamLive-teamImg-53"
+                        className="StreamLive-teamImg-43"
                         src="NRG+Logo+Light+Background.png"
                       />
                       <div
-                        className="StreamLive-teamName-54"
+                        className="StreamLive-teamName-44"
                       >
                         NRG
                       </div>
                       <div
-                        className="StreamLive-teamCountry-55 StreamLive-country1-56"
+                        className="StreamLive-teamCountry-45 StreamLive-country1-46"
                       >
                         <img
                           alt=""
-                          className="StreamLive-teamCountryImg-58"
+                          className="StreamLive-teamCountryImg-48"
                           src="france.png"
                         />
                         France
                       </div>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemScore-60"
+                      className="StreamLive-streamLiveItemScore-50"
                     >
                       6.14
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemVs-59"
+                      className="StreamLive-streamLiveItemVs-49"
                     >
                       VS
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemScore-60"
+                      className="StreamLive-streamLiveItemScore-50"
                     >
                       1.25
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team2-52"
+                      className="StreamLive-streamLiveItemTeam-40 StreamLive-team2-42"
                     >
                       <img
                         alt=""
-                        className="StreamLive-teamImg-53"
+                        className="StreamLive-teamImg-43"
                         src="Team_LDLC_Logo.png"
                       />
                       <div
-                        className="StreamLive-teamName-54"
+                        className="StreamLive-teamName-44"
                       >
                         LDLC
                       </div>
                       <div
-                        className="StreamLive-teamCountry-55 StreamLive-country2-57"
+                        className="StreamLive-teamCountry-45 StreamLive-country2-47"
                       >
                         <img
                           alt=""
-                          className="StreamLive-teamCountryImg-58"
+                          className="StreamLive-teamCountryImg-48"
                           src="spain.png"
                         />
                         Spain
                       </div>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemEvent-61"
+                      className="StreamLive-streamLiveItemEvent-51"
                     >
                       EVENT
                       <img
                         alt=""
-                        className="StreamLive-streamLiveItemEventImg-62"
+                        className="StreamLive-streamLiveItemEventImg-52"
                         src="event.png"
                       />
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemLink-63"
+                      className="StreamLive-streamLiveItemLink-53"
                     />
                   </div>
                   <div
-                    className="StreamLive-streamLiveItem-47"
+                    className="StreamLive-streamLiveItem-37"
                   >
                     <div
-                      className="StreamLive-streamLiveItemDate-48"
+                      className="StreamLive-streamLiveItemDate-38"
                     >
                       12:30 PM
                        
@@ -687,80 +594,80 @@ exports[`renders correctly 1`] = `
                       </span>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team1-51"
+                      className="StreamLive-streamLiveItemTeam-40 StreamLive-team1-41"
                     >
                       <img
                         alt=""
-                        className="StreamLive-teamImg-53"
+                        className="StreamLive-teamImg-43"
                         src="NRG+Logo+Light+Background.png"
                       />
                       <div
-                        className="StreamLive-teamName-54"
+                        className="StreamLive-teamName-44"
                       >
                         NRG
                       </div>
                       <div
-                        className="StreamLive-teamCountry-55 StreamLive-country1-56"
+                        className="StreamLive-teamCountry-45 StreamLive-country1-46"
                       >
                         <img
                           alt=""
-                          className="StreamLive-teamCountryImg-58"
+                          className="StreamLive-teamCountryImg-48"
                           src="france.png"
                         />
                         France
                       </div>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemScore-60"
+                      className="StreamLive-streamLiveItemScore-50"
                     >
                       6.14
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemVs-59"
+                      className="StreamLive-streamLiveItemVs-49"
                     >
                       VS
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemScore-60"
+                      className="StreamLive-streamLiveItemScore-50"
                     >
                       1.25
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemTeam-50 StreamLive-team2-52"
+                      className="StreamLive-streamLiveItemTeam-40 StreamLive-team2-42"
                     >
                       <img
                         alt=""
-                        className="StreamLive-teamImg-53"
+                        className="StreamLive-teamImg-43"
                         src="Team_LDLC_Logo.png"
                       />
                       <div
-                        className="StreamLive-teamName-54"
+                        className="StreamLive-teamName-44"
                       >
                         LDLC
                       </div>
                       <div
-                        className="StreamLive-teamCountry-55 StreamLive-country2-57"
+                        className="StreamLive-teamCountry-45 StreamLive-country2-47"
                       >
                         <img
                           alt=""
-                          className="StreamLive-teamCountryImg-58"
+                          className="StreamLive-teamCountryImg-48"
                           src="spain.png"
                         />
                         Spain
                       </div>
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemEvent-61"
+                      className="StreamLive-streamLiveItemEvent-51"
                     >
                       EVENT
                       <img
                         alt=""
-                        className="StreamLive-streamLiveItemEventImg-62"
+                        className="StreamLive-streamLiveItemEventImg-52"
                         src="event.png"
                       />
                     </div>
                     <div
-                      className="StreamLive-streamLiveItemLink-63"
+                      className="StreamLive-streamLiveItemLink-53"
                     />
                   </div>
                 </div>
@@ -778,14 +685,14 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <footer
-    className="Footer-root-64"
+    className="Footer-root-54"
   >
     <ul
-      className="Footer-footerNav-65"
+      className="Footer-footerNav-55"
     >
       <li>
         <a
-          className="Footer-footerNavItem-66"
+          className="Footer-footerNavItem-56"
           href="/"
           onClick={[Function]}
         >
@@ -794,7 +701,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-66"
+          className="Footer-footerNavItem-56"
           href="/"
           onClick={[Function]}
         >
@@ -803,7 +710,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-66"
+          className="Footer-footerNavItem-56"
           href="/"
           onClick={[Function]}
         >
@@ -812,7 +719,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-66"
+          className="Footer-footerNavItem-56"
           href="/games"
           onClick={[Function]}
         >
@@ -821,7 +728,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-66"
+          className="Footer-footerNavItem-56"
           href="/"
           onClick={[Function]}
         >
@@ -830,7 +737,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-66"
+          className="Footer-footerNavItem-56"
           href="/"
           onClick={[Function]}
         >

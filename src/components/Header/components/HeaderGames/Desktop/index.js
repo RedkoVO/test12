@@ -6,17 +6,17 @@ import UserImg from '../../../../../assets/images/user.png'
 
 import styles from './styles'
 
-const HeaderCatalog = ({ classes, children }) => (
+const HeaderGames = ({ classes, children }) => (
   <div className={classes.root}>
-    <div className={classes.catalogUserBlock}>
-      <p className={classes.catalogUserHello}> Hello, Ben A <br />
-        <span className={classes.catalogUserVerification}>KYC VERIFICATED</span>
+    <div className={classes.gamesUserBlock}>
+      <p className={classes.gamesUserHello}> Hello, Ben A <br />
+        <span className={classes.gamesUserVerification}>KYC VERIFICATED</span>
       </p>
-      <div className={classes.catalogUserPhoto}>
+      <div className={classes.gamesUserPhoto}>
         <img src={UserImg} alt="" />
       </div>
-      <p className={classes.catalogUserBallance}> 764.23 DCB <br />
-        <span className={classes.catalogUserBallDescr}>YOUR BALANCE</span>
+      <p className={classes.gamesUserBallance}> 764.23 DCB <br />
+        <span className={classes.gamesUserBallDescr}>YOUR BALANCE</span>
       </p>
     </div>
     
@@ -24,9 +24,9 @@ const HeaderCatalog = ({ classes, children }) => (
   </div>
 )
 
-HeaderCatalog.propTypes = {
+HeaderGames.propTypes = {
   classes: PropTypes.object,
   children: PropTypes.node
 }
 
-export default withStyles(styles)(HeaderCatalog)
+export default withStyles(styles)(HeaderGames)

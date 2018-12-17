@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly main 1`] = `
+<ul
+  className="MenuNavigation-root-1"
+>
+  <li
+    className={undefined}
+  >
+    <div
+      className="MenuNavigation-logout-10"
+      onClick={[Function]}
+    >
+      Logout
+    </div>
+  </li>
+  <li>
+    <a
+      className="MenuNavigation-headerMenuItem-2"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="MenuNavigation-menuIcon-3 MenuNavigation-dashboard-4"
+      />
+      <br />
+       Dashboard
+    </a>
+  </li>
+  <li>
+    <a
+      className="MenuNavigation-headerMenuItem-2"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="MenuNavigation-menuIcon-3 MenuNavigation-walletIcon-5"
+      />
+      <br />
+       Wallet
+    </a>
+  </li>
+  <li>
+    <a
+      className="MenuNavigation-headerMenuItem-2"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="MenuNavigation-menuIcon-3 MenuNavigation-shop-6"
+      />
+      <br />
+       Shop
+    </a>
+  </li>
+  <li>
+    <a
+      className="MenuNavigation-headerMenuItem-2"
+      href="/games"
+      onClick={[Function]}
+    >
+      <i
+        className="MenuNavigation-menuIcon-3 MenuNavigation-games-7"
+      />
+      <br />
+       Games
+    </a>
+  </li>
+  <li>
+    <a
+      className="MenuNavigation-headerMenuItem-2"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="MenuNavigation-menuIcon-3 MenuNavigation-friends-8"
+      />
+      <br />
+       Friends
+    </a>
+  </li>
+  <li>
+    <a
+      className="MenuNavigation-headerMenuItem-2"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="MenuNavigation-menuIcon-3 MenuNavigation-settings-9"
+      />
+      <br />
+       Settings
+    </a>
+  </li>
+</ul>
+`;

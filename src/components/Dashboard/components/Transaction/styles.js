@@ -15,13 +15,13 @@ export default theme => ({
     boxSizing: 'border-box',
     marginBottom: '30px',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       width: '510px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       width: '480px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       width: '320px'
     }
   },
@@ -55,7 +55,7 @@ export default theme => ({
     alignItems: 'center',
     marginBottom: '11px',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       height: '165px'
     }
   },
@@ -65,10 +65,10 @@ export default theme => ({
     fontWeight: 400,
     boxSizing: 'border-box',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       paddingLeft: '35px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       fontSize: '11px',
       paddingLeft: '15px'
     }
@@ -87,21 +87,21 @@ export default theme => ({
     borderRadius: '15px',
     width: '790px',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       paddingRight: '10px',
       width: '765px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       flexWrap: 'wrap',
       minHeight: '50px',
       width: '500px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       flexWrap: 'wrap',
       minHeight: '50px',
       width: '470px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       width: '310px'
     }
   },
@@ -117,7 +117,7 @@ export default theme => ({
       fontWeight: 700
     },
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       display: 'none'
     }
   },
@@ -136,7 +136,7 @@ export default theme => ({
       backgroundSize: '15px 12px',
       backgroundPosition: 'center',
 
-      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      [theme.breakpoints.down('xs')]: {
         bottom: 0,
         left: '15px'
       }
@@ -157,7 +157,7 @@ export default theme => ({
       backgroundSize: '12px',
       backgroundPosition: 'center',
 
-      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      [theme.breakpoints.down('xs')]: {
         bottom: 0,
         left: '15px'
       }
@@ -178,7 +178,7 @@ export default theme => ({
       backgroundSize: 'contain',
       backgroundPosition: 'center',
 
-      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      [theme.breakpoints.down('xs')]: {
         bottom: 0,
         left: 0
       }
@@ -199,7 +199,7 @@ export default theme => ({
       backgroundSize: '12px',
       backgroundPosition: 'center',
 
-      [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+      [theme.breakpoints.down('xs')]: {
         bottom: 0,
         left: 0
       }
@@ -208,10 +208,10 @@ export default theme => ({
   col1: {
     width: '48%',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       flexBasis: '100%'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       paddingLeft: '30px'
     }
   },
@@ -219,10 +219,10 @@ export default theme => ({
     width: '15%',
     paddingLeft: '40px',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       flexBasis: '30%'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       flexBasis: '32%',
       paddingLeft: '30px'
     }
@@ -231,10 +231,10 @@ export default theme => ({
     width: '12%',
     paddingLeft: '35px',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       flexBasis: '30%'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.XS)]: {
+    [theme.breakpoints.down('xs')]: {
       flexBasis: '26%',
       paddingLeft: '30px'
     }
@@ -242,7 +242,7 @@ export default theme => ({
   col4: {
     width: '23%',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       flexBasis: '40%'
     }
   },
@@ -267,7 +267,7 @@ export default theme => ({
     paddingRight: '20px',
     boxSizing: 'border-box',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       paddingRight: '5px'
     }
   },

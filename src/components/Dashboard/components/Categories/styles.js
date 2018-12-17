@@ -10,7 +10,7 @@ export default theme => ({
     width: '100%',
     '-ms-align-items': 'center',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       justifyContent: 'center'
     }
   },
@@ -24,13 +24,13 @@ export default theme => ({
     marginTop: '60px',
     '-ms-align-items': 'center',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       width: '390px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       width: '620px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth: '630px',
       width: '390px'
     }

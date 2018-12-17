@@ -1,4 +1,6 @@
-export default () => ({
+import gC from '../../../constants'
+
+export default theme => ({
   containerGame: {
     position: 'relative',
     width: '100%',
@@ -11,7 +13,14 @@ export default () => ({
   headerGame: {
     width: '100%',
     height: '585px',
-    display: 'flex'
+    display: 'flex',
+
+    [theme.breakpoints.down('sm')]: {
+      height: '100%',
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+      alignItems: 'center'
+    }
   },
   gameHeaderMain: {
     display: 'flex',
@@ -20,7 +29,11 @@ export default () => ({
     alignItems: 'center',
     padding: '30px 0',
     width: '100%',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+
+    [theme.breakpoints.down('sm')]: {
+      padding: 0
+    }
   },
 
   gameMain: {

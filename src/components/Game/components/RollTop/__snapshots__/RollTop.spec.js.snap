@@ -143,3 +143,253 @@ exports[`renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`renders correctly Desktop 1`] = `
+<div
+  className="RollTop-root-1"
+>
+  <div
+    className="RollTop-gameRollImg-2"
+  >
+    <img
+      alt=""
+      src="image"
+    />
+  </div>
+  <div
+    className="RollTop-gameRollInf-3"
+  >
+    <div
+      className="RollTop-gameRollNext-4"
+    >
+      <p>
+        next roll in: 
+        <span
+          className="RollTop-gameRollNextCounter-5"
+        >
+          00:00:23.12
+        </span>
+      </p>
+    </div>
+    <div
+      className="RollTop-gameRollDescr-6"
+    >
+      <div
+        className="RollTop-gameRollDescrleft-7"
+      >
+        <div
+          className="RollTop-gameRollTitleBlock-8"
+        >
+          <p
+            className="RollTop-gameRollTitle-9"
+          >
+            4Clover
+          </p>
+          <span
+            className="RollTop-gameRollOnline-10"
+          >
+            online: 234
+          </span>
+          <br />
+          <span
+            className="RollTop-gameRollCompany-11"
+          >
+            by Fall Inc.
+          </span>
+        </div>
+        <div
+          className="RollTop-gameRollText-12"
+        >
+          <p>
+            Integer tempor semper sapien sit amet bibendum. Etiam ornare teInteger tempor semper sapien sit amet bibendum. Etiam ornare te et bibendum. Etiam ornare te
+          </p>
+        </div>
+        <div
+          className="RollTop-gameRollTags-13"
+        >
+          <p>
+            #ROLLED #BESTCRYPTO #ETH 
+          </p>
+        </div>
+      </div>
+      <div
+        className="RollTop-gameRollRating-14"
+      >
+        <p
+          className="RollTop-ratingValue-15"
+        >
+          <span
+            className="RollTop-ratingValueNum-16"
+          >
+            6.5
+          </span>
+          <span
+            className="RollTop-ratingValueFull-17"
+          >
+            /7
+          </span>
+        </p>
+        <div
+          className="RollTop-ratingStars-18"
+        >
+          <div
+            className="RollTop-fullStars-19"
+          />
+          <div
+            className="RollTop-halfStars-20"
+          />
+        </div>
+        <span
+          className="RollTop-ratingCategory-21"
+        >
+          DICE CATEGORY
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly Mobile 1`] = `
+<div
+  className="RollTop-root-1"
+>
+  <div
+    className="RollTop-gameRollImg-2"
+  >
+    <img
+      alt=""
+      src="image"
+    />
+  </div>
+  <div
+    className="RollTop-gameRollInf-3"
+  >
+    <div
+      className="HeaderGame-root-22"
+    >
+      <div
+        className="HeaderGame-gameUserBlock-23"
+      >
+        <p
+          className="HeaderGame-gameUserHello-24"
+        >
+          Hello, Ben A 
+          <br />
+          <span
+            className="HeaderGame-gameUserVerification-26"
+          >
+            KYC VERIFICATED
+          </span>
+        </p>
+        <div
+          className="HeaderGame-gameUserPhoto-28"
+        >
+          <img
+            alt=""
+            src="user.png"
+          />
+        </div>
+        <p
+          className="HeaderGame-gameUserBallance-25"
+        >
+          764.23 DCB 
+          <br />
+          <span
+            className="HeaderGame-gameUserBallDescr-27"
+          >
+            YOUR BALANCE
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      className="RollTop-gameRollNext-4"
+    >
+      <p>
+        next roll in: 
+        <span
+          className="RollTop-gameRollNextCounter-5"
+        >
+          00:00:23.12
+        </span>
+      </p>
+    </div>
+    <div
+      className="RollTop-gameRollDescr-6"
+    >
+      <div
+        className="RollTop-gameRollDescrleft-7"
+      >
+        <div
+          className="RollTop-gameRollTitleBlock-8"
+        >
+          <p
+            className="RollTop-gameRollTitle-9"
+          >
+            4Clover
+          </p>
+          <span
+            className="RollTop-gameRollOnline-10"
+          >
+            online: 234
+          </span>
+          <br />
+          <span
+            className="RollTop-gameRollCompany-11"
+          >
+            by Fall Inc.
+          </span>
+        </div>
+        <div
+          className="RollTop-gameRollText-12"
+        >
+          <p>
+            Integer tempor semper sapien sit amet bibendum. Etiam ornare teInteger tempor semper sapien sit amet bibendum. Etiam ornare te et bibendum. Etiam ornare te
+          </p>
+        </div>
+        <div
+          className="RollTop-gameRollTags-13"
+        >
+          <p>
+            #ROLLED #BESTCRYPTO #ETH 
+          </p>
+        </div>
+      </div>
+      <div
+        className="RollTop-gameRollRating-14"
+      >
+        <p
+          className="RollTop-ratingValue-15"
+        >
+          <span
+            className="RollTop-ratingValueNum-16"
+          >
+            6.5
+          </span>
+          <span
+            className="RollTop-ratingValueFull-17"
+          >
+            /7
+          </span>
+        </p>
+        <div
+          className="RollTop-ratingStars-18"
+        >
+          <div
+            className="RollTop-fullStars-19"
+          />
+          <div
+            className="RollTop-halfStars-20"
+          />
+        </div>
+        <span
+          className="RollTop-ratingCategory-21"
+        >
+          DICE CATEGORY
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

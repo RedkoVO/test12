@@ -5,13 +5,13 @@ exports[`renders correctly 1`] = `
   className="GameCounter-root-1"
 >
   <div
-    className="GameCounter-counterWins-4"
+    className="GameCounter-counterWins-6"
   >
     <p
-      className="GameCounter-counterBiggestWin-5"
+      className="GameCounter-counterBiggestWin-7"
     >
       <span
-        className="GameCounter-counterValue-9"
+        className="GameCounter-counterValue-11"
       >
         4666.78 dcb
       </span>
@@ -26,10 +26,10 @@ exports[`renders correctly 1`] = `
     className="GameCounter-counterHours-2"
   >
     <p
-      className="GameCounter-counterHoursVolume-6"
+      className="GameCounter-counterHoursVolume-8"
     >
       <span
-        className="GameCounter-counterValue-9"
+        className="GameCounter-counterValue-11"
       >
         167.12 dcb
       </span>
@@ -41,13 +41,31 @@ exports[`renders correctly 1`] = `
     </p>
   </div>
   <div
-    className="GameCounter-counterContracts-3"
+    className="GameCounter-counterUsers-3"
   >
     <p
-      className="GameCounter-counterContractsVolume-7"
+      className="GameCounter-counterUsersVolume-4"
     >
       <span
-        className="GameCounter-counterValue-9"
+        className="GameCounter-counterValue-11"
+      >
+        785
+      </span>
+       
+      <br />
+       USERS FOR 
+      <br />
+      LAST 24 HOURS
+    </p>
+  </div>
+  <div
+    className="GameCounter-counterContracts-5"
+  >
+    <p
+      className="GameCounter-counterContractsVolume-9"
+    >
+      <span
+        className="GameCounter-counterValue-11"
       >
         20243.12 dcb
       </span>
@@ -59,7 +77,7 @@ exports[`renders correctly 1`] = `
     </p>
     <br />
     <a
-      className="GameCounter-counterContractsLink-8"
+      className="GameCounter-counterContractsLink-10"
       href="/"
       onClick={[Function]}
     >

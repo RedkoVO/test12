@@ -12,11 +12,11 @@ export default theme => ({
     display: 'none',
     position: 'relative',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       display: 'flex',
       order: 3
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       width: '100%'
     }
   },
@@ -69,7 +69,7 @@ export default theme => ({
     zIndex: 20,
     borderRadius: '25px',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       width: '100%',
       borderRadius: 0
     }

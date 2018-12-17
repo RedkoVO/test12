@@ -3,10 +3,10 @@ export default {
   API_NODE_URL: 'https://node.diceybit.io/api/node-api',
   IFRAME_URL: 'https://node.diceybit.io:3333/en/web/fourclover/?sid=',
   BRECKPOINT: {
-    XL: 1500,
-    LG: 1280,
-    MD: 1024,
-    SM: 767,
-    XS: 480
+    XL: 1280,
+    LG: 1024,
+    MD: 767,
+    SM: 480,
+    XS: 0
   }
 }

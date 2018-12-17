@@ -12,133 +12,40 @@ exports[`renders correctly 1`] = `
     >
       <header
         className="Skins-headerSkins-3"
-      >
-        <ul
-          className="MenuNavigation-root-5 dark"
-        >
-          <li
-            className={undefined}
-          >
-            <div
-              className="MenuNavigation-logout-14"
-              onClick={[Function]}
-            >
-              Logout
-            </div>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-dashboard-8"
-              />
-              <br />
-               Dashboard
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-walletIcon-9"
-              />
-              <br />
-               Wallet
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-shop-10"
-              />
-              <br />
-               Shop
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/games"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-games-11"
-              />
-              <br />
-               Games
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-friends-12"
-              />
-              <br />
-               Friends
-            </a>
-          </li>
-          <li>
-            <a
-              className="MenuNavigation-headerMenuItem-6"
-              href="/"
-              onClick={[Function]}
-            >
-              <i
-                className="MenuNavigation-menuIcon-7 MenuNavigation-settings-13"
-              />
-              <br />
-               Settings
-            </a>
-          </li>
-        </ul>
-      </header>
+      />
       <main
         className="Skins-tradeMain-4"
       >
         <div
-          className="TradeTop-root-15"
+          className="TradeTop-root-5"
         >
           <div
-            className="TradeTop-tradeGame-16"
+            className="TradeTop-tradeGame-6"
           >
             <div
-              className="TradeTop-tradeGameSelect-17"
+              className="TradeTop-tradeGameSelect-7"
             >
               Game:
             </div>
             <div
-              className="TradeTop-tradeGameItem-18"
+              className="TradeTop-tradeGameItem-8"
             >
               CS:GO
             </div>
           </div>
           <div
-            className="TradeTop-tradeStream-19"
+            className="TradeTop-tradeStream-9"
           >
             <div
-              className="TradeTop-tradeStreamTitle-20"
+              className="TradeTop-tradeStreamTitle-10"
             >
               Put your steam trade url: 
             </div>
             <div
-              className="TradeTop-tradeStreamUrlWrap-21"
+              className="TradeTop-tradeStreamUrlWrap-11"
             >
               <input
-                className="TradeTop-tradeStreamUrl-22"
+                className="TradeTop-tradeStreamUrl-12"
                 placeholder="https://steamcommunity.com/groups/dota2lounge/discussions/0/558"
                 type="text"
               />
@@ -146,21 +53,21 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="TradeSkins-root-23"
+          className="TradeSkins-root-13"
         >
           <div
-            className="TradeSkins-tradeSkinsTitle-24"
+            className="TradeSkins-tradeSkinsTitle-14"
           >
             Select skins you want to sale:
           </div>
           <div
-            className="TradeSkins-tradeSkinsItemWrap-25"
+            className="TradeSkins-tradeSkinsItemWrap-15"
           >
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -168,26 +75,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -195,26 +102,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -222,26 +129,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -249,26 +156,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -276,26 +183,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -303,26 +210,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -330,26 +237,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -357,26 +264,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -384,26 +291,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -411,26 +318,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -438,26 +345,26 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
             <div
-              className="TradeSkins-tradeSkinsItem-26 TradeSkins-skinSelected-27"
+              className="TradeSkins-tradeSkinsItem-16 TradeSkins-skinSelected-17"
             >
               <div
-                className="TradeSkins-skinsItemImg-28"
+                className="TradeSkins-skinsItemImg-18"
               >
                 <img
                   alt=""
@@ -465,28 +372,28 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradeSkins-skinsItemName-29"
+                className="TradeSkins-skinsItemName-19"
               >
                 Gun: Good Weapon2 1.2
               </div>
               <div
-                className="TradeSkins-skinsItemPrice-30"
+                className="TradeSkins-skinsItemPrice-20"
               >
                 $11.10 FN
               </div>
               <div
-                className="TradeSkins-skinsItemSale-31"
+                className="TradeSkins-skinsItemSale-21"
               >
                 $12.30
               </div>
             </div>
           </div>
           <ul
-            className="TradeSkins-pageNavi-32"
+            className="TradeSkins-pageNavi-22"
           >
             <li>
               <div
-                className="TradeSkins-previos-33"
+                className="TradeSkins-previos-23"
               >
                 Prev
               </div>
@@ -505,7 +412,7 @@ exports[`renders correctly 1`] = `
             </li>
             <li>
               <div
-                className="TradeSkins-next-34"
+                className="TradeSkins-next-24"
               >
                 Next
               </div>
@@ -513,21 +420,21 @@ exports[`renders correctly 1`] = `
           </ul>
         </div>
         <div
-          className="TradePayment-root-35"
+          className="TradePayment-root-25"
         >
           <div
-            className="TradePayment-paymentTitle-36"
+            className="TradePayment-paymentTitle-26"
           >
             Choose the way to cash out:
           </div>
           <div
-            className="TradePayment-paymentWay-37"
+            className="TradePayment-paymentWay-27"
           >
             <div
-              className="TradePayment-paymentWayItem-38 TradePayment-paymentSelectItem-39"
+              className="TradePayment-paymentWayItem-28 TradePayment-paymentSelectItem-29"
             >
               <div
-                className="TradePayment-paymentWayItemImg-40"
+                className="TradePayment-paymentWayItemImg-30"
               >
                 <img
                   alt=""
@@ -535,19 +442,19 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradePayment-paymentWayItemName-41"
+                className="TradePayment-paymentWayItemName-31"
               >
                 Credit Card
               </div>
               <div
-                className="TradePayment-paymentWayItemUnderline-42 TradePayment-selected-43"
+                className="TradePayment-paymentWayItemUnderline-32 TradePayment-selected-33"
               />
             </div>
             <div
-              className="TradePayment-paymentWayItem-38"
+              className="TradePayment-paymentWayItem-28"
             >
               <div
-                className="TradePayment-paymentWayItemImg-40"
+                className="TradePayment-paymentWayItemImg-30"
               >
                 <img
                   alt=""
@@ -555,19 +462,19 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradePayment-paymentWayItemName-41"
+                className="TradePayment-paymentWayItemName-31"
               >
                 Bitcoin
               </div>
               <div
-                className="TradePayment-paymentWayItemUnderline-42"
+                className="TradePayment-paymentWayItemUnderline-32"
               />
             </div>
             <div
-              className="TradePayment-paymentWayItem-38"
+              className="TradePayment-paymentWayItem-28"
             >
               <div
-                className="TradePayment-paymentWayItemImg-40"
+                className="TradePayment-paymentWayItemImg-30"
               >
                 <img
                   alt=""
@@ -575,71 +482,71 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="TradePayment-paymentWayItemName-41"
+                className="TradePayment-paymentWayItemName-31"
               >
                 CryptaurCoin
               </div>
               <div
-                className="TradePayment-paymentWayItemUnderline-42"
+                className="TradePayment-paymentWayItemUnderline-32"
               />
             </div>
           </div>
           <div
-            className="PaymentCard-root-54"
+            className="PaymentCard-root-44"
           >
             <div
-              className="PaymentCard-paymentCardTitle-55"
+              className="PaymentCard-paymentCardTitle-45"
             >
               Cashout on my Credit card:
             </div>
             <div
-              className="PaymentCard-paymentInputWrap-56"
+              className="PaymentCard-paymentInputWrap-46"
             >
               <input
-                className="PaymentCard-paymentCardNum-58"
+                className="PaymentCard-paymentCardNum-48"
                 placeholder="Card Number"
                 type="text"
               />
             </div>
             <div
-              className="PaymentCard-paymentInputWrap2-57"
+              className="PaymentCard-paymentInputWrap2-47"
             >
               <input
-                className="PaymentCard-paymentCardHolder-59"
+                className="PaymentCard-paymentCardHolder-49"
                 placeholder="Card Holder"
                 type="text"
               />
             </div>
             <div
-              className="PaymentCard-paymentCardMonth-60"
+              className="PaymentCard-paymentCardMonth-50"
             >
               MM
             </div>
             <div
-              className="PaymentCard-paymentCardYear-61"
+              className="PaymentCard-paymentCardYear-51"
             >
               YYYY
             </div>
             <div
-              className="PaymentCard-paymentInputWrap3-62"
+              className="PaymentCard-paymentInputWrap3-52"
             >
               <input
-                className="PaymentCard-paymentCardCvc-63"
+                className="PaymentCard-paymentCardCvc-53"
                 placeholder="CVC"
                 type="text"
               />
             </div>
           </div>
           <div
-            className="PaymentSelected-root-64"
+            className="PaymentSelected-root-54"
           >
             <div
-              className="PaymentSelected-paymentSelectedTitle-65"
+              className="PaymentSelected-paymentSelectedTitle-55"
             >
               You selected 6 items:
             </div>
             <div
-              className="PaymentSelected-paymentSelectedItem-66"
+              className="PaymentSelected-paymentSelectedItem-56"
             >
               <div
                 className={undefined}
@@ -650,16 +557,16 @@ exports[`renders correctly 1`] = `
                  ....
               </div>
               <div
-                className="PaymentSelected-selectedPrice-67"
+                className="PaymentSelected-selectedPrice-57"
               >
                 $12.20
               </div>
               <div
-                className="PaymentSelected-selectedClose-68"
+                className="PaymentSelected-selectedClose-58"
               />
             </div>
             <div
-              className="PaymentSelected-paymentSelectedItem-66"
+              className="PaymentSelected-paymentSelectedItem-56"
             >
               <div
                 className={undefined}
@@ -670,16 +577,16 @@ exports[`renders correctly 1`] = `
                  ....
               </div>
               <div
-                className="PaymentSelected-selectedPrice-67"
+                className="PaymentSelected-selectedPrice-57"
               >
                 $12.20
               </div>
               <div
-                className="PaymentSelected-selectedClose-68"
+                className="PaymentSelected-selectedClose-58"
               />
             </div>
             <div
-              className="PaymentSelected-paymentSelectedItem-66"
+              className="PaymentSelected-paymentSelectedItem-56"
             >
               <div
                 className={undefined}
@@ -690,16 +597,16 @@ exports[`renders correctly 1`] = `
                  ....
               </div>
               <div
-                className="PaymentSelected-selectedPrice-67"
+                className="PaymentSelected-selectedPrice-57"
               >
                 $12.20
               </div>
               <div
-                className="PaymentSelected-selectedClose-68"
+                className="PaymentSelected-selectedClose-58"
               />
             </div>
             <div
-              className="PaymentSelected-paymentSelectedItem-66"
+              className="PaymentSelected-paymentSelectedItem-56"
             >
               <div
                 className={undefined}
@@ -710,16 +617,16 @@ exports[`renders correctly 1`] = `
                  ....
               </div>
               <div
-                className="PaymentSelected-selectedPrice-67"
+                className="PaymentSelected-selectedPrice-57"
               >
                 $12.20
               </div>
               <div
-                className="PaymentSelected-selectedClose-68"
+                className="PaymentSelected-selectedClose-58"
               />
             </div>
             <div
-              className="PaymentSelected-paymentSelectedItem-66"
+              className="PaymentSelected-paymentSelectedItem-56"
             >
               <div
                 className={undefined}
@@ -730,16 +637,16 @@ exports[`renders correctly 1`] = `
                  ....
               </div>
               <div
-                className="PaymentSelected-selectedPrice-67"
+                className="PaymentSelected-selectedPrice-57"
               >
                 $12.20
               </div>
               <div
-                className="PaymentSelected-selectedClose-68"
+                className="PaymentSelected-selectedClose-58"
               />
             </div>
             <div
-              className="PaymentSelected-paymentSelectedItem-66"
+              className="PaymentSelected-paymentSelectedItem-56"
             >
               <div
                 className={undefined}
@@ -750,58 +657,58 @@ exports[`renders correctly 1`] = `
                  ....
               </div>
               <div
-                className="PaymentSelected-selectedPrice-67"
+                className="PaymentSelected-selectedPrice-57"
               >
                 $12.20
               </div>
               <div
-                className="PaymentSelected-selectedClose-68"
+                className="PaymentSelected-selectedClose-58"
               />
             </div>
           </div>
           <div
-            className="TradePayment-paymentAmmount-44"
+            className="TradePayment-paymentAmmount-34"
           >
             <div
-              className="TradePayment-paymentAmmountText-45"
+              className="TradePayment-paymentAmmountText-35"
             >
               Total ammount: 
             </div>
             <div
-              className="TradePayment-paymentAmmountFill-46"
+              className="TradePayment-paymentAmmountFill-36"
             />
             <div
-              className="TradePayment-paymentAmmountPrice-47"
+              className="TradePayment-paymentAmmountPrice-37"
             >
               $67.45
             </div>
           </div>
           <div
-            className="TradePayment-paymentBonus-48"
+            className="TradePayment-paymentBonus-38"
           >
             <input
-              className="TradePayment-paymentBonusCheck-49"
+              className="TradePayment-paymentBonusCheck-39"
               id="paymentBonusCheck"
               type="checkbox"
             />
             <label
-              className="TradePayment-paymentBonusCheckLabel-50"
+              className="TradePayment-paymentBonusCheckLabel-40"
               htmlFor="paymentBonusCheck"
             >
               Yes, I have a bonus code!
             </label>
           </div>
           <div
-            className="TradePayment-paymentInputWrap4-51"
+            className="TradePayment-paymentInputWrap4-41"
           >
             <input
-              className="TradePayment-paymentBonusInput-52"
+              className="TradePayment-paymentBonusInput-42"
               placeholder="Enter Your Bonus Code"
               type="text"
             />
           </div>
           <div
-            className="TradePayment-paymentBtn-53"
+            className="TradePayment-paymentBtn-43"
           >
             CASHOUT
           </div>
@@ -810,14 +717,14 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <footer
-    className="Footer-root-69"
+    className="Footer-root-59"
   >
     <ul
-      className="Footer-footerNav-70"
+      className="Footer-footerNav-60"
     >
       <li>
         <a
-          className="Footer-footerNavItem-71"
+          className="Footer-footerNavItem-61"
           href="/"
           onClick={[Function]}
         >
@@ -826,7 +733,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-71"
+          className="Footer-footerNavItem-61"
           href="/"
           onClick={[Function]}
         >
@@ -835,7 +742,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-71"
+          className="Footer-footerNavItem-61"
           href="/"
           onClick={[Function]}
         >
@@ -844,7 +751,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-71"
+          className="Footer-footerNavItem-61"
           href="/games"
           onClick={[Function]}
         >
@@ -853,7 +760,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-71"
+          className="Footer-footerNavItem-61"
           href="/"
           onClick={[Function]}
         >
@@ -862,7 +769,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-71"
+          className="Footer-footerNavItem-61"
           href="/"
           onClick={[Function]}
         >

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../MenuNavigation'
+import MenuNavigation from '../../MenuNavigation/Desktop/AsyncMenuNavigation'
 import Header from '../../../containers/Header/AsyncHeader'
 import TradeTop from '../components/TradeTop'
 import TradeSkins from '../components/TradeSkins'
@@ -16,7 +16,7 @@ const Skins = ({ classes, handleLogout, skins, selectedItems }) => (
     <div className={classes.containerTradeWrap}>
       <div className={classes.containerTrade}>
         <header className={classes.headerSkins}>
-          <MenuNavigation page="dark" handleLogout={handleLogout} />
+          <MenuNavigation type="main" page="dark" handleLogout={handleLogout} />
           <Header type="catalog" />
         </header>
 

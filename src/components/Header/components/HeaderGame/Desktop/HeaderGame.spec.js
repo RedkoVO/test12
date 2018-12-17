@@ -5,23 +5,22 @@ import { Provider } from 'react-redux'
 import { reduxForm } from 'redux-form'
 import { createStore } from 'redux'
 
-import MenuNavigation from './'
+import HeaderGame from './'
 
 const Wrapper = reduxForm({ form: 'test' })(({ children }) => children)
 const store = createStore(a => a, {})
 
-it('renders correctly', () => {
-  const tree = renderer.create(
-    <Provider store={store}>
-      <MemoryRouter keyLength={0}>
-        <Wrapper>
-          <MenuNavigation
-            page={'test'}
-            handleLogout={() => { }}
-          />
-        </Wrapper>
-      </MemoryRouter>
-    </Provider>
-  ).toJSON()
+it('renders correctly DESKTOP', () => {
+  const tree = renderer
+    .create(
+      <Provider store={store}>
+        <MemoryRouter keyLength={0}>
+          <Wrapper>
+            <HeaderGame />
+          </Wrapper>
+        </MemoryRouter>
+      </Provider>
+    )
+    .toJSON()
   expect(tree).toMatchSnapshot()
 })

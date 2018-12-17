@@ -5,13 +5,13 @@ export default theme => ({
     width: '100%',
     display: 'flex',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
       '-ms-align-items': 'center',
       alignItems: 'center'
     },
 
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'flex',
       flexDirection: 'column',
       '-ms-align-items': 'center',

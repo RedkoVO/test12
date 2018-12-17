@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly DESKTOP 1`] = `
+<div
+  className="HeaderGames-root-1"
+>
+  <div
+    className="HeaderGames-catalogUserBlock-2"
+  >
+    <p
+      className="HeaderGames-catalogUserHello-3"
+    >
+       Hello, Ben A 
+      <br />
+      <span
+        className="HeaderGames-catalogUserVerification-5"
+      >
+        KYC VERIFICATED
+      </span>
+    </p>
+    <div
+      className="HeaderGames-catalogUserPhoto-7"
+    >
+      <img
+        alt=""
+        src="user.png"
+      />
+    </div>
+    <p
+      className="HeaderGames-catalogUserBallance-4"
+    >
+       764.23 DCB 
+      <br />
+      <span
+        className="HeaderGames-catalogUserBallDescr-6"
+      >
+        YOUR BALANCE
+      </span>
+    </p>
+  </div>
+</div>
+`;

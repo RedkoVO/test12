@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../MenuNavigation'
+import MenuNavigation from '../../MenuNavigation/Desktop/AsyncMenuNavigation'
 import HeaderCatalog from '../../../containers/Header/AsyncHeader'
 import StreamBettingTop from '../components/StreamBettingTop'
 import StreamScreen from '../components/StreamScreen'
@@ -18,7 +18,7 @@ const Stream = ({ classes, handleLogout, isDesktop, streamLive }) => (
     <div className={classes.containerTradeWrap}>
       <div className={classes.containerTrade}>
         <header className={classes.headerStream}>
-          <MenuNavigation page="dark" handleLogout={handleLogout} />
+          <MenuNavigation type="main" page="dark" handleLogout={handleLogout} />
           <HeaderCatalog isDesktop={isDesktop} type="catalog" />
         </header>
 

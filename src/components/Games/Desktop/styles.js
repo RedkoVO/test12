@@ -19,10 +19,10 @@ export default theme => ({
     alignItems: 'center',
     boxSizing: 'border-box',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       minWidth: '75%'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       minWidth: '65%'
     }
   },
@@ -37,7 +37,7 @@ export default theme => ({
     paddingLeft: '65px',
     boxSizing: 'border-box',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       paddingLeft: 0
     }
   }

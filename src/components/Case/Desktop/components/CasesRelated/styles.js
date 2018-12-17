@@ -27,7 +27,6 @@ export default () => ({
     minHeight: '100px',
     backgroundColor: 'rgba(0,0,0,0.13)',
     borderRadius: '15px',
-    marginRight: '10px',
     marginBottom: '10px',
     padding: '5px',
     boxSizing: 'border-box',

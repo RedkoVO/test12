@@ -1,7 +1,8 @@
+import gC from '../../../../constants'
 import PlayArrowLogo from '../../../../assets/images/svg/playArrow.svg'
 import HeartLogo from '../../../../assets/images/svg/heart.svg'
 
-export default () => ({
+export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
@@ -17,7 +18,11 @@ export default () => ({
     flexDirection: 'column',
     '-ms-align-items': 'center',
     alignItems: 'center',
-    marginLeft: '100px'
+    marginLeft: '100px',
+
+    [theme.breakpoints.down('lg')]: {
+      minWidth: '200px'
+    }
   },
   playNowBtn: {
     position: 'relative',
@@ -66,7 +71,7 @@ export default () => ({
       backgroundImage: `url(${HeartLogo})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '0 0',
-      backgroundSize: '15px',
+      backgroundSize: '15px'
     }
   },
   gameRollSlider: {
@@ -82,7 +87,12 @@ export default () => ({
     boxSizing: 'border-box',
     backgroundColor: 'rgba(0,0,0,0.26)',
     borderTopLeftRadius: '30px',
-    borderBottomLeftRadius: '30px'
+    borderBottomLeftRadius: '30px',
+
+    [theme.breakpoints.down('lg')]: {
+      maxWidth: '850px',
+      marginLeft: '20px'
+    }
   },
   sliderItem: {
     display: 'block',
@@ -99,5 +109,5 @@ export default () => ({
   sliderItemPhoto: {
     width: '217px',
     height: '120px'
-  },
+  }
 })

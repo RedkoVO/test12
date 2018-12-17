@@ -1,7 +1,8 @@
+import gC from '../../../../constants'
 import LikeIcon from '../../../../assets/images/svg/like.svg'
 import CommentIcon from '../../../../assets/images/svg/comment.svg'
 
-export default () => ({
+export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
@@ -11,7 +12,11 @@ export default () => ({
     paddingLeft: '100px',
     boxSizing: 'border-box',
     marginTop: '50px',
-    color: '#fff'
+    color: '#fff',
+
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: '20px'
+    }
   },
   commentItem: {
     position: 'relative',
@@ -23,7 +28,11 @@ export default () => ({
     borderRadius: '25px',
     padding: '20px 30px',
     boxSizing: 'border-box',
-    marginBottom: '35px'
+    marginBottom: '35px',
+
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '740px'
+    }
   },
   comment1: {
     width: '700px'

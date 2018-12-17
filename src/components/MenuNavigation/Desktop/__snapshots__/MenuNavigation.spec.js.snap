@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`renders correctly game 1`] = `null`;
+
+exports[`renders correctly main 1`] = `
 <ul
   className="MenuNavigation-root-1"
 >

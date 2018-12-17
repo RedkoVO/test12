@@ -1,11 +1,11 @@
-import gC from '../../constants'
+import gC from '../../../../constants'
 
-import DashboardLogo from '../../assets/images/svg/wallet.svg'
-import WalletLogo from '../../assets/images/svg/wallet.svg'
-import ShopdLogo from '../../assets/images/svg/shopBag.svg'
-import PlayLogo from '../../assets/images/svg/play.svg'
-import SocialLogo from '../../assets/images/svg/social.svg'
-import SettingsLogo from '../../assets/images/svg/settings.svg'
+import DashboardLogo from '../../../../assets/images/svg/wallet.svg'
+import WalletLogo from '../../../../assets/images/svg/wallet.svg'
+import ShopdLogo from '../../../../assets/images/svg/shopBag.svg'
+import PlayLogo from '../../../../assets/images/svg/play.svg'
+import SocialLogo from '../../../../assets/images/svg/social.svg'
+import SettingsLogo from '../../../../assets/images/svg/settings.svg'
 
 export default theme => ({
   root: {
@@ -43,45 +43,29 @@ export default theme => ({
         }
       },
 
-      [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+      [theme.breakpoints.down('sm')]: {
         position: 'relative',
         flexDirection: 'row',
         justifyContent: 'space-around',
-        width: '500px',
-        height: '112px',
-        margin: 0,
+        height: '80px',
         padding: '0 0 10px 0',
-        borderBottomRightRadius: '25px',
-        borderBottomLeftRadius: '25px',
-        backgroundColor: 'rgba(0,0,0,0.74)',
-        order: 2
-      },
-      [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
         width: '100%',
-        borderBottomLeftRadius: 0,
-        borderBottomRightRadius: 0,
-        margin: 0
+        borderBottomLeftRadius: '0px',
+        borderBottomRightRadius: '0px',
+        order: 2
       }
     },
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('sm')]: {
       position: 'relative',
       flexDirection: 'row',
       justifyContent: 'space-around',
-      width: '500px',
       height: '80px',
-      margin: 0,
       padding: '0 0 10px 0',
-      borderBottomRightRadius: '25px',
-      borderBottomLeftRadius: '25px',
-      order: 2
-    },
-
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
       width: '100%',
       borderBottomLeftRadius: '0px',
       borderBottomRightRadius: '0px',
-      margin: 0
+      order: 2
     }
   },
   headerMenuItem: {
@@ -106,7 +90,7 @@ export default theme => ({
       }
     },
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('sm')]: {
       width: '40px'
     }
   },

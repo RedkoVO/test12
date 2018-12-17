@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../MenuNavigation'
+import MenuNavigation from '../../MenuNavigation/Desktop/AsyncMenuNavigation'
 import Filters from '../components/Filters'
 import CatalogList from '../components/CatalogList'
 import Header from '../../../containers/Header/AsyncHeader'
@@ -14,7 +14,7 @@ const Games = ({ classes, games, handleLogout, isDesktop }) => (
     <div className={classes.containerCatalogWrap}>
       <div className={classes.containerCatalog}>
         <header className={classes.headerCatalog}>
-          <MenuNavigation page="dark" handleLogout={handleLogout} />
+          <MenuNavigation type="main" page="dark" handleLogout={handleLogout} />
           <Header type="games">{isDesktop && <Filters />}</Header>
 
           {!isDesktop && <Filters />}

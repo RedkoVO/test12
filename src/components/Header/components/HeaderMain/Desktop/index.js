@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../../../MenuNavigation'
+import MenuNavigation from '../../../../MenuNavigation/Desktop/AsyncMenuNavigation'
 import UserBlock from '../components/UserBlock'
 
 import styles from './styles'
@@ -12,10 +12,8 @@ const HeaderMain = props => {
 
   return (
     <header className={classes.root}>
-      <MenuNavigation handleLogout={handleLogout} />
-      <UserBlock
-        balance={balance && balance.shortBalance}
-      />
+      <MenuNavigation type="main" handleLogout={handleLogout} />
+      <UserBlock balance={balance && balance.shortBalance} />
     </header>
   )
 }

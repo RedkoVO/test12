@@ -11,7 +11,7 @@ export default theme => ({
     width: '100%',
     boxSizing: 'border-box',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       paddingTop: 0,
       marginLeft: 0
     }
@@ -22,14 +22,14 @@ export default theme => ({
     justifyContent: 'flex-end',
     width: '100%',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       width: '500px',
       paddingTop: '20px',
       height: '92px',
       paddingBottom: '20px',
       backgroundColor: '#f5f5f5'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       minWidth: '100%',
       margin: 0
     }
@@ -86,7 +86,7 @@ export default theme => ({
     color: '#fff',
     lineHeight: '49px',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       left: 0,
       opacity: '0.3'
     }

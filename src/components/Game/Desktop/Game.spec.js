@@ -51,7 +51,7 @@ const comments = [
   }
 ]
 
-it('renders correctly', () => {
+it('renders correctly Desktop', () => {
   const tree = renderer.create(
     <MemoryRouter keyLength={0}>
       <Game
@@ -62,6 +62,25 @@ it('renders correctly', () => {
         imgMain={'image'}
         comments={comments}
         handleLogouts={() => {}}
+        isDesktop={true}
+      />
+    </MemoryRouter>
+  ).toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+it('renders correctly Mobile', () => {
+  const tree = renderer.create(
+    <MemoryRouter keyLength={0}>
+      <Game
+        handlePlayNow={() => {}}
+        isShowIframe={false}
+        slider={slider}
+        url={'url'}
+        imgMain={'image'}
+        comments={comments}
+        handleLogouts={() => {}}
+        isDesktop={false}
       />
     </MemoryRouter>
   ).toJSON()

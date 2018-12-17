@@ -1,7 +1,8 @@
+import gC from '../../../../constants'
 import StarLogo from '../../../../assets/images/svg/star.svg'
 import HalfStarLogo from '../../../../assets/images/svg/halfStar.svg'
 
-export default () => ({
+export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
@@ -24,59 +25,78 @@ export default () => ({
       width: '100%',
       borderTopRightRadius: '30px',
       borderBottomRightRadius: '30px'
+    },
+
+    [theme.breakpoints.down('lg')]: {
+      minWidth: '400px'
+    },
+    [theme.breakpoints.down('md')]: {
+      marginRight: '10px'
     }
   },
   gameRollInf: {
     display: 'flex',
     flexDirection: 'column',
-    width: '840px'
-  },
-  gameUser: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-end'
-  },
-  gameUserBlock: {
-    display: 'flex',
-    '-ms-align-items': 'center',
-    alignItems: 'center',
-    width: '300px',
-    marginRight: '230px',
-  },
-  gameUserHello: {
-    fontSize: '18px',
-    margin: 0,
-    color: '#fff',
-    textAlign: 'center'
-  },
-  gameUserBallance: {
-    fontSize: '18px',
-    margin: 0,
-    color: '#fff',
-    textAlign: 'center'
-  },
-  gameUserVerification: {
-    fontSize: '10px',
-    fontWeight: '500'
-  },
-  gameUserBallDescr: {
-    fontSize: '10px',
-    fontWeight: '500'
-  },
-  gameUserPhoto: {
-    height: '50px',
-    width: '50px',
-    display: 'block',
-    borderRadius: '50%',
-    boxShadow: '0px 5px 10px 0px rgba(0,0,0,0.1)',
-    margin: '0 15px',
+    width: '840px',
 
-    '& img': {
-      height: '100%',
-      width: '100%',
-      borderRadius: '50%'
+    [theme.breakpoints.down('lg')]: {
+      maxWidth: '840px'
+    },
+    [theme.breakpoints.down('md')]: {
+      alignItems: 'center'
     }
   },
+  // gameUser: {
+  //   display: 'flex',
+  //   flexDirection: 'row',
+  //   justifyContent: 'flex-end'
+  // },
+  // gameUserBlock: {
+  //   display: 'flex',
+  //   '-ms-align-items': 'center',
+  //   alignItems: 'center',
+  //   width: '300px',
+  //   marginRight: '230px',
+
+  //   [theme.breakpoints.down('md')]: {
+  //     justifyContent: 'center',
+  //     marginRight: 0
+  //   }
+  // },
+  // gameUserHello: {
+  //   fontSize: '18px',
+  //   margin: 0,
+  //   color: '#fff',
+  //   textAlign: 'center'
+  // },
+  // gameUserBallance: {
+  //   fontSize: '18px',
+  //   margin: 0,
+  //   color: '#fff',
+  //   textAlign: 'center'
+  // },
+  // gameUserVerification: {
+  //   fontSize: '10px',
+  //   fontWeight: '500'
+  // },
+  // gameUserBallDescr: {
+  //   fontSize: '10px',
+  //   fontWeight: '500'
+  // },
+  // gameUserPhoto: {
+  //   height: '50px',
+  //   width: '50px',
+  //   display: 'block',
+  //   borderRadius: '50%',
+  //   boxShadow: '0px 5px 10px 0px rgba(0,0,0,0.1)',
+  //   margin: '0 15px',
+
+  //   '& img': {
+  //     height: '100%',
+  //     width: '100%',
+  //     borderRadius: '50%'
+  //   }
+  // },
 
   /*--- gameRollNext */
   gameRollNext: {
@@ -89,11 +109,18 @@ export default () => ({
     color: '#ad6e9b',
 
     '& p': {
-      margin: '1px 0',
+      margin: '1px 0'
+    },
+
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingLeft: 0
     }
   },
   gameRollNextCounter: {
-    fontSize: '35px',
+    fontSize: '16px',
     fontWeight: 400
   },
   gameRollDescr: {
@@ -104,14 +131,28 @@ export default () => ({
     boxSizing: 'border-box',
     color: '#fff',
     backgroundColor: 'rgba(0,0,0,0.26)',
-    borderRadius: '23px'
+    borderRadius: '23px',
+
+    [theme.breakpoints.down('lg')]: {
+      boxSizing: 'border-box',
+      maxWidth: '600px',
+      paddingRight: '10px',
+      paddingLeft: '10px'
+    },
+    [theme.breakpoints.down('md')]: {
+      width: '350px'
+    }
   },
   gameRollDescrleft: {
     display: 'flex',
     flexDirection: 'column',
     '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
-    width: '480px'
+    width: '480px',
+
+    [theme.breakpoints.down('md')]: {
+      width: '270px'
+    }
   },
   gameRollTitleBlock: {
     display: 'flex',
@@ -119,25 +160,47 @@ export default () => ({
     '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     flexWrap: 'wrap',
-    width: '355px'
+    width: '355px',
+
+    [theme.breakpoints.down('md')]: {
+      width: '100%'
+    }
   },
   gameRollTitle: {
     fontSize: '40px',
     fontWeight: 700,
     margin: 0,
-    marginRight: '10px'
+    marginRight: '10px',
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '25px'
+    }
   },
   gameRollOnline: {
     fontSize: '15px',
-    fontWeight: 700
+    fontWeight: 700,
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '12px'
+    }
   },
   gameRollCompany: {
     fontSize: '18px',
-    fontWeight: 700
+    fontWeight: 700,
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '16px',
+      flexBasis: '100%'
+    }
   },
   gameRollText: {
     fontSize: '18px',
-    fontWeight: 400
+    fontWeight: 400,
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '14px',
+      paddingRight: '10px'
+    }
   },
   gameRollTags: {
     fontSize: '29px',
@@ -146,6 +209,10 @@ export default () => ({
 
     '& p': {
       margin: 0
+    },
+
+    [theme.breakpoints.down('md')]: {
+      fontSize: '15px'
     }
   },
   gameRollRating: {

@@ -14,11 +14,11 @@ export default theme => ({
     paddingTop: '45px',
     paddingBottom: '15px',
 
-    [theme.breakpoints.down(gC.BRECKPOINT.LG)]: {
+    [theme.breakpoints.down('lg')]: {
       marginLeft: '10px',
       marginRight: '10px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.MD)]: {
+    [theme.breakpoints.down('md')]: {
       minWidth: '500px',
       paddingTop: '14px',
       height: '107px',
@@ -26,7 +26,7 @@ export default theme => ({
       borderBottomLeftRadius: '0px',
       borderBottomRightRadius: '0px'
     },
-    [theme.breakpoints.down(gC.BRECKPOINT.SM)]: {
+    [theme.breakpoints.down('sm')]: {
       minWidth: '100%',
       margin: 0
     }
