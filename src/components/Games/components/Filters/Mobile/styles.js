@@ -1,5 +1,3 @@
-import gC from '../../../../../constants'
-
 import DownLogo from '../../../../../assets/images/svg/white-down.svg'
 
 export default theme => ({

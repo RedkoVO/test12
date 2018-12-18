@@ -1,6 +1,5 @@
-import gC from '../../../../constants'
-import PlayArrowLogo from '../../../../assets/images/svg/playArrow.svg'
-import HeartLogo from '../../../../assets/images/svg/heart.svg'
+import PlayArrowLogo from '../../../../../assets/images/svg/playArrow.svg'
+import HeartLogo from '../../../../../assets/images/svg/heart.svg'
 
 export default theme => ({
   root: {

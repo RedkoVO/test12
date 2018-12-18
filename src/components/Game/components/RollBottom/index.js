@@ -1,35 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
-import withStyles from '@material-ui/core/styles/withStyles'
+import compose from 'recompose/compose'
+import { branch, renderComponent } from 'recompose'
 
-import styles from './styles'
+import withDeviceTarget from '../../../../hocs/withDeviceTarget'
 
-const RollBottom = ({ classes, handlePlayNow, slider }) => (
-  <div className={classes.root}>
-    <div className={classes.gameRollActions}>
-      <div className={classes.playNowBtn} onClick={() => handlePlayNow()}>
-        Play Now
-      </div>
-      <Link to="/" className={classes.addBtn}>
-        Add to favorites
-      </Link>
-    </div>
+import AsyncRollBottomDesktop from './Desktop/AsyncRollBottomDesktop'
+import AsyncRollBottomMobile from './Mobile/AsyncRollBottomMobile'
 
-    <div className={classes.gameRollSlider} id="scrollSlider" tabIndex="5000">
-      {slider.map(item => (
-        <Link to="/" className={classes.sliderItem} key={item.id}>
-          <img src={item.img} alt="" className={classes.sliderItemPhoto} />
-        </Link>
-      ))}
-    </div>
-  </div>
-)
-
-RollBottom.propTypes = {
-  classes: PropTypes.object,
-  handlePlayNow: PropTypes.func,
-  slider: PropTypes.array
-}
-
-export default withStyles(styles)(RollBottom)
+export default compose(
+  withDeviceTarget,
+  branch(({ isMobile }) => isMobile, renderComponent(AsyncRollBottomMobile))
+)(AsyncRollBottomDesktop)

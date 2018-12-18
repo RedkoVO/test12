@@ -1,4 +1,3 @@
-import gC from '../../../../constants'
 import TransactionLogo from '../../../../assets/images/svg/transactions.svg'
 import WalletLogo from '../../../../assets/images/svg/wallet.svg'
 import MoneyTransactLogo from '../../../../assets/images/svg/moneyTransact.svg'

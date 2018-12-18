@@ -1,5 +1,3 @@
-import gC from '../../../constants'
-
 export default theme => ({
   containerGame: {
     position: 'relative',

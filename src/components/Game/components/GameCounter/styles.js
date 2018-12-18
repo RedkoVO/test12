@@ -1,4 +1,3 @@
-import gC from '../../../../constants'
 import WinnerLogo from '../../../../assets/images/winner.png'
 
 export default theme => ({
@@ -45,7 +44,6 @@ export default theme => ({
       padding: '0 5px',
       marginRight: '10px',
       minWidth: '95px',
-      padding: '0 5px',
       boxSizing: 'border-box'
     }
   },

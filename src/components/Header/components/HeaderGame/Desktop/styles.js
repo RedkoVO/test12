@@ -1,10 +1,19 @@
-import gC from '../../../../../constants'
-
 export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
+    
+    [theme.breakpoints.down('sm')]: {
+      minWidth: '100%',
+      margin: 0,
+      backgroundColor: 'rgba(0,0,0,0.71)',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingTop: '20px',
+      boxSizing: 'border-box',
+      order: 1
+    }
   },
   gameUserBlock: {
     display: 'flex',

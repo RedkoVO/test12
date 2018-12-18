@@ -5,6 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import MenuNavigation from '../../MenuNavigation/Desktop/AsyncMenuNavigation'
 import RollTop from '../components/RollTop'
 import RollBottom from '../components/RollBottom'
+import RollMobile from '../components/RollMobile'
 import GameCounter from '../components/GameCounter'
 import GameComments from '../components/GameComments'
 import Footer from '../../Footer/Desktop/AsyncFooterDesktop'
@@ -19,7 +20,6 @@ const Game = ({
   slider,
   comments,
   handleLogout,
-  isDesktop,
   imgMain
 }) => (
   <div className="mainWrapperGame">
@@ -27,21 +27,20 @@ const Game = ({
       <header className={classes.headerGame}>
         <div className={classes.gameHeaderMain}>
           <MenuNavigation type="game" page="dark" handleLogout={handleLogout} />
-          <RollTop imgMain={imgMain} isDesktop={isDesktop} />
-          <RollBottom handlePlayNow={handlePlayNow} slider={slider} />
+          <RollTop imgMain={imgMain} />
+          <RollBottom slider={slider} handlePlayNow={handlePlayNow} />
+          <RollMobile imgMain={imgMain} handlePlayNow={handlePlayNow} />
         </div>
       </header>
-
       <main className={classes.gameMain}>
         <GameCounter />
         <GameComments comments={comments} />
       </main>
-
       <Footer />
     </div>
 
     {isShowIframe && (
-      <div>
+      <React.Fragment>
         <div
           className={classes.overlayIframe}
           onClick={() => handlePlayNow()}
@@ -54,7 +53,7 @@ const Game = ({
             src={url}
           />
         </div>
-      </div>
+      </React.Fragment>
     )}
   </div>
 )
@@ -67,7 +66,6 @@ Game.propTypes = {
   slider: PropTypes.array,
   comments: PropTypes.array,
   handleLogout: PropTypes.func,
-  isDesktop: PropTypes.bool,
   imgMain: PropTypes.string
 }
 

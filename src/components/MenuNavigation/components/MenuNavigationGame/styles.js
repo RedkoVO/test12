@@ -1,5 +1,3 @@
-import gC from '../../../../constants'
-
 import DashboardLogo from '../../../../assets/images/svg/wallet.svg'
 import WalletLogo from '../../../../assets/images/svg/wallet.svg'
 import ShopdLogo from '../../../../assets/images/svg/shopBag.svg'

@@ -1,4 +1,3 @@
-import gC from '../../../../constants'
 import LikeIcon from '../../../../assets/images/svg/like.svg'
 import CommentIcon from '../../../../assets/images/svg/comment.svg'
 

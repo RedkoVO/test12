@@ -2,7 +2,7 @@ import * as React from 'react'
 import renderer from 'react-test-renderer'
 import { MemoryRouter } from 'react-router-dom'
 
-import RollBottom from './'
+import RollBottomMobile from './'
 
 const slider = [
   { id: 1, img: 'SliderItemImg1' },
@@ -17,7 +17,7 @@ const slider = [
 it('renders correctly', () => {
   const tree = renderer.create(
     <MemoryRouter keyLength={0}>
-      <RollBottom
+      <RollBottomMobile
         handlePlayNow={() => { }}
         slider={slider}
       />

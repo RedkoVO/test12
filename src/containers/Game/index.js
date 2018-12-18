@@ -5,7 +5,6 @@ import { clearStorageForlogout } from '../../utils/localStorageUtils'
 import gC from '../../constants'
 
 import AsyncGameDesktop from '../../components/Game/Desktop/AsyncGameDesktop'
-import withDeviceTarget from '../../hocs/withDeviceTarget'
 
 import SliderItemImg1 from '../../assets/images/sim_game_icon_4clover.png'
 import GameRollImg from '../../assets/images/slider_slot_4clover_m.jpg'
@@ -84,7 +83,6 @@ const urlJungle = 'https://slots-demo.netlify.com/'
 /* *** */
 
 export default compose(
-  withDeviceTarget,
   lifecycle({
     componentWillMount() {
       window.scrollTo(0, 0)

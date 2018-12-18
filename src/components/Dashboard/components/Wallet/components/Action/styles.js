@@ -1,4 +1,3 @@
-import gC from '../../../../../../constants'
 import GraphLogo from '../../../../../../assets/images/svg/graph.svg'
 import SendLogo from '../../../../../../assets/images/svg/sendIcon.svg'
 import MoneyLogo from '../../../../../../assets/images/svg/money.svg'
