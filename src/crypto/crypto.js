@@ -337,11 +337,12 @@ function formSendBlock(account, toAddress, amount, work) {
   const signature = fromUint8(signed);
 
   const sendBlock = {
-    type: 'state',
+    type: 'send',
     account: account.address,
     previous: account.lastBlock,
     representative: account.representative,
     balance: newBalance10,
+    amount: amount.toString(10),
     link: getAccountPublicKey(toAddress),
     work: work,
     signature: signature,
@@ -375,11 +376,12 @@ function formReceiveBlock(account, sourceBlockHash, amount, work) {
   const signed = nacl.sign.detached(hashBytes, toUint8(account.secretKey));
   const signature = fromUint8(signed);
   const receiveBlock = {
-    type: 'state',
+    type: 'receive',
     account: account.address,
     previous: account.lastBlock,
     representative: account.representative,
     balance: newBalance10,
+    amount: amount.toString(10),
     link: sourceBlockHash,
     work: work,
     signature: signature,

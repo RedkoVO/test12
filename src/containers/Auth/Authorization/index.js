@@ -89,8 +89,12 @@ export default compose(
 
                       sequential(requestsArr).then(() => {
                         dispatch(getBalance(data))
-                          .then(() => {
+                          .then(res => {
                             history.push('/')
+
+                            if (res && res.lastBlock) {
+                              localStorage.setItem('lastBlock', res.lastBlock)
+                            }
                           })
                           .catch(err => {
                             console.log('ERROR getBalance inside incoming', err)
