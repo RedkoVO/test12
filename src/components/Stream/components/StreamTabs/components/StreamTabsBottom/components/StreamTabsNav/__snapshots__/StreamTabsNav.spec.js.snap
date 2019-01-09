@@ -7,9 +7,7 @@ exports[`renders correctly 1`] = `
   <div
     className="StreamTabsNav-streamTabsNavItem-2 StreamTabsNav-liveNow-3"
   >
-    <span
-      className={undefined}
-    >
+    <span>
       LIVE NOW
     </span>
     <span
@@ -26,9 +24,7 @@ exports[`renders correctly 1`] = `
       className="StreamTabsNav-streamTabsNavImg-4"
       src="gamepad.svg"
     />
-    <span
-      className={undefined}
-    >
+    <span>
       ALL GAMES
     </span>
     <span
@@ -45,9 +41,7 @@ exports[`renders correctly 1`] = `
       className="StreamTabsNav-streamTabsNavImg-4"
       src="starcraft.png"
     />
-    <span
-      className={undefined}
-    >
+    <span>
       STARCRAFT 2
     </span>
     <span
@@ -64,9 +58,7 @@ exports[`renders correctly 1`] = `
       className="StreamTabsNav-streamTabsNavImg-4"
       src="dota-2.svg"
     />
-    <span
-      className={undefined}
-    >
+    <span>
       DOTA 2
     </span>
     <span
@@ -83,9 +75,7 @@ exports[`renders correctly 1`] = `
       className="StreamTabsNav-streamTabsNavImg-4"
       src="overwatch.png"
     />
-    <span
-      className={undefined}
-    >
+    <span>
       CS:GO
     </span>
     <span
@@ -102,9 +92,7 @@ exports[`renders correctly 1`] = `
       className="StreamTabsNav-streamTabsNavImg-4"
       src="csgo.png"
     />
-    <span
-      className={undefined}
-    >
+    <span>
       CS:GO
     </span>
     <span

@@ -12,9 +12,7 @@ exports[`renders correctly 1`] = `
     >
       Statistics
     </span>
-    <div
-      className={undefined}
-    >
+    <div>
       <canvas
         height="90"
         id="cvs"
@@ -41,8 +39,6 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="Action-sendAddressField-8"
-          id={undefined}
-          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onDragStart={[Function]}
@@ -53,13 +49,9 @@ exports[`renders correctly 1`] = `
           value=""
         />
       </div>
-      <div
-        className={undefined}
-      >
+      <div>
         <input
           className="Action-sendAmmountField-9"
-          id={undefined}
-          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onDragStart={[Function]}
@@ -86,9 +78,7 @@ exports[`renders correctly 1`] = `
     >
       Invoice
     </span>
-    <div
-      className={undefined}
-    >
+    <div>
       <input
         className="Action-invoiceAmmountField-10"
         placeholder="Set ammount you need to receive"

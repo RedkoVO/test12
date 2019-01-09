@@ -28,7 +28,6 @@ exports[`<Authorization /> renders correctly 1`] = `
         <input
           className="Authorization-field-10"
           id="key"
-          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onDragStart={[Function]}

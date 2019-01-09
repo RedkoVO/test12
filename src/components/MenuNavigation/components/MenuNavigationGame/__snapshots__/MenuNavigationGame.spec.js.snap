@@ -2,13 +2,11 @@
 
 exports[`renders correctly main 1`] = `
 <ul
-  className="MenuNavigation-root-1"
+  className="MenuNavigationGame-root-1"
 >
-  <li
-    className={undefined}
-  >
+  <li>
     <div
-      className="MenuNavigation-logout-10"
+      className="MenuNavigationGame-logout-10"
       onClick={[Function]}
     >
       Logout
@@ -16,12 +14,12 @@ exports[`renders correctly main 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigation-headerMenuItem-2"
+      className="MenuNavigationGame-headerMenuItem-2"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-dashboard-4"
+        className="MenuNavigationGame-menuIcon-3 MenuNavigationGame-dashboard-4"
       />
       <br />
        Dashboard
@@ -29,12 +27,12 @@ exports[`renders correctly main 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigation-headerMenuItem-2"
+      className="MenuNavigationGame-headerMenuItem-2"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-walletIcon-5"
+        className="MenuNavigationGame-menuIcon-3 MenuNavigationGame-walletIcon-5"
       />
       <br />
        Wallet
@@ -42,12 +40,12 @@ exports[`renders correctly main 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigation-headerMenuItem-2"
+      className="MenuNavigationGame-headerMenuItem-2"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-shop-6"
+        className="MenuNavigationGame-menuIcon-3 MenuNavigationGame-shop-6"
       />
       <br />
        Shop
@@ -55,12 +53,12 @@ exports[`renders correctly main 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigation-headerMenuItem-2"
+      className="MenuNavigationGame-headerMenuItem-2"
       href="/games"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-games-7"
+        className="MenuNavigationGame-menuIcon-3 MenuNavigationGame-games-7"
       />
       <br />
        Games
@@ -68,12 +66,12 @@ exports[`renders correctly main 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigation-headerMenuItem-2"
+      className="MenuNavigationGame-headerMenuItem-2"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-friends-8"
+        className="MenuNavigationGame-menuIcon-3 MenuNavigationGame-friends-8"
       />
       <br />
        Friends
@@ -81,12 +79,12 @@ exports[`renders correctly main 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigation-headerMenuItem-2"
+      className="MenuNavigationGame-headerMenuItem-2"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-settings-9"
+        className="MenuNavigationGame-menuIcon-3 MenuNavigationGame-settings-9"
       />
       <br />
        Settings

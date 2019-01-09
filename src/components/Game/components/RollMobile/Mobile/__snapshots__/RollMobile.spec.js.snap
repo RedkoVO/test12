@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="RollMobile-root-1"
+>
+  <div
+    className="RollMobile-gameMobileTop-2"
+  >
+    <div>
+      <p
+        className="RollMobile-gameMobileTitle-3"
+      >
+        Rolled-Folled
+      </p>
+      <span
+        className="RollMobile-gameMobileTitleComp-4"
+      >
+        by Fall Inc.
+      </span>
+    </div>
+    <div
+      className="RollMobile-gameMobileRating-5"
+    >
+      <p
+        className="RollMobile-gameMobileRatingValue-6"
+      >
+        <span
+          className="RollMobile-gameMobileRatingValueNum-7"
+        >
+          6.5
+        </span>
+        <span
+          className="RollMobile-gameMobileRatingValueFull-8"
+        >
+          /7
+        </span>
+      </p>
+      <div
+        className="RollMobile-gameMobileRatingStars-9"
+      >
+        <div
+          className="RollMobile-gameMobileFullStars-10"
+        />
+        <div
+          className="RollMobile-gameMobileHalfStars-11"
+        />
+      </div>
+      <span
+        className="RollMobile-gameMobileRateCategory-12"
+      >
+        DICE CATEGORY
+      </span>
+    </div>
+  </div>
+  <div
+    className="RollMobile-gameMobileImg-13"
+  >
+    <img
+      alt=""
+      src="sim_game_icon_4clover.png"
+    />
+    <div
+      className="RollMobile-gameMobileActions-14"
+    >
+      <div
+        className="RollMobile-playNowBtnMobile-15"
+        onClick={[Function]}
+      >
+        Play Now
+      </div>
+      <div
+        className="RollMobile-addBtnMobile-16"
+      >
+        Add to favorites
+      </div>
+    </div>
+  </div>
+  <div
+    className="RollMobile-gameMobileText-17"
+  >
+    <p>
+      Integer tempor semper sapien sit amet dsc s and bibendum. Etiam ornare teInteger tempor semper sapien sit amet bibendum. Etiam ornare te et bibendum. Etiam ornare te
+    </p>
+  </div>
+  <div
+    className="RollMobile-gameMobileTags-18"
+  >
+    <p
+      className="RollMobile-gameMobileTagsText-19"
+    >
+      #ROLLED #BESTCRYPTO #ETH 
+    </p>
+    <div
+      className="RollMobile-addTagBtn-20"
+    >
+      <img
+        alt=""
+        src="add.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

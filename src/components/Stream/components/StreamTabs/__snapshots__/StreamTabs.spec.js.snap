@@ -52,9 +52,7 @@ exports[`renders correctly 1`] = `
           <div
             className="StreamTabsNav-streamTabsNavItem-6 StreamTabsNav-liveNow-7"
           >
-            <span
-              className={undefined}
-            >
+            <span>
               LIVE NOW
             </span>
             <span
@@ -71,9 +69,7 @@ exports[`renders correctly 1`] = `
               className="StreamTabsNav-streamTabsNavImg-8"
               src="gamepad.svg"
             />
-            <span
-              className={undefined}
-            >
+            <span>
               ALL GAMES
             </span>
             <span
@@ -90,9 +86,7 @@ exports[`renders correctly 1`] = `
               className="StreamTabsNav-streamTabsNavImg-8"
               src="starcraft.png"
             />
-            <span
-              className={undefined}
-            >
+            <span>
               STARCRAFT 2
             </span>
             <span
@@ -109,9 +103,7 @@ exports[`renders correctly 1`] = `
               className="StreamTabsNav-streamTabsNavImg-8"
               src="dota-2.svg"
             />
-            <span
-              className={undefined}
-            >
+            <span>
               DOTA 2
             </span>
             <span
@@ -128,9 +120,7 @@ exports[`renders correctly 1`] = `
               className="StreamTabsNav-streamTabsNavImg-8"
               src="overwatch.png"
             />
-            <span
-              className={undefined}
-            >
+            <span>
               CS:GO
             </span>
             <span
@@ -147,9 +137,7 @@ exports[`renders correctly 1`] = `
               className="StreamTabsNav-streamTabsNavImg-8"
               src="csgo.png"
             />
-            <span
-              className={undefined}
-            >
+            <span>
               CS:GO
             </span>
             <span
@@ -256,9 +244,7 @@ exports[`renders correctly 1`] = `
               12:30 PM
                
               <br />
-              <span
-                className={undefined}
-              >
+              <span>
                 7/12/2018
               </span>
             </div>
@@ -433,9 +419,7 @@ exports[`renders correctly 1`] = `
               12:30 PM
                
               <br />
-              <span
-                className={undefined}
-              >
+              <span>
                 7/12/2018
               </span>
             </div>

@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly Desktop 1`] = `
+<div
+  className="RollTopDesktop-root-1"
+>
+  <div
+    className="RollTopDesktop-gameRollImg-2"
+  >
+    <img
+      alt=""
+      src="image"
+    />
+  </div>
+  <div
+    className="RollTopDesktop-gameRollInf-3"
+  >
+    <div
+      className="RollTopDesktop-gameRollNext-4"
+    >
+      <p>
+        next roll in:
+         
+        <span
+          className="RollTopDesktop-gameRollNextCounter-5"
+        >
+          00:00:23.12
+        </span>
+      </p>
+    </div>
+    <div
+      className="RollTopDesktop-gameRollDescr-6"
+    >
+      <div
+        className="RollTopDesktop-gameRollDescrleft-7"
+      >
+        <div
+          className="RollTopDesktop-gameRollTitleBlock-8"
+        >
+          <p
+            className="RollTopDesktop-gameRollTitle-9"
+          >
+            4Clover
+          </p>
+          <span
+            className="RollTopDesktop-gameRollOnline-10"
+          >
+            online: 234
+          </span>
+          <br />
+          <span
+            className="RollTopDesktop-gameRollCompany-11"
+          >
+            by Fall Inc.
+          </span>
+        </div>
+        <div
+          className="RollTopDesktop-gameRollText-12"
+        >
+          <p>
+            Integer tempor semper sapien sit amet bibendum. Etiam ornare teInteger tempor semper sapien sit amet bibendum. Etiam ornare te et bibendum. Etiam ornare te
+          </p>
+        </div>
+        <div
+          className="RollTopDesktop-gameRollTags-13"
+        >
+          <p>
+            #ROLLED #BESTCRYPTO #ETH 
+          </p>
+        </div>
+      </div>
+      <div
+        className="RollTopDesktop-gameRollRating-14"
+      >
+        <p
+          className="RollTopDesktop-ratingValue-15"
+        >
+          <span
+            className="RollTopDesktop-ratingValueNum-16"
+          >
+            6.5
+          </span>
+          <span
+            className="RollTopDesktop-ratingValueFull-17"
+          >
+            /7
+          </span>
+        </p>
+        <div
+          className="RollTopDesktop-ratingStars-18"
+        >
+          <div
+            className="RollTopDesktop-fullStars-19"
+          />
+          <div
+            className="RollTopDesktop-halfStars-20"
+          />
+        </div>
+        <span
+          className="RollTopDesktop-ratingCategory-21"
+        >
+          DICE CATEGORY
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

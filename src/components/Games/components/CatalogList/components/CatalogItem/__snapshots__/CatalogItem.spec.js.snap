@@ -7,9 +7,7 @@ exports[`renders correctly 1`] = `
   <div
     className="CatalogItem-catalogItemTop-2"
   >
-    <div
-      className={undefined}
-    >
+    <div>
       <p
         className="CatalogItem-catalogItemTitle-3"
       >
@@ -146,9 +144,7 @@ exports[`renders correctly 1`] = `
     <p>
       next roll in:
        
-      <span
-        className={undefined}
-      >
+      <span>
         00:00:23.12
       </span>
     </p>

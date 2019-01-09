@@ -2,24 +2,24 @@
 
 exports[`renders correctly DESKTOP 1`] = `
 <div
-  className="HeaderGames-root-1"
+  className="HeaderGame-root-1"
 >
   <div
-    className="HeaderGames-catalogUserBlock-2"
+    className="HeaderGame-gameUserBlock-2"
   >
     <p
-      className="HeaderGames-catalogUserHello-3"
+      className="HeaderGame-gameUserHello-3"
     >
-       Hello, Ben A 
+      Hello, Ben A 
       <br />
       <span
-        className="HeaderGames-catalogUserVerification-5"
+        className="HeaderGame-gameUserVerification-5"
       >
         KYC VERIFICATED
       </span>
     </p>
     <div
-      className="HeaderGames-catalogUserPhoto-7"
+      className="HeaderGame-gameUserPhoto-7"
     >
       <img
         alt=""
@@ -27,12 +27,12 @@ exports[`renders correctly DESKTOP 1`] = `
       />
     </div>
     <p
-      className="HeaderGames-catalogUserBallance-4"
+      className="HeaderGame-gameUserBallance-4"
     >
-       764.23 DCB 
+      764.23 DCB 
       <br />
       <span
-        className="HeaderGames-catalogUserBallDescr-6"
+        className="HeaderGame-gameUserBallDescr-6"
       >
         YOUR BALANCE
       </span>

@@ -10,9 +10,7 @@ exports[`renders correctly 1`] = `
     <div
       className="StreamTabsNav-streamTabsNavItem-3 StreamTabsNav-liveNow-4"
     >
-      <span
-        className={undefined}
-      >
+      <span>
         LIVE NOW
       </span>
       <span
@@ -29,9 +27,7 @@ exports[`renders correctly 1`] = `
         className="StreamTabsNav-streamTabsNavImg-5"
         src="gamepad.svg"
       />
-      <span
-        className={undefined}
-      >
+      <span>
         ALL GAMES
       </span>
       <span
@@ -48,9 +44,7 @@ exports[`renders correctly 1`] = `
         className="StreamTabsNav-streamTabsNavImg-5"
         src="starcraft.png"
       />
-      <span
-        className={undefined}
-      >
+      <span>
         STARCRAFT 2
       </span>
       <span
@@ -67,9 +61,7 @@ exports[`renders correctly 1`] = `
         className="StreamTabsNav-streamTabsNavImg-5"
         src="dota-2.svg"
       />
-      <span
-        className={undefined}
-      >
+      <span>
         DOTA 2
       </span>
       <span
@@ -86,9 +78,7 @@ exports[`renders correctly 1`] = `
         className="StreamTabsNav-streamTabsNavImg-5"
         src="overwatch.png"
       />
-      <span
-        className={undefined}
-      >
+      <span>
         CS:GO
       </span>
       <span
@@ -105,9 +95,7 @@ exports[`renders correctly 1`] = `
         className="StreamTabsNav-streamTabsNavImg-5"
         src="csgo.png"
       />
-      <span
-        className={undefined}
-      >
+      <span>
         CS:GO
       </span>
       <span
@@ -214,9 +202,7 @@ exports[`renders correctly 1`] = `
         12:30 PM
          
         <br />
-        <span
-          className={undefined}
-        >
+        <span>
           7/12/2018
         </span>
       </div>
@@ -391,9 +377,7 @@ exports[`renders correctly 1`] = `
         12:30 PM
          
         <br />
-        <span
-          className={undefined}
-        >
+        <span>
           7/12/2018
         </span>
       </div>
