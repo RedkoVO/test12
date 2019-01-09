@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="CategorieItem-root-1"
+>
+  <a
+    className="CategorieItem-gameImg-2"
+    href="/game/4clover"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      className="CategorieItem-gameImgLink-3"
+      src="CloverLogo1"
+    />
+  </a>
+  <a
+    className="CategorieItem-gameLink-4"
+    href="/game/4clover"
+    onClick={[Function]}
+  >
+    Most popular
+    : 
+    <br />
+     
+    <span>
+      4Clover
+    </span>
+  </a>
+</div>
+`;

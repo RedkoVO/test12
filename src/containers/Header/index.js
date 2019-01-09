@@ -6,7 +6,7 @@ import { getBalance } from '../../redux/actions/balance'
 import { getBalanceSelector } from '../../selectors/balance'
 
 import Crypto from '../../crypto/crypto'
-import { clearStorageForlogout } from '../../utils/localStorageUtils'
+import { clearStorageForLogout } from '../../utils/localStorageUtils'
 
 import AsyncHeaderDesktop from '../../components/Header/Desktop'
 
@@ -31,7 +31,7 @@ export default compose(
   }),
   withHandlers({
     handleLogout: ({ history }) => () => {
-      clearStorageForlogout()
+      clearStorageForLogout()
       history.push('/')
     }
   }),

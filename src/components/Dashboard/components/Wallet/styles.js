@@ -72,6 +72,11 @@ export default theme => ({
       textDecoration: 'none'
     }
   },
+  walletAddress: {
+    padding: '10px 0',
+    color: '#616161',
+    textAlign: 'center'
+  },
   walletNav: {
     display: 'flex',
     flexDirection: 'row',

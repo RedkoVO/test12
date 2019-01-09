@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Wallet-root-1"
+>
+  <div
+    className="Wallet-wallet-2"
+  >
+    <div
+      className="Wallet-walletTitle-3"
+    >
+      <p>
+        My dcb wallet:
+      </p>
+    </div>
+    <div
+      className="Wallet-walletAddress-5"
+    />
+    <div
+      className="Wallet-walletSum-4"
+    >
+      <a
+        href="/"
+      >
+        00000
+      </a>
+    </div>
+    <ul
+      className="Wallet-walletNav-6"
+    >
+      <li>
+        <a
+          className="Wallet-walletNavItem-7"
+          href="/"
+        >
+          Send Money
+        </a>
+      </li>
+      <li>
+        <a
+          className="Wallet-walletNavItem-7"
+          href="/"
+        >
+          Tranfer Money
+        </a>
+      </li>
+      <li>
+        <a
+          className="Wallet-walletNavItem-7"
+          href="/"
+        >
+          Invoice
+        </a>
+      </li>
+      <li>
+        <a
+          className="Wallet-walletNavItem-7"
+          href="/"
+        >
+          Cashout
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="Action-root-8"
+  >
+    <div
+      className="Action-actionsStatistics-9"
+    >
+      <span
+        className="Action-statisticsTitle-11"
+      >
+        Statistics
+      </span>
+      <div>
+        <canvas
+          height="90"
+          id="cvs"
+          width="200"
+        >
+          [No canvas support]
+        </canvas>
+      </div>
+    </div>
+    <div
+      className="Action-actionsSend-12"
+    >
+      <form
+        className="Action-form-10"
+        onSubmit={[Function]}
+      >
+        <span
+          className="Action-sendTitle-13"
+        >
+          Send now
+        </span>
+        <div
+          className="Action-sendAddress-14"
+        >
+          <input
+            className="Action-sendAddressField-15"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            placeholder="Put address you want to send the money"
+            type="text"
+            value=""
+          />
+        </div>
+        <div>
+          <input
+            className="Action-sendAmmountField-16"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            placeholder="Set ammount"
+            type="text"
+            value=""
+          />
+        </div>
+        <button
+          className="Action-sendBtn-18"
+          type="submit"
+        >
+          Send money
+        </button>
+      </form>
+    </div>
+    <div
+      className="Action-actionsInvoice-20"
+    >
+      <span
+        className="Action-invoiceTitle-21"
+      >
+        Invoice
+      </span>
+      <div>
+        <input
+          className="Action-invoiceAmmountField-17"
+          placeholder="Set ammount you need to receive"
+          type="text"
+        />
+      </div>
+      <a
+        className="Action-invoiceBtn-19"
+        href="/"
+      >
+        Generate link
+      </a>
+    </div>
+  </div>
+</div>
+`;

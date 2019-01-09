@@ -1,0 +1,457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main>
+  <div
+    className="CatalogList-catalogList-1"
+  >
+    <div
+      className="CatalogItem-catalogListItem-2"
+    >
+      <div
+        className="CatalogItem-catalogItemTop-3"
+      >
+        <div>
+          <p
+            className="CatalogItem-catalogItemTitle-4"
+          >
+            Rolled-Folled
+          </p>
+          <span
+            className="CatalogItem-catalogItemTitleComp-5"
+          >
+            by Fall Inc.
+          </span>
+        </div>
+        <div
+          className="CatalogItem-catalogItemRating-6"
+        >
+          <p
+            className="CatalogItem-catalogRatingValue-7"
+          >
+            <span
+              className="CatalogItem-catalogRatingValueNum-8"
+            >
+              6.5
+            </span>
+            <span
+              className="CatalogItem-catalogRatingValueFull-9"
+            >
+              /7
+            </span>
+          </p>
+          <div
+            className="CatalogItem-catalogRatingStars-10"
+          >
+            <div
+              className="CatalogItem-fullStars-11"
+            />
+            <div
+              className="CatalogItem-halfStars-12"
+            />
+          </div>
+          <span
+            className="CatalogItem-catalogRatingCategory-13"
+          >
+            DICE CATEGORY
+          </span>
+        </div>
+      </div>
+      <a
+        className="CatalogItem-catalogItemImg-14"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CatalogItem-catalogItemImgGame-15"
+          src="catalogItem.png"
+        />
+        <div
+          className="CatalogItem-catalogItemOnline-16"
+        >
+          online: 
+          536
+        </div>
+      </a>
+      <div
+        className="CatalogItem-catalogItemCounter-17"
+      >
+        <div
+          className="CatalogItem-catalogCounterWins-18"
+        >
+          <p
+            className="CatalogItem-catalogCounterBigstWin-21"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              4666.78
+               dcb
+            </span>
+             
+            <br />
+             BIGGEST WIN 
+            <br />
+             FOR ALL TIME
+          </p>
+        </div>
+        <div
+          className="CatalogItem-catalogCounterHours-19"
+        >
+          <p
+            className="CatalogItem-catalogCounterHoursVolume-22"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              167.12
+               dcb
+            </span>
+             
+            <br />
+             VOLUME OF 
+            <br />
+            24 HOURS
+          </p>
+        </div>
+        <div
+          className="CatalogItem-catalogCounterContracts-20"
+        >
+          <p
+            className="CatalogItem-catalogCounterContractsVolume-23"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              20243.12
+               dcb
+            </span>
+             
+            <br />
+             ALL VOLUME OF 
+            <br />
+             SMART CONTRACT
+          </p>
+        </div>
+      </div>
+      <a
+        className="CatalogItem-catalogItemBtn-25"
+        href="/"
+        onClick={[Function]}
+      >
+        Play Now
+      </a>
+      <div
+        className="CatalogItem-catalogItemNext-26"
+      >
+        <p>
+          next roll in:
+           
+          <span>
+            00:00:23.12
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      className="CatalogItem-catalogListItem-2"
+    >
+      <div
+        className="CatalogItem-catalogItemTop-3"
+      >
+        <div>
+          <p
+            className="CatalogItem-catalogItemTitle-4"
+          >
+            Rolled-Folled-Rolled
+          </p>
+          <span
+            className="CatalogItem-catalogItemTitleComp-5"
+          >
+            by Fall Fall Fall Fall Inc.
+          </span>
+        </div>
+        <div
+          className="CatalogItem-catalogItemRating-6"
+        >
+          <p
+            className="CatalogItem-catalogRatingValue-7"
+          >
+            <span
+              className="CatalogItem-catalogRatingValueNum-8"
+            >
+              6.5
+            </span>
+            <span
+              className="CatalogItem-catalogRatingValueFull-9"
+            >
+              /7
+            </span>
+          </p>
+          <div
+            className="CatalogItem-catalogRatingStars-10"
+          >
+            <div
+              className="CatalogItem-fullStars-11"
+            />
+            <div
+              className="CatalogItem-halfStars-12"
+            />
+          </div>
+          <span
+            className="CatalogItem-catalogRatingCategory-13"
+          >
+            DICE DICE DICE CATEGORY
+          </span>
+        </div>
+      </div>
+      <a
+        className="CatalogItem-catalogItemImg-14"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CatalogItem-catalogItemImgGame-15"
+          src="catalogItem.png"
+        />
+        <div
+          className="CatalogItem-catalogItemOnline-16"
+        >
+          online: 
+          536
+        </div>
+      </a>
+      <div
+        className="CatalogItem-catalogItemCounter-17"
+      >
+        <div
+          className="CatalogItem-catalogCounterWins-18"
+        >
+          <p
+            className="CatalogItem-catalogCounterBigstWin-21"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              466603.782390328
+               dcb
+            </span>
+             
+            <br />
+             BIGGEST WIN 
+            <br />
+             FOR ALL TIME
+          </p>
+        </div>
+        <div
+          className="CatalogItem-catalogCounterHours-19"
+        >
+          <p
+            className="CatalogItem-catalogCounterHoursVolume-22"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              167434.1243434
+               dcb
+            </span>
+             
+            <br />
+             VOLUME OF 
+            <br />
+            24 HOURS
+          </p>
+        </div>
+        <div
+          className="CatalogItem-catalogCounterContracts-20"
+        >
+          <p
+            className="CatalogItem-catalogCounterContractsVolume-23"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              2024343.134342
+               dcb
+            </span>
+             
+            <br />
+             ALL VOLUME OF 
+            <br />
+             SMART CONTRACT
+          </p>
+        </div>
+      </div>
+      <a
+        className="CatalogItem-catalogItemBtn-25"
+        href="/"
+        onClick={[Function]}
+      >
+        Play Now
+      </a>
+      <div
+        className="CatalogItem-catalogItemNext-26"
+      >
+        <p>
+          next roll in:
+           
+          <span>
+            00:00:23.12
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      className="CatalogItem-catalogListItem-2"
+    >
+      <div
+        className="CatalogItem-catalogItemTop-3"
+      >
+        <div>
+          <p
+            className="CatalogItem-catalogItemTitle-4"
+          >
+            Rolled-Folled
+          </p>
+          <span
+            className="CatalogItem-catalogItemTitleComp-5"
+          >
+            by Fall Inc.
+          </span>
+        </div>
+        <div
+          className="CatalogItem-catalogItemRating-6"
+        >
+          <p
+            className="CatalogItem-catalogRatingValue-7"
+          >
+            <span
+              className="CatalogItem-catalogRatingValueNum-8"
+            >
+              6.5
+            </span>
+            <span
+              className="CatalogItem-catalogRatingValueFull-9"
+            >
+              /7
+            </span>
+          </p>
+          <div
+            className="CatalogItem-catalogRatingStars-10"
+          >
+            <div
+              className="CatalogItem-fullStars-11"
+            />
+            <div
+              className="CatalogItem-halfStars-12"
+            />
+          </div>
+          <span
+            className="CatalogItem-catalogRatingCategory-13"
+          >
+            DICE CATEGORY
+          </span>
+        </div>
+      </div>
+      <a
+        className="CatalogItem-catalogItemImg-14"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="CatalogItem-catalogItemImgGame-15"
+          src="catalogItem.png"
+        />
+        <div
+          className="CatalogItem-catalogItemOnline-16"
+        >
+          online: 
+          536
+        </div>
+      </a>
+      <div
+        className="CatalogItem-catalogItemCounter-17"
+      >
+        <div
+          className="CatalogItem-catalogCounterWins-18"
+        >
+          <p
+            className="CatalogItem-catalogCounterBigstWin-21"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              4666.78
+               dcb
+            </span>
+             
+            <br />
+             BIGGEST WIN 
+            <br />
+             FOR ALL TIME
+          </p>
+        </div>
+        <div
+          className="CatalogItem-catalogCounterHours-19"
+        >
+          <p
+            className="CatalogItem-catalogCounterHoursVolume-22"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              167.12
+               dcb
+            </span>
+             
+            <br />
+             VOLUME OF 
+            <br />
+            24 HOURS
+          </p>
+        </div>
+        <div
+          className="CatalogItem-catalogCounterContracts-20"
+        >
+          <p
+            className="CatalogItem-catalogCounterContractsVolume-23"
+          >
+            <span
+              className="CatalogItem-catalogCounterValue-24"
+            >
+              20243.12
+               dcb
+            </span>
+             
+            <br />
+             ALL VOLUME OF 
+            <br />
+             SMART CONTRACT
+          </p>
+        </div>
+      </div>
+      <a
+        className="CatalogItem-catalogItemBtn-25"
+        href="/"
+        onClick={[Function]}
+      >
+        Play Now
+      </a>
+      <div
+        className="CatalogItem-catalogItemNext-26"
+      >
+        <p>
+          next roll in:
+           
+          <span>
+            00:00:23.12
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+`;

@@ -16,12 +16,14 @@ const Dashboard = ({
   gameCategories,
   balance,
   isDisabledButton,
-  onSubmit
+  onSubmit,
+  addressKey
 }) => (
   <main>
     <div className={classes.root}>
       <Wallet
         onSubmit={onSubmit}
+        addressKey={addressKey}
         isDisabledButton={isDisabledButton}
         balance={balance && balance.shortBalance}
       />
@@ -39,7 +41,8 @@ Dashboard.propTypes = {
   gameCategories: PropTypes.array,
   balance: PropTypes.object,
   isDisabledButton: PropTypes.bool,
-  onSubmit: PropTypes.func
+  onSubmit: PropTypes.func,
+  addressKey: PropTypes.string
 }
 
 export default withStyles(styles)(Dashboard)

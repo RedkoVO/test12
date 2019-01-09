@@ -10,7 +10,7 @@ import { getBalanceSelector } from '../../selectors/balance'
 import Crypto from '../../crypto/crypto'
 import validate from './validate'
 import { getBigNumberAmount } from '../../utils/math'
-import { clearStorageForlogout } from '../../utils/localStorageUtils'
+import { clearStorageForLogout } from '../../utils/localStorageUtils'
 
 import AsyncDashboardDesktop from '../../components/Dashboard/Desktop/AsyncDashboardDesktop'
 
@@ -237,7 +237,7 @@ export default compose(
   withState('isDisabledButton', 'setDisabledButton', false),
   withHandlers({
     handleLogout: ({ history }) => () => {
-      clearStorageForlogout()
+      clearStorageForLogout()
       history.push('/')
     },
 
@@ -310,7 +310,8 @@ export default compose(
   withProps({
     transactions: tmpTransactionCollection,
     bestAds: tmpBestAdsCollection,
-    gameCategories: gameCategories
+    gameCategories: gameCategories,
+    addressKey: localStorage.getItem('address')
   }),
   pure
 )(AsyncDashboardDesktop)

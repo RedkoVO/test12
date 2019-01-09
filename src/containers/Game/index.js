@@ -1,7 +1,7 @@
 import compose from 'recompose/compose'
 import { withHandlers, withProps, withState, pure, lifecycle } from 'recompose'
 
-import { clearStorageForlogout } from '../../utils/localStorageUtils'
+import { clearStorageForLogout } from '../../utils/localStorageUtils'
 import gC from '../../constants'
 
 import AsyncGameDesktop from '../../components/Game/Desktop/AsyncGameDesktop'
@@ -105,7 +105,7 @@ export default compose(
   withState('isShowIframe', 'setShowIframe', false),
   withHandlers({
     handleLogout: ({ history }) => () => {
-      clearStorageForlogout()
+      clearStorageForLogout()
       history.push('/')
     },
     handlePlayNow: ({ isShowIframe, setShowIframe }) => () => {

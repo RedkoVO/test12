@@ -6,27 +6,42 @@ import Action from './components/Action'
 
 import styles from './styles'
 
-const Wallet = ({ classes, onSubmit, balance, isDisabledButton }) => (
+const Wallet = ({
+  classes,
+  onSubmit,
+  balance,
+  isDisabledButton,
+  addressKey
+}) => (
   <div className={classes.root}>
     <div className={classes.wallet}>
       <div className={classes.walletTitle}>
         <p>My dcb wallet:</p>
       </div>
+      <div className={classes.walletAddress}>{addressKey}</div>
       <div className={classes.walletSum}>
         <a href="/">{balance}</a>
       </div>
       <ul className={classes.walletNav}>
         <li>
-          <a href="/" className={classes.walletNavItem}>Send Money</a>
+          <a href="/" className={classes.walletNavItem}>
+            Send Money
+          </a>
         </li>
         <li>
-          <a href="/" className={classes.walletNavItem}>Tranfer Money</a>
+          <a href="/" className={classes.walletNavItem}>
+            Tranfer Money
+          </a>
         </li>
         <li>
-          <a href="/" className={classes.walletNavItem}>Invoice</a>
+          <a href="/" className={classes.walletNavItem}>
+            Invoice
+          </a>
         </li>
         <li>
-          <a href="/" className={classes.walletNavItem}>Cashout</a>
+          <a href="/" className={classes.walletNavItem}>
+            Cashout
+          </a>
         </li>
       </ul>
     </div>
@@ -39,7 +54,8 @@ Wallet.propTypes = {
   classes: PropTypes.object,
   onSubmit: PropTypes.func,
   balance: PropTypes.string,
-  isDisabledButton: PropTypes.bool
+  isDisabledButton: PropTypes.bool,
+  addressKey: PropTypes.string
 }
 
 export default withStyles(styles)(Wallet)

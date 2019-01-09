@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="CasesList-root-1"
+>
+  <div
+    className="CasesList-casesListItem-2"
+  >
+    <div
+      className="CasesList-casesListItemImg-3"
+    >
+      <img
+        alt=""
+        src="caseX.png"
+      />
+    </div>
+    <div
+      className="CasesList-casesListItemName-4"
+    >
+      Case: 
+      <span>
+        Hello, buddy!
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemPrise-5"
+    >
+      Open for 
+      <span>
+        $34.20
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemGame-6"
+    >
+      Case: 
+      <span>
+        CS:GO
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemMarker-7"
+    />
+  </div>
+  <div
+    className="CasesList-casesListItem-2"
+  >
+    <div
+      className="CasesList-casesListItemImg-3"
+    >
+      <img
+        alt=""
+        src="caseX.png"
+      />
+    </div>
+    <div
+      className="CasesList-casesListItemName-4"
+    >
+      Case: 
+      <span>
+        Hello, buddy!
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemPrise-5"
+    >
+      Open for 
+      <span>
+        $34.20
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemGame-6"
+    >
+      Case: 
+      <span>
+        CS:GO
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemMarker-7"
+    />
+  </div>
+  <div
+    className="CasesList-casesListItem-2"
+  >
+    <div
+      className="CasesList-casesListItemImg-3"
+    >
+      <img
+        alt=""
+        src="caseX.png"
+      />
+    </div>
+    <div
+      className="CasesList-casesListItemName-4"
+    >
+      Case: 
+      <span>
+        Hello, buddy!
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemPrise-5"
+    >
+      Open for 
+      <span>
+        $34.20
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemGame-6"
+    >
+      Case: 
+      <span>
+        CS:GO
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemMarker-7"
+    />
+  </div>
+  <div
+    className="CasesList-casesListItem-2"
+  >
+    <div
+      className="CasesList-casesListItemImg-3"
+    >
+      <img
+        alt=""
+        src="caseX.png"
+      />
+    </div>
+    <div
+      className="CasesList-casesListItemName-4"
+    >
+      Case: 
+      <span>
+        Hello, buddy!
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemPrise-5"
+    >
+      Open for 
+      <span>
+        $34.20
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemGame-6"
+    >
+      Case: 
+      <span>
+        CS:GO
+      </span>
+    </div>
+    <div
+      className="CasesList-casesListItemMarker-7"
+    />
+  </div>
+</div>
+`;
