@@ -22,7 +22,6 @@ exports[`renders correctly 1`] = `
     <input
       className="Step1-field-5"
       id="email"
-      name={undefined}
       onBlur={[Function]}
       onChange={[Function]}
       onDragStart={[Function]}

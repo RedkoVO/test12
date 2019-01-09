@@ -206,9 +206,7 @@ exports[`renders correctly 1`] = `
                   <div
                     className="StreamTabsNav-streamTabsNavItem-32 StreamTabsNav-liveNow-33"
                   >
-                    <span
-                      className={undefined}
-                    >
+                    <span>
                       LIVE NOW
                     </span>
                     <span
@@ -225,9 +223,7 @@ exports[`renders correctly 1`] = `
                       className="StreamTabsNav-streamTabsNavImg-34"
                       src="gamepad.svg"
                     />
-                    <span
-                      className={undefined}
-                    >
+                    <span>
                       ALL GAMES
                     </span>
                     <span
@@ -244,9 +240,7 @@ exports[`renders correctly 1`] = `
                       className="StreamTabsNav-streamTabsNavImg-34"
                       src="starcraft.png"
                     />
-                    <span
-                      className={undefined}
-                    >
+                    <span>
                       STARCRAFT 2
                     </span>
                     <span
@@ -263,9 +257,7 @@ exports[`renders correctly 1`] = `
                       className="StreamTabsNav-streamTabsNavImg-34"
                       src="dota-2.svg"
                     />
-                    <span
-                      className={undefined}
-                    >
+                    <span>
                       DOTA 2
                     </span>
                     <span
@@ -282,9 +274,7 @@ exports[`renders correctly 1`] = `
                       className="StreamTabsNav-streamTabsNavImg-34"
                       src="overwatch.png"
                     />
-                    <span
-                      className={undefined}
-                    >
+                    <span>
                       CS:GO
                     </span>
                     <span
@@ -301,9 +291,7 @@ exports[`renders correctly 1`] = `
                       className="StreamTabsNav-streamTabsNavImg-34"
                       src="csgo.png"
                     />
-                    <span
-                      className={undefined}
-                    >
+                    <span>
                       CS:GO
                     </span>
                     <span
@@ -410,9 +398,7 @@ exports[`renders correctly 1`] = `
                       12:30 PM
                        
                       <br />
-                      <span
-                        className={undefined}
-                      >
+                      <span>
                         7/12/2018
                       </span>
                     </div>
@@ -587,9 +573,7 @@ exports[`renders correctly 1`] = `
                       12:30 PM
                        
                       <br />
-                      <span
-                        className={undefined}
-                      >
+                      <span>
                         7/12/2018
                       </span>
                     </div>
@@ -745,9 +729,7 @@ exports[`renders correctly 1`] = `
         </a>
       </li>
     </ul>
-    <span
-      className={undefined}
-    >
+    <span>
       Vault. All Rights Reserved 2018
     </span>
   </footer>
