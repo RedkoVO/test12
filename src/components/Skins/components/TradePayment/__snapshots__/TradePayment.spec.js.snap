@@ -130,9 +130,7 @@ exports[`renders correctly 1`] = `
     <div
       className="PaymentSelected-paymentSelectedItem-32"
     >
-      <div
-        className={undefined}
-      >
+      <div>
         0
         ) 
         Good EWeapon 1.2
@@ -150,9 +148,7 @@ exports[`renders correctly 1`] = `
     <div
       className="PaymentSelected-paymentSelectedItem-32"
     >
-      <div
-        className={undefined}
-      >
+      <div>
         1
         ) 
         Good EWeapon 1.2
@@ -170,9 +166,7 @@ exports[`renders correctly 1`] = `
     <div
       className="PaymentSelected-paymentSelectedItem-32"
     >
-      <div
-        className={undefined}
-      >
+      <div>
         2
         ) 
         Good EWeapon 1.2
@@ -190,9 +184,7 @@ exports[`renders correctly 1`] = `
     <div
       className="PaymentSelected-paymentSelectedItem-32"
     >
-      <div
-        className={undefined}
-      >
+      <div>
         3
         ) 
         Good EWeapon 1.2
@@ -210,9 +202,7 @@ exports[`renders correctly 1`] = `
     <div
       className="PaymentSelected-paymentSelectedItem-32"
     >
-      <div
-        className={undefined}
-      >
+      <div>
         4
         ) 
         Good EWeapon 1.2
@@ -230,9 +220,7 @@ exports[`renders correctly 1`] = `
     <div
       className="PaymentSelected-paymentSelectedItem-32"
     >
-      <div
-        className={undefined}
-      >
+      <div>
         5
         ) 
         Good EWeapon 1.2

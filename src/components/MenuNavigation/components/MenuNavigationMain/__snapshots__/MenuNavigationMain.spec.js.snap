@@ -4,9 +4,7 @@ exports[`renders correctly main 1`] = `
 <ul
   className="MenuNavigation-root-1"
 >
-  <li
-    className={undefined}
-  >
+  <li>
     <div
       className="MenuNavigation-logout-10"
       onClick={[Function]}

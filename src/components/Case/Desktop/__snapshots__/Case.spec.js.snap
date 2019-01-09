@@ -485,7 +485,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="CaseX.png"
+                src="caseX.png"
               />
             </div>
             <div
@@ -505,7 +505,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="CaseX.png"
+                src="caseX.png"
               />
             </div>
             <div
@@ -525,7 +525,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="CaseX.png"
+                src="caseX.png"
               />
             </div>
             <div
@@ -545,7 +545,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="CaseX.png"
+                src="caseX.png"
               />
             </div>
             <div
@@ -565,7 +565,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="CaseX.png"
+                src="caseX.png"
               />
             </div>
             <div
@@ -585,7 +585,7 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=""
-                src="CaseX.png"
+                src="caseX.png"
               />
             </div>
             <div
@@ -662,9 +662,7 @@ exports[`renders correctly 1`] = `
         </a>
       </li>
     </ul>
-    <span
-      className={undefined}
-    >
+    <span>
       Vault. All Rights Reserved 2018
     </span>
   </footer>

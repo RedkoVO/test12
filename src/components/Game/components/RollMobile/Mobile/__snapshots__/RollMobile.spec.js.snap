@@ -7,9 +7,7 @@ exports[`renders correctly 1`] = `
   <div
     className="RollMobile-gameMobileTop-2"
   >
-    <div
-      className={undefined}
-    >
+    <div>
       <p
         className="RollMobile-gameMobileTitle-3"
       >

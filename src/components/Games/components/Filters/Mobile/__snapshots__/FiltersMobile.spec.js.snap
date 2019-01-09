@@ -4,9 +4,7 @@ exports[`renders correctly filters HIDDEN 1`] = `
 <div
   className="FiltersMobile-root-1"
 >
-  <div
-    className={undefined}
-  >
+  <div>
     <input
       className="FiltersMobile-mobileSortSearchField-2"
       placeholder="Search..."
@@ -32,9 +30,7 @@ exports[`renders correctly filters SHOW 1`] = `
 <div
   className="FiltersMobile-root-1"
 >
-  <div
-    className={undefined}
-  >
+  <div>
     <input
       className="FiltersMobile-mobileSortSearchField-2"
       placeholder="Search..."

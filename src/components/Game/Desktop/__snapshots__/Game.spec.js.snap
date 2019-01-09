@@ -134,9 +134,7 @@ exports[`renders correctly Desktop 1`] = `
               22 May 2018 12:03
             </time>
           </div>
-          <p
-            className={undefined}
-          >
+          <p>
             Curabitur tincidunt orci quis odio aliquet placerat. Nullam laoreet justo eros, quis semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank. s semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank.
           </p>
           <a
@@ -195,9 +193,7 @@ exports[`renders correctly Desktop 1`] = `
               22 May 2018 12:03
             </time>
           </div>
-          <p
-            className={undefined}
-          >
+          <p>
             Nulla non pellentesque sem, sed aliquet justo. Praesent egestas purus et bibendum tempus.Interdum et malesuada fames ac ante ipsum primis in faucibus.
           </p>
           <a
@@ -248,9 +244,7 @@ exports[`renders correctly Mobile 1`] = `
         <ul
           className="MenuNavigationGame-root-33 dark"
         >
-          <li
-            className={undefined}
-          >
+          <li>
             <div
               className="MenuNavigationGame-logout-42"
               onClick={[Function]}
@@ -512,7 +506,6 @@ exports[`renders correctly Mobile 1`] = `
               <img
                 alt=""
                 className="RollBottomDesktop-sliderItemPhoto-73"
-                src={undefined}
               />
             </a>
             <a
@@ -523,7 +516,6 @@ exports[`renders correctly Mobile 1`] = `
               <img
                 alt=""
                 className="RollBottomDesktop-sliderItemPhoto-73"
-                src={undefined}
               />
             </a>
           </div>
@@ -650,9 +642,7 @@ exports[`renders correctly Mobile 1`] = `
               22 May 2018 12:03
             </time>
           </div>
-          <p
-            className={undefined}
-          >
+          <p>
             Curabitur tincidunt orci quis odio aliquet placerat. Nullam laoreet justo eros, quis semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank. s semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank.
           </p>
           <a
@@ -711,9 +701,7 @@ exports[`renders correctly Mobile 1`] = `
               22 May 2018 12:03
             </time>
           </div>
-          <p
-            className={undefined}
-          >
+          <p>
             Nulla non pellentesque sem, sed aliquet justo. Praesent egestas purus et bibendum tempus.Interdum et malesuada fames ac ante ipsum primis in faucibus.
           </p>
           <a
@@ -805,9 +793,7 @@ exports[`renders correctly Mobile 1`] = `
           </a>
         </li>
       </ul>
-      <span
-        className={undefined}
-      >
+      <span>
         Vault. All Rights Reserved 2018
       </span>
     </footer>
