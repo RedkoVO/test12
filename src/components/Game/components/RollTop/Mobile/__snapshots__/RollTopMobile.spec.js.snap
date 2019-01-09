@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly Mobile 1`] = `
+<div
+  className="RollTopMobile-root-1"
+>
+  <div
+    className="RollTopMobile-gameRollInf-2"
+  />
+</div>
+`;

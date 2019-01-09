@@ -5,21 +5,21 @@ exports[`renders correctly DESKTOP 1`] = `
   className="HeaderGames-root-1"
 >
   <div
-    className="HeaderGames-catalogUserBlock-2"
+    className="HeaderGames-gamesUserBlock-2"
   >
     <p
-      className="HeaderGames-catalogUserHello-3"
+      className="HeaderGames-gamesUserHello-3"
     >
        Hello, Ben A 
       <br />
       <span
-        className="HeaderGames-catalogUserVerification-5"
+        className="HeaderGames-gamesUserVerification-5"
       >
         KYC VERIFICATED
       </span>
     </p>
     <div
-      className="HeaderGames-catalogUserPhoto-7"
+      className="HeaderGames-gamesUserPhoto-7"
     >
       <img
         alt=""
@@ -27,56 +27,12 @@ exports[`renders correctly DESKTOP 1`] = `
       />
     </div>
     <p
-      className="HeaderGames-catalogUserBallance-4"
+      className="HeaderGames-gamesUserBallance-4"
     >
        764.23 DCB 
       <br />
       <span
-        className="HeaderGames-catalogUserBallDescr-6"
-      >
-        YOUR BALANCE
-      </span>
-    </p>
-  </div>
-  <div>
-    test
-  </div>
-</div>
-`;
-
-exports[`renders correctly MOBILE 1`] = `
-<div
-  className="HeaderGames-root-1"
->
-  <div
-    className="HeaderGames-catalogUserBlock-2"
-  >
-    <p
-      className="HeaderGames-catalogUserHello-3"
-    >
-       Hello, Ben A 
-      <br />
-      <span
-        className="HeaderGames-catalogUserVerification-5"
-      >
-        KYC VERIFICATED
-      </span>
-    </p>
-    <div
-      className="HeaderGames-catalogUserPhoto-7"
-    >
-      <img
-        alt=""
-        src="user.png"
-      />
-    </div>
-    <p
-      className="HeaderGames-catalogUserBallance-4"
-    >
-       764.23 DCB 
-      <br />
-      <span
-        className="HeaderGames-catalogUserBallDescr-6"
+        className="HeaderGames-gamesUserBallDescr-6"
       >
         YOUR BALANCE
       </span>
