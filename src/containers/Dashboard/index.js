@@ -1,7 +1,8 @@
 import compose from 'recompose/compose'
-import { withProps, withHandlers, withState, pure } from 'recompose'
+import { withProps, withHandlers, withState, lifecycle, pure } from 'recompose'
 import { connect } from 'react-redux'
 import { reduxForm, reset } from 'redux-form'
+import isEqual from 'lodash/isEqual'
 import BigNumber from 'bignumber.js'
 
 import { getWork, getBalance, sendMoney } from '../../redux/actions/balance'
@@ -10,7 +11,6 @@ import { getBalanceSelector } from '../../selectors/balance'
 import Crypto from '../../crypto/crypto'
 import validate from './validate'
 import { getBigNumberAmount } from '../../utils/math'
-import { clearStorageForLogout } from '../../utils/localStorageUtils'
 
 import AsyncDashboardDesktop from '../../components/Dashboard/Desktop/AsyncDashboardDesktop'
 
@@ -235,10 +235,11 @@ export default compose(
     validate
   }),
   withState('isDisabledButton', 'setDisabledButton', false),
+  withState('curencySelectValue', 'setCurencySelectValue', ''),
   withHandlers({
-    handleLogout: ({ history }) => () => {
-      clearStorageForLogout()
-      history.push('/')
+    handleChangeBalance: ({ setCurencySelectValue }) => e => {
+      console.log('value', e.target.value)
+      setCurencySelectValue(e.target.value)
     },
 
     onSubmit: ({
@@ -306,6 +307,22 @@ export default compose(
             })
         }
       })
+  }),
+  lifecycle({
+    componentDidMount() {
+      const { balance, setCurencySelectValue } = this.props
+      if (!!balance) {
+        setCurencySelectValue(balance.shortBalance)
+      }
+    },
+    componentDidUpdate(prevProps) {
+      const { balance, setCurencySelectValue } = this.props
+      if (!isEqual(prevProps.balance, balance)) {
+        if (!!balance.shortBalance) {
+          setCurencySelectValue(balance.shortBalance)
+        }
+      }
+    }
   }),
   withProps({
     transactions: tmpTransactionCollection,

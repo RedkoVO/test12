@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { withHandlers, lifecycle, pure } from 'recompose'
 
 import { getBalance } from '../../redux/actions/balance'
+import { resetApp } from '../../redux/actions/appReset'
 import { getBalanceSelector } from '../../selectors/balance'
 
 import Crypto from '../../crypto/crypto'
@@ -30,7 +31,8 @@ export default compose(
     }
   }),
   withHandlers({
-    handleLogout: ({ history }) => () => {
+    handleLogout: ({ history, dispatch }) => () => {
+      dispatch(resetApp())
       clearStorageForLogout()
       history.push('/')
     }

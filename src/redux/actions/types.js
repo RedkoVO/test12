@@ -5,3 +5,6 @@ export const GET_INCOMING = 'GET_INCOMING'
 
 export const GET_BALANCE = 'GET_BALANCE'
 export const GET_WORK = 'GET_WORK'
+
+/* Reset store */
+export const APP_RESET = 'APP_RESET'

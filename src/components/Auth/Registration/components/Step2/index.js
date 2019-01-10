@@ -4,7 +4,6 @@ import DatePicker from 'react-datepicker'
 import withStyles from '@material-ui/core/styles/withStyles'
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
-// import { Field, Form } from 'redux-form'
 import cn from 'classnames'
 
 import InputField from '../../../../App/components/Form/InputField'

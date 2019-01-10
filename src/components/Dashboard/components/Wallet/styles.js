@@ -42,13 +42,72 @@ export default theme => ({
       margin: '30px 0 0 0'
     }
   },
-  walletSum: {
+  ///////////////////////////////////
+  // walletSum: {
+  //   position: 'relative',
+  //   padding: 0,
+  //   paddingLeft: '0',
+  //   boxSizing: 'border-box',
+  //   textAlign: 'center',
+
+  //   '&::after': {
+  //     position: 'absolute',
+  //     content: `""`,
+  //     width: '30px',
+  //     height: '30px',
+  //     bottom: '25px',
+  //     right: '-35px',
+  //     backgroundImage: `url(${DownLogo})`,
+  //     backgroundRepeat: 'no-repeat',
+  //     backgroundSize: '30px',
+  //     backgroundPosition: 'center'
+  //   },
+
+  //   '& a': {
+  //     color: '#5e7cff',
+  //     fontSize: '82px',
+  //     fontWeight: 700,
+  //     margin: '15px 0 0 0',
+  //     padding: 0,
+  //     lineHeight: '82px',
+  //     textDecoration: 'none'
+  //   }
+  // },
+  ///////////////////////////////////
+  walletAddress: {
+    padding: '10px 0',
+    color: '#616161',
+    textAlign: 'center'
+  },
+  selectCurency: {
     position: 'relative',
     padding: 0,
-    paddingLeft: '0',
-    boxSizing: 'border-box',
     textAlign: 'center',
 
+    '&::before': {
+      display: 'none'
+    },
+    '&::after': {
+      display: 'none'
+    }
+  },
+  dropdownStyle: {
+    border: '1px solid black',
+    borderRadius: '5%',
+    backgroundColor: 'lightgrey'
+  },
+  selectField: {
+    color: '#5e7cff',
+    fontSize: '82px',
+    fontWeight: 700,
+    padding: 0,
+    lineHeight: '82px',
+    textDecoration: 'none',
+    cursor: 'pointer',
+
+    '&:focus': {
+      outline: 'none'
+    },
     '&::after': {
       position: 'absolute',
       content: `""`,
@@ -60,22 +119,24 @@ export default theme => ({
       backgroundRepeat: 'no-repeat',
       backgroundSize: '30px',
       backgroundPosition: 'center'
-    },
-
-    '& a': {
-      color: '#5e7cff',
-      fontSize: '82px',
-      fontWeight: 700,
-      margin: '15px 0 0 0',
-      padding: 0,
-      lineHeight: '82px',
-      textDecoration: 'none'
     }
   },
-  walletAddress: {
-    padding: '10px 0',
-    color: '#616161',
-    textAlign: 'center'
+  curencyIcon: {
+    display: 'none'
+  },
+  wrCurencySelectWallet: {
+    display: 'flex',
+    alignItems: 'center',
+    margin: '0 auto'
+  },
+  curency: {
+    color: '#5e7cff',
+    cursor: 'pointer',
+    padding: '0 15px 0 0',
+    fontSize: '30px',
+    fontWeight: 700,
+    lineHeight: '82px',
+    textDecoration: 'none'
   },
   walletNav: {
     display: 'flex',
