@@ -1,8 +1,12 @@
 import React from 'react'
-import compose from 'recompose/compose'
-import pure from 'recompose/compose'
-import withProps from 'recompose/withProps'
+import { connect } from 'react-redux'
+import { compose, lifecycle, withProps, pure } from 'recompose'
 import { Route, Redirect, Switch, withRouter } from 'react-router-dom'
+
+import Crypto from '../../../crypto/crypto'
+
+import { getConfig } from '../../../redux/actions/config'
+import { getAllBalanceInfo } from '../../../redux/actions/balance'
 
 import RoutePage from '../../../components/App/components/Routes/RoutePage'
 import AsyncAuthorization from '../../../containers/Auth/Authorization/AsyncAuthorization'
@@ -31,117 +35,73 @@ const RootRoute = props => {
       {keyAuth ? (
         <Redirect exact from="/login" to="/" />
       ) : (
-          <Redirect exact from="/" to="/login" />
-        )}
-
-      {!keyAuth && (
-        <Route
-          path={`/login`}
-          component={AsyncAuthorization}
-        />
+        <Redirect exact from="/" to="/login" />
       )}
 
+      {!keyAuth && <Route path={`/login`} component={AsyncAuthorization} />}
+
       {!keyAuth && (
-        <Route
-          path={`/registration`}
-          component={AsyncRegistration}
-        />
+        <Route path={`/registration`} component={AsyncRegistration} />
       )}
 
       {!keyAuth && (
-        <Route
-          path={`/confirmation-email`}
-          component={AsyncConfirmEmail}
-        />
+        <Route path={`/confirmation-email`} component={AsyncConfirmEmail} />
       )}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/settings`}
-          component={AsyncSettings}
-        />
-      )}
+      {keyAuth && <RoutePage path={`/settings`} component={AsyncSettings} />}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/friends`}
-          component={AsyncFriends}
-        />
-      )}
+      {keyAuth && <RoutePage path={`/friends`} component={AsyncFriends} />}
 
-      {keyAuth && (
-        <Route
-          path={`/games`}
-          component={AsyncGames}
-        />
-      )}
+      {keyAuth && <Route path={`/games`} component={AsyncGames} />}
 
-      {keyAuth && (
-        <Route
-          path={`/game/:bundle`}
-          component={AsyncGame}
-        />
-      )}
+      {keyAuth && <Route path={`/game/:bundle`} component={AsyncGame} />}
 
-      {keyAuth && (
-        <Route
-          path={`/stream`}
-          component={AsyncStream}
-        />
-      )}
+      {keyAuth && <Route path={`/stream`} component={AsyncStream} />}
 
-      {keyAuth && (
-        <Route
-          path={`/skins`}
-          component={AsyncSkins}
-        />
-      )}
+      {keyAuth && <Route path={`/skins`} component={AsyncSkins} />}
 
-      {keyAuth && (
-        <Route
-          path={`/cases`}
-          component={AsyncCases}
-        />
-      )}
+      {keyAuth && <Route path={`/cases`} component={AsyncCases} />}
 
-      {keyAuth && (
-        <Route
-          path={`/case`}
-          component={AsyncCase}
-        />
-      )}
+      {keyAuth && <Route path={`/case`} component={AsyncCase} />}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/shop`}
-          component={AsyncShop}
-        />
-      )}
+      {keyAuth && <RoutePage path={`/shop`} component={AsyncShop} />}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/wallet`}
-          component={AsyncWallet}
-        />
-      )}
+      {keyAuth && <RoutePage path={`/wallet`} component={AsyncWallet} />}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/`}
-          component={AsyncDashboard}
-        />
-      )}
+      {keyAuth && <RoutePage path={`/`} component={AsyncDashboard} />}
       <Redirect to="/" />
     </Switch>
   )
 }
 
 export default compose(
-  // connect(mapStateToProps),
   withRouter,
   withProps(() => {
     return {
       keyAuth: localStorage.getItem('secretKey')
+    }
+  }),
+  connect(),
+  lifecycle({
+    //TODO: move to HOC balance !!!
+    componentDidMount() {
+      const { dispatch } = this.props
+      const isSecretKey = localStorage.getItem('secretKey')
+      const getCryptoInfo = Crypto.account.accountFromSecret(isSecretKey)
+
+      if (isSecretKey) {
+        const data = {
+          address: getCryptoInfo.address
+        }
+
+        dispatch(getConfig())
+          .then(res => {
+            if (res.success) {
+              dispatch(getAllBalanceInfo(data))
+            }
+          })
+          .catch(err => console.log('Error get config:', err))
+      }
     }
   }),
   pure

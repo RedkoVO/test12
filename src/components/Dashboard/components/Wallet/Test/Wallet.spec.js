@@ -6,20 +6,33 @@ import { createStore } from 'redux'
 
 import Main from '../'
 
+const allBalanceResultMock = [
+  {
+    balance: '0',
+    currency: 'DCB',
+    lastBlock:
+      '0000000000000000000000000000000000000000000000000000000000000000'
+  }
+]
+
 const Wrapper = reduxForm({ form: 'test' })(({ children }) => children)
 const store = createStore(a => a, {})
 
 it('renders correctly', () => {
-  const tree = renderer.create(
-    <Provider store={store}>
-      <Wrapper>
-        <Main
-          onSubmit={() => { }}
-          balance={'00000'}
-          isDisabledButton={false}
-        />
-      </Wrapper>
-    </Provider>
-  ).toJSON()
+  const tree = renderer
+    .create(
+      <Provider store={store}>
+        <Wrapper>
+          <Main
+            onSubmit={() => {}}
+            handleChangeBalance={() => {}}
+            allBalanceResult={allBalanceResultMock}
+            curencySelectValue={'USD'}
+            isDisabledButton={false}
+          />
+        </Wrapper>
+      </Provider>
+    )
+    .toJSON()
   expect(tree).toMatchSnapshot()
 })

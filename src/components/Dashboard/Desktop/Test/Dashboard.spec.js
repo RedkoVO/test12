@@ -144,6 +144,22 @@ const dataCategories = [
     ]
   }
 ]
+const dataAllBalance = {
+  result: [
+    {
+      balance: '0',
+      currency: 'USD',
+      lastBlock:
+        '0000000000000000000000000000000000000000000000000000000000000000'
+    },
+    {
+      balance: '1000000',
+      currency: 'BTC',
+      lastBlock:
+        '0000000000000000000000000000000000000000000000000000000000000000'
+    }
+  ]
+}
 
 const Wrapper = reduxForm({ form: 'test' })(({ children }) => children)
 const store = createStore(a => a, {})
@@ -160,7 +176,9 @@ it('renders correctly', () => {
               gameCategories={dataCategories}
               onSubmit={() => {}}
               isDisabledButton={false}
-              balance={{}}
+              allBalance={dataAllBalance}
+              curencySelectValue={'USD'}
+              handleChangeBalance={() => {}}
             />
           </Wrapper>
         </MemoryRouter>

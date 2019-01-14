@@ -4,6 +4,8 @@ import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
 import withStyles from '@material-ui/core/styles/withStyles'
 
+import { shortBalance } from '../../../../utils/math'
+
 import Action from './components/Action'
 
 import styles from './styles'
@@ -11,11 +13,11 @@ import styles from './styles'
 const Wallet = ({
   classes,
   onSubmit,
-  balance = 0,
+  allBalanceResult,
   addressKey,
   isDisabledButton,
   handleChangeBalance,
-  curencySelectValue
+  curencySelectValue = ''
 }) => (
   <div className={classes.root}>
     <div className={classes.wallet}>
@@ -23,26 +25,28 @@ const Wallet = ({
         <p>My dcb wallet:</p>
       </div>
       <div className={classes.walletAddress}>{addressKey}</div>
-      <div className={classes.wrCurencySelectWallet}>
-        <div className={classes.curency}>USD</div>
-        <Select
-          className={classes.selectCurency}
-          value={curencySelectValue}
-          onChange={e => handleChangeBalance(e)}
-          IconComponent={props => (
-            <i {...props} className={classes.curencyIcon} />
-          )}
-          inputProps={{
-            id: 'curencyDropdownWallet',
-            name: 'curency'
-          }}
-          SelectDisplayProps={{ className: classes.selectField }}
-          MenuProps={{ classes: { paper: classes.dropdownStyle } }}
-        >
-          <MenuItem value={balance}>{balance}</MenuItem>
-          <MenuItem value={'100500'}>100500</MenuItem>
-        </Select>
-      </div>
+      <Select
+        className={classes.selectCurency}
+        value={curencySelectValue}
+        onChange={e => handleChangeBalance(e)}
+        IconComponent={props => (
+          <i {...props} className={classes.curencyIcon} />
+        )}
+        inputProps={{
+          id: 'curencyDropdownWallet',
+          name: 'curency'
+        }}
+        SelectDisplayProps={{ className: classes.selectField }}
+        MenuProps={{ classes: { paper: classes.dropdownStyle } }}
+      >
+        {!!allBalanceResult &&
+          allBalanceResult.map(item => (
+            <MenuItem value={item.currency} key={item.currency}>
+              <div className={classes.curency}>{item.currency}</div>
+              {shortBalance(item.balance)}
+            </MenuItem>
+          ))}
+      </Select>
       <ul className={classes.walletNav}>
         <li>
           <a href="/" className={classes.walletNavItem}>
@@ -74,11 +78,11 @@ const Wallet = ({
 Wallet.propTypes = {
   classes: PropTypes.object,
   onSubmit: PropTypes.func,
-  balance: PropTypes.string,
+  allBalanceResult: PropTypes.array,
   addressKey: PropTypes.string,
   isDisabledButton: PropTypes.bool,
-  handleChangeBalance: PropTypes.func, //TODO: test
-  curencySelectValue: PropTypes.string //TODO: test
+  handleChangeBalance: PropTypes.func,
+  curencySelectValue: PropTypes.string
 }
 
 export default withStyles(styles)(Wallet)

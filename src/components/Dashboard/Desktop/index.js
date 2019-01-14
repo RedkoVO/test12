@@ -14,22 +14,20 @@ const Dashboard = ({
   transactions,
   bestAds,
   gameCategories,
-  balance,
+  allBalance,
   isDisabledButton,
   onSubmit,
   addressKey,
   handleChangeBalance,
   curencySelectValue
-}) => {
-  console.log('curencySelectValue', curencySelectValue)
-  return (
+}) => (
   <main>
     <div className={classes.root}>
       <Wallet
         onSubmit={onSubmit}
         addressKey={addressKey}
         isDisabledButton={isDisabledButton}
-        balance={balance && balance.shortBalance}
+        allBalanceResult={allBalance && allBalance.result}
         handleChangeBalance={handleChangeBalance}
         curencySelectValue={curencySelectValue}
       />
@@ -38,19 +36,19 @@ const Dashboard = ({
       <Categories categories={gameCategories} />
     </div>
   </main>
-)}
+)
 
 Dashboard.propTypes = {
   classes: PropTypes.object,
   transactions: PropTypes.array,
   bestAds: PropTypes.array,
   gameCategories: PropTypes.array,
-  balance: PropTypes.object,
+  allBalance: PropTypes.object,
   isDisabledButton: PropTypes.bool,
   onSubmit: PropTypes.func,
   addressKey: PropTypes.string,
-  handleChangeBalance: PropTypes.func, //TODO: test
-  curencySelectValue: PropTypes.string //TODO: test
+  handleChangeBalance: PropTypes.func,
+  curencySelectValue: PropTypes.string
 }
 
 export default withStyles(styles)(Dashboard)

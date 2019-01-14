@@ -1,40 +1,64 @@
 import axios from 'axios'
 
-import { GET_BALANCE, GET_WORK, GET_INCOMING, SEND_MONEY } from './types'
+import {
+  GET_ALL_BALANCE_INFO,
+  GET_WORK,
+  GET_INCOMING,
+  SEND_MONEY
+} from './types'
 import gC from '../../constants'
 
-/* GET BALANCE */
-export const getBalance = data => {
-  data.action = 'address_info'
+/* GET ALL BALANCE INFO */
+export const getAllBalanceInfo = data => {
+  data.action = 'allBalanceInfo'
 
-  return (dispatch) => {
+  return (dispatch, getState) => {
     return axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       data: JSON.stringify(data),
-      url: `${gC.API_URL}/address_info/`
+      url: `${gC.API_URL}/all_balance_info/`
     })
-      .then((response) => {
-        dispatch(createGetBalanceSuccess(response.data))
+      .then(response => {
+        const { config } = getState()
+
+        dispatch(createGetAllBalanceInfoSuccess(response.data, config))
 
         return response.data
       })
-      .catch((error) => {
-        console.log('GET_BALANCE error', error)
+      .catch(error => {
+        console.log('GET_ALL_BALANCE_INFO error', error)
       })
   }
 }
 
-export const createGetBalanceSuccess = (data) => {
+export const createGetAllBalanceInfoSuccess = (data, { config }) => {
+  const dataResult = data.result
+  const configResult = config.result.balances
+  const resultCollection = []
+
+  Object.keys(configResult).forEach(objectKey => {
+    dataResult.forEach(item => {
+      if (item.currency === objectKey) {
+        configResult[objectKey] = item
+      }
+    })
+
+    resultCollection.push({
+      currency: objectKey,
+      balance: configResult[objectKey].balance,
+      lastBlock: configResult[objectKey].lastBlock
+    })
+  })
+
   return {
-    type: GET_BALANCE,
+    type: GET_ALL_BALANCE_INFO,
     payload: {
-      balance: data.balance,
-      lastBlock: data.lastBlock,
-      shortBalance: data.shortBalance
+      result: resultCollection,
+      success: data.success
     }
   }
 }
@@ -44,28 +68,28 @@ export const createGetBalanceSuccess = (data) => {
 export const getWork = data => {
   data.action = 'work'
 
-  return (dispatch) => {
+  return dispatch => {
     return axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       data: JSON.stringify(data),
       url: `${gC.API_URL}/work/`
     })
-      .then((response) => {
+      .then(response => {
         dispatch(createGetWorkSuccess(response.data))
 
         return response.data
       })
-      .catch((error) => {
+      .catch(error => {
         console.log('GET_WORK error', error)
       })
   }
 }
 
-export const createGetWorkSuccess = (data) => {
+export const createGetWorkSuccess = data => {
   return {
     type: GET_WORK,
     payload: {
@@ -77,30 +101,30 @@ export const createGetWorkSuccess = (data) => {
 
 /* GET INCOMING */
 export const getIncoming = data => {
-  data.action = 'incoming'
+  data.action = 'addressPending'
 
-  return (dispatch) => {
+  return dispatch => {
     return axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       data: JSON.stringify(data),
       url: `${gC.API_URL}/incoming/`
     })
-      .then((response) => {
+      .then(response => {
         dispatch(createGetIncomingSuccess(response.data))
 
         return response.data
       })
-      .catch((error) => {
+      .catch(error => {
         console.log('GET_INCOMING error', error)
       })
   }
 }
 
-export const createGetIncomingSuccess = (data) => {
+export const createGetIncomingSuccess = data => {
   return {
     type: GET_INCOMING,
     payload: {
@@ -112,30 +136,30 @@ export const createGetIncomingSuccess = (data) => {
 
 /* SEND MONEY */
 export const sendMoney = data => {
-  data.action = 'submit'
+  data.action = 'blockPublish'
 
-  return (dispatch) => {
+  return dispatch => {
     return axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       data: JSON.stringify(data),
       url: `${gC.API_URL}/submit/`
     })
-      .then((response) => {
+      .then(response => {
         dispatch(createSendMoneySuccess(response.data))
 
         return response.data
       })
-      .catch((error) => {
+      .catch(error => {
         console.log('SEND_MONEY error', error)
       })
   }
 }
 
-export const createSendMoneySuccess = (data) => {
+export const createSendMoneySuccess = data => {
   return {
     type: SEND_MONEY,
     payload: {

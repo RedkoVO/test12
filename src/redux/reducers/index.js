@@ -3,11 +3,13 @@ import { reducer as form } from 'redux-form'
 import { APP_RESET } from '../actions/types'
 import auth from './auth'
 import balance from './balance'
+import config from './config'
 
 const appReducer = combineReducers({
   form,
   auth,
-  balance
+  balance,
+  config
 })
 
 export default (state, action) => {

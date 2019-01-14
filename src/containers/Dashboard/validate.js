@@ -3,7 +3,7 @@ const validate = values => {
 
   if (!values.addressKey) {
     errors.addressKey = 'error.required'
-  } else if (values.addressKey.length !== 64) {
+  } else if (values.addressKey.length !== 60) {
     errors.addressKey = 'error.length'
   }
 

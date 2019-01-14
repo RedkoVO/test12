@@ -1,21 +1,20 @@
 import {
-  GET_BALANCE,
+  GET_ALL_BALANCE_INFO,
   GET_WORK,
   GET_INCOMING,
   SEND_MONEY
 } from '../actions/types'
 
-const auth = (state = {}, action) => {
+const balance = (state = {}, action) => {
   const { payload, type } = action
 
   switch (type) {
-    case GET_BALANCE:
+    case GET_ALL_BALANCE_INFO:
       return {
         ...state,
-        balance: {
-          balance: payload.balance,
-          lastBlock: payload.lastBlock,
-          shortBalance: payload.shortBalance
+        allBalance: {
+          result: payload.result,
+          success: payload.success
         }
       }
     case GET_WORK:
@@ -44,4 +43,4 @@ const auth = (state = {}, action) => {
   }
 }
 
-export default auth
+export default balance

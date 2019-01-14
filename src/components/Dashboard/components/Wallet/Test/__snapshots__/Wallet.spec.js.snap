@@ -15,23 +15,51 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="Wallet-walletAddress-5"
+      className="Wallet-walletAddress-4"
     />
     <div
-      className="Wallet-walletSum-4"
+      className="MuiInputBase-root-32 MuiInput-root-19 MuiInput-underline-23 Wallet-selectCurency-5"
+      onClick={[Function]}
     >
-      <a
-        href="/"
+      <div
+        className="MuiSelect-root-12"
       >
-        00000
-      </a>
+        <div
+          aria-haspopup="true"
+          aria-pressed="false"
+          className="Wallet-selectField-7"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "&#8203;",
+              }
+            }
+          />
+        </div>
+        <input
+          id="curencyDropdownWallet"
+          name="curency"
+          type="hidden"
+          value="USD"
+        />
+        <i
+          className="Wallet-curencyIcon-8"
+        />
+      </div>
     </div>
     <ul
-      className="Wallet-walletNav-6"
+      className="Wallet-walletNav-10"
     >
       <li>
         <a
-          className="Wallet-walletNavItem-7"
+          className="Wallet-walletNavItem-11"
           href="/"
         >
           Send Money
@@ -39,7 +67,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Wallet-walletNavItem-7"
+          className="Wallet-walletNavItem-11"
           href="/"
         >
           Tranfer Money
@@ -47,7 +75,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Wallet-walletNavItem-7"
+          className="Wallet-walletNavItem-11"
           href="/"
         >
           Invoice
@@ -55,7 +83,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Wallet-walletNavItem-7"
+          className="Wallet-walletNavItem-11"
           href="/"
         >
           Cashout
@@ -64,13 +92,13 @@ exports[`renders correctly 1`] = `
     </ul>
   </div>
   <div
-    className="Action-root-8"
+    className="Action-root-53"
   >
     <div
-      className="Action-actionsStatistics-9"
+      className="Action-actionsStatistics-54"
     >
       <span
-        className="Action-statisticsTitle-11"
+        className="Action-statisticsTitle-56"
       >
         Statistics
       </span>
@@ -85,22 +113,22 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="Action-actionsSend-12"
+      className="Action-actionsSend-57"
     >
       <form
-        className="Action-form-10"
+        className="Action-form-55"
         onSubmit={[Function]}
       >
         <span
-          className="Action-sendTitle-13"
+          className="Action-sendTitle-58"
         >
           Send now
         </span>
         <div
-          className="Action-sendAddress-14"
+          className="Action-sendAddress-59"
         >
           <input
-            className="Action-sendAddressField-15"
+            className="Action-sendAddressField-60"
             onBlur={[Function]}
             onChange={[Function]}
             onDragStart={[Function]}
@@ -113,7 +141,7 @@ exports[`renders correctly 1`] = `
         </div>
         <div>
           <input
-            className="Action-sendAmmountField-16"
+            className="Action-sendAmmountField-61"
             onBlur={[Function]}
             onChange={[Function]}
             onDragStart={[Function]}
@@ -125,7 +153,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <button
-          className="Action-sendBtn-18"
+          className="Action-sendBtn-63"
           type="submit"
         >
           Send money
@@ -133,22 +161,22 @@ exports[`renders correctly 1`] = `
       </form>
     </div>
     <div
-      className="Action-actionsInvoice-20"
+      className="Action-actionsInvoice-65"
     >
       <span
-        className="Action-invoiceTitle-21"
+        className="Action-invoiceTitle-66"
       >
         Invoice
       </span>
       <div>
         <input
-          className="Action-invoiceAmmountField-17"
+          className="Action-invoiceAmmountField-62"
           placeholder="Set ammount you need to receive"
           type="text"
         />
       </div>
       <a
-        className="Action-invoiceBtn-19"
+        className="Action-invoiceBtn-64"
         href="/"
       >
         Generate link

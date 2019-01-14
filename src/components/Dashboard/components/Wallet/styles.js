@@ -97,6 +97,10 @@ export default theme => ({
     backgroundColor: 'lightgrey'
   },
   selectField: {
+    margin: '0 auto',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     color: '#5e7cff',
     fontSize: '82px',
     fontWeight: 700,
@@ -123,11 +127,6 @@ export default theme => ({
   },
   curencyIcon: {
     display: 'none'
-  },
-  wrCurencySelectWallet: {
-    display: 'flex',
-    alignItems: 'center',
-    margin: '0 auto'
   },
   curency: {
     color: '#5e7cff',

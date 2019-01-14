@@ -5,8 +5,12 @@ import { reduxForm, reset } from 'redux-form'
 import isEqual from 'lodash/isEqual'
 import BigNumber from 'bignumber.js'
 
-import { getWork, getBalance, sendMoney } from '../../redux/actions/balance'
-import { getBalanceSelector } from '../../selectors/balance'
+import {
+  getWork,
+  getAllBalanceInfo,
+  sendMoney
+} from '../../redux/actions/balance'
+import { getAllBalanceInfoSelector } from '../../selectors/balance'
 
 import Crypto from '../../crypto/crypto'
 import validate from './validate'
@@ -225,7 +229,7 @@ const gameCategories = [
 const FORM_NAME = 'sendMoney'
 
 const mapStateToProps = state => ({
-  balance: getBalanceSelector(state)
+  allBalance: getAllBalanceInfoSelector(state)
 })
 
 export default compose(
@@ -247,7 +251,7 @@ export default compose(
       setDisabledButton,
       isDisabledButton,
       dispatch,
-      balance
+      allBalance
     }) =>
       handleSubmit(variables => {
         if (!isDisabledButton) {
@@ -260,8 +264,8 @@ export default compose(
                 secretKey: localStorage.getItem('secretKey'),
                 address: localStorage.getItem('address'),
                 representative: localStorage.getItem('representative'),
-                lastBlock: localStorage.getItem('lastBlock'),
-                balance: new BigNumber(balance.balance)
+                lastBlock: localStorage.getItem('lastBlock'), //// is redux storage
+                balance: new BigNumber(allBalance.balance) // refactor, send curent balance
               }
               const toAddress = variables.addressKey
               const amount = getBigNumberAmount(variables.amount)
@@ -289,7 +293,7 @@ export default compose(
                       const data = {
                         address: getCryptoInfo.address
                       }
-                      dispatch(getBalance(data))
+                      dispatch(getAllBalanceInfo(data))
                     }
 
                     localStorage.setItem('lastBlock', res.hash)
@@ -310,16 +314,16 @@ export default compose(
   }),
   lifecycle({
     componentDidMount() {
-      const { balance, setCurencySelectValue } = this.props
-      if (!!balance) {
-        setCurencySelectValue(balance.shortBalance)
+      const { allBalance, setCurencySelectValue } = this.props
+      if (!!allBalance) {
+        setCurencySelectValue(allBalance.result[0].currency)
       }
     },
     componentDidUpdate(prevProps) {
-      const { balance, setCurencySelectValue } = this.props
-      if (!isEqual(prevProps.balance, balance)) {
-        if (!!balance.shortBalance) {
-          setCurencySelectValue(balance.shortBalance)
+      const { allBalance, setCurencySelectValue } = this.props
+      if (!isEqual(prevProps.allBalance, allBalance)) {
+        if (!!allBalance.result[0]) {
+          setCurencySelectValue(allBalance.result[0].currency)
         }
       }
     }

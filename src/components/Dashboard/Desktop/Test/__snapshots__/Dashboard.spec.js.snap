@@ -19,21 +19,50 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="Wallet-walletAddress-6"
+          className="Wallet-walletAddress-5"
         />
         <div
-          className="Wallet-walletSum-5"
+          className="MuiInputBase-root-33 MuiInput-root-20 MuiInput-underline-24 Wallet-selectCurency-6"
+          onClick={[Function]}
         >
-          <a
-            href="/"
-          />
+          <div
+            className="MuiSelect-root-13"
+          >
+            <div
+              aria-haspopup="true"
+              aria-pressed="false"
+              className="Wallet-selectField-8"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <div
+                className="Wallet-curency-10"
+              >
+                USD
+              </div>
+              0.0
+            </div>
+            <input
+              id="curencyDropdownWallet"
+              name="curency"
+              type="hidden"
+              value="USD"
+            />
+            <i
+              className="Wallet-curencyIcon-9"
+            />
+          </div>
         </div>
         <ul
-          className="Wallet-walletNav-7"
+          className="Wallet-walletNav-11"
         >
           <li>
             <a
-              className="Wallet-walletNavItem-8"
+              className="Wallet-walletNavItem-12"
               href="/"
             >
               Send Money
@@ -41,7 +70,7 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="Wallet-walletNavItem-8"
+              className="Wallet-walletNavItem-12"
               href="/"
             >
               Tranfer Money
@@ -49,7 +78,7 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="Wallet-walletNavItem-8"
+              className="Wallet-walletNavItem-12"
               href="/"
             >
               Invoice
@@ -57,7 +86,7 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <a
-              className="Wallet-walletNavItem-8"
+              className="Wallet-walletNavItem-12"
               href="/"
             >
               Cashout
@@ -66,13 +95,13 @@ exports[`renders correctly 1`] = `
         </ul>
       </div>
       <div
-        className="Action-root-9"
+        className="Action-root-54"
       >
         <div
-          className="Action-actionsStatistics-10"
+          className="Action-actionsStatistics-55"
         >
           <span
-            className="Action-statisticsTitle-12"
+            className="Action-statisticsTitle-57"
           >
             Statistics
           </span>
@@ -87,22 +116,22 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="Action-actionsSend-13"
+          className="Action-actionsSend-58"
         >
           <form
-            className="Action-form-11"
+            className="Action-form-56"
             onSubmit={[Function]}
           >
             <span
-              className="Action-sendTitle-14"
+              className="Action-sendTitle-59"
             >
               Send now
             </span>
             <div
-              className="Action-sendAddress-15"
+              className="Action-sendAddress-60"
             >
               <input
-                className="Action-sendAddressField-16"
+                className="Action-sendAddressField-61"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onDragStart={[Function]}
@@ -115,7 +144,7 @@ exports[`renders correctly 1`] = `
             </div>
             <div>
               <input
-                className="Action-sendAmmountField-17"
+                className="Action-sendAmmountField-62"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onDragStart={[Function]}
@@ -127,7 +156,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <button
-              className="Action-sendBtn-19"
+              className="Action-sendBtn-64"
               type="submit"
             >
               Send money
@@ -135,22 +164,22 @@ exports[`renders correctly 1`] = `
           </form>
         </div>
         <div
-          className="Action-actionsInvoice-21"
+          className="Action-actionsInvoice-66"
         >
           <span
-            className="Action-invoiceTitle-22"
+            className="Action-invoiceTitle-67"
           >
             Invoice
           </span>
           <div>
             <input
-              className="Action-invoiceAmmountField-18"
+              className="Action-invoiceAmmountField-63"
               placeholder="Set ammount you need to receive"
               type="text"
             />
           </div>
           <a
-            className="Action-invoiceBtn-20"
+            className="Action-invoiceBtn-65"
             href="/"
           >
             Generate link
@@ -159,74 +188,74 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="Transaction-root-23"
+      className="Transaction-root-68"
     >
       <div
-        className="Transaction-transactionsTitle-24"
+        className="Transaction-transactionsTitle-69"
       >
          Transactions
       </div>
       <div
-        className="Transaction-transactionsTable-25"
+        className="Transaction-transactionsTable-70"
       >
         <div
-          className="Transaction-tableHead-28 Transaction-tableRow-27"
+          className="Transaction-tableHead-73 Transaction-tableRow-72"
         >
           <div
-            className="Transaction-tableData-26 Transaction-col1-33"
+            className="Transaction-tableData-71 Transaction-col1-78"
           >
             to address:
           </div>
           <div
-            className="Transaction-tableData-26 Transaction-col2-34"
+            className="Transaction-tableData-71 Transaction-col2-79"
           >
             ammount:
           </div>
           <div
-            className="Transaction-tableData-26 Transaction-col3-35"
+            className="Transaction-tableData-71 Transaction-col3-80"
           >
             status:
           </div>
           <div
-            className="Transaction-tableData-26 Transaction-col4-36"
+            className="Transaction-tableData-71 Transaction-col4-81"
           >
             date/time:
           </div>
         </div>
         <div
-          className="Transaction-tableWrapper-37"
+          className="Transaction-tableWrapper-82"
           id="table-scroll"
           tabIndex="5000"
         >
           <div
-            className="Transaction-tableContentWrap-38"
+            className="Transaction-tableContentWrap-83"
           >
             <div
-              className="Transaction-tableRow-27"
+              className="Transaction-tableRow-72"
             >
               <div
-                className="Transaction-tableData-26 Transaction-col1-33 Transaction-icon1-29"
+                className="Transaction-tableData-71 Transaction-col1-78 Transaction-icon1-74"
               >
                 <span>
                   0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col2-34 Transaction-icon2-30"
+                className="Transaction-tableData-71 Transaction-col2-79 Transaction-icon2-75"
               >
                 <span>
                   0.1221 DCB
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col3-35 Transaction-icon3-31"
+                className="Transaction-tableData-71 Transaction-col3-80 Transaction-icon3-76"
               >
                 <span>
                   DEMO
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col4-36 Transaction-icon4-32"
+                className="Transaction-tableData-71 Transaction-col4-81 Transaction-icon4-77"
               >
                 <time
                   dateTime="2018-02-12 13:30"
@@ -236,31 +265,31 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="Transaction-tableRow-27"
+              className="Transaction-tableRow-72"
             >
               <div
-                className="Transaction-tableData-26 Transaction-col1-33 Transaction-icon1-29"
+                className="Transaction-tableData-71 Transaction-col1-78 Transaction-icon1-74"
               >
                 <span>
                   0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col2-34 Transaction-icon2-30"
+                className="Transaction-tableData-71 Transaction-col2-79 Transaction-icon2-75"
               >
                 <span>
                   0.1221 DCB
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col3-35 Transaction-icon3-31"
+                className="Transaction-tableData-71 Transaction-col3-80 Transaction-icon3-76"
               >
                 <span>
                   DEMO
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col4-36 Transaction-icon4-32"
+                className="Transaction-tableData-71 Transaction-col4-81 Transaction-icon4-77"
               >
                 <time
                   dateTime="2018-02-12 13:30"
@@ -270,31 +299,31 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="Transaction-tableRow-27"
+              className="Transaction-tableRow-72"
             >
               <div
-                className="Transaction-tableData-26 Transaction-col1-33 Transaction-icon1-29"
+                className="Transaction-tableData-71 Transaction-col1-78 Transaction-icon1-74"
               >
                 <span>
                   0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col2-34 Transaction-icon2-30"
+                className="Transaction-tableData-71 Transaction-col2-79 Transaction-icon2-75"
               >
                 <span>
                   0.1221 DCB
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col3-35 Transaction-icon3-31"
+                className="Transaction-tableData-71 Transaction-col3-80 Transaction-icon3-76"
               >
                 <span>
                   DEMO
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col4-36 Transaction-icon4-32"
+                className="Transaction-tableData-71 Transaction-col4-81 Transaction-icon4-77"
               >
                 <time
                   dateTime="2018-02-12 13:30"
@@ -304,31 +333,31 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="Transaction-tableRow-27"
+              className="Transaction-tableRow-72"
             >
               <div
-                className="Transaction-tableData-26 Transaction-col1-33 Transaction-icon1-29"
+                className="Transaction-tableData-71 Transaction-col1-78 Transaction-icon1-74"
               >
                 <span>
                   0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col2-34 Transaction-icon2-30"
+                className="Transaction-tableData-71 Transaction-col2-79 Transaction-icon2-75"
               >
                 <span>
                   0.1221 DCB
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col3-35 Transaction-icon3-31"
+                className="Transaction-tableData-71 Transaction-col3-80 Transaction-icon3-76"
               >
                 <span>
                   DEMO
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col4-36 Transaction-icon4-32"
+                className="Transaction-tableData-71 Transaction-col4-81 Transaction-icon4-77"
               >
                 <time
                   dateTime="2018-02-12 13:30"
@@ -338,31 +367,31 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="Transaction-tableRow-27"
+              className="Transaction-tableRow-72"
             >
               <div
-                className="Transaction-tableData-26 Transaction-col1-33 Transaction-icon1-29"
+                className="Transaction-tableData-71 Transaction-col1-78 Transaction-icon1-74"
               >
                 <span>
                   0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col2-34 Transaction-icon2-30"
+                className="Transaction-tableData-71 Transaction-col2-79 Transaction-icon2-75"
               >
                 <span>
                   0.1221 DCB
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col3-35 Transaction-icon3-31"
+                className="Transaction-tableData-71 Transaction-col3-80 Transaction-icon3-76"
               >
                 <span>
                   DEMO
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col4-36 Transaction-icon4-32"
+                className="Transaction-tableData-71 Transaction-col4-81 Transaction-icon4-77"
               >
                 <time
                   dateTime="2018-02-12 13:30"
@@ -372,31 +401,31 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="Transaction-tableRow-27"
+              className="Transaction-tableRow-72"
             >
               <div
-                className="Transaction-tableData-26 Transaction-col1-33 Transaction-icon1-29"
+                className="Transaction-tableData-71 Transaction-col1-78 Transaction-icon1-74"
               >
                 <span>
                   0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col2-34 Transaction-icon2-30"
+                className="Transaction-tableData-71 Transaction-col2-79 Transaction-icon2-75"
               >
                 <span>
                   0.1221 DCB
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col3-35 Transaction-icon3-31"
+                className="Transaction-tableData-71 Transaction-col3-80 Transaction-icon3-76"
               >
                 <span>
                   DEMO
                 </span>
               </div>
               <div
-                className="Transaction-tableData-26 Transaction-col4-36 Transaction-icon4-32"
+                className="Transaction-tableData-71 Transaction-col4-81 Transaction-icon4-77"
               >
                 <time
                   dateTime="2018-02-12 13:30"
@@ -409,16 +438,16 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="Transaction-tableBtns-39"
+        className="Transaction-tableBtns-84"
       >
         <a
-          className="Transaction-receivedBtn-40"
+          className="Transaction-receivedBtn-85"
           href="/"
         >
           Received
         </a>
         <a
-          className="Transaction-sentBtn-41"
+          className="Transaction-sentBtn-86"
           href="/"
         >
           Sent
@@ -426,16 +455,16 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="BestAd-root-42"
+      className="BestAd-root-87"
     >
       <div
-        className="BestAd-bestItem-43"
+        className="BestAd-bestItem-88"
       >
         <div
-          className="BestAd-titleWrap-44"
+          className="BestAd-titleWrap-89"
         >
           <a
-            className="BestAd-bestTitle-45"
+            className="BestAd-bestTitle-90"
             href="/games"
             onClick={[Function]}
           >
@@ -443,21 +472,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="BestAd-bestContent-46"
+          className="BestAd-bestContent-91"
         >
           <a
-            className="BestAd-bestImg-47"
+            className="BestAd-bestImg-92"
             href="/games"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="BestAd-bestItemImg-48"
+              className="BestAd-bestItemImg-93"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="BestAd-bestLink-49"
+            className="BestAd-bestLink-94"
             href="/games"
             onClick={[Function]}
           >
@@ -471,13 +500,13 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="BestAd-bestItem-43"
+        className="BestAd-bestItem-88"
       >
         <div
-          className="BestAd-titleWrap-44"
+          className="BestAd-titleWrap-89"
         >
           <a
-            className="BestAd-bestTitle-45"
+            className="BestAd-bestTitle-90"
             href="/stream"
             onClick={[Function]}
           >
@@ -485,21 +514,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="BestAd-bestContent-46"
+          className="BestAd-bestContent-91"
         >
           <a
-            className="BestAd-bestImg-47"
+            className="BestAd-bestImg-92"
             href="/stream"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="BestAd-bestItemImg-48"
+              className="BestAd-bestItemImg-93"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="BestAd-bestLink-49"
+            className="BestAd-bestLink-94"
             href="/stream"
             onClick={[Function]}
           >
@@ -514,16 +543,16 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="Categories-root-50"
+      className="Categories-root-95"
     >
       <div
-        className="Categories-categories-51"
+        className="Categories-categories-96"
       >
         <div
-          className="Categories-categTitleWrap-52"
+          className="Categories-categTitleWrap-97"
         >
           <a
-            className="Categories-categoriesTitle-53"
+            className="Categories-categoriesTitle-98"
             href="/"
             onClick={[Function]}
           >
@@ -531,21 +560,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -559,21 +588,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -587,21 +616,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -615,21 +644,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -643,21 +672,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -671,21 +700,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -700,13 +729,13 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="Categories-categories-51"
+        className="Categories-categories-96"
       >
         <div
-          className="Categories-categTitleWrap-52"
+          className="Categories-categTitleWrap-97"
         >
           <a
-            className="Categories-categoriesTitle-53"
+            className="Categories-categoriesTitle-98"
             href="/"
             onClick={[Function]}
           >
@@ -714,21 +743,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -742,21 +771,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -770,21 +799,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-54"
+          className="CategorieItem-root-99"
         >
           <a
-            className="CategorieItem-gameImg-55"
+            className="CategorieItem-gameImg-100"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-56"
+              className="CategorieItem-gameImgLink-101"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-57"
+            className="CategorieItem-gameLink-102"
             href="/game/4clover"
             onClick={[Function]}
           >
