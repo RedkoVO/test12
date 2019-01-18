@@ -6,14 +6,20 @@ import { createStore } from 'redux'
 
 import Main from '../'
 
-const allBalanceResultMock = [
-  {
+const allBalanceResultMock = {
+  ADA: {
+    code: 262,
     balance: '0',
-    currency: 'DCB',
+    lastBlock:
+      '0000000000000000000000000000000000000000000000000000000000000000'
+  },
+  USD: {
+    currency: 'USD',
+    balance: '999918599998995600000000000000000000',
     lastBlock:
       '0000000000000000000000000000000000000000000000000000000000000000'
   }
-]
+}
 
 const Wrapper = reduxForm({ form: 'test' })(({ children }) => children)
 const store = createStore(a => a, {})

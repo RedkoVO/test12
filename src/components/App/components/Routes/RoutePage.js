@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom'
 import PageLayout from '../PageLayout'
 
 const RoutePage = props => {
-  const { component, ...rest } = props
+  const { component, secretKey, ...rest } = props
 
   return (
     <Route
@@ -14,6 +14,7 @@ const RoutePage = props => {
         return (
           <PageLayout
             {...props}
+            secretKey={secretKey}
             content={component}
           />
         )
@@ -23,7 +24,8 @@ const RoutePage = props => {
 }
 
 RoutePage.propTypes = {
-  component: PropTypes.func
+  component: PropTypes.func,
+  secretKey: PropTypes.string
 }
 
 export default RoutePage

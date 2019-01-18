@@ -13,7 +13,7 @@ import styles from './styles'
 const Wallet = ({
   classes,
   onSubmit,
-  allBalanceResult,
+  allBalanceResult = {},
   addressKey,
   isDisabledButton,
   handleChangeBalance,
@@ -39,13 +39,14 @@ const Wallet = ({
         SelectDisplayProps={{ className: classes.selectField }}
         MenuProps={{ classes: { paper: classes.dropdownStyle } }}
       >
-        {!!allBalanceResult &&
-          allBalanceResult.map(item => (
-            <MenuItem value={item.currency} key={item.currency}>
-              <div className={classes.curency}>{item.currency}</div>
-              {shortBalance(item.balance)}
-            </MenuItem>
-          ))}
+        {Object.keys(allBalanceResult).map(item => (
+          <MenuItem value={allBalanceResult[item].currency} key={item}>
+            <div className={classes.curency}>
+              {allBalanceResult[item].currency}
+            </div>
+            {shortBalance(allBalanceResult[item].balance)}
+          </MenuItem>
+        ))}
       </Select>
       <ul className={classes.walletNav}>
         <li>
@@ -78,7 +79,7 @@ const Wallet = ({
 Wallet.propTypes = {
   classes: PropTypes.object,
   onSubmit: PropTypes.func,
-  allBalanceResult: PropTypes.array,
+  allBalanceResult: PropTypes.object,
   addressKey: PropTypes.string,
   isDisabledButton: PropTypes.bool,
   handleChangeBalance: PropTypes.func,

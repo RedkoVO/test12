@@ -242,7 +242,6 @@ export default compose(
   withState('curencySelectValue', 'setCurencySelectValue', ''),
   withHandlers({
     handleChangeBalance: ({ setCurencySelectValue }) => e => {
-      console.log('value', e.target.value)
       setCurencySelectValue(e.target.value)
     },
 
@@ -251,7 +250,8 @@ export default compose(
       setDisabledButton,
       isDisabledButton,
       dispatch,
-      allBalance
+      allBalance,
+      secretKey
     }) =>
       handleSubmit(variables => {
         if (!isDisabledButton) {
@@ -261,7 +261,7 @@ export default compose(
             .then(res => {
               const acc = {
                 publicKey: localStorage.getItem('publicKey'),
-                secretKey: localStorage.getItem('secretKey'),
+                secretKey: secretKey,
                 address: localStorage.getItem('address'),
                 representative: localStorage.getItem('representative'),
                 lastBlock: localStorage.getItem('lastBlock'), //// is redux storage
@@ -284,12 +284,11 @@ export default compose(
               dispatch(sendMoney(data))
                 .then(res => {
                   if (res.hash) {
-                    const isSecretKey = localStorage.getItem('secretKey')
                     const getCryptoInfo = Crypto.account.accountFromSecret(
-                      isSecretKey
+                      secretKey
                     )
 
-                    if (isSecretKey) {
+                    if (secretKey) {
                       const data = {
                         address: getCryptoInfo.address
                       }
@@ -316,14 +315,14 @@ export default compose(
     componentDidMount() {
       const { allBalance, setCurencySelectValue } = this.props
       if (!!allBalance) {
-        setCurencySelectValue(allBalance.result[0].currency)
+        setCurencySelectValue(allBalance.result['DCB'].currency)
       }
     },
     componentDidUpdate(prevProps) {
       const { allBalance, setCurencySelectValue } = this.props
       if (!isEqual(prevProps.allBalance, allBalance)) {
-        if (!!allBalance.result[0]) {
-          setCurencySelectValue(allBalance.result[0].currency)
+        if (!!allBalance.result['DCB']) {
+          setCurencySelectValue(allBalance.result['DCB'].currency)
         }
       }
     }

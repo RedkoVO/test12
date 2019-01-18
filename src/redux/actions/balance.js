@@ -27,7 +27,14 @@ export const getAllBalanceInfo = data => {
 
         dispatch(createGetAllBalanceInfoSuccess(response.data, config))
 
-        return response.data
+        return {
+          success: response.data.success,
+          result: response.data.result,
+          customAllBalance: createGetAllBalanceInfoSuccess(
+            response.data,
+            config
+          ).payload.result
+        }
       })
       .catch(error => {
         console.log('GET_ALL_BALANCE_INFO error', error)
@@ -38,19 +45,16 @@ export const getAllBalanceInfo = data => {
 export const createGetAllBalanceInfoSuccess = (data, { config }) => {
   const dataResult = data.result
   const configResult = config.result.balances
-  const resultCollection = []
+  const resultCollection = {}
 
   Object.keys(configResult).forEach(objectKey => {
+    resultCollection[objectKey] = configResult[objectKey]
+    resultCollection[objectKey].currency = objectKey
+
     dataResult.forEach(item => {
       if (item.currency === objectKey) {
-        configResult[objectKey] = item
+        resultCollection[objectKey] = item
       }
-    })
-
-    resultCollection.push({
-      currency: objectKey,
-      balance: configResult[objectKey].balance,
-      lastBlock: configResult[objectKey].lastBlock
     })
   })
 

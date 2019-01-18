@@ -4,7 +4,10 @@ import { withHandlers, withState, pure } from 'recompose'
 import { reduxForm } from 'redux-form'
 import validate from './validate'
 import BigNumber from 'bignumber.js'
+
 import { sequential } from '../../../utils/promiseSequential'
+
+import withConfigAndAllBalance from '../../../hocs/withConfigAndAllBalance'
 
 import { getAllBalanceInfo, getIncoming } from '../../../redux/actions/balance'
 import { getAllBalanceInfoSelector } from '../../../selectors/balance'
@@ -17,12 +20,13 @@ import AsyncAuthorizationDesktop from '../../../components/Auth/Authorization/De
 const FORM_NAME = 'registration'
 
 const mapStateToProps = state => ({
-  balance: getAllBalanceInfoSelector(state),
+  allBalance: getAllBalanceInfoSelector(state),
   config: getConfigSelector(state)
 })
 
 export default compose(
   connect(mapStateToProps),
+  withConfigAndAllBalance,
   reduxForm({
     form: FORM_NAME,
     validate
@@ -34,7 +38,8 @@ export default compose(
       history,
       dispatch,
       isDisabledButton,
-      setDisabledButton
+      setDisabledButton,
+      allBalance
     }) =>
       handleSubmit(variables => {
         const getCryptoInfo = Crypto.account.accountFromSecret(variables.key)
@@ -58,8 +63,6 @@ export default compose(
                 }
                 dispatch(getIncoming(dataForIncoming))
                   .then(blocks => {
-                    console.log('blocks', blocks)
-
                     const requestsArr = []
                     let userAccount = {
                       publicKey: localStorage.getItem('publicKey'),
@@ -70,9 +73,27 @@ export default compose(
                       balance: new BigNumber(res.balance)
                     }
 
-                    Object.keys(blocks.result).forEach(hash => {
-                      const sourceBlockHash = hash
-                      const amountStr = blocks.result[hash].amount
+                    // Object.keys(blocks.result).forEach(hash => {
+                    //   console.log('hash', hash)
+                    //   const sourceBlockHash = hash
+                    //   const amountStr = blocks.result[hash].amount
+
+                    //   requestsArr.push(() =>
+                    //     receiveFromFaucet(
+                    //       userAccount,
+                    //       sourceBlockHash,
+                    //       amountStr
+                    //     )
+                    //   )
+                    // })
+
+                    console.log('res', res)
+
+                    blocks.result.forEach(item => {
+                      console.log('item', item)
+                      // console.log('-----', res.)
+                      const sourceBlockHash = item.hash
+                      const amountStr = item.amount
 
                       requestsArr.push(() =>
                         receiveFromFaucet(
