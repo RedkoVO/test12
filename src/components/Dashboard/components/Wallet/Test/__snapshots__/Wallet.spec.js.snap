@@ -35,13 +35,12 @@ exports[`renders correctly 1`] = `
           role="button"
           tabIndex={0}
         >
-          <span
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "&#8203;",
-              }
-            }
-          />
+          <div
+            className="Wallet-curency-9"
+          >
+            USD
+          </div>
+          999918.59999899
         </div>
         <input
           id="curencyDropdownWallet"
