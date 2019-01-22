@@ -23,12 +23,12 @@ export const PageLayout = ({
 
 PageLayout.propTypes = {
   header: PropTypes.func.isRequired,
-  content: PropTypes.func.isRequired,
+  content: PropTypes.func.isRequired
   // footer: PropTypes.func.isRequired
 }
 
 PageLayout.defaultProps = {
-  header: DefaultHeader,
+  header: DefaultHeader
   // footer: DefaultFooter
 }
 

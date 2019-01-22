@@ -136,13 +136,20 @@ my-app/
   public/
     index.html
     favicon.ico
+    manifest.json
   src/
-    App.css
-    App.js
-    App.test.js
-    index.css
-    index.js
-    logo.svg
+    assets/
+      font/
+      images/
+    components/
+    containers/
+    crypto/
+    hocs/
+    mocks/
+    redux/
+    requests/
+    selectors/
+    utils
 ```
 
 For the project to build, **these files must exist with exact filenames**:

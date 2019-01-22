@@ -1,8 +1,9 @@
 import React from 'react'
-import compose from 'recompose/compose'
-import pure from 'recompose/compose'
-import withProps from 'recompose/withProps'
+import { compose, pure } from 'recompose'
 import { Route, Redirect, Switch, withRouter } from 'react-router-dom'
+
+import withConfigAndAllBalance from '../../../hocs/withConfigAndAllBalance'
+import secretKey from '../../../hocs/withSecretKey'
 
 import RoutePage from '../../../components/App/components/Routes/RoutePage'
 import AsyncAuthorization from '../../../containers/Auth/Authorization/AsyncAuthorization'
@@ -24,112 +25,50 @@ import AsyncSettings from '../../../containers/Settings/AsyncSettings'
 // whyDidYouUpdate(React)
 
 const RootRoute = props => {
-  const { location, keyAuth } = props
+  const { location, secretKey } = props
+
+  // console.log('Route', secretKey)
 
   return (
     <Switch location={location}>
-      {keyAuth ? (
+      {secretKey ? (
         <Redirect exact from="/login" to="/" />
       ) : (
-          <Redirect exact from="/" to="/login" />
-        )}
-
-      {!keyAuth && (
-        <Route
-          path={`/login`}
-          component={AsyncAuthorization}
-        />
+        <Redirect exact from="/" to="/login" />
       )}
 
-      {!keyAuth && (
-        <Route
-          path={`/registration`}
-          component={AsyncRegistration}
-        />
+      {!secretKey && <Route path={`/login`} component={AsyncAuthorization} />}
+
+      {!secretKey && (
+        <Route path={`/registration`} component={AsyncRegistration} />
       )}
 
-      {!keyAuth && (
-        <Route
-          path={`/confirmation-email`}
-          component={AsyncConfirmEmail}
-        />
+      {!secretKey && (
+        <Route path={`/confirmation-email`} component={AsyncConfirmEmail} />
       )}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/settings`}
-          component={AsyncSettings}
-        />
-      )}
+      {secretKey && <RoutePage path={`/settings`} component={AsyncSettings} />}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/friends`}
-          component={AsyncFriends}
-        />
-      )}
+      {secretKey && <RoutePage path={`/friends`} component={AsyncFriends} />}
 
-      {keyAuth && (
-        <Route
-          path={`/games`}
-          component={AsyncGames}
-        />
-      )}
+      {secretKey && <Route path={`/games`} component={AsyncGames} />}
 
-      {keyAuth && (
-        <Route
-          path={`/game/:bundle`}
-          component={AsyncGame}
-        />
-      )}
+      {secretKey && <Route path={`/game/:bundle`} component={AsyncGame} />}
 
-      {keyAuth && (
-        <Route
-          path={`/stream`}
-          component={AsyncStream}
-        />
-      )}
+      {secretKey && <Route path={`/stream`} component={AsyncStream} />}
 
-      {keyAuth && (
-        <Route
-          path={`/skins`}
-          component={AsyncSkins}
-        />
-      )}
+      {secretKey && <Route path={`/skins`} component={AsyncSkins} />}
 
-      {keyAuth && (
-        <Route
-          path={`/cases`}
-          component={AsyncCases}
-        />
-      )}
+      {secretKey && <Route path={`/cases`} component={AsyncCases} />}
 
-      {keyAuth && (
-        <Route
-          path={`/case`}
-          component={AsyncCase}
-        />
-      )}
+      {secretKey && <Route path={`/case`} component={AsyncCase} />}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/shop`}
-          component={AsyncShop}
-        />
-      )}
+      {secretKey && <RoutePage path={`/shop`} component={AsyncShop} />}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/wallet`}
-          component={AsyncWallet}
-        />
-      )}
+      {secretKey && <RoutePage path={`/wallet`} component={AsyncWallet} />}
 
-      {keyAuth && (
-        <RoutePage
-          path={`/`}
-          component={AsyncDashboard}
-        />
+      {secretKey && (
+        <RoutePage path={`/`} component={AsyncDashboard} />
       )}
       <Redirect to="/" />
     </Switch>
@@ -137,12 +76,8 @@ const RootRoute = props => {
 }
 
 export default compose(
-  // connect(mapStateToProps),
   withRouter,
-  withProps(() => {
-    return {
-      keyAuth: localStorage.getItem('secretKey')
-    }
-  }),
+  secretKey,
+  withConfigAndAllBalance,
   pure
 )(RootRoute)

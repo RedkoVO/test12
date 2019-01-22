@@ -1,5 +1,5 @@
 
-export const clearStorageForlogout = () => {
+export const clearStorageForLogout = () => {
   localStorage.removeItem("address")
   localStorage.removeItem("publicKey")
   localStorage.removeItem("representative")

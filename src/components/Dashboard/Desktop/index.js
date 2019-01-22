@@ -14,16 +14,22 @@ const Dashboard = ({
   transactions,
   bestAds,
   gameCategories,
-  balance,
+  allBalance,
   isDisabledButton,
-  onSubmit
+  onSubmit,
+  addressKey,
+  handleChangeBalance,
+  curencySelectValue
 }) => (
   <main>
     <div className={classes.root}>
       <Wallet
         onSubmit={onSubmit}
+        addressKey={addressKey}
         isDisabledButton={isDisabledButton}
-        balance={balance && balance.shortBalance}
+        allBalanceResult={allBalance && allBalance.result}
+        handleChangeBalance={handleChangeBalance}
+        curencySelectValue={curencySelectValue}
       />
       <Transaction transactions={transactions} />
       <BestAd bestAds={bestAds} />
@@ -37,9 +43,12 @@ Dashboard.propTypes = {
   transactions: PropTypes.array,
   bestAds: PropTypes.array,
   gameCategories: PropTypes.array,
-  balance: PropTypes.object,
+  allBalance: PropTypes.object,
   isDisabledButton: PropTypes.bool,
-  onSubmit: PropTypes.func
+  onSubmit: PropTypes.func,
+  addressKey: PropTypes.string,
+  handleChangeBalance: PropTypes.func,
+  curencySelectValue: PropTypes.string
 }
 
 export default withStyles(styles)(Dashboard)

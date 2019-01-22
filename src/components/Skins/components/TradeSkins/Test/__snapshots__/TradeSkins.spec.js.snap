@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="TradeSkins-root-1"
+>
+  <div
+    className="TradeSkins-tradeSkinsTitle-2"
+  >
+    Select skins you want to sale:
+  </div>
+  <div
+    className="TradeSkins-tradeSkinsItemWrap-3"
+  >
+    <div
+      className="TradeSkins-tradeSkinsItem-4 TradeSkins-skinSelected-5"
+    >
+      <div
+        className="TradeSkins-skinsItemImg-6"
+      >
+        <img
+          alt=""
+          src="gun.png"
+        />
+      </div>
+      <div
+        className="TradeSkins-skinsItemName-7"
+      >
+        Gun: Good Weapon2 1.2
+      </div>
+      <div
+        className="TradeSkins-skinsItemPrice-8"
+      >
+        $11.10 FN
+      </div>
+      <div
+        className="TradeSkins-skinsItemSale-9"
+      >
+        $12.30
+      </div>
+    </div>
+    <div
+      className="TradeSkins-tradeSkinsItem-4 TradeSkins-skinSelected-5"
+    >
+      <div
+        className="TradeSkins-skinsItemImg-6"
+      >
+        <img
+          alt=""
+          src="gun.png"
+        />
+      </div>
+      <div
+        className="TradeSkins-skinsItemName-7"
+      >
+        Gun: Good Weapon2 1.2
+      </div>
+      <div
+        className="TradeSkins-skinsItemPrice-8"
+      >
+        $11.10 FN
+      </div>
+      <div
+        className="TradeSkins-skinsItemSale-9"
+      >
+        $12.30
+      </div>
+    </div>
+    <div
+      className="TradeSkins-tradeSkinsItem-4 TradeSkins-skinSelected-5"
+    >
+      <div
+        className="TradeSkins-skinsItemImg-6"
+      >
+        <img
+          alt=""
+          src="gun.png"
+        />
+      </div>
+      <div
+        className="TradeSkins-skinsItemName-7"
+      >
+        Gun: Good Weapon2 1.2
+      </div>
+      <div
+        className="TradeSkins-skinsItemPrice-8"
+      >
+        $11.10 FN
+      </div>
+      <div
+        className="TradeSkins-skinsItemSale-9"
+      >
+        $12.30
+      </div>
+    </div>
+    <div
+      className="TradeSkins-tradeSkinsItem-4 TradeSkins-skinSelected-5"
+    >
+      <div
+        className="TradeSkins-skinsItemImg-6"
+      >
+        <img
+          alt=""
+          src="gun.png"
+        />
+      </div>
+      <div
+        className="TradeSkins-skinsItemName-7"
+      >
+        Gun: Good Weapon2 1.2
+      </div>
+      <div
+        className="TradeSkins-skinsItemPrice-8"
+      >
+        $11.10 FN
+      </div>
+      <div
+        className="TradeSkins-skinsItemSale-9"
+      >
+        $12.30
+      </div>
+    </div>
+    <div
+      className="TradeSkins-tradeSkinsItem-4 TradeSkins-skinSelected-5"
+    >
+      <div
+        className="TradeSkins-skinsItemImg-6"
+      >
+        <img
+          alt=""
+          src="gun.png"
+        />
+      </div>
+      <div
+        className="TradeSkins-skinsItemName-7"
+      >
+        Gun: Good Weapon2 1.2
+      </div>
+      <div
+        className="TradeSkins-skinsItemPrice-8"
+      >
+        $11.10 FN
+      </div>
+      <div
+        className="TradeSkins-skinsItemSale-9"
+      >
+        $12.30
+      </div>
+    </div>
+  </div>
+  <ul
+    className="TradeSkins-pageNavi-10"
+  >
+    <li>
+      <div
+        className="TradeSkins-previos-11"
+      >
+        Prev
+      </div>
+    </li>
+    <li>
+      <div>
+        1
+      </div>
+    </li>
+    <li>
+      <div>
+        2
+      </div>
+    </li>
+    <li>
+      <div
+        className="TradeSkins-next-12"
+      >
+        Next
+      </div>
+    </li>
+  </ul>
+</div>
+`;
