@@ -54,6 +54,7 @@ export const createGetAllBalanceInfoSuccess = (data, { config }) => {
     dataResult.forEach(item => {
       if (item.currency === objectKey) {
         resultCollection[objectKey] = item
+        resultCollection[objectKey].code = configResult[objectKey].code
       }
     })
   })
@@ -104,6 +105,7 @@ export const createGetWorkSuccess = data => {
 /* ********** */
 
 /* GET INCOMING */
+/*TODO: rename Incoming to addressPending */
 export const getIncoming = data => {
   data.action = 'addressPending'
 

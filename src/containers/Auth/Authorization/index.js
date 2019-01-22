@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { withHandlers, withState, pure } from 'recompose'
 import { reduxForm } from 'redux-form'
 import validate from './validate'
-import BigNumber from 'bignumber.js'
 
 import { sequential } from '../../../utils/promiseSequential'
 
@@ -38,8 +37,7 @@ export default compose(
       history,
       dispatch,
       isDisabledButton,
-      setDisabledButton,
-      allBalance
+      setDisabledButton
     }) =>
       handleSubmit(variables => {
         const getCryptoInfo = Crypto.account.accountFromSecret(variables.key)
@@ -47,7 +45,6 @@ export default compose(
         localStorage.setItem('address', getCryptoInfo.address)
         localStorage.setItem('publicKey', getCryptoInfo.publicKey)
 
-        /* TODO: refactor !!! */
         if (!isDisabledButton) {
           setDisabledButton(!isDisabledButton)
 
@@ -64,42 +61,35 @@ export default compose(
                 dispatch(getIncoming(dataForIncoming))
                   .then(blocks => {
                     const requestsArr = []
+                    const currencyInfo = {}
                     let userAccount = {
                       publicKey: localStorage.getItem('publicKey'),
                       secretKey: localStorage.getItem('secretKey'),
-                      address: localStorage.getItem('address'),
-                      representative: localStorage.getItem('representative'),
-                      lastBlock: localStorage.getItem('lastBlock'),
-                      balance: new BigNumber(res.balance)
+                      address: localStorage.getItem('address')
                     }
 
-                    // Object.keys(blocks.result).forEach(hash => {
-                    //   console.log('hash', hash)
-                    //   const sourceBlockHash = hash
-                    //   const amountStr = blocks.result[hash].amount
-
-                    //   requestsArr.push(() =>
-                    //     receiveFromFaucet(
-                    //       userAccount,
-                    //       sourceBlockHash,
-                    //       amountStr
-                    //     )
-                    //   )
-                    // })
-
-                    console.log('res', res)
+                    const currencyInfoUpdate = (currency, newLastBlock) => {
+                      currencyInfo[currency] = {
+                        currency: currency,
+                        lastBlock: newLastBlock
+                          ? newLastBlock
+                          : res.customAllBalance[currency].lastBlock
+                      }
+                    }
 
                     blocks.result.forEach(item => {
-                      console.log('item', item)
-                      // console.log('-----', res.)
                       const sourceBlockHash = item.hash
                       const amountStr = item.amount
+                      currencyInfoUpdate(item.currency)
 
                       requestsArr.push(() =>
                         receiveFromFaucet(
                           userAccount,
                           sourceBlockHash,
-                          amountStr
+                          amountStr,
+                          currencyInfo,
+                          item.currency,
+                          currencyInfoUpdate
                         )
                       )
                     })
@@ -107,10 +97,8 @@ export default compose(
                     sequential(requestsArr).then(() => {
                       dispatch(getAllBalanceInfo(data))
                         .then(res => {
-                          history.push('/')
-
-                          if (res && res.lastBlock) {
-                            localStorage.setItem('lastBlock', res.lastBlock)
+                          if (res.success) {
+                            history.push('/')
                           }
                         })
                         .catch(err => {

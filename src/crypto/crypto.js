@@ -192,12 +192,12 @@ function getPublicAccountID(accountPublicKeyBytes) {
 }
 
 function getAccountPublicKey(account) {
-  if (
-    (!account.startsWith('dcb_1') && !account.startsWith('dcb_3')) ||
-    account.length !== 64
-  )
-    throw new Error(`Invalid NANO Account`)
-  const account_crop = account.substring(4, 64)
+  // if (
+  //   (!account.startsWith('dcb_1') && !account.startsWith('dcb_3')) ||
+  //   account.length !== 64
+  // )
+  //   throw new Error(`Invalid NANO Account`)
+  const account_crop = account
   const isValid = /^[13456789abcdefghijkmnopqrstuwxyz]+$/.test(account_crop)
   if (!isValid) throw new Error(`Invalid NANO account`)
 
@@ -320,11 +320,11 @@ const STATE_BLOCK_PREAMBLE = toUint8(STATE_BLOCK_PREAMBLE_STR)
 //     balance: new BigNumber('340282366920938463463374607431768211455'),
 //   }
 
-function formSendBlock(account, toAddress, amount, work) {
+function formSendBlock(account, toAddress, amount, work, currencyInfo) {
   // TODO check amount < balance
 
   // calc new balance
-  const newBalance = account.balance.minus(amount)
+  const newBalance = currencyInfo.balance.minus(amount)
   const newBalance10 = newBalance.toString(10)
   console.log(newBalance10)
   let newBalance16 = newBalance.toString(16)
@@ -334,11 +334,11 @@ function formSendBlock(account, toAddress, amount, work) {
   const context = blake.blake2bInit(32, null)
   blake.blake2bUpdate(context, STATE_BLOCK_PREAMBLE)
   blake.blake2bUpdate(context, toUint8(account.publicKey))
-  blake.blake2bUpdate(context, toUint8(account.lastBlock))
-  blake.blake2bUpdate(
-    context,
-    toUint8(getAccountPublicKey(account.representative))
-  )
+  blake.blake2bUpdate(context, toUint8(currencyInfo.lastBlock))
+  // blake.blake2bUpdate(
+  //   context,
+  //   toUint8(getAccountPublicKey(account.representative))
+  // )
   blake.blake2bUpdate(context, toUint8(newBalance16))
   blake.blake2bUpdate(context, toUint8(getAccountPublicKey(toAddress)))
   const hashBytes = blake.blake2bFinal(context)
@@ -349,39 +349,28 @@ function formSendBlock(account, toAddress, amount, work) {
 
   const sendBlock = {
     type: 'send',
-    account: account.address,
-    previous: account.lastBlock,
-    representative: account.representative,
+    creator: account.address,
+    previous: currencyInfo.lastBlock,
+    // representative: account.representative,
     balance: newBalance10,
     amount: amount.toString(10),
     link: getAccountPublicKey(toAddress),
     work: work,
+    currency: currencyInfo.currency,
     signature: signature
   }
   return sendBlock
 }
 
-function formReceiveBlock(account, sourceBlockHash, amount, work) {
-  // calc new balance
-  const newBalance = account.balance.plus(amount)
-  const newBalance10 = newBalance.toString(10)
-  let newBalance16 = newBalance.toString(16)
-  while (newBalance16.length < 32) newBalance16 = '0' + newBalance16 // Left pad with 0's
-
+function formReceiveBlock(account, sourceBlockHash, amount, work, currencyInfo) {
   // different algo for open blocks
-  let prevBlock = account.lastBlock
-  //if (prevBlock == '0000000000000000000000000000000000000000000000000000000000000000') prevBlock = account.publicKey;
+  let prevBlock = currencyInfo.lastBlock
 
   // calc hash of block data
   const context = blake.blake2bInit(32, null)
   blake.blake2bUpdate(context, STATE_BLOCK_PREAMBLE)
   blake.blake2bUpdate(context, toUint8(account.publicKey))
   blake.blake2bUpdate(context, toUint8(prevBlock))
-  blake.blake2bUpdate(
-    context,
-    toUint8(getAccountPublicKey(account.representative))
-  )
-  blake.blake2bUpdate(context, toUint8(newBalance16))
   blake.blake2bUpdate(context, toUint8(sourceBlockHash))
   const hashBytes = blake.blake2bFinal(context)
 
@@ -390,11 +379,11 @@ function formReceiveBlock(account, sourceBlockHash, amount, work) {
   const signature = fromUint8(signed)
   const receiveBlock = {
     type: 'receive',
-    account: account.address,
-    previous: account.lastBlock,
-    representative: account.representative,
-    balance: newBalance10,
+    creator: account.address,
+    previous: currencyInfo.lastBlock,
+    currency: currencyInfo.currency,
     amount: amount.toString(10),
+    balance: '0',
     link: sourceBlockHash,
     work: work,
     signature: signature

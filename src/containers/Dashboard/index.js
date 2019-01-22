@@ -247,66 +247,73 @@ export default compose(
 
     onSubmit: ({
       handleSubmit,
+      curencySelectValue,
       setDisabledButton,
       isDisabledButton,
       dispatch,
-      allBalance,
-      secretKey
+      allBalance
     }) =>
       handleSubmit(variables => {
         if (!isDisabledButton) {
           setDisabledButton(!isDisabledButton)
 
-          dispatch(getWork({ hash: localStorage.getItem('lastBlock') }))
+          dispatch(
+            getWork({ hash: allBalance.result[curencySelectValue].lastBlock })
+          )
             .then(res => {
-              const acc = {
-                publicKey: localStorage.getItem('publicKey'),
-                secretKey: secretKey,
-                address: localStorage.getItem('address'),
-                representative: localStorage.getItem('representative'),
-                lastBlock: localStorage.getItem('lastBlock'), //// is redux storage
-                balance: new BigNumber(allBalance.balance) // refactor, send curent balance
-              }
-              const toAddress = variables.addressKey
-              const amount = getBigNumberAmount(variables.amount)
-              const work = res.work
-              const getCryptoBlock = Crypto.sign.formSendBlock(
-                acc,
-                toAddress,
-                amount,
-                work
-              )
+              if (res.success) {
+                const acc = {
+                  publicKey: localStorage.getItem('publicKey'),
+                  secretKey: localStorage.getItem('secretKey'),
+                  address: localStorage.getItem('address')
+                }
+                const toAddress = variables.addressKey
+                const amount = getBigNumberAmount(variables.amount)
+                const work = res.result.work
+                const currencyInfo = {
+                  currency: curencySelectValue,
+                  lastBlock: allBalance.result[curencySelectValue].lastBlock,
+                  balance: new BigNumber(
+                    allBalance.result[curencySelectValue].balance
+                  )
+                }
+                const getCryptoBlock = Crypto.sign.formSendBlock(
+                  acc,
+                  toAddress,
+                  amount,
+                  work,
+                  currencyInfo
+                )
 
-              const data = {
-                block: JSON.stringify(getCryptoBlock)
-              }
+                const data = {
+                  block: getCryptoBlock
+                }
 
-              dispatch(sendMoney(data))
-                .then(res => {
-                  if (res.hash) {
-                    const getCryptoInfo = Crypto.account.accountFromSecret(
-                      secretKey
-                    )
+                dispatch(sendMoney(data))
+                  .then(res => {
+                    if (res.result.hash) {
+                      const getCryptoInfo = Crypto.account.accountFromSecret(
+                        localStorage.getItem('secretKey')
+                      )
 
-                    if (secretKey) {
-                      const data = {
-                        address: getCryptoInfo.address
+                      if (localStorage.getItem('secretKey')) {
+                        const data = {
+                          address: getCryptoInfo.address
+                        }
+                        dispatch(getAllBalanceInfo(data))
                       }
-                      dispatch(getAllBalanceInfo(data))
+
+                      dispatch(reset('sendMoney'))
+                      setDisabledButton(false)
                     }
-
-                    localStorage.setItem('lastBlock', res.hash)
-                    dispatch(reset('sendMoney'))
-
-                    setDisabledButton(false)
-                  }
-                })
-                .catch(err => {
-                  console.log('err registration:', err)
-                })
+                  })
+                  .catch(err => {
+                    console.log('ERROR send money:', err)
+                  })
+              }
             })
             .catch(err => {
-              console.log('err registration:', err)
+              console.log('ERROR get work:', err)
             })
         }
       })
@@ -319,10 +326,16 @@ export default compose(
       }
     },
     componentDidUpdate(prevProps) {
-      const { allBalance, setCurencySelectValue } = this.props
+      const {
+        allBalance,
+        setCurencySelectValue,
+        curencySelectValue
+      } = this.props
       if (!isEqual(prevProps.allBalance, allBalance)) {
-        if (!!allBalance.result['DCB']) {
-          setCurencySelectValue(allBalance.result['DCB'].currency)
+        const curency = curencySelectValue ? curencySelectValue : 'DCB'
+
+        if (!!allBalance.result[curency]) {
+          setCurencySelectValue(allBalance.result[curency].currency)
         }
       }
     }
