@@ -2,123 +2,96 @@
 
 exports[`renders catalog 1`] = `
 <div
-  className="HeaderCatalog-root-35"
+  className="HeaderCatalog-root-28"
 >
   <div
-    className="HeaderCatalog-streamUserBlock-36"
+    className="HeaderCatalog-streamUserBlock-29"
   >
     <p
-      className="HeaderCatalog-streamUserHello-37"
+      className="HeaderCatalog-streamUserHello-30"
     >
-       Hello, Ben A 
+      Hello, Ben A 
       <br />
-      <span
-        className="HeaderCatalog-streamUserVerification-39"
+      <a
+        className="HeaderCatalog-streamUserVerification-31"
+        href="/"
+        onClick={[Function]}
       >
         KYC VERIFICATED
-      </span>
+      </a>
     </p>
     <div
-      className="HeaderCatalog-streamUserPhoto-41"
+      className="HeaderCatalog-streamUserPhoto-32"
     >
       <img
         alt=""
-        src="user.png"
+        src="user.jpg"
       />
     </div>
-    <p
-      className="HeaderCatalog-streamUserBallance-38"
-    >
-       764.23 DCB 
-      <br />
-      <span
-        className="HeaderCatalog-streamUserBallDescr-40"
-      >
-        YOUR BALANCE
-      </span>
-    </p>
   </div>
 </div>
 `;
 
 exports[`renders game 1`] = `
 <div
-  className="HeaderGame-root-21"
+  className="HeaderGame-root-18"
 >
   <div
-    className="HeaderGame-gameUserBlock-22"
+    className="HeaderGame-gameUserBlock-19"
   >
     <p
-      className="HeaderGame-gameUserHello-23"
+      className="HeaderGame-gameUserHello-20"
     >
       Hello, Ben A 
       <br />
-      <span
-        className="HeaderGame-gameUserVerification-25"
+      <a
+        className="HeaderGame-gameUserVerification-21"
+        href="/"
+        onClick={[Function]}
       >
         KYC VERIFICATED
-      </span>
+      </a>
     </p>
     <div
-      className="HeaderGame-gameUserPhoto-27"
+      className="HeaderGame-gameUserPhoto-22"
     >
       <img
         alt=""
-        src="user.png"
+        src="user.jpg"
       />
     </div>
-    <p
-      className="HeaderGame-gameUserBallance-24"
-    >
-      764.23 DCB 
-      <br />
-      <span
-        className="HeaderGame-gameUserBallDescr-26"
-      >
-        YOUR BALANCE
-      </span>
-    </p>
   </div>
 </div>
 `;
 
 exports[`renders games 1`] = `
 <div
-  className="HeaderGames-root-28"
+  className="HeaderGames-root-23"
 >
   <div
-    className="HeaderGames-gamesUserBlock-29"
+    className="HeaderGames-gamesUserBlock-24"
   >
     <p
-      className="HeaderGames-gamesUserHello-30"
+      className="HeaderGames-gamesUserHello-25"
     >
        Hello, Ben A 
       <br />
-      <span
-        className="HeaderGames-gamesUserVerification-32"
+      <a
+        className="HeaderGames-gamesUserVerification-26"
+        href="/"
+        onClick={[Function]}
       >
         KYC VERIFICATED
-      </span>
+      </a>
     </p>
     <div
-      className="HeaderGames-gamesUserPhoto-34"
+      className="HeaderGames-gamesUserPhoto-27"
     >
       <img
         alt=""
-        src="user.png"
+        src="user.jpg"
       />
     </div>
-    <p
-      className="HeaderGames-gamesUserBallance-31"
-    >
-       764.23 DCB 
-      <br />
-      <span
-        className="HeaderGames-gamesUserBallDescr-33"
-      >
-        YOUR BALANCE
-      </span>
-    </p>
   </div>
   <div>
     Test
@@ -134,11 +107,6 @@ exports[`renders main 1`] = `
     className="UserBlock-root-2"
   >
     <div
-      className="UserBlock-demoTitle-10"
-    >
-      DEMO VERSION
-    </div>
-    <div
       className="UserBlock-user-3"
     >
       <div
@@ -147,33 +115,24 @@ exports[`renders main 1`] = `
         <p
           className="UserBlock-userHello-5"
         >
-           Hello, Ben A 
+          Hello, anonymous 
           <br />
-          <span
+          <a
             className="UserBlock-userVerification-6"
+            href="/"
+            onClick={[Function]}
           >
             KYC VERIFICATED
-          </span>
+          </a>
         </p>
         <div
           className="UserBlock-userPhoto-7"
         >
           <img
             alt=""
-            src="user.png"
+            src="user.jpg"
           />
         </div>
-        <p
-          className="UserBlock-userBallance-8"
-        >
-           dcb
-          <br />
-          <span
-            className="UserBlock-userBallDescr-9"
-          >
-            YOUR BALANCE
-          </span>
-        </p>
       </div>
     </div>
   </div>

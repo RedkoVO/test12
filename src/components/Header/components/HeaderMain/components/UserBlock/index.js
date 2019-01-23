@@ -1,27 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import Avatar from '../../../../../../assets/images/user.png'
+import Avatar from '../../../../../../assets/images/user.jpg'
 
 import styles from './styles'
 
-const UserBlock = ({ classes, balance }) => (
+const UserBlock = ({ classes }) => (
   <div className={classes.root}>
-    <div className={classes.demoTitle}>
-      DEMO VERSION
-    </div>
     <div className={classes.user}>
       <div className={classes.userBlock}>
-        <p className={classes.userHello}> Hello, Ben A <br />
-          <span className={classes.userVerification}>KYC VERIFICATED</span>
+        <p className={classes.userHello}>
+          Hello, anonymous <br />
+          <Link to={'/'} className={classes.userVerification}>KYC VERIFICATED</Link>
         </p>
         <div className={classes.userPhoto}>
           <img src={Avatar} alt="" />
         </div>
-        <p className={classes.userBallance}>{balance} dcb<br />
-          <span className={classes.userBallDescr}>YOUR BALANCE</span>
-        </p>
       </div>
     </div>
   </div>

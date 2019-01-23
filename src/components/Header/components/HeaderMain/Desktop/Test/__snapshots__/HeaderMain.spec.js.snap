@@ -8,11 +8,6 @@ exports[`renders correctly 1`] = `
     className="UserBlock-root-2"
   >
     <div
-      className="UserBlock-demoTitle-10"
-    >
-      DEMO VERSION
-    </div>
-    <div
       className="UserBlock-user-3"
     >
       <div
@@ -21,33 +16,24 @@ exports[`renders correctly 1`] = `
         <p
           className="UserBlock-userHello-5"
         >
-           Hello, Ben A 
+          Hello, anonymous 
           <br />
-          <span
+          <a
             className="UserBlock-userVerification-6"
+            href="/"
+            onClick={[Function]}
           >
             KYC VERIFICATED
-          </span>
+          </a>
         </p>
         <div
           className="UserBlock-userPhoto-7"
         >
           <img
             alt=""
-            src="user.png"
+            src="user.jpg"
           />
         </div>
-        <p
-          className="UserBlock-userBallance-8"
-        >
-           dcb
-          <br />
-          <span
-            className="UserBlock-userBallDescr-9"
-          >
-            YOUR BALANCE
-          </span>
-        </p>
       </div>
     </div>
   </div>

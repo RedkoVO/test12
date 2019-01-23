@@ -46,7 +46,13 @@ export default theme => ({
   },
   userVerification: {
     fontSize: '10px',
-    fontWeight: '500'
+    fontWeight: '500',
+    color: 'inherit',
+    textDecoration: 'none',
+
+    '&:hover': {
+      textDecoration: 'underline'
+    }
   },
   userPhoto: {
     height: '50px',
@@ -60,33 +66,6 @@ export default theme => ({
       height: '100%',
       width: '100%',
       borderRadius: '50%'
-    }
-  },
-  userBallance: {
-    fontSize: '18px',
-    margin: 0,
-    textAlign: 'center'
-  },
-  userBallDescr: {
-    fontSize: '10px',
-    fontWeight: '500'
-  },
-  demoTitle: {
-    fontWeight: 900,
-    position: 'absolute',
-    fontSize: '20px',
-    left: '154px',
-    width: '200px',
-    height: '50px',
-    textAlign: 'center',
-    background: '#f00',
-    borderRadius: '10px',
-    color: '#fff',
-    lineHeight: '49px',
-
-    [theme.breakpoints.down('md')]: {
-      left: 0,
-      opacity: '0.3'
     }
   }
 })

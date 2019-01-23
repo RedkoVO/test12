@@ -12,31 +12,22 @@ exports[`renders correctly DESKTOP 1`] = `
     >
       Hello, Ben A 
       <br />
-      <span
-        className="HeaderGame-gameUserVerification-5"
+      <a
+        className="HeaderGame-gameUserVerification-4"
+        href="/"
+        onClick={[Function]}
       >
         KYC VERIFICATED
-      </span>
+      </a>
     </p>
     <div
-      className="HeaderGame-gameUserPhoto-7"
+      className="HeaderGame-gameUserPhoto-5"
     >
       <img
         alt=""
-        src="user.png"
+        src="user.jpg"
       />
     </div>
-    <p
-      className="HeaderGame-gameUserBallance-4"
-    >
-      764.23 DCB 
-      <br />
-      <span
-        className="HeaderGame-gameUserBallDescr-6"
-      >
-        YOUR BALANCE
-      </span>
-    </p>
   </div>
 </div>
 `;
