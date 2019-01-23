@@ -18,8 +18,10 @@ import { getBigNumberAmount } from '../../utils/math'
 
 import AsyncDashboardDesktop from '../../components/Dashboard/Desktop/AsyncDashboardDesktop'
 
-import BestGameLogo from '../../assets/images/best-shop.png'
-import BestShopLogo from '../../assets/images/best-shop.png'
+import BestGameLogo from '../../assets/images/exchange.jpg'
+import BestShopLogo from '../../assets/images/shop.jpg'
+import CSGOLogo from '../../assets/images/csgo.jpg'
+import CasesLogo from '../../assets/images/cases.jpg'
 import GameLogo from '../../assets/images/loto-game.png'
 import CloverLogo from '../../assets/images/sim_game_icon_4clover.png'
 import JungleImg2 from '../../assets/images/jungle_game2.png'
@@ -106,24 +108,32 @@ const tmpTransactionCollection = [
 const tmpBestAdsCollection = [
   {
     id: 1,
-    title: 'Skins',
+    title: 'VChange',
     img: BestGameLogo,
-    link: '/skins',
+    link: '/',
     titleLink: 'Skins of the day',
     nameLink: 'Smash Champs'
   },
   {
     id: 2,
-    title: 'Stream',
+    title: 'Shop',
     img: BestShopLogo,
-    link: '/stream',
+    link: '/',
     titleLink: 'Stream of the day',
     nameLink: 'Blue cool Jelly'
   },
   {
     id: 3,
+    title: 'CSGO',
+    img: CSGOLogo,
+    link: '/skins',
+    titleLink: 'Cases of the day',
+    nameLink: 'Blue cool Jelly'
+  },
+  {
+    id: 4,
     title: 'Cases',
-    img: BestShopLogo,
+    img: CasesLogo,
     link: '/cases',
     titleLink: 'Cases of the day',
     nameLink: 'Blue cool Jelly'
@@ -241,8 +251,8 @@ export default compose(
   withState('isDisabledButton', 'setDisabledButton', false),
   withState('curencySelectValue', 'setCurencySelectValue', ''),
   withHandlers({
-    handleChangeBalance: ({ setCurencySelectValue }) => e => {
-      setCurencySelectValue(e.target.value)
+    handleChangeBalance: ({ setCurencySelectValue }) => value => {
+      setCurencySelectValue(value)
     },
 
     onSubmit: ({

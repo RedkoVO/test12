@@ -13,7 +13,7 @@ const HeaderCatalog = ({ classes }) => (
       <p className={classes.streamUserHello}>
         Hello, Ben A <br />
         <Link to={'/'} className={classes.streamUserVerification}>
-          KYC VERIFICATED
+          KYC VERIFICATION
         </Link>
       </p>
       <div className={classes.streamUserPhoto}>

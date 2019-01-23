@@ -42,38 +42,6 @@ export default theme => ({
       margin: '30px 0 0 0'
     }
   },
-  ///////////////////////////////////
-  // walletSum: {
-  //   position: 'relative',
-  //   padding: 0,
-  //   paddingLeft: '0',
-  //   boxSizing: 'border-box',
-  //   textAlign: 'center',
-
-  //   '&::after': {
-  //     position: 'absolute',
-  //     content: `""`,
-  //     width: '30px',
-  //     height: '30px',
-  //     bottom: '25px',
-  //     right: '-35px',
-  //     backgroundImage: `url(${DownLogo})`,
-  //     backgroundRepeat: 'no-repeat',
-  //     backgroundSize: '30px',
-  //     backgroundPosition: 'center'
-  //   },
-
-  //   '& a': {
-  //     color: '#5e7cff',
-  //     fontSize: '82px',
-  //     fontWeight: 700,
-  //     margin: '15px 0 0 0',
-  //     padding: 0,
-  //     lineHeight: '82px',
-  //     textDecoration: 'none'
-  //   }
-  // },
-  ///////////////////////////////////
   walletAddress: {
     padding: '10px 0',
     color: '#616161',
@@ -158,6 +126,7 @@ export default theme => ({
     padding: '5px 15px',
     borderRadius: '10px',
     margin: '0 5px',
+    cursor: 'pointer',
 
     '&:hover': {
       backgroundColor: '#76bff7'
