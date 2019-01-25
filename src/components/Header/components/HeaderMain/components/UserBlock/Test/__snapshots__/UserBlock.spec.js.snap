@@ -20,7 +20,7 @@ exports[`renders correctly 1`] = `
           href="/"
           onClick={[Function]}
         >
-          KYC VERIFICATED
+          KYC VERIFICATION
         </a>
       </p>
       <div

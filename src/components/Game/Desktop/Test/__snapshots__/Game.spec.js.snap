@@ -361,7 +361,7 @@ exports[`renders correctly Mobile 1`] = `
                     href="/"
                     onClick={[Function]}
                   >
-                    KYC VERIFICATED
+                    KYC VERIFICATION
                   </a>
                 </p>
                 <div
