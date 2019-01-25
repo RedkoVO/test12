@@ -12,7 +12,7 @@ const HeaderGame = ({ classes }) => (
     <div className={classes.gameUserBlock}>
       <p className={classes.gameUserHello}>
         Hello, Ben A <br />
-        <Link to={'/'} className={classes.gameUserVerification}>KYC VERIFICATED</Link>
+        <Link to={'/'} className={classes.gameUserVerification}>KYC VERIFICATION</Link>
       </p>
       <div className={classes.gameUserPhoto}>
         <img src={UserImg} alt="" />

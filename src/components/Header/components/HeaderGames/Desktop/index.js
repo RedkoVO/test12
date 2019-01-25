@@ -11,7 +11,7 @@ const HeaderGames = ({ classes, children }) => (
   <div className={classes.root}>
     <div className={classes.gamesUserBlock}>
       <p className={classes.gamesUserHello}> Hello, Ben A <br />
-        <Link to={'/'} className={classes.gamesUserVerification}>KYC VERIFICATED</Link>
+        <Link to={'/'} className={classes.gamesUserVerification}>KYC VERIFICATION</Link>
       </p>
       <div className={classes.gamesUserPhoto}>
         <img src={UserImg} alt="" />

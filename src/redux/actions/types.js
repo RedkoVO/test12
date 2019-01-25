@@ -1,7 +1,7 @@
 export const REGISTRATION_USER = 'REGISTRATION_USER'
 export const SEND_MONEY = 'SEND_MONEY'
 
-export const GET_INCOMING = 'GET_INCOMING'
+export const POST_PENDING = 'POST_PENDING'
 
 export const GET_CONFIG = 'GET_CONFIG'
 

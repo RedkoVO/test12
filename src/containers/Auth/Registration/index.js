@@ -1,9 +1,12 @@
 import compose from 'recompose/compose'
 import { withHandlers, withState } from 'recompose'
 import { reduxForm } from 'redux-form'
+
+import { download } from '../../../utils/downloadFiles'
+import Crypto from '../../../crypto/crypto'
 import validate from './validate'
 
-import { registrationEmail } from '../../../redux/actions/auth'
+// import { registrationEmail } from '../../../redux/actions/auth'
 
 import AsyncRegistrationDesktop from '../../../components/Auth/Registration/Desktop/AsyncRegistrationDesktop'
 
@@ -15,26 +18,36 @@ export default compose(
     validate
   }),
   withState('isDisabledButton', 'setDisabledButton', false),
+  withState('generatedKey', 'setGeneratedKey', ''),
   withHandlers({
-    onSubmit: ({ handleSubmit, dispatch, history, setDisabledButton, isDisabledButton }) =>
+    handleGenerateSecretKey: ({ setGeneratedKey }) => () => {
+      setGeneratedKey(Crypto.account.generateNewAccount().secretKey)
+    },
+    handleSaveSecretKey: ({ generatedKey }) => () => {
+      if (!!generatedKey) {
+        download(generatedKey, 'SecretKey.txt', 'text/plain')
+      }
+    },
+    onSubmit: ({
+      handleSubmit
+      // dispatch,
+      // history,
+      // setDisabledButton,
+      // isDisabledButton
+    }) =>
       handleSubmit(variables => {
-        const data = { email: variables.email }
-
-        if (!isDisabledButton) {
-          setDisabledButton(!isDisabledButton)
-
-          dispatch(registrationEmail(data))
-            .then(res => {
-              if (res.success)
-                history.push('/confirmation-email')
-              console.log('res', res)
-            })
-            .catch(err => {
-              console.log('err registration:', err)
-            })
-        }
+        // const data = { email: variables.email }
+        // if (!isDisabledButton) {
+        //   setDisabledButton(!isDisabledButton)
+        //   dispatch(registrationEmail(data))
+        //     .then(res => {
+        //       if (res.success) history.push('/confirmation-email')
+        //       console.log('res', res)
+        //     })
+        //     .catch(err => {
+        //       console.log('err registration:', err)
+        //     })
+        // }
       })
   })
 )(AsyncRegistrationDesktop)
-
-

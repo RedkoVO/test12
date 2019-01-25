@@ -5,42 +5,69 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import { Field, Form } from 'redux-form'
 import cn from 'classnames'
 
-import InputField from '../../../../App/components/Form/InputField'
+// import InputField from '../../../../App/components/Form/InputField'
 
 import styles from './styles'
 
-const Step1 = ({ classes, onSubmit, isDisabledButton }) => (
+const Step1 = ({
+  classes,
+  generatedKey,
+  onSubmit,
+  handleSaveSecretKey,
+  handleGenerateSecretKey,
+  isDisabledButton
+}) => (
   <div className={classes.root}>
     <Form className={classes.registrStep1} onSubmit={onSubmit}>
       <h1 className={classes.step1Title}>Registration</h1>
-      <label htmlFor="email" className={classes.step1Label}>E-mail</label>
+      <div className={classes.step1Label}>Vault ID</div>
+      {generatedKey}
+      {/* <label htmlFor="password" className={classes.step1Label}>
+        Password
+      </label>
       <Field
-        id="email"
-        name="email"
-        type="email"
+        id="password"
+        name="password"
+        type="password"
         className={classes.field}
         component={InputField}
-        placeholder="Enter E-mail"
+        placeholder="Password"
       />
-      {/* <label htmlFor="password" className={classes.step1Label}>Pass</label>
-      <InputField
-        id="password"
-        className={classes.field}
-        name="psw"
+      <label htmlFor="repeat password" className={classes.step1Label}>
+        Repeat password
+      </label>
+      <Field
+        id="repeatPassword"
+        name="repeatPassword"
         type="password"
-        placeholder="Enter Password"
-      />
-      <label htmlFor="pswRepeat" className={classes.step1Label}>Confirm pass</label>
-      <InputField
-        id="pswRepeat"
         className={classes.field}
-        name="psw"
-        type="password"
-        placeholder="Enter Password"
+        component={InputField}
+        placeholder="Password"
       /> */}
+      <button
+        className={classes.step1BtnsRegister}
+        onClick={() => handleGenerateSecretKey()}
+      >
+        Generate
+      </button>
+      <button
+        className={classes.step1BtnsRegister}
+        onClick={() => handleSaveSecretKey()}
+      >
+        Save key
+      </button>
       <div>
-        <Link to={'/login'} className={classes.step1BtnBack}>Login</Link>
-        <button type="submit" className={cn(classes.step1BtnsRegister, { disabled: isDisabledButton })}>Register!</button>
+        <Link to={'/login'} className={classes.step1BtnBack}>
+          Login
+        </Link>
+        <button
+          type="submit"
+          className={cn(classes.step1BtnsRegister, {
+            disabled: isDisabledButton
+          })}
+        >
+          Register!
+        </button>
       </div>
     </Form>
   </div>
@@ -49,6 +76,9 @@ const Step1 = ({ classes, onSubmit, isDisabledButton }) => (
 Step1.propTypes = {
   classNamees: PropTypes.object,
   onSubmit: PropTypes.func,
+  generatedKey: PropTypes.string, // test
+  handleSaveSecretKey: PropTypes.func, // test
+  handleGenerateSecretKey: PropTypes.func, // test
   isDisabledButton: PropTypes.bool
 }
 

@@ -249,10 +249,13 @@ export default compose(
     validate
   }),
   withState('isDisabledButton', 'setDisabledButton', false),
-  withState('curencySelectValue', 'setCurencySelectValue', ''),
+  withState('curencySelectValue', 'setCurencySelectValue', {}),
   withHandlers({
-    handleChangeBalance: ({ setCurencySelectValue }) => value => {
-      setCurencySelectValue(value)
+    handleChangeBalance: ({ setCurencySelectValue, allBalance }) => value => {
+      setCurencySelectValue({
+        currency: value,
+        code: allBalance.result[value].code
+      })
     },
 
     onSubmit: ({
@@ -268,7 +271,9 @@ export default compose(
           setDisabledButton(!isDisabledButton)
 
           dispatch(
-            getWork({ hash: allBalance.result[curencySelectValue].lastBlock })
+            getWork({
+              hash: allBalance.result[curencySelectValue.currency].lastBlock
+            })
           )
             .then(res => {
               if (res.success) {
@@ -281,10 +286,12 @@ export default compose(
                 const amount = getBigNumberAmount(variables.amount)
                 const work = res.result.work
                 const currencyInfo = {
-                  currency: curencySelectValue,
-                  lastBlock: allBalance.result[curencySelectValue].lastBlock,
+                  code: curencySelectValue.code,
+                  currency: curencySelectValue.currency,
+                  lastBlock:
+                    allBalance.result[curencySelectValue.currency].lastBlock,
                   balance: new BigNumber(
-                    allBalance.result[curencySelectValue].balance
+                    allBalance.result[curencySelectValue.currency].balance
                   )
                 }
                 const getCryptoBlock = Crypto.sign.formSendBlock(
@@ -332,7 +339,10 @@ export default compose(
     componentDidMount() {
       const { allBalance, setCurencySelectValue } = this.props
       if (!!allBalance) {
-        setCurencySelectValue(allBalance.result['DCB'].currency)
+        setCurencySelectValue({
+          code: allBalance.result['DCB'].code,
+          currency: allBalance.result['DCB'].currency
+        })
       }
     },
     componentDidUpdate(prevProps) {
@@ -342,19 +352,24 @@ export default compose(
         curencySelectValue
       } = this.props
       if (!isEqual(prevProps.allBalance, allBalance)) {
-        const curency = curencySelectValue ? curencySelectValue : 'DCB'
+        const curency = curencySelectValue.currency
+          ? curencySelectValue.currency
+          : 'DCB'
 
         if (!!allBalance.result[curency]) {
-          setCurencySelectValue(allBalance.result[curency].currency)
+          setCurencySelectValue({
+            code: allBalance.result[curency].code,
+            currency: allBalance.result[curency].currency
+          })
         }
       }
     }
   }),
-  withProps({
+  withProps(() => ({
     transactions: tmpTransactionCollection,
     bestAds: tmpBestAdsCollection,
     gameCategories: gameCategories,
     addressKey: localStorage.getItem('address')
-  }),
+  })),
   pure
 )(AsyncDashboardDesktop)

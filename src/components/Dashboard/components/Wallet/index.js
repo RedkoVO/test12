@@ -17,7 +17,7 @@ const Wallet = ({
   addressKey,
   isDisabledButton,
   handleChangeBalance,
-  curencySelectValue = ''
+  curencySelectValue = {}
 }) => (
   <div className={classes.root}>
     <div className={classes.wallet}>
@@ -27,7 +27,7 @@ const Wallet = ({
       <div className={classes.walletAddress}>{addressKey}</div>
       <Select
         className={classes.selectCurency}
-        value={curencySelectValue}
+        value={curencySelectValue.currency ? curencySelectValue.currency : ''}
         onChange={e => handleChangeBalance(e.target.value)}
         IconComponent={props => (
           <i {...props} className={classes.curencyIcon} />
@@ -95,7 +95,7 @@ Wallet.propTypes = {
   addressKey: PropTypes.string,
   isDisabledButton: PropTypes.bool,
   handleChangeBalance: PropTypes.func,
-  curencySelectValue: PropTypes.string
+  curencySelectValue: PropTypes.object
 }
 
 export default withStyles(styles)(Wallet)

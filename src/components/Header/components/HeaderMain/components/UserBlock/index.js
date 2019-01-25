@@ -13,7 +13,7 @@ const UserBlock = ({ classes }) => (
       <div className={classes.userBlock}>
         <p className={classes.userHello}>
           Hello, anonymous <br />
-          <Link to={'/'} className={classes.userVerification}>KYC VERIFICATED</Link>
+          <Link to={'/'} className={classes.userVerification}>KYC VERIFICATION</Link>
         </p>
         <div className={classes.userPhoto}>
           <img src={Avatar} alt="" />

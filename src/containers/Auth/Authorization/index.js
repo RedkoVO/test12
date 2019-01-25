@@ -3,12 +3,13 @@ import { connect } from 'react-redux'
 import { withHandlers, withState, pure } from 'recompose'
 import { reduxForm } from 'redux-form'
 import validate from './validate'
+import BigNumber from 'bignumber.js'
 
 import { sequential } from '../../../utils/promiseSequential'
 
 import withConfigAndAllBalance from '../../../hocs/withConfigAndAllBalance'
 
-import { getAllBalanceInfo, getIncoming } from '../../../redux/actions/balance'
+import { getAllBalanceInfo, postPending } from '../../../redux/actions/balance'
 import { getAllBalanceInfoSelector } from '../../../selectors/balance'
 import { getConfigSelector } from '../../../selectors/config'
 import { receiveFromFaucet } from '../../../requests/receiveFromFaucet'
@@ -58,7 +59,7 @@ export default compose(
                 const dataForIncoming = {
                   address: localStorage.getItem('address')
                 }
-                dispatch(getIncoming(dataForIncoming))
+                dispatch(postPending(dataForIncoming))
                   .then(blocks => {
                     const requestsArr = []
                     const currencyInfo = {}
@@ -68,9 +69,13 @@ export default compose(
                       address: localStorage.getItem('address')
                     }
 
-                    const currencyInfoUpdate = (currency, newLastBlock) => {
+                    const currencyInfoUpdate = (currency, newLastBlock, newBalance) => {
                       currencyInfo[currency] = {
                         currency: currency,
+                        code: res.customAllBalance[currency].code,
+                        balance: newBalance
+                          ? newBalance
+                          : new BigNumber(res.customAllBalance[currency].balance),
                         lastBlock: newLastBlock
                           ? newLastBlock
                           : res.customAllBalance[currency].lastBlock
