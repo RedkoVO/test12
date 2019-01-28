@@ -5,7 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import { Field, Form } from 'redux-form'
 import cn from 'classnames'
 
-// import InputField from '../../../../App/components/Form/InputField'
+import InputField from '../../../../App/components/Form/InputField'
 
 import styles from './styles'
 
@@ -22,6 +22,8 @@ const Step1 = ({
       <h1 className={classes.step1Title}>Registration</h1>
       <div className={classes.step1Label}>Vault ID</div>
       {generatedKey}
+
+
       {/* <label htmlFor="password" className={classes.step1Label}>
         Password
       </label>
@@ -44,7 +46,9 @@ const Step1 = ({
         component={InputField}
         placeholder="Password"
       /> */}
-      <button
+
+
+      {/* <button
         className={classes.step1BtnsRegister}
         onClick={() => handleGenerateSecretKey()}
       >
@@ -55,7 +59,7 @@ const Step1 = ({
         onClick={() => handleSaveSecretKey()}
       >
         Save key
-      </button>
+      </button> */}
       <div>
         <Link to={'/login'} className={classes.step1BtnBack}>
           Login

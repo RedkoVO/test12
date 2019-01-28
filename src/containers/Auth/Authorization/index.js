@@ -32,7 +32,16 @@ export default compose(
     validate
   }),
   withState('isDisabledButton', 'setDisabledButton', false),
+  withState('secretKeyFromFile', 'setSecretKeyFromFile', false),
   withHandlers({
+    handleFileChosen: () => file => {
+      const reader = new FileReader()
+      reader.onloadend = e => {
+        const content = reader.result
+        console.log('content', content)
+      }
+      reader.readAsText(file.target.files[0])
+    },
     onSubmit: ({
       handleSubmit,
       history,
@@ -69,13 +78,19 @@ export default compose(
                       address: localStorage.getItem('address')
                     }
 
-                    const currencyInfoUpdate = (currency, newLastBlock, newBalance) => {
+                    const currencyInfoUpdate = (
+                      currency,
+                      newLastBlock,
+                      newBalance
+                    ) => {
                       currencyInfo[currency] = {
                         currency: currency,
                         code: res.customAllBalance[currency].code,
                         balance: newBalance
                           ? newBalance
-                          : new BigNumber(res.customAllBalance[currency].balance),
+                          : new BigNumber(
+                              res.customAllBalance[currency].balance
+                            ),
                         lastBlock: newLastBlock
                           ? newLastBlock
                           : res.customAllBalance[currency].lastBlock

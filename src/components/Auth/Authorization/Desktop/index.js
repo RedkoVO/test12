@@ -9,7 +9,12 @@ import InputField from '../../../App/components/Form/InputField'
 
 import styles from './styles'
 
-const Authorization = ({ classes, onSubmit, isDisabledButton }) => (
+const Authorization = ({
+  classes,
+  onSubmit,
+  handleFileChosen,
+  isDisabledButton
+}) => (
   <div className={classes.root}>
     <div className={classes.containerRegistrat}>
       <div className={classes.containerRegistratStep1}>
@@ -26,6 +31,16 @@ const Authorization = ({ classes, onSubmit, isDisabledButton }) => (
             component={InputField}
             placeholder="Secret key"
           />
+
+          {/* <div>
+            <input
+              type="file"
+              id="file"
+              className={classes.inputFile}
+              accept=".txt"
+              onChange={e => handleFileChosen(e)}
+            />
+          </div> */}
 
           <div>
             <Link to={'/registration'} className={classes.step1BtnBack}>
@@ -63,6 +78,7 @@ const Authorization = ({ classes, onSubmit, isDisabledButton }) => (
 Authorization.propTypes = {
   classNamees: PropTypes.object,
   onSubmit: PropTypes.func,
+  handleFileChosen: PropTypes.func, // Test
   isDisabledButton: PropTypes.bool,
   test_name: PropTypes.string
 }
