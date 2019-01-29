@@ -16,16 +16,17 @@ exports[`renders correctly 1`] = `
     <div
       className="Step1-step1Label-4"
     >
-      Vault ID
+      Vault ID:
     </div>
+    0000000000000000000000000000000000000000000000000000000000000000
     <button
-      className="Step1-step1BtnsRegister-7"
+      className="Step1-step1BtnsGeneration-8"
       onClick={[Function]}
     >
       Generate
     </button>
     <button
-      className="Step1-step1BtnsRegister-7"
+      className="Step1-step1BtnsSave-9"
       onClick={[Function]}
     >
       Save key

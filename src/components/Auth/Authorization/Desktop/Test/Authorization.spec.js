@@ -68,10 +68,10 @@ describe('<Authorization />', () => {
         .debug()
     )
 
-    btnRegistre.simulate('click')
+    // btnRegistre.simulate('click')
     // btnRegistre.prop('onClick')()
 
-    tree.update()
+    // tree.update()
 
     console.log(
       '---2----',
