@@ -28,6 +28,7 @@ exports[`renders correctly 1`] = `
           aria-haspopup="true"
           aria-pressed="false"
           className="Wallet-selectField-7"
+          id="select-curency"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}

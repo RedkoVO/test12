@@ -11,22 +11,22 @@ exports[`<Authorization /> renders correctly 1`] = `
       className="Authorization-containerRegistratStep1-2"
     >
       <form
-        className="Authorization-registrStep1-7"
+        className="Authorization-registrStep1-10"
         onSubmit={[Function]}
       >
         <h1
-          className="Authorization-step1Title-8"
+          className="Authorization-step1Title-11"
         >
           Login
         </h1>
         <label
-          className="Authorization-step1Label-9"
+          className="Authorization-step1Label-12"
           htmlFor="key"
         >
           Enter secret key from email
         </label>
         <input
-          className="Authorization-field-10"
+          className="Authorization-field-13"
           id="key"
           onBlur={[Function]}
           onChange={[Function]}
@@ -37,16 +37,47 @@ exports[`<Authorization /> renders correctly 1`] = `
           type="text"
           value=""
         />
+        <div
+          className="Authorization-dropzone-6"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragEnter={[Function]}
+          onDragLeave={[Function]}
+          onDragOver={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          <input
+            accept="text/*"
+            autoComplete="off"
+            multiple={true}
+            onChange={[Function]}
+            onClick={[Function]}
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+            tabIndex={-1}
+            type="file"
+          />
+          <p>
+            Try dropping .txt files here, or click to this area.
+          </p>
+        </div>
         <div>
           <a
-            className="Authorization-step1BtnBack-11"
+            className="Authorization-step1BtnBack-14"
             href="/registration"
             onClick={[Function]}
           >
             Registration
           </a>
           <button
-            className="Authorization-step1BtnsRegister-12"
+            className="Authorization-step1BtnsRegister-15"
             type="submit"
           >
             Login!
@@ -64,13 +95,13 @@ exports[`<Authorization /> renders correctly 1`] = `
       </span>
       <div>
         <a
-          className="Authorization-footerLink-6"
+          className="Authorization-footerLink-9"
           href="/"
         >
           Privacy Policy
         </a>
         <a
-          className="Authorization-footerLink-6"
+          className="Authorization-footerLink-9"
           href="/"
         >
           Terms and conditions
