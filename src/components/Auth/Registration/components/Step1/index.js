@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import withStyles from '@material-ui/core/styles/withStyles'
-import { Field, Form } from 'redux-form'
+import { Form } from 'redux-form'
 import cn from 'classnames'
 
-import InputField from '../../../../App/components/Form/InputField'
+// import InputField from '../../../../App/components/Form/InputField'
 
 import styles from './styles'
 
@@ -20,9 +20,12 @@ const Step1 = ({
   <div className={classes.root}>
     <Form className={classes.registrStep1} onSubmit={onSubmit}>
       <h1 className={classes.step1Title}>Registration</h1>
-      <div className={classes.step1Label}>Vault ID</div>
-      {generatedKey}
-
+      {generatedKey && (
+        <React.Fragment>
+          <div className={classes.step1Label}>Vault ID:</div>
+          {generatedKey}
+        </React.Fragment>
+      )}
 
       {/* <label htmlFor="password" className={classes.step1Label}>
         Password
@@ -47,19 +50,18 @@ const Step1 = ({
         placeholder="Password"
       /> */}
 
-
-      {/* <button
-        className={classes.step1BtnsRegister}
+      <button
+        className={classes.step1BtnsGeneration}
         onClick={() => handleGenerateSecretKey()}
       >
         Generate
       </button>
       <button
-        className={classes.step1BtnsRegister}
+        className={classes.step1BtnsSave}
         onClick={() => handleSaveSecretKey()}
       >
         Save key
-      </button> */}
+      </button>
       <div>
         <Link to={'/login'} className={classes.step1BtnBack}>
           Login
@@ -80,9 +82,9 @@ const Step1 = ({
 Step1.propTypes = {
   classNamees: PropTypes.object,
   onSubmit: PropTypes.func,
-  generatedKey: PropTypes.string, // test
-  handleSaveSecretKey: PropTypes.func, // test
-  handleGenerateSecretKey: PropTypes.func, // test
+  generatedKey: PropTypes.string,
+  handleSaveSecretKey: PropTypes.func,
+  handleGenerateSecretKey: PropTypes.func,
   isDisabledButton: PropTypes.bool
 }
 

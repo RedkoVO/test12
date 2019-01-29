@@ -1,7 +1,7 @@
 import compose from 'recompose/compose'
 import { connect } from 'react-redux'
 import { withHandlers, withState, pure } from 'recompose'
-import { reduxForm } from 'redux-form'
+import { change, reduxForm } from 'redux-form'
 import validate from './validate'
 import BigNumber from 'bignumber.js'
 
@@ -34,13 +34,15 @@ export default compose(
   withState('isDisabledButton', 'setDisabledButton', false),
   withState('secretKeyFromFile', 'setSecretKeyFromFile', false),
   withHandlers({
-    handleFileChosen: () => file => {
-      const reader = new FileReader()
-      reader.onloadend = e => {
-        const content = reader.result
-        console.log('content', content)
+    handleFileDropzone: ({ dispatch }) => (acceptedFiles, rejectedFiles) => {
+      if (rejectedFiles.length === 0) {
+        const reader = new FileReader()
+        reader.onloadend = () => {
+          const content = reader.result
+          dispatch(change(FORM_NAME, 'key', content))
+        }
+        reader.readAsText(acceptedFiles[0])
       }
-      reader.readAsText(file.target.files[0])
     },
     onSubmit: ({
       handleSubmit,

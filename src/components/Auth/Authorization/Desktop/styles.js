@@ -39,6 +39,27 @@ export default () => ({
     marginBottom: '5px',
     marginTop: '35px'
   },
+  dropzone: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    marginTop: '30px',
+    width: '100%',
+    height: '150px',
+    border: '2px dashed #616161',
+    cursor: 'pointer',
+
+    '&:focus': {
+      outline: 'none'
+    }
+  },
+  dropAccept: {
+    border: '2px solid #62cc6f'
+  },
+  dropReject: {
+    border: '2px solid red'
+  },
   footerLink: {
     fontSize: '14px',
     fontWeight: 200,

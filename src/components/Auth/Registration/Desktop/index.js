@@ -48,9 +48,9 @@ const Registration = ({
 Registration.propTypes = {
   classNamees: PropTypes.object,
   onSubmit: PropTypes.func,
-  generatedKey: PropTypes.string, // test
-  handleSaveSecretKey: PropTypes.func, // test
-  handleGenerateSecretKey: PropTypes.func, // test
+  generatedKey: PropTypes.string,
+  handleSaveSecretKey: PropTypes.func,
+  handleGenerateSecretKey: PropTypes.func,
   isDisabledButton: PropTypes.bool
 }
 

@@ -11,17 +11,22 @@ const Wrapper = reduxForm({ form: 'test' })(({ children }) => children)
 const store = createStore(a => a, {})
 
 it('renders correctly', () => {
-  const tree = renderer.create(
-    <Provider store={store}>
-      <MemoryRouter keyLength={0}>
-        <Wrapper>
-          <Step1
-            onSubmit={() => { }}
-            isDisabledButton={false}
-          />
-        </Wrapper>
-      </MemoryRouter>
-    </Provider>
-  ).toJSON()
+  const tree = renderer
+    .create(
+      <Provider store={store}>
+        <MemoryRouter keyLength={0}>
+          <Wrapper>
+            <Step1
+              generatedKey="0000000000000000000000000000000000000000000000000000000000000000"
+              isDisabledButton={false}
+              onSubmit={() => {}}
+              handleSaveSecretKey={() => {}}
+              handleGenerateSecretKey={() => {}}
+            />
+          </Wrapper>
+        </MemoryRouter>
+      </Provider>
+    )
+    .toJSON()
   expect(tree).toMatchSnapshot()
 })

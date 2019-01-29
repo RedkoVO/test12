@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { Field, Form } from 'redux-form'
+import Dropzone from 'react-dropzone'
 import cn from 'classnames'
 
 import InputField from '../../../App/components/Form/InputField'
@@ -12,7 +13,7 @@ import styles from './styles'
 const Authorization = ({
   classes,
   onSubmit,
-  handleFileChosen,
+  handleFileDropzone,
   isDisabledButton
 }) => (
   <div className={classes.root}>
@@ -32,15 +33,37 @@ const Authorization = ({
             placeholder="Secret key"
           />
 
-          {/* <div>
-            <input
-              type="file"
-              id="file"
-              className={classes.inputFile}
-              accept=".txt"
-              onChange={e => handleFileChosen(e)}
-            />
-          </div> */}
+          <Dropzone onDrop={handleFileDropzone} accept="text/*">
+            {({
+              getRootProps,
+              getInputProps,
+              isDragActive,
+              isDragAccept,
+              isDragReject
+            }) => {
+              return (
+                <div
+                  {...getRootProps()}
+                  className={cn(
+                    classes.dropzone,
+                    { [classes.dropAccept]: isDragAccept },
+                    { [classes.dropReject]: isDragReject }
+                  )}
+                >
+                  <input {...getInputProps()} />
+                  {isDragActive ? (
+                    <p>Drop files here...</p>
+                  ) : (
+                    <p>Try dropping .txt files here, or click to this area.</p>
+                  )}
+
+                  {isDragReject && (
+                    <p>Unsupported file type...</p>
+                  )}
+                </div>
+              )
+            }}
+          </Dropzone>
 
           <div>
             <Link to={'/registration'} className={classes.step1BtnBack}>
@@ -78,7 +101,7 @@ const Authorization = ({
 Authorization.propTypes = {
   classNamees: PropTypes.object,
   onSubmit: PropTypes.func,
-  handleFileChosen: PropTypes.func, // Test
+  handleFileDropzone: PropTypes.func,
   isDisabledButton: PropTypes.bool,
   test_name: PropTypes.string
 }
