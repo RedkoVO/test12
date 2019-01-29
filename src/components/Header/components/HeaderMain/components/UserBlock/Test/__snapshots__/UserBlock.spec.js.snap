@@ -5,11 +5,6 @@ exports[`renders correctly 1`] = `
   className="UserBlock-root-1"
 >
   <div
-    className="UserBlock-demoTitle-9"
-  >
-    DEMO VERSION
-  </div>
-  <div
     className="UserBlock-user-2"
   >
     <div
@@ -18,34 +13,24 @@ exports[`renders correctly 1`] = `
       <p
         className="UserBlock-userHello-4"
       >
-         Hello, Ben A 
+        Hello, anonymous 
         <br />
-        <span
+        <a
           className="UserBlock-userVerification-5"
+          href="/"
+          onClick={[Function]}
         >
-          KYC VERIFICATED
-        </span>
+          KYC VERIFICATION
+        </a>
       </p>
       <div
         className="UserBlock-userPhoto-6"
       >
         <img
           alt=""
-          src="user.png"
+          src="user.jpg"
         />
       </div>
-      <p
-        className="UserBlock-userBallance-7"
-      >
-        0000
-         dcb
-        <br />
-        <span
-          className="UserBlock-userBallDescr-8"
-        >
-          YOUR BALANCE
-        </span>
-      </p>
     </div>
   </div>
 </div>

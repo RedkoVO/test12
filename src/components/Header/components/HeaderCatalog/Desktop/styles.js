@@ -41,19 +41,15 @@ export default theme => ({
     color: '#fff',
     textAlign: 'center'
   },
-  streamUserBallance: {
-    fontSize: '18px',
-    margin: 0,
-    color: '#fff',
-    textAlign: 'center'
-  },
   streamUserVerification: {
     fontSize: '10px',
-    fontWeight: '500'
-  },
-  streamUserBallDescr: {
-    fontSize: '10px',
-    fontWeight: '500'
+    fontWeight: '500',
+    color: 'inherit',
+    textDecoration: 'none',
+
+    '&:hover': {
+      textDecoration: 'underline'
+    }
   },
   streamUserPhoto: {
     height: '50px',

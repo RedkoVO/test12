@@ -3,7 +3,7 @@ export default theme => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'flex-end',
-    
+
     [theme.breakpoints.down('sm')]: {
       minWidth: '100%',
       margin: 0,
@@ -33,19 +33,14 @@ export default theme => ({
     color: '#fff',
     textAlign: 'center'
   },
-  gameUserBallance: {
-    fontSize: '18px',
-    margin: 0,
-    color: '#fff',
-    textAlign: 'center'
-  },
   gameUserVerification: {
     fontSize: '10px',
-    fontWeight: '500'
-  },
-  gameUserBallDescr: {
-    fontSize: '10px',
-    fontWeight: '500'
+    fontWeight: '500',
+    textDecoration: 'none',
+
+    '&:hover': {
+      textDecoration: 'underline'
+    }
   },
   gameUserPhoto: {
     height: '50px',
@@ -60,5 +55,5 @@ export default theme => ({
       width: '100%',
       borderRadius: '50%'
     }
-  },
+  }
 })

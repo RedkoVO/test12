@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       className="Wallet-walletTitle-3"
     >
       <p>
-        My dcb wallet:
+        My Vault:
       </p>
     </div>
     <div
@@ -35,18 +35,19 @@ exports[`renders correctly 1`] = `
           role="button"
           tabIndex={0}
         >
-          <div
-            className="Wallet-curency-9"
-          >
-            USD
-          </div>
-          999918.59999899
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "&#8203;",
+              }
+            }
+          />
         </div>
         <input
           id="curencyDropdownWallet"
           name="curency"
           type="hidden"
-          value="USD"
+          value="DCB"
         />
         <i
           className="Wallet-curencyIcon-8"
@@ -57,36 +58,36 @@ exports[`renders correctly 1`] = `
       className="Wallet-walletNav-10"
     >
       <li>
-        <a
+        <div
           className="Wallet-walletNavItem-11"
-          href="/"
+          onClick={[Function]}
         >
-          Send Money
-        </a>
+          DCB
+        </div>
       </li>
       <li>
-        <a
+        <div
           className="Wallet-walletNavItem-11"
-          href="/"
+          onClick={[Function]}
         >
-          Tranfer Money
-        </a>
+          USD
+        </div>
       </li>
       <li>
-        <a
+        <div
           className="Wallet-walletNavItem-11"
-          href="/"
+          onClick={[Function]}
         >
-          Invoice
-        </a>
+          EUR
+        </div>
       </li>
       <li>
-        <a
+        <div
           className="Wallet-walletNavItem-11"
-          href="/"
+          onClick={[Function]}
         >
-          Cashout
-        </a>
+          CPT
+        </div>
       </li>
     </ul>
   </div>
@@ -97,37 +98,36 @@ exports[`renders correctly 1`] = `
       className="Action-actionsStatistics-54"
     >
       <span
-        className="Action-statisticsTitle-56"
+        className="Action-statisticsTitle-57"
       >
         Statistics
       </span>
-      <div>
-        <canvas
-          height="90"
-          id="cvs"
-          width="200"
-        >
-          [No canvas support]
-        </canvas>
+      <div
+        className="Action-statisticsGraph-55"
+      >
+        <img
+          alt=""
+          src="graphic.png"
+        />
       </div>
     </div>
     <div
-      className="Action-actionsSend-57"
+      className="Action-actionsSend-58"
     >
       <form
-        className="Action-form-55"
+        className="Action-form-56"
         onSubmit={[Function]}
       >
         <span
-          className="Action-sendTitle-58"
+          className="Action-sendTitle-59"
         >
           Send now
         </span>
         <div
-          className="Action-sendAddress-59"
+          className="Action-sendAddress-60"
         >
           <input
-            className="Action-sendAddressField-60"
+            className="Action-sendAddressField-61"
             onBlur={[Function]}
             onChange={[Function]}
             onDragStart={[Function]}
@@ -140,7 +140,7 @@ exports[`renders correctly 1`] = `
         </div>
         <div>
           <input
-            className="Action-sendAmmountField-61"
+            className="Action-sendAmmountField-62"
             onBlur={[Function]}
             onChange={[Function]}
             onDragStart={[Function]}
@@ -152,7 +152,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <button
-          className="Action-sendBtn-63"
+          className="Action-sendBtn-64"
           type="submit"
         >
           Send money
@@ -160,22 +160,22 @@ exports[`renders correctly 1`] = `
       </form>
     </div>
     <div
-      className="Action-actionsInvoice-65"
+      className="Action-actionsInvoice-66"
     >
       <span
-        className="Action-invoiceTitle-66"
+        className="Action-invoiceTitle-67"
       >
         Invoice
       </span>
       <div>
         <input
-          className="Action-invoiceAmmountField-62"
+          className="Action-invoiceAmmountField-63"
           placeholder="Set ammount you need to receive"
           type="text"
         />
       </div>
       <a
-        className="Action-invoiceBtn-64"
+        className="Action-invoiceBtn-65"
         href="/"
       >
         Generate link

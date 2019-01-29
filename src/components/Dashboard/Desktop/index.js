@@ -48,7 +48,7 @@ Dashboard.propTypes = {
   onSubmit: PropTypes.func,
   addressKey: PropTypes.string,
   handleChangeBalance: PropTypes.func,
-  curencySelectValue: PropTypes.string
+  curencySelectValue: PropTypes.object
 }
 
 export default withStyles(styles)(Dashboard)

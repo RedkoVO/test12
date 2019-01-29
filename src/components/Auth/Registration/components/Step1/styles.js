@@ -29,7 +29,6 @@ export default () => ({
     fontWeight: 400,
     textAlign: 'left',
     alignSelf: 'flex-start',
-    paddingLeft: '25px',
     margin: '15px 0',
     '-ms-align-self': 'flex-start'
   },
@@ -59,6 +58,42 @@ export default () => ({
     textDecoration: 'none'
   },
   step1BtnsRegister: {
+    fontSize: '20px',
+    fontWeight: 700,
+    border: 'none',
+    outline: 'none',
+    backgroundColor: '#6eec7c',
+    color: '#fff',
+    padding: '13px',
+    width: '245px',
+    borderRadius: '23px',
+    marginTop: '50px',
+    cursor: 'pointer',
+
+    '&.disabled': {
+      opacity: '0.5',
+      cursor: 'default'
+    }
+  },
+  step1BtnsGeneration: {
+    fontSize: '20px',
+    fontWeight: 700,
+    border: 'none',
+    outline: 'none',
+    backgroundColor: '#6eec7c',
+    color: '#fff',
+    padding: '13px',
+    width: '245px',
+    borderRadius: '23px',
+    marginTop: '50px',
+    cursor: 'pointer',
+
+    '&.disabled': {
+      opacity: '0.5',
+      cursor: 'default'
+    }
+  },
+  step1BtnsSave: {
     fontSize: '20px',
     fontWeight: 700,
     border: 'none',

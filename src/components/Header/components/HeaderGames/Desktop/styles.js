@@ -42,19 +42,15 @@ export default theme => ({
     color: '#fff',
     textAlign: 'center'
   },
-  gamesUserBallance: {
-    fontSize: '18px',
-    margin: 0,
-    color: '#fff',
-    textAlign: 'center'
-  },
   gamesUserVerification: {
     fontSize: '10px',
-    fontWeight: '500'
-  },
-  gamesUserBallDescr: {
-    fontSize: '10px',
-    fontWeight: '500'
+    fontWeight: '500',
+    color: 'inherit',
+    textDecoration: 'none',
+
+    '&:hover': {
+      textDecoration: 'underline'
+    }
   },
   gamesUserPhoto: {
     height: '50px',

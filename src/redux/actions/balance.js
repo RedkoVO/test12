@@ -3,7 +3,7 @@ import axios from 'axios'
 import {
   GET_ALL_BALANCE_INFO,
   GET_WORK,
-  GET_INCOMING,
+  POST_PENDING,
   SEND_MONEY
 } from './types'
 import gC from '../../constants'
@@ -104,9 +104,9 @@ export const createGetWorkSuccess = data => {
 }
 /* ********** */
 
-/* GET INCOMING */
+/* POST PENDING */
 /*TODO: rename Incoming to addressPending */
-export const getIncoming = data => {
+export const postPending = data => {
   data.action = 'addressPending'
 
   return dispatch => {
@@ -117,22 +117,22 @@ export const getIncoming = data => {
         'Content-Type': 'application/json'
       },
       data: JSON.stringify(data),
-      url: `${gC.API_URL}/incoming/`
+      url: `${gC.API_URL}/pending/`
     })
       .then(response => {
-        dispatch(createGetIncomingSuccess(response.data))
+        dispatch(createPostPendingSuccess(response.data))
 
         return response.data
       })
       .catch(error => {
-        console.log('GET_INCOMING error', error)
+        console.log('POST_PENDING error', error)
       })
   }
 }
 
-export const createGetIncomingSuccess = data => {
+export const createPostPendingSuccess = data => {
   return {
-    type: GET_INCOMING,
+    type: POST_PENDING,
     payload: {
       blocks: data.blocks
     }

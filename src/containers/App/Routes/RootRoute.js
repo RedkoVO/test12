@@ -27,8 +27,6 @@ import AsyncSettings from '../../../containers/Settings/AsyncSettings'
 const RootRoute = props => {
   const { location, secretKey } = props
 
-  // console.log('Route', secretKey)
-
   return (
     <Switch location={location}>
       {secretKey ? (
@@ -67,9 +65,7 @@ const RootRoute = props => {
 
       {secretKey && <RoutePage path={`/wallet`} component={AsyncWallet} />}
 
-      {secretKey && (
-        <RoutePage path={`/`} component={AsyncDashboard} />
-      )}
+      {secretKey && <RoutePage path={`/`} component={AsyncDashboard} />}
       <Redirect to="/" />
     </Switch>
   )

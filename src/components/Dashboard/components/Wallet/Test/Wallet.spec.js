@@ -33,7 +33,7 @@ it('renders correctly', () => {
             onSubmit={() => {}}
             handleChangeBalance={() => {}}
             allBalanceResult={allBalanceResultMock}
-            curencySelectValue={'USD'}
+            curencySelectValue={{ currency: 'DCB', code: 0 }}
             isDisabledButton={false}
           />
         </Wrapper>

@@ -1,7 +1,7 @@
 import {
   GET_ALL_BALANCE_INFO,
   GET_WORK,
-  GET_INCOMING,
+  POST_PENDING,
   SEND_MONEY
 } from '../actions/types'
 
@@ -24,10 +24,10 @@ const balance = (state = {}, action) => {
           success: payload.success
         }
       }
-    case GET_INCOMING:
+    case POST_PENDING:
       return {
         ...state,
-        getIncomingResponse: {
+        postPending: {
           blocks: payload.blocks
         }
       }

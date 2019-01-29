@@ -67,7 +67,10 @@ export const receiveFromFaucet = async (
 
     //update last block and balance if all good
     if (gateResponse.data.success) {
-      currencyInfoUpdate(currency, gateResponse.data.result.hash)
+      const hash = gateResponse.data.result.hash
+      const balance = currencyInfo[currency].balance.plus(amount)
+
+      currencyInfoUpdate(currency, hash, balance)
     }
     return gateResponse
   } catch (error) {

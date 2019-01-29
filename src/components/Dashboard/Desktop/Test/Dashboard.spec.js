@@ -177,7 +177,7 @@ it('renders correctly', () => {
               onSubmit={() => {}}
               isDisabledButton={false}
               allBalance={dataAllBalance}
-              curencySelectValue={'USD'}
+              curencySelectValue={{ currency: 'DCB', code: 0 }}
               handleChangeBalance={() => {}}
             />
           </Wrapper>

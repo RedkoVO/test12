@@ -307,41 +307,31 @@ function accountFromSecret(secretKey) {
  * Signing functions
  */
 
-const STATE_BLOCK_PREAMBLE_STR =
-  '0000000000000000000000000000000000000000000000000000000000000006'
-const STATE_BLOCK_PREAMBLE = toUint8(STATE_BLOCK_PREAMBLE_STR)
-
-// acc = {
-//     publicKey: '01C35B728B16E78193D064389532E73EDC13A2696CBF787551AFFD1CDF89C806',
-//     secretKey: 'B8F750325DB4B73C85CFEE42A3DB10D1F10258FAE87EE54A0EA3B5CC3E4203F0',
-//     address: 'dcb_11g5dfsap7q9i8bx1s3rknsgghpw4gj8ku7zh3to5dzx5mhrmk18njfp7e8j',
-//     representative: 'dcb_1dcbabuebyrdidjti9sy414da86qa47k5snqo44g54qs86994u6gnpjxm7ga',
-//     lastBlock: 'CCE2427153AA9A52198B53F1E4690A56CE4358375C79CE93CC20C58BF8CA51A3',
-//     balance: new BigNumber('340282366920938463463374607431768211455'),
-//   }
-
 function formSendBlock(account, toAddress, amount, work, currencyInfo) {
   // TODO check amount < balance
 
   // calc new balance
   const newBalance = currencyInfo.balance.minus(amount)
-  const newBalance10 = newBalance.toString(10)
-  console.log(newBalance10)
   let newBalance16 = newBalance.toString(16)
   while (newBalance16.length < 32) newBalance16 = '0' + newBalance16 // Left pad with 0's
 
+  const typeBytes = new Uint8Array([1]) // send = 1, receive = 2
+  const currBytes = new Uint8Array([
+    currencyInfo.code & 255,
+    currencyInfo.code >> 8
+  ])
+
   // calc hash of block data
   const context = blake.blake2bInit(32, null)
-  blake.blake2bUpdate(context, STATE_BLOCK_PREAMBLE)
+  blake.blake2bUpdate(context, typeBytes)
   blake.blake2bUpdate(context, toUint8(account.publicKey))
   blake.blake2bUpdate(context, toUint8(currencyInfo.lastBlock))
-  // blake.blake2bUpdate(
-  //   context,
-  //   toUint8(getAccountPublicKey(account.representative))
-  // )
+  blake.blake2bUpdate(context, currBytes)
   blake.blake2bUpdate(context, toUint8(newBalance16))
   blake.blake2bUpdate(context, toUint8(getAccountPublicKey(toAddress)))
   const hashBytes = blake.blake2bFinal(context)
+
+  console.log(fromUint8(hashBytes))
 
   // calc signature
   const signed = nacl.sign.detached(hashBytes, toUint8(account.secretKey))
@@ -351,8 +341,6 @@ function formSendBlock(account, toAddress, amount, work, currencyInfo) {
     type: 'send',
     creator: account.address,
     previous: currencyInfo.lastBlock,
-    // representative: account.representative,
-    balance: newBalance10,
     amount: amount.toString(10),
     link: getAccountPublicKey(toAddress),
     work: work,
@@ -362,17 +350,36 @@ function formSendBlock(account, toAddress, amount, work, currencyInfo) {
   return sendBlock
 }
 
-function formReceiveBlock(account, sourceBlockHash, amount, work, currencyInfo) {
+function formReceiveBlock(
+  account,
+  sourceBlockHash,
+  amount,
+  work,
+  currencyInfo
+) {
   // different algo for open blocks
-  let prevBlock = currencyInfo.lastBlock
+  // calc new balance
+  const newBalance = currencyInfo.balance.plus(amount)
+  let newBalance16 = newBalance.toString(16)
+  while (newBalance16.length < 32) newBalance16 = '0' + newBalance16 // Left pad with 0's
+
+  const typeBytes = new Uint8Array([2]) // send = 1, receive = 2
+  const currBytes = new Uint8Array([
+    currencyInfo.code & 255,
+    currencyInfo.code >> 8
+  ])
 
   // calc hash of block data
   const context = blake.blake2bInit(32, null)
-  blake.blake2bUpdate(context, STATE_BLOCK_PREAMBLE)
+  blake.blake2bUpdate(context, typeBytes)
   blake.blake2bUpdate(context, toUint8(account.publicKey))
-  blake.blake2bUpdate(context, toUint8(prevBlock))
+  blake.blake2bUpdate(context, toUint8(currencyInfo.lastBlock))
+  blake.blake2bUpdate(context, currBytes)
+  blake.blake2bUpdate(context, toUint8(newBalance16))
   blake.blake2bUpdate(context, toUint8(sourceBlockHash))
   const hashBytes = blake.blake2bFinal(context)
+
+  console.log(fromUint8(hashBytes))
 
   // calc signature
   const signed = nacl.sign.detached(hashBytes, toUint8(account.secretKey))
@@ -383,7 +390,6 @@ function formReceiveBlock(account, sourceBlockHash, amount, work, currencyInfo) 
     previous: currencyInfo.lastBlock,
     currency: currencyInfo.currency,
     amount: amount.toString(10),
-    balance: '0',
     link: sourceBlockHash,
     work: work,
     signature: signature

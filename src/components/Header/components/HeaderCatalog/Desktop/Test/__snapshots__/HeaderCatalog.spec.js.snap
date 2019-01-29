@@ -10,33 +10,24 @@ exports[`renders correctly 1`] = `
     <p
       className="HeaderCatalog-streamUserHello-3"
     >
-       Hello, Ben A 
+      Hello, Ben A 
       <br />
-      <span
-        className="HeaderCatalog-streamUserVerification-5"
+      <a
+        className="HeaderCatalog-streamUserVerification-4"
+        href="/"
+        onClick={[Function]}
       >
-        KYC VERIFICATED
-      </span>
+        KYC VERIFICATION
+      </a>
     </p>
     <div
-      className="HeaderCatalog-streamUserPhoto-7"
+      className="HeaderCatalog-streamUserPhoto-5"
     >
       <img
         alt=""
-        src="user.png"
+        src="user.jpg"
       />
     </div>
-    <p
-      className="HeaderCatalog-streamUserBallance-4"
-    >
-       764.23 DCB 
-      <br />
-      <span
-        className="HeaderCatalog-streamUserBallDescr-6"
-      >
-        YOUR BALANCE
-      </span>
-    </p>
   </div>
 </div>
 `;

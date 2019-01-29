@@ -17,18 +17,18 @@ const Wallet = ({
   addressKey,
   isDisabledButton,
   handleChangeBalance,
-  curencySelectValue = ''
+  curencySelectValue = {}
 }) => (
   <div className={classes.root}>
     <div className={classes.wallet}>
       <div className={classes.walletTitle}>
-        <p>My dcb wallet:</p>
+        <p>My Vault:</p>
       </div>
       <div className={classes.walletAddress}>{addressKey}</div>
       <Select
         className={classes.selectCurency}
-        value={curencySelectValue}
-        onChange={e => handleChangeBalance(e)}
+        value={curencySelectValue.currency ? curencySelectValue.currency : ''}
+        onChange={e => handleChangeBalance(e.target.value)}
         IconComponent={props => (
           <i {...props} className={classes.curencyIcon} />
         )}
@@ -50,24 +50,36 @@ const Wallet = ({
       </Select>
       <ul className={classes.walletNav}>
         <li>
-          <a href="/" className={classes.walletNavItem}>
-            Send Money
-          </a>
+          <div
+            className={classes.walletNavItem}
+            onClick={() => handleChangeBalance('DCB')}
+          >
+            DCB
+          </div>
         </li>
         <li>
-          <a href="/" className={classes.walletNavItem}>
-            Tranfer Money
-          </a>
+          <div
+            className={classes.walletNavItem}
+            onClick={() => handleChangeBalance('USD')}
+          >
+            USD
+          </div>
         </li>
         <li>
-          <a href="/" className={classes.walletNavItem}>
-            Invoice
-          </a>
+          <div
+            className={classes.walletNavItem}
+            onClick={() => handleChangeBalance('EUR')}
+          >
+            EUR
+          </div>
         </li>
         <li>
-          <a href="/" className={classes.walletNavItem}>
-            Cashout
-          </a>
+          <div
+            className={classes.walletNavItem}
+            onClick={() => handleChangeBalance('CPT')}
+          >
+            CPT
+          </div>
         </li>
       </ul>
     </div>
@@ -83,7 +95,7 @@ Wallet.propTypes = {
   addressKey: PropTypes.string,
   isDisabledButton: PropTypes.bool,
   handleChangeBalance: PropTypes.func,
-  curencySelectValue: PropTypes.string
+  curencySelectValue: PropTypes.object
 }
 
 export default withStyles(styles)(Wallet)

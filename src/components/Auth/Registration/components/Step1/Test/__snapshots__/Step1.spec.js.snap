@@ -13,24 +13,23 @@ exports[`renders correctly 1`] = `
     >
       Registration
     </h1>
-    <label
+    <div
       className="Step1-step1Label-4"
-      htmlFor="email"
     >
-      E-mail
-    </label>
-    <input
-      className="Step1-field-5"
-      id="email"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onDragStart={[Function]}
-      onDrop={[Function]}
-      onFocus={[Function]}
-      placeholder="Enter E-mail"
-      type="email"
-      value=""
-    />
+      Vault ID
+    </div>
+    <button
+      className="Step1-step1BtnsRegister-7"
+      onClick={[Function]}
+    >
+      Generate
+    </button>
+    <button
+      className="Step1-step1BtnsRegister-7"
+      onClick={[Function]}
+    >
+      Save key
+    </button>
     <div>
       <a
         className="Step1-step1BtnBack-6"

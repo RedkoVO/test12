@@ -18,7 +18,11 @@ describe('<Authorization />', () => {
         <Provider store={store}>
           <MemoryRouter keyLength={0}>
             <Wrapper>
-              <Authorization onSubmit={() => {}} isDisabledButton={false} />
+              <Authorization
+                onSubmit={() => {}}
+                handleFileDropzone={() => {}}
+                isDisabledButton={false}
+              />
             </Wrapper>
           </MemoryRouter>
         </Provider>
@@ -30,7 +34,11 @@ describe('<Authorization />', () => {
 
   it('HTML: check input #key element', () => {
     const tree = shallow(
-      <Authorization onSubmit={() => {}} isDisabledButton={false} />
+      <Authorization
+        onSubmit={() => {}}
+        handleFileDropzone={() => {}}
+        isDisabledButton={false}
+      />
     )
 
     expect(
@@ -43,19 +51,35 @@ describe('<Authorization />', () => {
 
   it('HTML: check input #key element', () => {
     const tree = shallow(
-      <Authorization onSubmit={() => {}} isDisabledButton={false} />
+      <Authorization
+        onSubmit={() => {}}
+        handleFileDropzone={() => {}}
+        isDisabledButton={false}
+      />
     )
 
     const btnRegistre = tree.dive().find('.Authorization-step1BtnBack-11')
 
-    console.log('---1----', tree.dive().find('h1').debug())
+    console.log(
+      '---1----',
+      tree
+        .dive()
+        .find('h1')
+        .debug()
+    )
 
     btnRegistre.simulate('click')
     // btnRegistre.prop('onClick')()
 
     tree.update()
 
-    console.log('---2----', tree.dive().find('h1').debug())
+    console.log(
+      '---2----',
+      tree
+        .dive()
+        .find('h1')
+        .debug()
+    )
 
     expect(
       tree
@@ -70,7 +94,7 @@ describe('<Authorization />', () => {
   //     <Provider store={store}>
   //       <MemoryRouter keyLength={0}>
   //         <Wrapper>
-  //           <Authorization onSubmit={() => {}} isDisabledButton={false} test />
+  //           <Authorization onSubmit={() => {}} handleFileDropzone={() => {}} isDisabledButton={false} test />
   //         </Wrapper>
   //       </MemoryRouter>
   //     </Provider>

@@ -6,6 +6,8 @@ import cn from 'classnames'
 
 import InputField from '../../../../../App/components/Form/InputField'
 
+import GraphicImg from '../../../../../../assets/images/graphic.png'
+
 import styles from './styles'
 
 const Action = ({ classes, onSubmit, isDisabledButton }) => (
@@ -13,9 +15,10 @@ const Action = ({ classes, onSubmit, isDisabledButton }) => (
     <div className={classes.actionsStatistics}>
       <span className={classes.statisticsTitle}>Statistics</span>
       <div className={classes.statisticsGraph}>
-        <canvas id="cvs" width="200" height="90">
+        {/* <canvas id="cvs" width="200" height="90">
           [No canvas support]
-        </canvas>
+        </canvas> */}
+        <img src={GraphicImg} alt="" />
       </div>
     </div>
     <div className={classes.actionsSend}>

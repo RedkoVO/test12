@@ -13,7 +13,7 @@ import JungleImg2 from '../../assets/images/jungle_game2.png'
 import JungleImg3 from '../../assets/images/jungle_game3.png'
 import JungleImg4 from '../../assets/images/jungle_game4.png'
 import JungleImg5 from '../../assets/images/jungle_game5.png'
-import UserImg from '../../assets/images/user.png'
+import UserImg from '../../assets/images/user.jpg'
 
 /* TODO: TMP solution! */
 const tmpSliderArr = [

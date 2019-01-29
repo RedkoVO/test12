@@ -8,37 +8,36 @@ exports[`renders correctly 1`] = `
     className="Action-actionsStatistics-2"
   >
     <span
-      className="Action-statisticsTitle-4"
+      className="Action-statisticsTitle-5"
     >
       Statistics
     </span>
-    <div>
-      <canvas
-        height="90"
-        id="cvs"
-        width="200"
-      >
-        [No canvas support]
-      </canvas>
+    <div
+      className="Action-statisticsGraph-3"
+    >
+      <img
+        alt=""
+        src="graphic.png"
+      />
     </div>
   </div>
   <div
-    className="Action-actionsSend-5"
+    className="Action-actionsSend-6"
   >
     <form
-      className="Action-form-3"
+      className="Action-form-4"
       onSubmit={[Function]}
     >
       <span
-        className="Action-sendTitle-6"
+        className="Action-sendTitle-7"
       >
         Send now
       </span>
       <div
-        className="Action-sendAddress-7"
+        className="Action-sendAddress-8"
       >
         <input
-          className="Action-sendAddressField-8"
+          className="Action-sendAddressField-9"
           onBlur={[Function]}
           onChange={[Function]}
           onDragStart={[Function]}
@@ -51,7 +50,7 @@ exports[`renders correctly 1`] = `
       </div>
       <div>
         <input
-          className="Action-sendAmmountField-9"
+          className="Action-sendAmmountField-10"
           onBlur={[Function]}
           onChange={[Function]}
           onDragStart={[Function]}
@@ -63,7 +62,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <button
-        className="Action-sendBtn-11"
+        className="Action-sendBtn-12"
         type="submit"
       >
         Send money
@@ -71,22 +70,22 @@ exports[`renders correctly 1`] = `
     </form>
   </div>
   <div
-    className="Action-actionsInvoice-13"
+    className="Action-actionsInvoice-14"
   >
     <span
-      className="Action-invoiceTitle-14"
+      className="Action-invoiceTitle-15"
     >
       Invoice
     </span>
     <div>
       <input
-        className="Action-invoiceAmmountField-10"
+        className="Action-invoiceAmmountField-11"
         placeholder="Set ammount you need to receive"
         type="text"
       />
     </div>
     <a
-      className="Action-invoiceBtn-12"
+      className="Action-invoiceBtn-13"
       href="/"
     >
       Generate link

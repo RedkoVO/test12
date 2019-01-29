@@ -8,18 +8,37 @@ import Step1 from '../components/Step1/AsyncStep1'
 
 import styles from './styles'
 
-const Registration = ({ classes, onSubmit, isDisabledButton }) => (
+const Registration = ({
+  classes,
+  onSubmit,
+  handleGenerateSecretKey,
+  handleSaveSecretKey,
+  generatedKey,
+  isDisabledButton
+}) => (
   <div className={classes.root}>
     <div className={classes.containerRegistrat}>
-      <Step1 onSubmit={onSubmit} isDisabledButton={isDisabledButton} />
+      <Step1
+        onSubmit={onSubmit}
+        handleGenerateSecretKey={handleGenerateSecretKey}
+        handleSaveSecretKey={handleSaveSecretKey}
+        generatedKey={generatedKey}
+        isDisabledButton={isDisabledButton}
+      />
       {/* <Step2 />
       <Step3 /> */}
 
       <div className={classes.footer}>
-        <span className={classes.copyright}>Vault. All Rights Reserved 2018</span>
+        <span className={classes.copyright}>
+          Vault. All Rights Reserved 2018
+        </span>
         <div>
-          <a href="/" className={classes.footerLink}>Privacy Policy</a>
-          <a href="/" className={classes.footerLink}>Terms and conditions</a>
+          <a href="/" className={classes.footerLink}>
+            Privacy Policy
+          </a>
+          <a href="/" className={classes.footerLink}>
+            Terms and conditions
+          </a>
         </div>
       </div>
     </div>
@@ -29,6 +48,9 @@ const Registration = ({ classes, onSubmit, isDisabledButton }) => (
 Registration.propTypes = {
   classNamees: PropTypes.object,
   onSubmit: PropTypes.func,
+  generatedKey: PropTypes.string,
+  handleSaveSecretKey: PropTypes.func,
+  handleGenerateSecretKey: PropTypes.func,
   isDisabledButton: PropTypes.bool
 }
 
