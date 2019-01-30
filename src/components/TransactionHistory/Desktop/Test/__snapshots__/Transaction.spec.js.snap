@@ -2,436 +2,61 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="Transaction-root-1"
+  className="TransactionHistory-root-1"
 >
   <div
-    className="Transaction-transactionsTitle-2"
+    className="TransactionHistory-transactionsTitle-2"
   >
      Transactions
   </div>
   <div
-    className="Transaction-transactionsTable-3"
+    className="TransactionHistory-transactionsTable-3"
   >
     <div
-      className="Transaction-tableHead-6 Transaction-tableRow-5"
+      className="TransactionHistory-tableHead-6 TransactionHistory-tableRow-5"
     >
       <div
-        className="Transaction-tableData-4 Transaction-col1-11"
+        className="TransactionHistory-tableData-4 TransactionHistory-col1-11"
       >
         to address:
       </div>
       <div
-        className="Transaction-tableData-4 Transaction-col2-12"
+        className="TransactionHistory-tableData-4 TransactionHistory-col2-12"
       >
         ammount:
       </div>
       <div
-        className="Transaction-tableData-4 Transaction-col3-13"
+        className="TransactionHistory-tableData-4 TransactionHistory-col3-13"
       >
         status:
       </div>
       <div
-        className="Transaction-tableData-4 Transaction-col4-14"
+        className="TransactionHistory-tableData-4 TransactionHistory-col4-14"
       >
         date/time:
       </div>
     </div>
     <div
-      className="Transaction-tableWrapper-15"
+      className="TransactionHistory-tableWrapper-15"
       id="table-scroll"
       tabIndex="5000"
     >
       <div
-        className="Transaction-tableContentWrap-16"
-      >
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-        <div
-          className="Transaction-tableRow-5"
-        >
-          <div
-            className="Transaction-tableData-4 Transaction-col1-11 Transaction-icon1-7"
-          >
-            <span>
-              0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col2-12 Transaction-icon2-8"
-          >
-            <span>
-              0.1221 DCB
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col3-13 Transaction-icon3-9"
-          >
-            <span>
-              DEMO
-            </span>
-          </div>
-          <div
-            className="Transaction-tableData-4 Transaction-col4-14 Transaction-icon4-10"
-          >
-            <time
-              dateTime="2018-02-12 13:30"
-            >
-              01:30 PM 12.02.2018
-            </time>
-          </div>
-        </div>
-      </div>
+        className="TransactionHistory-tableContentWrap-16"
+      />
     </div>
   </div>
   <div
-    className="Transaction-tableBtns-17"
+    className="TransactionHistory-tableBtns-17"
   >
     <a
-      className="Transaction-receivedBtn-18"
+      className="TransactionHistory-receivedBtn-18"
       href="/"
     >
       Received
     </a>
     <a
-      className="Transaction-sentBtn-19"
+      className="TransactionHistory-sentBtn-19"
       href="/"
     >
       Sent
