@@ -1,8 +1,8 @@
-import TransactionLogo from '../../../../assets/images/svg/transactions.svg'
-import WalletLogo from '../../../../assets/images/svg/wallet.svg'
-import MoneyTransactLogo from '../../../../assets/images/svg/moneyTransact.svg'
-import StatusLogo from '../../../../assets/images/svg/status.svg'
-import TimeLogo from '../../../../assets/images/svg/time.svg'
+import TransactionLogo from '../../../assets/images/svg/transactions.svg'
+import WalletLogo from '../../../assets/images/svg/wallet.svg'
+import MoneyTransactLogo from '../../../assets/images/svg/moneyTransact.svg'
+import StatusLogo from '../../../assets/images/svg/status.svg'
+import TimeLogo from '../../../assets/images/svg/time.svg'
 
 export default theme => ({
   root: {
@@ -206,6 +206,9 @@ export default theme => ({
   },
   col1: {
     width: '48%',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
 
     [theme.breakpoints.down('md')]: {
       flexBasis: '100%'
@@ -217,6 +220,9 @@ export default theme => ({
   col2: {
     width: '15%',
     paddingLeft: '40px',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
 
     [theme.breakpoints.down('md')]: {
       flexBasis: '30%'

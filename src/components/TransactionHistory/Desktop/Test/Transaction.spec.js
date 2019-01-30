@@ -1,7 +1,7 @@
 import * as React from 'react'
 import renderer from 'react-test-renderer'
 
-import Transaction from '../'
+import TransactionHistory from '../'
 
 const data = [
   { id: 1, address: '0x88d50B466BfE55222019D71F9E8fAe17f5f45FCA1', amount: '0.1221 DCB', status: 'DEMO', time: '01:30 PM 12.02.2018' },
@@ -18,6 +18,6 @@ const data = [
 ]
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Transaction transactions={data} />).toJSON()
+  const tree = renderer.create(<TransactionHistory TransactionHistory={data} />).toJSON()
   expect(tree).toMatchSnapshot()
 })

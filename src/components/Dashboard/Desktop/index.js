@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import Transaction from '../components/Transaction'
+import TransactionHistory from '../../../containers/TransactionHistory/AsyncTransactionHistory'
 import BestAd from '../components/BestAd'
 import Categories from '../components/Categories'
 import Wallet from '../components/Wallet'
@@ -11,7 +11,6 @@ import styles from './styles'
 
 const Dashboard = ({
   classes,
-  transactions,
   bestAds,
   gameCategories,
   allBalance,
@@ -31,7 +30,10 @@ const Dashboard = ({
         handleChangeBalance={handleChangeBalance}
         curencySelectValue={curencySelectValue}
       />
-      <Transaction transactions={transactions} />
+      <TransactionHistory
+        addressKey={addressKey}
+        currency={curencySelectValue}
+      />
       <BestAd bestAds={bestAds} />
       <Categories categories={gameCategories} />
     </div>
@@ -40,7 +42,6 @@ const Dashboard = ({
 
 Dashboard.propTypes = {
   classes: PropTypes.object,
-  transactions: PropTypes.array,
   bestAds: PropTypes.array,
   gameCategories: PropTypes.array,
   allBalance: PropTypes.object,

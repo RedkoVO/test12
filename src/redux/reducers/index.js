@@ -4,12 +4,14 @@ import { APP_RESET } from '../actions/types'
 import auth from './auth'
 import balance from './balance'
 import config from './config'
+import history from './history'
 
 const appReducer = combineReducers({
   form,
   auth,
   balance,
-  config
+  config,
+  history
 })
 
 export default (state, action) => {

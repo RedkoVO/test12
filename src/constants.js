@@ -8,5 +8,6 @@ export default {
     MD: 767,
     SM: 480,
     XS: 0
-  }
+  },
+  TRANSACTION_HISTORY_LIMIT: 20
 }
