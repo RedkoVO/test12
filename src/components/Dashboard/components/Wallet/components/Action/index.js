@@ -6,25 +6,25 @@ import cn from 'classnames'
 
 import InputField from '../../../../../App/components/Form/InputField'
 
-import GraphicImg from '../../../../../../assets/images/graphic.png'
+// import GraphicImg from '../../../../../../assets/images/graphic.png'
 
 import styles from './styles'
 
 const Action = ({ classes, onSubmit, isDisabledButton }) => (
   <div className={classes.root}>
-    <div className={classes.actionsStatistics}>
+    {/* <div className={classes.actionsStatistics}>
       <span className={classes.statisticsTitle}>Statistics</span>
       <div className={classes.statisticsGraph}>
-        {/* <canvas id="cvs" width="200" height="90">
-          [No canvas support]
-        </canvas> */}
         <img src={GraphicImg} alt="" />
       </div>
-    </div>
+    </div> */}
     <div className={classes.actionsSend}>
       <Form className={classes.form} onSubmit={onSubmit}>
         <span className={classes.sendTitle}>Send now</span>
-        <div className={classes.sendAddress}>
+        <div className={classes.wrSendField}>
+          <label htmlFor="addressKey" className={classes.actionLabel}>
+            Address:
+          </label>
           <Field
             name="addressKey"
             type="text"
@@ -33,7 +33,10 @@ const Action = ({ classes, onSubmit, isDisabledButton }) => (
             placeholder="Put address you want to send the money"
           />
         </div>
-        <div className={classes.sendAmmount}>
+        <div className={classes.wrSendField}>
+          <label htmlFor="amount" className={classes.actionLabel}>
+            Amount:
+          </label>
           <Field
             name="amount"
             type="text"
@@ -42,15 +45,33 @@ const Action = ({ classes, onSubmit, isDisabledButton }) => (
             placeholder="Set ammount"
           />
         </div>
-        <button type="submit" className={cn(classes.sendBtn, { disabled: isDisabledButton })}>Send money</button>
+        <button
+          type="submit"
+          className={cn(classes.sendBtn, { disabled: isDisabledButton })}
+        >
+          Send money
+        </button>
       </Form>
     </div>
     <div className={classes.actionsInvoice}>
       <span className={classes.invoiceTitle}>Invoice</span>
-      <div className={classes.invoiceAmmount}>
-        <input type="text" className={classes.invoiceAmmountField} placeholder="Set ammount you need to receive" />
+      <div className={classes.wrSendField}>
+        <label htmlFor="invoice" className={classes.actionLabel}>
+          Email:
+        </label>
+        <input
+          name="invoice"
+          type="text"
+          className={classes.invoiceAmmountField}
+          placeholder="Set ammount you need to receive"
+        />
       </div>
-      <a href="/" className={classes.invoiceBtn}>Generate link</a>
+      <button
+          type="submit"
+          className={cn(classes.sendBtn, { disabled: isDisabledButton })}
+        >
+          Send Invoice
+        </button>
     </div>
   </div>
 )

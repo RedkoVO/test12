@@ -17,8 +17,11 @@ export default compose(
     form: FORM_NAME,
     validate
   }),
-  withState('isDisabledButton', 'setDisabledButton', false),
-  withState('generatedKey', 'setGeneratedKey', ''),
+  withState(
+    'generatedKey',
+    'setGeneratedKey',
+    Crypto.account.generateNewAccount().secretKey
+  ),
   withHandlers({
     handleGenerateSecretKey: ({ setGeneratedKey }) => () => {
       setGeneratedKey(Crypto.account.generateNewAccount().secretKey)
@@ -33,12 +36,9 @@ export default compose(
       // dispatch,
       // history,
       // setDisabledButton,
-      // isDisabledButton
     }) =>
       handleSubmit(variables => {
         // const data = { email: variables.email }
-        // if (!isDisabledButton) {
-        //   setDisabledButton(!isDisabledButton)
         //   dispatch(registrationEmail(data))
         //     .then(res => {
         //       if (res.success) history.push('/confirmation-email')
@@ -47,7 +47,6 @@ export default compose(
         //     .catch(err => {
         //       console.log('err registration:', err)
         //     })
-        // }
       })
   })
 )(AsyncRegistrationDesktop)

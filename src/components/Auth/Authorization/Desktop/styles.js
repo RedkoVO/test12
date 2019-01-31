@@ -70,7 +70,6 @@ export default () => ({
   registrStep1: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'rgba(255,255,255,.38)',
@@ -91,7 +90,6 @@ export default () => ({
     alignSelf: 'flex-start',
     paddingLeft: '25px',
     margin: '15px 0',
-    '-ms-align-self': 'flex-start'
   },
   field: {
     height: '46px',

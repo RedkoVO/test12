@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
+import { NavHashLink as NavLink } from 'react-router-hash-link'
 import cn from 'classnames'
 import withStyles from '@material-ui/core/styles/withStyles'
 
@@ -15,40 +16,83 @@ const MenuNavigation = ({ classes, page, handleLogout }) => (
       </div>
     </li>
     <li>
-      <Link to={'/'} className={classes.headerMenuItem}>
-        <i className={cn(classes.menuIcon, classes.dashboard)} />
-        <br /> Dashboard
-      </Link>
-    </li>
-    <li>
-      <Link to={'/'} className={classes.headerMenuItem}>
+      <NavLink
+        exact
+        smooth
+        to={'/'}
+        className={classes.headerMenuItem}
+        activeClassName="active"
+        location={{
+          pathname: document.location.pathname + document.location.hash
+        }}
+      >
         <i className={cn(classes.menuIcon, classes.walletIcon)} />
         <br /> Wallet
-      </Link>
+      </NavLink>
     </li>
     <li>
-      <Link to={'/'} className={classes.headerMenuItem}>
-        <i className={cn(classes.menuIcon, classes.shop)} />
-        <br /> Shop
-      </Link>
-    </li>
-    <li>
-      <Link to={'/games'} className={classes.headerMenuItem}>
+      <NavLink
+        to={'/games'}
+        className={classes.headerMenuItem}
+        activeClassName="active"
+      >
         <i className={cn(classes.menuIcon, classes.games)} />
         <br /> Games
-      </Link>
+      </NavLink>
     </li>
     <li>
-      <Link to={'/'} className={classes.headerMenuItem}>
+      <NavLink
+        to={'/#apps'}
+        className={classes.headerMenuItem}
+        activeClassName="active"
+        location={{
+          pathname: document.location.pathname + document.location.hash
+        }}
+      >
+        <i className={cn(classes.menuIcon, classes.shop)} />
+        <br /> Apps
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        smooth
+        to={'/#shop'}
+        className={classes.headerMenuItem}
+        activeClassName="active"
+        location={{
+          pathname: document.location.pathname + document.location.hash
+        }}
+      >
+        <i className={cn(classes.menuIcon, classes.shop)} />
+        <br /> Shop
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        smooth
+        to={'/#contacts'}
+        className={classes.headerMenuItem}
+        activeClassName="active"
+        location={{
+          pathname: document.location.pathname + document.location.hash
+        }}
+      >
         <i className={cn(classes.menuIcon, classes.friends)} />
-        <br /> Friends
-      </Link>
+        <br /> Contacts
+      </NavLink>
     </li>
     <li>
-      <Link to={'/'} className={classes.headerMenuItem}>
+      <NavLink
+        to={'/#setting'}
+        className={classes.headerMenuItem}
+        activeClassName="active"
+        location={{
+          pathname: document.location.pathname + document.location.hash
+        }}
+      >
         <i className={cn(classes.menuIcon, classes.settings)} />
         <br /> Settings
-      </Link>
+      </NavLink>
     </li>
   </ul>
 )

@@ -4,13 +4,11 @@ export default () => ({
     minHeight: 'inherit',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
-    '-ms-align-items': 'center'
+    justifyContent: 'center'
   },
   registrStep1: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'rgba(255,255,255,.38)',
@@ -29,8 +27,7 @@ export default () => ({
     fontWeight: 400,
     textAlign: 'left',
     alignSelf: 'flex-start',
-    margin: '15px 0',
-    '-ms-align-self': 'flex-start'
+    margin: '15px 0'
   },
   field: {
     height: '46px',
@@ -41,6 +38,16 @@ export default () => ({
     paddingLeft: '25px',
     boxSizing: 'border-box',
     backgroundColor: 'rgba(	255, 255, 255, 0.61)'
+  },
+  wrKey: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  refresh: {
+    width: '20px',
+    height: '20px',
+    marginLeft: '10px',
+    cursor: 'pointer'
   },
   step1BtnBack: {
     fontSize: '20px',
@@ -57,7 +64,10 @@ export default () => ({
     cursor: 'pointer',
     textDecoration: 'none'
   },
-  step1BtnsRegister: {
+  step1BtnsFinish: {
+    display: 'inline-block',
+    textAlign: 'center',
+    textDecoration: 'none',
     fontSize: '20px',
     fontWeight: 700,
     border: 'none',
@@ -68,12 +78,7 @@ export default () => ({
     width: '245px',
     borderRadius: '23px',
     marginTop: '50px',
-    cursor: 'pointer',
-
-    '&.disabled': {
-      opacity: '0.5',
-      cursor: 'default'
-    }
+    cursor: 'pointer'
   },
   step1BtnsGeneration: {
     fontSize: '20px',

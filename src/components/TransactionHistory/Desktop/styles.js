@@ -8,7 +8,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     paddingTop: '60px',
     boxSizing: 'border-box',
@@ -50,7 +49,6 @@ export default theme => ({
     height: '135px',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     marginBottom: '11px',
 
@@ -75,7 +73,6 @@ export default theme => ({
   tableRow: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: '#e3e3e3',
@@ -105,7 +102,6 @@ export default theme => ({
     }
   },
   tableHead: {
-    '-ms-align-items': 'flex-end',
     alignItems: 'flex-end',
     paddingBottom: '5px',
     marginBottom: 0,
@@ -164,6 +160,13 @@ export default theme => ({
   },
   icon3: {
     position: 'relative',
+
+    '&.send': {
+      color: 'red'
+    },
+    '&.receive': {
+      color: 'green'
+    },
 
     '&::before': {
       position: 'absolute',
@@ -255,7 +258,6 @@ export default theme => ({
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     overflow: 'scroll',
     overflowX: 'hidden',
@@ -268,7 +270,6 @@ export default theme => ({
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     paddingRight: '20px',
     boxSizing: 'border-box',
 
@@ -276,13 +277,13 @@ export default theme => ({
       paddingRight: '5px'
     }
   },
-  tableBtns: {
+  wrTableBtns: {
     display: 'flex',
     height: '31px',
     boxSizing: 'border-box',
     marginTop: '10px'
   },
-  receivedBtn: {
+  moreButton: {
     display: 'block',
     fontSize: '12px',
     fontWeight: 700,
@@ -290,18 +291,10 @@ export default theme => ({
     color: '#f0f0f0',
     backgroundColor: '#5e7cff',
     padding: '9px 40px 9px 30px',
-    borderBottomLeftRadius: '15px',
-    borderTopLeftRadius: '15px'
-  },
-  sentBtn: {
-    display: 'block',
-    fontSize: '12px',
-    fontWeight: 700,
-    textDecoration: 'none',
-    color: '#f0f0f0',
-    backgroundColor: '#5e7cff',
-    padding: '9px 40px',
-    borderBottomRightRadius: '15px',
-    borderTopRightRadius: '15px'
+    borderRadius: '15px',
+
+    '&:focus': {
+      outline: 'none'
+    }
   }
 })

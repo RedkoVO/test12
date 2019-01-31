@@ -22,7 +22,7 @@ const Wallet = ({
   <div className={classes.root}>
     <div className={classes.wallet}>
       <div className={classes.walletTitle}>
-        <p>My Vault:</p>
+        <p>My Address:</p>
       </div>
       <div className={classes.walletAddress}>{addressKey}</div>
       <Select

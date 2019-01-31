@@ -7,10 +7,10 @@ import secretKey from '../../../hocs/withSecretKey'
 
 import RoutePage from '../../../components/App/components/Routes/RoutePage'
 import AsyncAuthorization from '../../../containers/Auth/Authorization/AsyncAuthorization'
+import AsyncFinishRegistration from '../../../containers/Auth/FinishRegistration/AsyncFinishRegistration'
 import AsyncRegistration from '../../../containers/Auth/Registration/AsyncRegistration'
 import AsyncConfirmEmail from '../../../containers/Auth/ConfirmEmail/AsyncConfirmEmail'
 import AsyncDashboard from '../../../containers/Dashboard/AsyncDashboard'
-import AsyncWallet from '../../../containers/Wallet/AsyncWallet'
 import AsyncShop from '../../../containers/Shop/AsyncShop'
 import AsyncGames from '../../../containers/Games/AsyncGames'
 import AsyncGame from '../../../containers/Game/AsyncGame'
@@ -38,6 +38,13 @@ const RootRoute = props => {
       {!secretKey && <Route path={`/login`} component={AsyncAuthorization} />}
 
       {!secretKey && (
+        <Route
+          path={`/finish-registration`}
+          component={AsyncFinishRegistration}
+        />
+      )}
+
+      {!secretKey && (
         <Route path={`/registration`} component={AsyncRegistration} />
       )}
 
@@ -63,9 +70,8 @@ const RootRoute = props => {
 
       {secretKey && <RoutePage path={`/shop`} component={AsyncShop} />}
 
-      {secretKey && <RoutePage path={`/wallet`} component={AsyncWallet} />}
-
       {secretKey && <RoutePage path={`/`} component={AsyncDashboard} />}
+
       <Redirect to="/" />
     </Switch>
   )

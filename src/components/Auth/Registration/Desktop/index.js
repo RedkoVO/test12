@@ -13,8 +13,7 @@ const Registration = ({
   onSubmit,
   handleGenerateSecretKey,
   handleSaveSecretKey,
-  generatedKey,
-  isDisabledButton
+  generatedKey
 }) => (
   <div className={classes.root}>
     <div className={classes.containerRegistrat}>
@@ -23,7 +22,6 @@ const Registration = ({
         handleGenerateSecretKey={handleGenerateSecretKey}
         handleSaveSecretKey={handleSaveSecretKey}
         generatedKey={generatedKey}
-        isDisabledButton={isDisabledButton}
       />
       {/* <Step2 />
       <Step3 /> */}
@@ -50,8 +48,7 @@ Registration.propTypes = {
   onSubmit: PropTypes.func,
   generatedKey: PropTypes.string,
   handleSaveSecretKey: PropTypes.func,
-  handleGenerateSecretKey: PropTypes.func,
-  isDisabledButton: PropTypes.bool
+  handleGenerateSecretKey: PropTypes.func
 }
 
 export default withStyles(styles)(Registration)

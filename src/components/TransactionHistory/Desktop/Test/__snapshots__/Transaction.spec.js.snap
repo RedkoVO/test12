@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
       <div
         className="TransactionHistory-tableData-4 TransactionHistory-col1-11"
       >
-        to address:
+        address:
       </div>
       <div
         className="TransactionHistory-tableData-4 TransactionHistory-col2-12"
@@ -29,11 +29,6 @@ exports[`renders correctly 1`] = `
         className="TransactionHistory-tableData-4 TransactionHistory-col3-13"
       >
         status:
-      </div>
-      <div
-        className="TransactionHistory-tableData-4 TransactionHistory-col4-14"
-      >
-        date/time:
       </div>
     </div>
     <div
@@ -47,20 +42,13 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="TransactionHistory-tableBtns-17"
+    className="TransactionHistory-wrTableBtns-17"
   >
-    <a
-      className="TransactionHistory-receivedBtn-18"
-      href="/"
+    <button
+      className="TransactionHistory-moreButton-18"
     >
-      Received
-    </a>
-    <a
-      className="TransactionHistory-sentBtn-19"
-      href="/"
-    >
-      Sent
-    </a>
+      More 10 transaction
+    </button>
   </div>
 </div>
 `;

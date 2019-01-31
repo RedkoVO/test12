@@ -5,16 +5,15 @@ import MoneyLogo from '../../../../../../assets/images/svg/money.svg'
 export default theme => ({
   root: {
     width: '870px',
-    height: '230px',
+    height: '256px',
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    '-ms-align-items': 'flex-end',
-    alignItems: 'flex-end',
+    justifyContent: 'space-around',
+    paddingTop: '45px',
 
     [theme.breakpoints.down('lg')]: {
       width: '100%',
-      justifyContent: 'center',
+      justifyContent: 'space-around',
       flexWrap: 'wrap'
     },
     [theme.breakpoints.down('sm')]: {
@@ -22,14 +21,13 @@ export default theme => ({
     },
     [theme.breakpoints.down('xs')]: {
       height: '100%'
-    },
+    }
   },
   actionsStatistics: {
     width: '260px',
     height: '160px',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
 
     [theme.breakpoints.down('lg')]: {
@@ -73,7 +71,7 @@ export default theme => ({
   },
   actionsSend: {
     width: '260px',
-    height: '160px',
+    height: '226px',
     display: 'flex',
     flexDirection: 'column',
     '-ms-align-items': 'center',
@@ -105,8 +103,11 @@ export default theme => ({
       backgroundPosition: 'center'
     }
   },
-  sendAddress: {
-    marginTop: '20px',
+  wrSendField: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    flexDirection: 'column',
+    marginTop: '20px'
   },
   sendAddressField: {
     width: '210px',
@@ -204,7 +205,6 @@ export default theme => ({
     fontWeight: 700,
     color: '#5e7cff',
     textAlign: 'center',
-    marginBottom: '30px',
 
     '&::before': {
       position: 'absolute',

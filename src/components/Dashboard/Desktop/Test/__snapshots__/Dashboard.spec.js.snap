@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
           className="Wallet-walletTitle-4"
         >
           <p>
-            My Vault:
+            My Address:
           </p>
         </div>
         <div
@@ -100,23 +100,6 @@ exports[`renders correctly 1`] = `
         className="Action-root-54"
       >
         <div
-          className="Action-actionsStatistics-55"
-        >
-          <span
-            className="Action-statisticsTitle-58"
-          >
-            Statistics
-          </span>
-          <div
-            className="Action-statisticsGraph-56"
-          >
-            <img
-              alt=""
-              src="graphic.png"
-            />
-          </div>
-        </div>
-        <div
           className="Action-actionsSend-59"
         >
           <form
@@ -129,8 +112,13 @@ exports[`renders correctly 1`] = `
               Send now
             </span>
             <div
-              className="Action-sendAddress-61"
+              className="Action-wrSendField-61"
             >
+              <label
+                htmlFor="addressKey"
+              >
+                Address:
+              </label>
               <input
                 className="Action-sendAddressField-62"
                 onBlur={[Function]}
@@ -143,7 +131,14 @@ exports[`renders correctly 1`] = `
                 value=""
               />
             </div>
-            <div>
+            <div
+              className="Action-wrSendField-61"
+            >
+              <label
+                htmlFor="amount"
+              >
+                Amount:
+              </label>
               <input
                 className="Action-sendAmmountField-63"
                 onBlur={[Function]}
@@ -172,19 +167,27 @@ exports[`renders correctly 1`] = `
           >
             Invoice
           </span>
-          <div>
+          <div
+            className="Action-wrSendField-61"
+          >
+            <label
+              htmlFor="invoice"
+            >
+              Email:
+            </label>
             <input
               className="Action-invoiceAmmountField-64"
+              name="invoice"
               placeholder="Set ammount you need to receive"
               type="text"
             />
           </div>
-          <a
-            className="Action-invoiceBtn-66"
-            href="/"
+          <button
+            className="Action-sendBtn-65"
+            type="submit"
           >
-            Generate link
-          </a>
+            Send Invoice
+          </button>
         </div>
       </div>
     </div>

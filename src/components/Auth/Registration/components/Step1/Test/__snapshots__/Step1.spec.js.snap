@@ -18,33 +18,38 @@ exports[`renders correctly 1`] = `
     >
       Vault ID:
     </div>
-    0000000000000000000000000000000000000000000000000000000000000000
-    <button
-      className="Step1-step1BtnsGeneration-8"
-      onClick={[Function]}
+    <div
+      className="Step1-wrKey-6"
     >
-      Generate
-    </button>
+      0000000000000000000000000000000000000000000000000000000000000000
+      <img
+        alt=""
+        className="Step1-refresh-7"
+        onClick={[Function]}
+        src="refresh.png"
+      />
+    </div>
     <button
-      className="Step1-step1BtnsSave-9"
+      className="Step1-step1BtnsSave-11"
       onClick={[Function]}
     >
       Save key
     </button>
     <div>
       <a
-        className="Step1-step1BtnBack-6"
+        className="Step1-step1BtnBack-8"
         href="/login"
         onClick={[Function]}
       >
         Login
       </a>
-      <button
-        className="Step1-step1BtnsRegister-7"
-        type="submit"
+      <a
+        className="Step1-step1BtnsFinish-9"
+        href="/finish-registration"
+        onClick={[Function]}
       >
-        Register!
-      </button>
+        Finish!
+      </a>
     </div>
   </form>
 </div>

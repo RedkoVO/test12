@@ -7,7 +7,7 @@ import SettingsLogo from '../../../../assets/images/svg/settings.svg'
 
 export default theme => ({
   root: {
-    position: 'absolute',
+    position: 'fixed',
     left: 0,
     top: 0,
     display: 'flex',
@@ -85,7 +85,6 @@ export default theme => ({
   headerMenuItem: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     width: '100%',
     height: '100%',
@@ -98,6 +97,13 @@ export default theme => ({
     verticalAlign: 'bottom',
 
     '&:hover, &:active': {
+      '& i': {
+        boxShadow: '0px 0px 15px 6px  rgba(0, 0, 0, .6) inset',
+        backgroundColor: 'rgba(255,255,255,0.5)'
+      }
+    },
+
+    '&.active': {
       '& i': {
         boxShadow: '0px 0px 15px 6px  rgba(0, 0, 0, .6) inset',
         backgroundColor: 'rgba(255,255,255,0.5)'
