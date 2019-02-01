@@ -1,6 +1,8 @@
-import DashboardLogo from '../../../../assets/images/svg/wallet.svg'
+import LogoutLogo from '../../../../assets/images/logout.png'
 import WalletLogo from '../../../../assets/images/svg/wallet.svg'
+import VexchangeLogo from '../../../../assets/images/svg/vexchange.svg'
 import ShopdLogo from '../../../../assets/images/svg/shopBag.svg'
+import AppsLogo from '../../../../assets/images/app.png'
 import PlayLogo from '../../../../assets/images/svg/play.svg'
 import SocialLogo from '../../../../assets/images/svg/social.svg'
 import SettingsLogo from '../../../../assets/images/svg/settings.svg'
@@ -15,7 +17,7 @@ export default theme => ({
     justifyContent: 'flex-end',
     listStyleType: 'none',
     width: '65px',
-    height: '535px',
+    height: '600px',
     backgroundColor: '#f5f5f5',
     margin: 0,
     padding: 0,
@@ -114,20 +116,35 @@ export default theme => ({
       width: '40px'
     }
   },
+  wrLogout: {
+    cursor: 'pointer'
+  },
   menuIcon: {
     display: 'block',
     minHeight: '35px',
     width: '35px',
     borderRadius: '5px'
   },
-  dashboard: {
-    backgroundImage: `url(${DashboardLogo})`,
+  logout: {
+    backgroundImage: `url(${LogoutLogo})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '17px 17px',
     backgroundPosition: 'center'
   },
   walletIcon: {
     backgroundImage: `url(${WalletLogo})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '17px 17px',
+    backgroundPosition: 'center'
+  },
+  vexchange: {
+    backgroundImage: `url(${VexchangeLogo})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '17px 17px',
+    backgroundPosition: 'center'
+  },
+  apps: {
+    backgroundImage: `url(${AppsLogo})`, //
     backgroundRepeat: 'no-repeat',
     backgroundSize: '17px 17px',
     backgroundPosition: 'center'
@@ -155,10 +172,5 @@ export default theme => ({
     backgroundRepeat: 'no-repeat',
     backgroundSize: '25px',
     backgroundPosition: 'center'
-  },
-  logout: {
-    cursor: 'pointer',
-    display: 'block',
-    textAlign: 'center'
   }
 })

@@ -1,92 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="BestAd-root-1"
+<section
+  id="shops"
 >
   <div
-    className="BestAd-bestItem-2"
+    className="BestAd-bestTitle-4"
   >
-    <div
-      className="BestAd-titleWrap-3"
-    >
-      <a
-        className="BestAd-bestTitle-4"
-        href="/"
-        onClick={[Function]}
-      >
-        Games
-      </a>
-    </div>
-    <div
-      className="BestAd-bestContent-5"
-    >
-      <a
-        className="BestAd-bestImg-6"
-        href="/"
-        onClick={[Function]}
-      >
-        <img
-          alt=""
-          className="BestAd-bestItemImg-7"
-          src="best-game.png"
-        />
-      </a>
-      <a
-        className="BestAd-bestLink-8"
-        href="/"
-        onClick={[Function]}
-      >
-        Game of the day
-        : 
-        <br />
-        <span>
-          Smash Champs
-        </span>
-      </a>
-    </div>
+    Shops
   </div>
   <div
-    className="BestAd-bestItem-2"
+    className="BestAd-root-1"
   >
     <div
-      className="BestAd-titleWrap-3"
+      className="BestAd-bestItem-2"
     >
-      <a
-        className="BestAd-bestTitle-4"
-        href="/"
-        onClick={[Function]}
+      <div
+        className="BestAd-titleWrap-3"
       >
-        Shop
-      </a>
+        <a
+          className="BestAd-bestTitle-4"
+          href="/"
+          onClick={[Function]}
+        >
+          Games
+        </a>
+      </div>
+      <div
+        className="BestAd-bestContent-5"
+      >
+        <a
+          className="BestAd-bestImg-6"
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            className="BestAd-bestItemImg-7"
+            src="best-game.png"
+          />
+        </a>
+        <a
+          className="BestAd-bestLink-8"
+          href="/"
+          onClick={[Function]}
+        >
+          Game of the day
+          : 
+          <br />
+          <span>
+            Smash Champs
+          </span>
+        </a>
+      </div>
     </div>
     <div
-      className="BestAd-bestContent-5"
+      className="BestAd-bestItem-2"
     >
-      <a
-        className="BestAd-bestImg-6"
-        href="/"
-        onClick={[Function]}
+      <div
+        className="BestAd-titleWrap-3"
       >
-        <img
-          alt=""
-          className="BestAd-bestItemImg-7"
-          src="best-game.png"
-        />
-      </a>
-      <a
-        className="BestAd-bestLink-8"
-        href="/"
-        onClick={[Function]}
+        <a
+          className="BestAd-bestTitle-4"
+          href="/"
+          onClick={[Function]}
+        >
+          Shop
+        </a>
+      </div>
+      <div
+        className="BestAd-bestContent-5"
       >
-        Product of the day
-        : 
-        <br />
-        <span>
-          Blue cool Jelly
-        </span>
-      </a>
+        <a
+          className="BestAd-bestImg-6"
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            className="BestAd-bestItemImg-7"
+            src="best-game.png"
+          />
+        </a>
+        <a
+          className="BestAd-bestLink-8"
+          href="/"
+          onClick={[Function]}
+        >
+          Product of the day
+          : 
+          <br />
+          <span>
+            Blue cool Jelly
+          </span>
+        </a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 `;

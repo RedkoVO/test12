@@ -42,7 +42,14 @@ export default theme => ({
       margin: '30px 0 0 0'
     }
   },
+  copyIcon: {
+    marginLeft: '10px',
+    width: '17px',
+    height: '17px',
+    cursor: 'pointer'
+  },
   walletAddress: {
+    display: 'flex',
     padding: '10px 0',
     color: '#616161',
     textAlign: 'center'

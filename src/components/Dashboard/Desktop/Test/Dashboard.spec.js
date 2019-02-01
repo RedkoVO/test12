@@ -130,10 +130,13 @@ it('renders correctly', () => {
               bestAds={dataBestAds}
               gameCategories={dataCategories}
               onSubmit={() => {}}
+              onCopyKey={() => {}}
               isDisabledButton={false}
               allBalance={dataAllBalance}
               curencySelectValue={{ currency: 'DCB', code: 0 }}
               handleChangeBalance={() => {}}
+              handleSubscribeCheckbox={() => {}}
+              isSubscribeCheckbox={false}
             />
           </Wrapper>
         </MemoryRouter>

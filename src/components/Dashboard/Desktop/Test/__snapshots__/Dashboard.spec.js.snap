@@ -19,19 +19,26 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="Wallet-walletAddress-5"
-        />
+          className="Wallet-walletAddress-6"
+        >
+          <img
+            alt=""
+            className="Wallet-copyIcon-5"
+            onClick={[Function]}
+            src="copy.svg"
+          />
+        </div>
         <div
-          className="MuiInputBase-root-33 MuiInput-root-20 MuiInput-underline-24 Wallet-selectCurency-6"
+          className="MuiInputBase-root-34 MuiInput-root-21 MuiInput-underline-25 Wallet-selectCurency-7"
           onClick={[Function]}
         >
           <div
-            className="MuiSelect-root-13"
+            className="MuiSelect-root-14"
           >
             <div
               aria-haspopup="true"
               aria-pressed="false"
-              className="Wallet-selectField-8"
+              className="Wallet-selectField-9"
               id="select-curency"
               onBlur={[Function]}
               onClick={[Function]}
@@ -55,16 +62,16 @@ exports[`renders correctly 1`] = `
               value="DCB"
             />
             <i
-              className="Wallet-curencyIcon-9"
+              className="Wallet-curencyIcon-10"
             />
           </div>
         </div>
         <ul
-          className="Wallet-walletNav-11"
+          className="Wallet-walletNav-12"
         >
           <li>
             <div
-              className="Wallet-walletNavItem-12"
+              className="Wallet-walletNavItem-13"
               onClick={[Function]}
             >
               DCB
@@ -72,7 +79,7 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <div
-              className="Wallet-walletNavItem-12"
+              className="Wallet-walletNavItem-13"
               onClick={[Function]}
             >
               USD
@@ -80,7 +87,7 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <div
-              className="Wallet-walletNavItem-12"
+              className="Wallet-walletNavItem-13"
               onClick={[Function]}
             >
               EUR
@@ -88,7 +95,7 @@ exports[`renders correctly 1`] = `
           </li>
           <li>
             <div
-              className="Wallet-walletNavItem-12"
+              className="Wallet-walletNavItem-13"
               onClick={[Function]}
             >
               CPT
@@ -97,22 +104,22 @@ exports[`renders correctly 1`] = `
         </ul>
       </div>
       <div
-        className="Action-root-54"
+        className="Action-root-55"
       >
         <div
-          className="Action-actionsSend-59"
+          className="Action-actionsSend-60"
         >
           <form
-            className="Action-form-57"
+            className="Action-form-58"
             onSubmit={[Function]}
           >
             <span
-              className="Action-sendTitle-60"
+              className="Action-sendTitle-61"
             >
               Send now
             </span>
             <div
-              className="Action-wrSendField-61"
+              className="Action-wrSendField-62"
             >
               <label
                 htmlFor="addressKey"
@@ -120,7 +127,7 @@ exports[`renders correctly 1`] = `
                 Address:
               </label>
               <input
-                className="Action-sendAddressField-62"
+                className="Action-sendAddressField-63"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onDragStart={[Function]}
@@ -132,7 +139,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="Action-wrSendField-61"
+              className="Action-wrSendField-62"
             >
               <label
                 htmlFor="amount"
@@ -140,7 +147,7 @@ exports[`renders correctly 1`] = `
                 Amount:
               </label>
               <input
-                className="Action-sendAmmountField-63"
+                className="Action-sendAmmountField-64"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onDragStart={[Function]}
@@ -152,7 +159,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <button
-              className="Action-sendBtn-65"
+              className="Action-sendBtn-66"
               type="submit"
             >
               Send money
@@ -160,15 +167,15 @@ exports[`renders correctly 1`] = `
           </form>
         </div>
         <div
-          className="Action-actionsInvoice-67"
+          className="Action-actionsInvoice-68"
         >
           <span
-            className="Action-invoiceTitle-68"
+            className="Action-invoiceTitle-69"
           >
             Invoice
           </span>
           <div
-            className="Action-wrSendField-61"
+            className="Action-wrSendField-62"
           >
             <label
               htmlFor="invoice"
@@ -176,14 +183,14 @@ exports[`renders correctly 1`] = `
               Email:
             </label>
             <input
-              className="Action-invoiceAmmountField-64"
+              className="Action-invoiceAmmountField-65"
               name="invoice"
               placeholder="Set ammount you need to receive"
               type="text"
             />
           </div>
           <button
-            className="Action-sendBtn-65"
+            className="Action-sendBtn-66"
             type="submit"
           >
             Send Invoice
@@ -191,105 +198,114 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="BestAd-root-69"
+    <section
+      id="shops"
     >
       <div
-        className="BestAd-bestItem-70"
+        className="BestAd-bestTitle-73"
       >
-        <div
-          className="BestAd-titleWrap-71"
-        >
-          <a
-            className="BestAd-bestTitle-72"
-            href="/games"
-            onClick={[Function]}
-          >
-            Games
-          </a>
-        </div>
-        <div
-          className="BestAd-bestContent-73"
-        >
-          <a
-            className="BestAd-bestImg-74"
-            href="/games"
-            onClick={[Function]}
-          >
-            <img
-              alt=""
-              className="BestAd-bestItemImg-75"
-              src="CloverLogo1"
-            />
-          </a>
-          <a
-            className="BestAd-bestLink-76"
-            href="/games"
-            onClick={[Function]}
-          >
-            Game of the day
-            : 
-            <br />
-            <span>
-              Smash Champs
-            </span>
-          </a>
-        </div>
+        Shops
       </div>
       <div
-        className="BestAd-bestItem-70"
+        className="BestAd-root-70"
       >
         <div
-          className="BestAd-titleWrap-71"
+          className="BestAd-bestItem-71"
         >
-          <a
-            className="BestAd-bestTitle-72"
-            href="/stream"
-            onClick={[Function]}
+          <div
+            className="BestAd-titleWrap-72"
           >
-            Shop
-          </a>
+            <a
+              className="BestAd-bestTitle-73"
+              href="/games"
+              onClick={[Function]}
+            >
+              Games
+            </a>
+          </div>
+          <div
+            className="BestAd-bestContent-74"
+          >
+            <a
+              className="BestAd-bestImg-75"
+              href="/games"
+              onClick={[Function]}
+            >
+              <img
+                alt=""
+                className="BestAd-bestItemImg-76"
+                src="CloverLogo1"
+              />
+            </a>
+            <a
+              className="BestAd-bestLink-77"
+              href="/games"
+              onClick={[Function]}
+            >
+              Game of the day
+              : 
+              <br />
+              <span>
+                Smash Champs
+              </span>
+            </a>
+          </div>
         </div>
         <div
-          className="BestAd-bestContent-73"
+          className="BestAd-bestItem-71"
         >
-          <a
-            className="BestAd-bestImg-74"
-            href="/stream"
-            onClick={[Function]}
+          <div
+            className="BestAd-titleWrap-72"
           >
-            <img
-              alt=""
-              className="BestAd-bestItemImg-75"
-              src="CloverLogo1"
-            />
-          </a>
-          <a
-            className="BestAd-bestLink-76"
-            href="/stream"
-            onClick={[Function]}
+            <a
+              className="BestAd-bestTitle-73"
+              href="/stream"
+              onClick={[Function]}
+            >
+              Shop
+            </a>
+          </div>
+          <div
+            className="BestAd-bestContent-74"
           >
-            Product of the day
-            : 
-            <br />
-            <span>
-              Blue cool Jelly
-            </span>
-          </a>
+            <a
+              className="BestAd-bestImg-75"
+              href="/stream"
+              onClick={[Function]}
+            >
+              <img
+                alt=""
+                className="BestAd-bestItemImg-76"
+                src="CloverLogo1"
+              />
+            </a>
+            <a
+              className="BestAd-bestLink-77"
+              href="/stream"
+              onClick={[Function]}
+            >
+              Product of the day
+              : 
+              <br />
+              <span>
+                Blue cool Jelly
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <div
-      className="Categories-root-77"
+      className="Categories-root-78"
     >
       <div
-        className="Categories-categories-78"
+        className="Categories-categories-79"
       >
         <div
-          className="Categories-categTitleWrap-79"
+          className="Categories-categTitleWrap-80"
         >
           <a
-            className="Categories-categoriesTitle-80"
+            className="Categories-categoriesTitle-81"
             href="/"
             onClick={[Function]}
           >
@@ -297,21 +313,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -325,21 +341,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -353,21 +369,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -381,21 +397,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -409,21 +425,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -437,21 +453,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -466,13 +482,13 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="Categories-categories-78"
+        className="Categories-categories-79"
       >
         <div
-          className="Categories-categTitleWrap-79"
+          className="Categories-categTitleWrap-80"
         >
           <a
-            className="Categories-categoriesTitle-80"
+            className="Categories-categoriesTitle-81"
             href="/"
             onClick={[Function]}
           >
@@ -480,21 +496,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -508,21 +524,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -536,21 +552,21 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          className="CategorieItem-root-81"
+          className="CategorieItem-root-82"
         >
           <a
-            className="CategorieItem-gameImg-82"
+            className="CategorieItem-gameImg-83"
             href="/game/4clover"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="CategorieItem-gameImgLink-83"
+              className="CategorieItem-gameImgLink-84"
               src="CloverLogo1"
             />
           </a>
           <a
-            className="CategorieItem-gameLink-84"
+            className="CategorieItem-gameLink-85"
             href="/game/4clover"
             onClick={[Function]}
           >
@@ -565,6 +581,148 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
     </div>
+    <section
+      id="contacts"
+    >
+      <div
+        className="Contacts-root-86"
+      >
+        <div
+          className="Contacts-title-87"
+        >
+          Contacts
+        </div>
+        <div>
+          <div
+            className="Contacts-wrInfo-88"
+          >
+            <div
+              className="Contacts-userPhoto-89"
+            >
+              <img
+                alt=""
+                src="user.jpg"
+              />
+            </div>
+            <div>
+              <div>
+                Mike Grinch
+              </div>
+              <div>
+                0x000000000000000000000000000000000000000000000000000000000
+                <img
+                  alt=""
+                  className="Contacts-copyIcon-90"
+                  src="copy.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="Contacts-wrInfo-88"
+          >
+            <div
+              className="Contacts-userPhoto-89"
+            >
+              <img
+                alt=""
+                src="user.jpg"
+              />
+            </div>
+            <div>
+              <div>
+                Clarck Malkolm
+              </div>
+              <div>
+                0x000000000000000000000000000000000000000000000000000000000
+                <img
+                  alt=""
+                  className="Contacts-copyIcon-90"
+                  src="copy.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="settings"
+    >
+      <div
+        className="Settings-root-91"
+      >
+        <div
+          className="Settings-title-92"
+        >
+          Settings
+        </div>
+        <div
+          className="Settings-themeTitle-93"
+        >
+          Theme
+        </div>
+        <div
+          className="Settings-wrBtns-94"
+        >
+          <button
+            className="Settings-btn-95"
+          >
+            Light
+          </button>
+          <button
+            className="Settings-btn-95 Settings-disableBtn-96"
+          >
+            Dark
+          </button>
+        </div>
+        <div>
+          <span
+            className="MuiButtonBase-root-113 MuiIconButton-root-107 MuiPrivateSwitchBase-root-103 MuiCheckbox-root-97 MuiCheckbox-colorPrimary-101"
+            onBlur={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={null}
+          >
+            <span
+              className="MuiIconButton-label-112"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-116"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                />
+              </svg>
+              <input
+                checked={false}
+                className="MuiPrivateSwitchBase-input-106"
+                data-indeterminate={false}
+                onChange={[Function]}
+                type="checkbox"
+                value="checkedB"
+              />
+            </span>
+            <span
+              className="MuiTouchRipple-root-125"
+            />
+          </span>
+          Subscribe for funds receiving
+        </div>
+      </div>
+    </section>
   </div>
 </main>
 `;

@@ -2,18 +2,18 @@
 
 exports[`renders catalog 1`] = `
 <div
-  className="HeaderCatalog-root-28"
+  className="HeaderCatalog-root-30"
 >
   <div
-    className="HeaderCatalog-streamUserBlock-29"
+    className="HeaderCatalog-streamUserBlock-31"
   >
     <p
-      className="HeaderCatalog-streamUserHello-30"
+      className="HeaderCatalog-streamUserHello-32"
     >
       Hello, Ben A 
       <br />
       <a
-        className="HeaderCatalog-streamUserVerification-31"
+        className="HeaderCatalog-streamUserVerification-33"
         href="/"
         onClick={[Function]}
       >
@@ -21,7 +21,7 @@ exports[`renders catalog 1`] = `
       </a>
     </p>
     <div
-      className="HeaderCatalog-streamUserPhoto-32"
+      className="HeaderCatalog-streamUserPhoto-34"
     >
       <img
         alt=""
@@ -34,18 +34,18 @@ exports[`renders catalog 1`] = `
 
 exports[`renders game 1`] = `
 <div
-  className="HeaderGame-root-18"
+  className="HeaderGame-root-20"
 >
   <div
-    className="HeaderGame-gameUserBlock-19"
+    className="HeaderGame-gameUserBlock-21"
   >
     <p
-      className="HeaderGame-gameUserHello-20"
+      className="HeaderGame-gameUserHello-22"
     >
       Hello, Ben A 
       <br />
       <a
-        className="HeaderGame-gameUserVerification-21"
+        className="HeaderGame-gameUserVerification-23"
         href="/"
         onClick={[Function]}
       >
@@ -53,7 +53,7 @@ exports[`renders game 1`] = `
       </a>
     </p>
     <div
-      className="HeaderGame-gameUserPhoto-22"
+      className="HeaderGame-gameUserPhoto-24"
     >
       <img
         alt=""
@@ -66,18 +66,18 @@ exports[`renders game 1`] = `
 
 exports[`renders games 1`] = `
 <div
-  className="HeaderGames-root-23"
+  className="HeaderGames-root-25"
 >
   <div
-    className="HeaderGames-gamesUserBlock-24"
+    className="HeaderGames-gamesUserBlock-26"
   >
     <p
-      className="HeaderGames-gamesUserHello-25"
+      className="HeaderGames-gamesUserHello-27"
     >
        Hello, Ben A 
       <br />
       <a
-        className="HeaderGames-gamesUserVerification-26"
+        className="HeaderGames-gamesUserVerification-28"
         href="/"
         onClick={[Function]}
       >
@@ -85,7 +85,7 @@ exports[`renders games 1`] = `
       </a>
     </p>
     <div
-      className="HeaderGames-gamesUserPhoto-27"
+      className="HeaderGames-gamesUserPhoto-29"
     >
       <img
         alt=""

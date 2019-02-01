@@ -6,6 +6,8 @@ import TransactionHistory from '../../../containers/TransactionHistory/AsyncTran
 import BestAd from '../components/BestAd'
 import Categories from '../components/Categories'
 import Wallet from '../components/Wallet'
+import Contacts from '../components/Contacts'
+import Settings from '../components/Settings'
 
 import styles from './styles'
 
@@ -16,14 +18,18 @@ const Dashboard = ({
   allBalance,
   isDisabledButton,
   onSubmit,
+  onCopyKey,
   addressKey,
   handleChangeBalance,
+  handleSubscribeCheckbox,
+  isSubscribeCheckbox,
   curencySelectValue
 }) => (
   <main>
     <div className={classes.root}>
       <Wallet
         onSubmit={onSubmit}
+        onCopyKey={onCopyKey}
         addressKey={addressKey}
         isDisabledButton={isDisabledButton}
         allBalanceResult={allBalance && allBalance.result}
@@ -36,6 +42,11 @@ const Dashboard = ({
       />
       <BestAd bestAds={bestAds} />
       <Categories categories={gameCategories} />
+      <Contacts />
+      <Settings
+        handleSubscribeCheckbox={handleSubscribeCheckbox}
+        isSubscribeCheckbox={isSubscribeCheckbox}
+      />
     </div>
   </main>
 )
@@ -47,8 +58,11 @@ Dashboard.propTypes = {
   allBalance: PropTypes.object,
   isDisabledButton: PropTypes.bool,
   onSubmit: PropTypes.func,
+  onCopyKey: PropTypes.func,
   addressKey: PropTypes.string,
   handleChangeBalance: PropTypes.func,
+  handleSubscribeCheckbox: PropTypes.func,
+  isSubscribeCheckbox: PropTypes.bool,
   curencySelectValue: PropTypes.object
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
 import withStyles from '@material-ui/core/styles/withStyles'
@@ -8,6 +9,8 @@ import { shortBalance } from '../../../../utils/math'
 
 import Action from './components/Action'
 
+import CopyIcon from '../../../../assets/images/svg/copy.svg'
+
 import styles from './styles'
 
 const Wallet = ({
@@ -15,6 +18,7 @@ const Wallet = ({
   onSubmit,
   allBalanceResult = {},
   addressKey,
+  onCopyKey,
   isDisabledButton,
   handleChangeBalance,
   curencySelectValue = {}
@@ -24,7 +28,12 @@ const Wallet = ({
       <div className={classes.walletTitle}>
         <p>My Address:</p>
       </div>
-      <div className={classes.walletAddress}>{addressKey}</div>
+      <div className={classes.walletAddress}>
+        {addressKey}
+        <CopyToClipboard text={addressKey} onCopy={() => onCopyKey()}>
+          <img className={classes.copyIcon} src={CopyIcon} alt="" />
+        </CopyToClipboard>
+      </div>
       <Select
         className={classes.selectCurency}
         value={curencySelectValue.currency ? curencySelectValue.currency : ''}
@@ -91,6 +100,7 @@ const Wallet = ({
 Wallet.propTypes = {
   classes: PropTypes.object,
   onSubmit: PropTypes.func,
+  onCopyKey: PropTypes.func,
   allBalanceResult: PropTypes.object,
   addressKey: PropTypes.string,
   isDisabledButton: PropTypes.bool,

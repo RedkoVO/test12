@@ -7,10 +7,8 @@ export default theme => ({
     flexWrap: 'wrap',
     marginTop: '40px',
     width: '100%',
-    '-ms-align-items': 'center',
 
     [theme.breakpoints.down('md')]: {
-      '-ms-align-items': 'flex-start',
       alignItems: 'flex-start',
       justifyContent: 'center',
       flexWrap: 'wrap',
@@ -22,7 +20,6 @@ export default theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     paddingBottom: '40px',
-    '-ms-align-items': 'center',
 
     [theme.breakpoints.down('md')]: {
       marginRight: '20px',
@@ -53,8 +50,7 @@ export default theme => ({
   bestContent: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   bestImg: {
     display: 'block',

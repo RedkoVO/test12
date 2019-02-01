@@ -15,19 +15,26 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="Wallet-walletAddress-4"
-    />
+      className="Wallet-walletAddress-5"
+    >
+      <img
+        alt=""
+        className="Wallet-copyIcon-4"
+        onClick={[Function]}
+        src="copy.svg"
+      />
+    </div>
     <div
-      className="MuiInputBase-root-32 MuiInput-root-19 MuiInput-underline-23 Wallet-selectCurency-5"
+      className="MuiInputBase-root-33 MuiInput-root-20 MuiInput-underline-24 Wallet-selectCurency-6"
       onClick={[Function]}
     >
       <div
-        className="MuiSelect-root-12"
+        className="MuiSelect-root-13"
       >
         <div
           aria-haspopup="true"
           aria-pressed="false"
-          className="Wallet-selectField-7"
+          className="Wallet-selectField-8"
           id="select-curency"
           onBlur={[Function]}
           onClick={[Function]}
@@ -51,16 +58,16 @@ exports[`renders correctly 1`] = `
           value="DCB"
         />
         <i
-          className="Wallet-curencyIcon-8"
+          className="Wallet-curencyIcon-9"
         />
       </div>
     </div>
     <ul
-      className="Wallet-walletNav-10"
+      className="Wallet-walletNav-11"
     >
       <li>
         <div
-          className="Wallet-walletNavItem-11"
+          className="Wallet-walletNavItem-12"
           onClick={[Function]}
         >
           DCB
@@ -68,7 +75,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <div
-          className="Wallet-walletNavItem-11"
+          className="Wallet-walletNavItem-12"
           onClick={[Function]}
         >
           USD
@@ -76,7 +83,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <div
-          className="Wallet-walletNavItem-11"
+          className="Wallet-walletNavItem-12"
           onClick={[Function]}
         >
           EUR
@@ -84,7 +91,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <div
-          className="Wallet-walletNavItem-11"
+          className="Wallet-walletNavItem-12"
           onClick={[Function]}
         >
           CPT
@@ -93,22 +100,22 @@ exports[`renders correctly 1`] = `
     </ul>
   </div>
   <div
-    className="Action-root-53"
+    className="Action-root-54"
   >
     <div
-      className="Action-actionsSend-58"
+      className="Action-actionsSend-59"
     >
       <form
-        className="Action-form-56"
+        className="Action-form-57"
         onSubmit={[Function]}
       >
         <span
-          className="Action-sendTitle-59"
+          className="Action-sendTitle-60"
         >
           Send now
         </span>
         <div
-          className="Action-wrSendField-60"
+          className="Action-wrSendField-61"
         >
           <label
             htmlFor="addressKey"
@@ -116,7 +123,7 @@ exports[`renders correctly 1`] = `
             Address:
           </label>
           <input
-            className="Action-sendAddressField-61"
+            className="Action-sendAddressField-62"
             onBlur={[Function]}
             onChange={[Function]}
             onDragStart={[Function]}
@@ -128,7 +135,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <div
-          className="Action-wrSendField-60"
+          className="Action-wrSendField-61"
         >
           <label
             htmlFor="amount"
@@ -136,7 +143,7 @@ exports[`renders correctly 1`] = `
             Amount:
           </label>
           <input
-            className="Action-sendAmmountField-62"
+            className="Action-sendAmmountField-63"
             onBlur={[Function]}
             onChange={[Function]}
             onDragStart={[Function]}
@@ -148,7 +155,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <button
-          className="Action-sendBtn-64"
+          className="Action-sendBtn-65"
           type="submit"
         >
           Send money
@@ -156,15 +163,15 @@ exports[`renders correctly 1`] = `
       </form>
     </div>
     <div
-      className="Action-actionsInvoice-66"
+      className="Action-actionsInvoice-67"
     >
       <span
-        className="Action-invoiceTitle-67"
+        className="Action-invoiceTitle-68"
       >
         Invoice
       </span>
       <div
-        className="Action-wrSendField-60"
+        className="Action-wrSendField-61"
       >
         <label
           htmlFor="invoice"
@@ -172,14 +179,14 @@ exports[`renders correctly 1`] = `
           Email:
         </label>
         <input
-          className="Action-invoiceAmmountField-63"
+          className="Action-invoiceAmmountField-64"
           name="invoice"
           placeholder="Set ammount you need to receive"
           type="text"
         />
       </div>
       <button
-        className="Action-sendBtn-64"
+        className="Action-sendBtn-65"
         type="submit"
       >
         Send Invoice

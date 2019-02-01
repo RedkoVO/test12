@@ -31,6 +31,7 @@ it('renders correctly', () => {
         <Wrapper>
           <Main
             onSubmit={() => {}}
+            onCopyKey={() => {}}
             handleChangeBalance={() => {}}
             allBalanceResult={allBalanceResultMock}
             curencySelectValue={{ currency: 'DCB', code: 0 }}

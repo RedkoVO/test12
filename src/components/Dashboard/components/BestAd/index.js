@@ -7,26 +7,29 @@ import styles from './styles'
 
 const BestAd = ({ classes, bestAds }) => {
   return (
-    <div className={classes.root}>
-      {bestAds.map(item => (
-        <div className={classes.bestItem} key={item.id}>
-          <div className={classes.titleWrap}>
-            <Link to={item.link} className={classes.bestTitle}>
-              {item.title}
-            </Link>
+    <section id="shops">
+      <div className={classes.bestTitle}>Shops</div>
+      <div className={classes.root}>
+        {bestAds.map(item => (
+          <div className={classes.bestItem} key={item.id}>
+            <div className={classes.titleWrap}>
+              <Link to={item.link} className={classes.bestTitle}>
+                {item.title}
+              </Link>
+            </div>
+            <div className={classes.bestContent}>
+              <Link to={item.link} className={classes.bestImg}>
+                <img src={item.img} alt="" className={classes.bestItemImg} />
+              </Link>
+              <Link to={item.link} className={classes.bestLink}>
+                {item.titleLink}: <br />
+                <span>{item.nameLink}</span>
+              </Link>
+            </div>
           </div>
-          <div className={classes.bestContent}>
-            <Link to={item.link} className={classes.bestImg}>
-              <img src={item.img} alt="" className={classes.bestItemImg} />
-            </Link>
-            <Link to={item.link} className={classes.bestLink}>
-              {item.titleLink}: <br />
-              <span>{item.nameLink}</span>
-            </Link>
-          </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   )
 }
 

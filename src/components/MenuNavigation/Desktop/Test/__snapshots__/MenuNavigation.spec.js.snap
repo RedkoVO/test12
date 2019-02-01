@@ -2,11 +2,11 @@
 
 exports[`renders correctly game 1`] = `
 <ul
-  className="MenuNavigationGame-root-11"
+  className="MenuNavigationGame-root-13"
 >
   <li>
     <div
-      className="MenuNavigationGame-logout-20"
+      className="MenuNavigationGame-logout-22"
       onClick={[Function]}
     >
       Logout
@@ -14,12 +14,12 @@ exports[`renders correctly game 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigationGame-headerMenuItem-12"
+      className="MenuNavigationGame-headerMenuItem-14"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigationGame-menuIcon-13 MenuNavigationGame-dashboard-14"
+        className="MenuNavigationGame-menuIcon-15 MenuNavigationGame-dashboard-16"
       />
       <br />
        Dashboard
@@ -27,12 +27,12 @@ exports[`renders correctly game 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigationGame-headerMenuItem-12"
+      className="MenuNavigationGame-headerMenuItem-14"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigationGame-menuIcon-13 MenuNavigationGame-walletIcon-15"
+        className="MenuNavigationGame-menuIcon-15 MenuNavigationGame-walletIcon-17"
       />
       <br />
        Wallet
@@ -40,12 +40,12 @@ exports[`renders correctly game 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigationGame-headerMenuItem-12"
+      className="MenuNavigationGame-headerMenuItem-14"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigationGame-menuIcon-13 MenuNavigationGame-shop-16"
+        className="MenuNavigationGame-menuIcon-15 MenuNavigationGame-shop-18"
       />
       <br />
        Shop
@@ -53,12 +53,12 @@ exports[`renders correctly game 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigationGame-headerMenuItem-12"
+      className="MenuNavigationGame-headerMenuItem-14"
       href="/games"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigationGame-menuIcon-13 MenuNavigationGame-games-17"
+        className="MenuNavigationGame-menuIcon-15 MenuNavigationGame-games-19"
       />
       <br />
        Games
@@ -66,12 +66,12 @@ exports[`renders correctly game 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigationGame-headerMenuItem-12"
+      className="MenuNavigationGame-headerMenuItem-14"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigationGame-menuIcon-13 MenuNavigationGame-friends-18"
+        className="MenuNavigationGame-menuIcon-15 MenuNavigationGame-friends-20"
       />
       <br />
        Friends
@@ -79,12 +79,12 @@ exports[`renders correctly game 1`] = `
   </li>
   <li>
     <a
-      className="MenuNavigationGame-headerMenuItem-12"
+      className="MenuNavigationGame-headerMenuItem-14"
       href="/"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigationGame-menuIcon-13 MenuNavigationGame-settings-19"
+        className="MenuNavigationGame-menuIcon-15 MenuNavigationGame-settings-21"
       />
       <br />
        Settings
@@ -97,14 +97,16 @@ exports[`renders correctly main 1`] = `
 <ul
   className="MenuNavigation-root-1"
 >
-  <li>
-    <div
-      className="MenuNavigation-logout-10"
-      onClick={[Function]}
-    >
-      Logout
-    </div>
-  </li>
+  <div
+    className="MenuNavigation-headerMenuItem-2 MenuNavigation-wrLogout-3"
+    onClick={[Function]}
+  >
+    <i
+      className="MenuNavigation-menuIcon-4 MenuNavigation-logout-5"
+    />
+    <br />
+     Logout
+  </div>
   <li>
     <a
       aria-current="page"
@@ -114,10 +116,24 @@ exports[`renders correctly main 1`] = `
       style={Object {}}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-walletIcon-5"
+        className="MenuNavigation-menuIcon-4 MenuNavigation-walletIcon-6"
       />
       <br />
        Wallet
+    </a>
+  </li>
+  <li>
+    <a
+      aria-current={null}
+      className="MenuNavigation-headerMenuItem-2"
+      href="/vchange"
+      onClick={[Function]}
+    >
+      <i
+        className="MenuNavigation-menuIcon-4 MenuNavigation-vexchange-7"
+      />
+      <br />
+       VChange
     </a>
   </li>
   <li>
@@ -128,7 +144,7 @@ exports[`renders correctly main 1`] = `
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-games-7"
+        className="MenuNavigation-menuIcon-4 MenuNavigation-games-10"
       />
       <br />
        Games
@@ -142,7 +158,7 @@ exports[`renders correctly main 1`] = `
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-shop-6"
+        className="MenuNavigation-menuIcon-4 MenuNavigation-apps-8"
       />
       <br />
        Apps
@@ -152,11 +168,11 @@ exports[`renders correctly main 1`] = `
     <a
       aria-current={null}
       className="MenuNavigation-headerMenuItem-2"
-      href="/#shop"
+      href="/#shops"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-shop-6"
+        className="MenuNavigation-menuIcon-4 MenuNavigation-shop-9"
       />
       <br />
        Shop
@@ -170,7 +186,7 @@ exports[`renders correctly main 1`] = `
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-friends-8"
+        className="MenuNavigation-menuIcon-4 MenuNavigation-friends-11"
       />
       <br />
        Contacts
@@ -180,11 +196,11 @@ exports[`renders correctly main 1`] = `
     <a
       aria-current={null}
       className="MenuNavigation-headerMenuItem-2"
-      href="/#setting"
+      href="/#settings"
       onClick={[Function]}
     >
       <i
-        className="MenuNavigation-menuIcon-3 MenuNavigation-settings-9"
+        className="MenuNavigation-menuIcon-4 MenuNavigation-settings-12"
       />
       <br />
        Settings

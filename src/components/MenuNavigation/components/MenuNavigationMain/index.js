@@ -9,12 +9,13 @@ import styles from './styles'
 
 const MenuNavigation = ({ classes, page, handleLogout }) => (
   <ul className={cn(classes.root, { dark: page === 'dark' })}>
-    <li className={classes.logo}>
-      {/* <img src={HouseLogo} alt="" /> */}
-      <div className={classes.logout} onClick={() => handleLogout()}>
-        Logout
-      </div>
-    </li>
+    <div
+      className={cn(classes.headerMenuItem, classes.wrLogout)}
+      onClick={() => handleLogout()}
+    >
+      <i className={cn(classes.menuIcon, classes.logout)} />
+      <br /> Logout
+    </div>
     <li>
       <NavLink
         exact
@@ -28,6 +29,18 @@ const MenuNavigation = ({ classes, page, handleLogout }) => (
       >
         <i className={cn(classes.menuIcon, classes.walletIcon)} />
         <br /> Wallet
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        exact
+        smooth
+        to={'/vchange'}
+        className={classes.headerMenuItem}
+        activeClassName="active"
+      >
+        <i className={cn(classes.menuIcon, classes.vexchange)} />
+        <br /> VChange
       </NavLink>
     </li>
     <li>
@@ -49,14 +62,14 @@ const MenuNavigation = ({ classes, page, handleLogout }) => (
           pathname: document.location.pathname + document.location.hash
         }}
       >
-        <i className={cn(classes.menuIcon, classes.shop)} />
+        <i className={cn(classes.menuIcon, classes.apps)} />
         <br /> Apps
       </NavLink>
     </li>
     <li>
       <NavLink
         smooth
-        to={'/#shop'}
+        to={'/#shops'}
         className={classes.headerMenuItem}
         activeClassName="active"
         location={{
@@ -83,7 +96,7 @@ const MenuNavigation = ({ classes, page, handleLogout }) => (
     </li>
     <li>
       <NavLink
-        to={'/#setting'}
+        to={'/#settings'}
         className={classes.headerMenuItem}
         activeClassName="active"
         location={{

@@ -18,7 +18,7 @@ import { getBigNumberAmount } from '../../utils/math'
 
 import AsyncDashboardDesktop from '../../components/Dashboard/Desktop/AsyncDashboardDesktop'
 
-import BestGameLogo from '../../assets/images/exchange.jpg'
+// import BestGameLogo from '../../assets/images/exchange.jpg'
 import BestShopLogo from '../../assets/images/shop.jpg'
 import CSGOLogo from '../../assets/images/csgo.jpg'
 import CasesLogo from '../../assets/images/cases.jpg'
@@ -29,31 +29,23 @@ import JungleImg2 from '../../assets/images/jungle_game2.png'
 const tmpBestAdsCollection = [
   {
     id: 1,
-    title: 'VChange',
-    img: BestGameLogo,
-    link: '/',
-    titleLink: 'Skins of the day',
-    nameLink: 'Smash Champs'
-  },
-  {
-    id: 2,
-    title: 'Shop',
+    title: '',
     img: BestShopLogo,
     link: '/',
     titleLink: 'Stream of the day',
     nameLink: 'Blue cool Jelly'
   },
   {
-    id: 3,
-    title: 'CSGO',
+    id: 2,
+    title: '',
     img: CSGOLogo,
     link: '/skins',
     titleLink: 'Cases of the day',
     nameLink: 'Blue cool Jelly'
   },
   {
-    id: 4,
-    title: 'Cases',
+    id: 3,
+    title: '',
     img: CasesLogo,
     link: '/cases',
     titleLink: 'Cases of the day',
@@ -171,6 +163,8 @@ export default compose(
   }),
   withState('isDisabledButton', 'setDisabledButton', false),
   withState('curencySelectValue', 'setCurencySelectValue', {}),
+  withState('textToCopy', 'setTextToCopy', false),
+  withState('isSubscribeCheckbox', 'setisSubscribeCheckbox', true),
   withHandlers({
     handleChangeBalance: ({ setCurencySelectValue, allBalance }) => value => {
       setCurencySelectValue({
@@ -179,6 +173,16 @@ export default compose(
       })
     },
 
+    onCopyKey: ({ setTextToCopy, textToCopy }) => () => {
+      setTextToCopy(!textToCopy)
+    },
+
+    handleSubscribeCheckbox: ({
+      setisSubscribeCheckbox,
+      isSubscribeCheckbox
+    }) => () => {
+      setisSubscribeCheckbox(!isSubscribeCheckbox)
+    },
 
     onSubmit: ({
       handleSubmit,
