@@ -16,7 +16,7 @@ import AsyncGames from '../../../containers/Games/AsyncGames'
 import AsyncGame from '../../../containers/Game/AsyncGame'
 import AsyncStream from '../../../containers/Stream/AsyncStream'
 import AsyncSkins from '../../../containers/Skins/AsyncSkins'
-import AsyncVExchange from '../../../containers/VExchange/AsyncVExchange'
+import AsyncVchange from '../../../containers/Vchange/AsyncVchange'
 import AsyncCases from '../../../containers/Cases/AsyncCases'
 import AsyncCase from '../../../containers/Case/AsyncCase'
 import AsyncFriends from '../../../containers/Friends/AsyncFriends'
@@ -65,7 +65,7 @@ const RootRoute = props => {
 
       {secretKey && <Route path={`/skins`} component={AsyncSkins} />}
 
-      {secretKey && <RoutePage path={`/vchange`} component={AsyncVExchange} />}
+      {secretKey && <RoutePage path={`/vchange`} component={AsyncVchange} />}
 
       {secretKey && <Route path={`/cases`} component={AsyncCases} />}
 

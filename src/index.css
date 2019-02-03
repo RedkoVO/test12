@@ -1,3 +1,23 @@
+@font-face {
+  font-family: ubLight;
+  src: url("./assets/fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: ubRegular;
+  src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: ubMedium;
+  src: url("./assets/fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: ubBold;
+  src: url("./assets/fonts/Ubuntu-Bold.ttf");
+}
+
 body,
 html,
 #root {
@@ -8,7 +28,7 @@ html,
 body{	
 	font-size: 15px;
 	font-weight: 300;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'ubRegular', sans-serif;
 	text-transform: none;
 	background: #f0f0f0;
 	color: #575757;
