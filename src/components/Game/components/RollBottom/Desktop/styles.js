@@ -5,7 +5,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     marginTop: '35px',
@@ -15,7 +14,6 @@ export default theme => ({
     width: '200px',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     marginLeft: '100px',
 
@@ -76,7 +74,6 @@ export default theme => ({
   gameRollSlider: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     height: '150px',
     width: '1000px',

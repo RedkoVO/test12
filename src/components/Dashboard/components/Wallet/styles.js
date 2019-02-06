@@ -4,7 +4,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     padding: '30px 25px 0 25px',
     width: '100%',
@@ -17,7 +16,6 @@ export default theme => ({
   wallet: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'stretch',
     alignItems: 'stretch',
     width: 'initial',
 
@@ -27,7 +25,6 @@ export default theme => ({
     },
     [theme.breakpoints.down('xs')]: {
       width: '320px',
-      '-ms-align-items': 'center',
       alignItems: 'center',
       paddingBottom: '20px',
       marginBottom: '20px'

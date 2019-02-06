@@ -17,7 +17,6 @@ export default theme => ({
   },
   gameUserBlock: {
     display: 'flex',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     width: '300px',
     marginRight: '230px',

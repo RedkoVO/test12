@@ -6,8 +6,8 @@ import withStyles from '@material-ui/core/styles/withStyles'
 
 import Graph from '../components/Graph'
 import PricesBuy from '../components/PricesBuy'
+import PricesSell from '../components/PricesSell'
 
-// import VchangeIcon from '../../../assets/images/exchange_page.png'
 import BTCIcon from '../../../assets/images/btc_icon.png'
 import USDIcon from '../../../assets/images/usd_icon.png'
 
@@ -15,6 +15,8 @@ import styles from './styles'
 
 const Vchange = ({
   classes,
+  pricesBuyData,
+  pricesSellData,
   curencySelectFirstValue,
   curencySelectSecondValue,
   handleChangeFirsCurrency,
@@ -107,23 +109,21 @@ const Vchange = ({
 
       <Graph />
 
-      <PricesBuy />
-      {/* <Prices /> */}
+      <div className={classes.prices}>
+        <PricesBuy pricesBuyData={pricesBuyData} />
+        <PricesSell pricesSellData={pricesSellData} />
+      </div>
     </div>
   </main>
 )
 
-// const Vchange = ({ classes }) => (
-//   <div className={classes.root}>
-//     <img className={classes.exchangeMock} src={VchangeIcon} alt="" />
-//   </div>
-// )
-
 Vchange.propTypes = {
-  curencySelectFirstValue: PropTypes.string, // Test
-  curencySelectSecondValue: PropTypes.string, // Test
-  handleChangeFirsCurrency: PropTypes.func, // Test
-  handleChangeSecondCurrency: PropTypes.func // Test
+  pricesBuyData: PropTypes.array,
+  pricesSellData: PropTypes.array,
+  curencySelectFirstValue: PropTypes.string,
+  curencySelectSecondValue: PropTypes.string,
+  handleChangeFirsCurrency: PropTypes.func,
+  handleChangeSecondCurrency: PropTypes.func
 }
 
 export default withStyles(styles)(Vchange)

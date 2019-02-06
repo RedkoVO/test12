@@ -2,7 +2,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'space-between',
     maxWidth: '850px',
@@ -31,7 +30,6 @@ export default theme => ({
   },
   streamUserBlock: {
     display: 'flex',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     width: '300px'
   },

@@ -5,14 +5,12 @@ export default theme => ({
 
     [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
-      '-ms-align-items': 'center',
       alignItems: 'center'
     },
 
     [theme.breakpoints.down('sm')]: {
       display: 'flex',
       flexDirection: 'column',
-      '-ms-align-items': 'center',
       alignItems: 'center'
     }
   }

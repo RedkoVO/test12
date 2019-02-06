@@ -3,8 +3,7 @@ export default theme => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '15px 10px',
-    '-ms-align-items': 'center'
+    padding: '15px 10px'
   },
   gameImg: {
     display: 'block',

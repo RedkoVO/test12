@@ -2,7 +2,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     width: '100%'
   },

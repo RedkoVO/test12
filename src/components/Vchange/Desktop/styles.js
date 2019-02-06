@@ -106,10 +106,9 @@ export default () => ({
       width: '42px',
       height: '42px'
     }
+  },
+  prices: {
+    display: 'flex',
+    justifyContent: 'space-around'
   }
-  // exchangeMock: {
-  //   width: '100%',
-  //   marginTop: '-80px',
-  //   height: 'calc(100vh)'
-  // }
 })

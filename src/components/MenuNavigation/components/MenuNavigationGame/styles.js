@@ -69,7 +69,6 @@ export default theme => ({
   headerMenuItem: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     width: '100%',
     height: '100%',

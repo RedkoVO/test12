@@ -3,7 +3,6 @@ import DownLogo from '../../../../../assets/images/svg/white-down.svg'
 export default theme => ({
   root: {
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     justifyContent: 'center',
     width: '100%',
@@ -38,7 +37,6 @@ export default theme => ({
   mobilleFilterBtn: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     paddingTop: '15px',
     width: '20px',
@@ -56,7 +54,6 @@ export default theme => ({
   mobileSortItems: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     justifyContent: 'space-around',
     position: 'absolute',

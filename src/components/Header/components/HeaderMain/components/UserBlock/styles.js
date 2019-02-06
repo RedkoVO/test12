@@ -2,7 +2,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     padding: '30px 0 0 0',
     marginLeft: '65px',
@@ -34,7 +33,6 @@ export default theme => ({
   },
   userBlock: {
     display: 'flex',
-    '-ms-align-items': 'center',
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%'

@@ -4,7 +4,6 @@ export default () => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'space-between',
     width: '100%',

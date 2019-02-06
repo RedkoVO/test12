@@ -3,7 +3,6 @@ export default () => ({
     minHeight: 'inherit',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: '50px'
@@ -13,7 +12,6 @@ export default () => ({
     maxWidth: '525px',
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'baseline',
     alignItems: 'baseline',
     justifyContent: 'center',
     flexWrap: 'wrap',
@@ -38,7 +36,6 @@ export default () => ({
     fontSize: '15px',
     fontWeight: 400,
     textAlign: 'left',
-    '-ms-align-self': 'flex-start',
     alignSelf: 'flex-start',
     display: 'flex',
     flexDirection: 'column',
@@ -94,7 +91,6 @@ export default () => ({
     outline: 'none',
     borderRadius: '23px',
     boxSizing: 'border-box',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'rgba(255, 255, 255, 0.61)'

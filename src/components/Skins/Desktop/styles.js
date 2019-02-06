@@ -21,8 +21,7 @@ export default () => ({
     boxSizing: 'border-box',
     alignItems: 'center',
     paddingLeft: '65px',
-    flexDirection: 'column',
-    '-ms-align-items': 'center'
+    flexDirection: 'column'
   },
   tradeMain: {
     display: 'flex',

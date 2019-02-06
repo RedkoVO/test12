@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PricesSell /> renders correctly 1`] = `
+<div
+  className="PricesSell-root-1"
+>
+  <div
+    className="PricesSell-title-2"
+  >
+    <span>
+      Sell
+    </span>
+     BTC: Prices
+  </div>
+  <table
+    cellSpacing="0"
+    className="PricesSell-wrTable-3"
+  >
+    <tbody>
+      <tr>
+        <th>
+          Price (USDT)
+        </th>
+        <th>
+          Ammount (BTC)
+        </th>
+        <th>
+          Total (USDT)
+        </th>
+      </tr>
+      <tr
+        className="PricesSell-wrItem-4"
+      >
+        <td>
+          3752.22
+        </td>
+        <td>
+          1.0000
+        </td>
+        <td>
+          3752.2200000
+        </td>
+      </tr>
+      <tr
+        className="PricesSell-wrItem-4"
+      >
+        <td>
+          3752.22
+        </td>
+        <td>
+          1.0000
+        </td>
+        <td>
+          3752.2200000
+        </td>
+      </tr>
+      <tr
+        className="PricesSell-wrItem-4"
+      >
+        <td>
+          3752.22
+        </td>
+        <td>
+          1.0000
+        </td>
+        <td>
+          3752.2200000
+        </td>
+      </tr>
+      <tr
+        className="PricesSell-wrItem-4"
+      >
+        <td>
+          3752.22
+        </td>
+        <td>
+          1.0000
+        </td>
+        <td>
+          3752.2200000
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

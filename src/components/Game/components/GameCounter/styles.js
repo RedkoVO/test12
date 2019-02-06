@@ -4,7 +4,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     height: '175px',
@@ -64,7 +63,6 @@ export default theme => ({
     borderBottomRightRadius: '0px',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     paddingLeft: '40px',
     boxSizing: 'border-box',

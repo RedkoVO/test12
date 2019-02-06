@@ -11,10 +11,7 @@ import './index.css'
 const initApp = () => {
   const history = createBrowserHistory()
 
-  ReactDOM.render(
-    <App history={history} />,
-    document.getElementById('root')
-  )
+  ReactDOM.render(<App history={history} />, document.getElementById('root'))
   registerServiceWorker()
 }
 

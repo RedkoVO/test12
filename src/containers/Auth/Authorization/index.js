@@ -17,7 +17,7 @@ import Crypto from '../../../crypto/crypto'
 
 import AsyncAuthorizationDesktop from '../../../components/Auth/Authorization/Desktop/AsyncAuthorizationDesktop'
 
-const FORM_NAME = 'registration'
+const FORM_NAME = 'authirization'
 
 const mapStateToProps = state => ({
   allBalance: getAllBalanceInfoSelector(state),

@@ -1,7 +1,30 @@
 import compose from 'recompose/compose'
-import { withHandlers, withState, pure } from 'recompose'
+import { withProps, withHandlers, withState, pure } from 'recompose'
 
 import VchangeDesktop from '../../components/Vchange/Desktop/'
+
+const tmpPricesBuyData = [
+  { id: 1, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 2, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 3, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 4, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 5, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 6, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 7, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 8, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 9, price: '3752.22', ammount: '1.0000', total: '3752.2200000' }
+]
+const tmpPricesSellData = [
+  { id: 1, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 2, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 3, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 4, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 5, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 6, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 7, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 8, price: '3752.22', ammount: '1.0000', total: '3752.2200000' },
+  { id: 9, price: '3752.22', ammount: '1.0000', total: '3752.2200000' }
+]
 
 export default compose(
   withState('curencySelectFirstValue', 'setCurencySelectFirstValue', 'BTC'),
@@ -14,5 +37,9 @@ export default compose(
       setCurencySelectSecondValue(value)
     }
   }),
+  withProps(() => ({
+    pricesBuyData: tmpPricesBuyData,
+    pricesSellData: tmpPricesSellData
+  })),
   pure
 )(VchangeDesktop)

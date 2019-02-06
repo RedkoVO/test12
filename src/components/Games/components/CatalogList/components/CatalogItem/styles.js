@@ -7,7 +7,6 @@ export default () => ({
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     width: '260px',
     minHeight: '330px',
@@ -18,7 +17,6 @@ export default () => ({
   catalogItemTop: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     justifyContent: 'space-around',
     minHeight: '60px',
@@ -43,7 +41,6 @@ export default () => ({
   catalogItemRating: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center'
   },
   catalogRatingValue: {
@@ -125,7 +122,6 @@ export default () => ({
   catalogItemCounter: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'space-around',
     flexWrap: 'wrap',

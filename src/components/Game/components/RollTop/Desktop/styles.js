@@ -5,7 +5,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     width: '100%'
   },
@@ -45,7 +44,7 @@ export default theme => ({
       alignItems: 'center'
     }
   },
-  
+
   /*--- gameRollNext */
   gameRollNext: {
     height: '45px',
@@ -94,7 +93,6 @@ export default theme => ({
   gameRollDescrleft: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     width: '480px',
 
@@ -105,7 +103,6 @@ export default theme => ({
   gameRollTitleBlock: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     flexWrap: 'wrap',
     width: '355px',
@@ -166,7 +163,6 @@ export default theme => ({
   gameRollRating: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center'
   },
   ratingValue: {

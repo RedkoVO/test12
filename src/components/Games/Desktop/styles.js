@@ -4,7 +4,6 @@ export default theme => ({
     minWidth: '70%',
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start'
   },
   containerCatalog: {
@@ -13,7 +12,6 @@ export default theme => ({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     boxSizing: 'border-box',
 
@@ -30,7 +28,6 @@ export default theme => ({
     height: '170px',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     paddingLeft: '65px',
     boxSizing: 'border-box',

@@ -3,7 +3,6 @@ export default () => ({
     minHeight: 'inherit',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: '50px'
@@ -13,7 +12,6 @@ export default () => ({
     maxWidth: '525px',
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'baseline',
     alignItems: 'baseline',
     justifyContent: 'center',
     flexWrap: 'wrap',

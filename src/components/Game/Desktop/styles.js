@@ -4,7 +4,6 @@ export default theme => ({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center'
   },
 
@@ -23,7 +22,6 @@ export default theme => ({
   gameHeaderMain: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     padding: '30px 0',
     width: '100%',
@@ -39,7 +37,6 @@ export default theme => ({
     padding: 0,
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center'
   },
 

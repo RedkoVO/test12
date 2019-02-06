@@ -74,7 +74,6 @@ export default theme => ({
     height: '226px',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
 
     [theme.breakpoints.down('lg')]: {
@@ -190,7 +189,6 @@ export default theme => ({
     height: '160px',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
 
     [theme.breakpoints.down('lg')]: {

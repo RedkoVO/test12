@@ -6,7 +6,6 @@ export default theme => ({
     justifyContent: 'space-between',
     flexWrap: 'wrap',
     width: '100%',
-    '-ms-align-items': 'center',
 
     [theme.breakpoints.down('md')]: {
       justifyContent: 'center'
@@ -20,7 +19,6 @@ export default theme => ({
     flexWrap: 'wrap',
     width: '405px',
     marginTop: '60px',
-    '-ms-align-items': 'center',
 
     [theme.breakpoints.down('lg')]: {
       width: '390px'

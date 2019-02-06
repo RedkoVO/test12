@@ -5,7 +5,6 @@ export default theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     width: '100%',
     paddingLeft: '100px',
@@ -21,7 +20,6 @@ export default theme => ({
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    '-ms-align-items': 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,0.52)',
     borderRadius: '25px',
@@ -52,7 +50,6 @@ export default theme => ({
   commentTitle: {
     display: 'flex',
     flexDirection: 'row',
-    '-ms-align-items': 'flex-start',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     width: '100%'

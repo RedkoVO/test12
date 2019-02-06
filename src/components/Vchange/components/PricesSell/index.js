@@ -4,10 +4,10 @@ import withStyles from '@material-ui/core/styles/withStyles'
 
 import styles from './styles'
 
-const PricesBuy = ({ classes, pricesBuyData }) => (
+const PricesSell = ({ classes, pricesSellData }) => (
   <div className={classes.root}>
     <div className={classes.title}>
-      <span>Buy</span> BTC: Prices
+      <span>Sell</span> BTC: Prices
     </div>
 
     <table className={classes.wrTable} cellSpacing="0">
@@ -17,7 +17,7 @@ const PricesBuy = ({ classes, pricesBuyData }) => (
           <th>Ammount (BTC)</th>
           <th>Total (USDT)</th>
         </tr>
-        {pricesBuyData.map(item => (
+        {pricesSellData.map(item => (
           <tr className={classes.wrItem} key={item.id}>
             <td>{item.price}</td>
             <td>{item.ammount}</td>
@@ -29,8 +29,8 @@ const PricesBuy = ({ classes, pricesBuyData }) => (
   </div>
 )
 
-PricesBuy.propTypes = {
-  pricesBuyData: PropTypes.array
+PricesSell.propTypes = {
+  pricesSellData: PropTypes.array
 }
 
-export default withStyles(styles)(PricesBuy)
+export default withStyles(styles)(PricesSell)

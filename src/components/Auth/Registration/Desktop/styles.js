@@ -15,15 +15,13 @@ export default () => ({
     minHeight: 'inherit',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
-    '-ms-align-items': 'center'
+    justifyContent: 'center'
   },
   footer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    paddingBottom: '15px',
-    '-ms-align-items': 'center'
+    paddingBottom: '15px'
   },
   copyright: {
     fontsize: '16px',
