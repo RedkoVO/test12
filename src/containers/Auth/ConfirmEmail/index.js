@@ -1,7 +1,7 @@
 import compose from 'recompose/compose'
 
-import AsyncConfirmEmail from '../../../components/Auth/ConfirmEmail/Desktop/AsyncConfirmEmail'
+import ConfirmEmail from '../../../components/Auth/ConfirmEmail/Desktop'
 
-export default compose()(AsyncConfirmEmail)
+export default compose()(ConfirmEmail)
 
 

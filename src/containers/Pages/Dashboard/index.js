@@ -16,7 +16,7 @@ import Crypto from '../../../crypto/crypto'
 import validate from './validate'
 import { getBigNumberAmount } from '../../../utils/math'
 
-import AsyncDashboardDesktop from '../../../components/Pages/Dashboard/Desktop/AsyncDashboardDesktop'
+import DashboardDesktop from '../../../components/Pages/Dashboard/Desktop'
 
 // import BestGameLogo from '../../assets/images/exchange.jpg'
 import BestShopLogo from '../../../assets/images/shop.jpg'
@@ -297,4 +297,4 @@ export default compose(
     addressKey: localStorage.getItem('address')
   })),
   pure
-)(AsyncDashboardDesktop)
+)(DashboardDesktop)

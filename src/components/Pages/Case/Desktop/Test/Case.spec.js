@@ -6,8 +6,8 @@ import { MemoryRouter } from 'react-router-dom'
 
 import Case from '../'
 
-import GunCase from '../../../../assets/images/GunCase.png'
-import CaseX from '../../../../assets/images/CaseX.png'
+import GunCase from '../../../../../assets/images/GunCase.png'
+import CaseX from '../../../../../assets/images/CaseX.png'
 
 const caseItems = [
   { id: 1, title: 'Good Weapon2 1.2', img: GunCase },
@@ -42,9 +42,13 @@ it('renders correctly', () => {
   const tree = renderer
     .create(
       // <Provider store={store}>
-        <MemoryRouter keyLength={0}>
-            <Case handleLogout={() => {}} caseItems={caseItems} relaredItems={relaredItems} />
-        </MemoryRouter>
+      <MemoryRouter keyLength={0}>
+        <Case
+          handleLogout={() => {}}
+          caseItems={caseItems}
+          relaredItems={relaredItems}
+        />
+      </MemoryRouter>
       // </Provider>
     )
     .toJSON()

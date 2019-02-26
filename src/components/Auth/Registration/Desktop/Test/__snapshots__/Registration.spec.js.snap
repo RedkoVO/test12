@@ -8,6 +8,58 @@ exports[`renders correctly 1`] = `
     className="Registration-containerRegistrat-2"
   >
     <div
+      className="Step1-root-6"
+    >
+      <form
+        className="Step1-registrStep1-7"
+        onSubmit={[Function]}
+      >
+        <h1
+          className="Step1-step1Title-8"
+        >
+          Registration
+        </h1>
+        <div
+          className="Step1-step1Label-9"
+        >
+          Vault ID:
+        </div>
+        <div
+          className="Step1-wrKey-11"
+        >
+          0000000000000000000000000000000000000000000000000000000000000000
+          <img
+            alt=""
+            className="Step1-refresh-12"
+            onClick={[Function]}
+            src="refresh.png"
+          />
+        </div>
+        <button
+          className="Step1-step1BtnsSave-16"
+          onClick={[Function]}
+        >
+          Save key
+        </button>
+        <div>
+          <a
+            className="Step1-step1BtnBack-13"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+          <a
+            className="Step1-step1BtnsFinish-14"
+            href="/finish-registration"
+            onClick={[Function]}
+          >
+            Finish!
+          </a>
+        </div>
+      </form>
+    </div>
+    <div
       className="Registration-footer-3"
     >
       <span

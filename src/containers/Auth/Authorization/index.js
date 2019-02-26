@@ -15,7 +15,7 @@ import { getConfigSelector } from '../../../selectors/config'
 import { receiveFromFaucet } from '../../../requests/receiveFromFaucet'
 import Crypto from '../../../crypto/crypto'
 
-import AsyncAuthorizationDesktop from '../../../components/Auth/Authorization/Desktop/AsyncAuthorizationDesktop'
+import AuthorizationDesktop from '../../../components/Auth/Authorization/Desktop'
 
 const FORM_NAME = 'authirization'
 
@@ -143,4 +143,4 @@ export default compose(
       })
   }),
   pure
-)(AsyncAuthorizationDesktop)
+)(AuthorizationDesktop)

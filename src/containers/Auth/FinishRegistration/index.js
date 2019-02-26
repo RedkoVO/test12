@@ -1,5 +1,5 @@
 import compose from 'recompose/compose'
 
-import AsyncFinishRegistrationDesktop from '../../../components/Auth/FinishRegistration/Desktop/AsyncFinishRegistration'
+import FinishRegistrationDesktop from '../../../components/Auth/FinishRegistration/Desktop'
 
-export default compose()(AsyncFinishRegistrationDesktop)
+export default compose()(FinishRegistrationDesktop)

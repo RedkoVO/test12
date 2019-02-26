@@ -12,95 +12,209 @@ exports[`renders correctly 1`] = `
     >
       <header
         className="Case-headerCase-3"
-      />
+      >
+        <ul
+          className="MenuNavigation-root-5 dark"
+        >
+          <div
+            className="MenuNavigation-headerMenuItem-6 MenuNavigation-wrLogout-7"
+            onClick={[Function]}
+          >
+            <i
+              className="MenuNavigation-menuIcon-8 MenuNavigation-logout-9"
+            />
+            <br />
+             Logout
+          </div>
+          <li>
+            <a
+              aria-current="page"
+              className="MenuNavigation-headerMenuItem-6 active"
+              href="/"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-walletIcon-10"
+              />
+              <br />
+               Wallet
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/vchange"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-vexchange-11"
+              />
+              <br />
+               VChange
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/games"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-games-14"
+              />
+              <br />
+               Games
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/#apps"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-apps-12"
+              />
+              <br />
+               Apps
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/#shops"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-shop-13"
+              />
+              <br />
+               Shop
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/#contacts"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-friends-15"
+              />
+              <br />
+               Contacts
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/#settings"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-settings-16"
+              />
+              <br />
+               Settings
+            </a>
+          </li>
+        </ul>
+      </header>
       <main
         className="Case-case-4"
       >
         <div
-          className="CaseFilter-root-5"
+          className="CaseFilter-root-17"
         >
           <input
-            className="CaseFilter-caseFilterSearch-6"
+            className="CaseFilter-caseFilterSearch-18"
             placeholder="Search"
             type="text"
           />
           <div
-            className="CaseFilter-caseFilterOptions-7"
+            className="CaseFilter-caseFilterOptions-19"
           >
             <div
-              className="CaseFilter-caseFilterType-8"
+              className="CaseFilter-caseFilterType-20"
             >
               <div
-                className="CaseFilter-caseFilterItem-9"
+                className="CaseFilter-caseFilterItem-21"
               >
                 less than $15&lt;
               </div>
               <div
-                className="CaseFilter-caseFilterItem-9"
+                className="CaseFilter-caseFilterItem-21"
               >
                 $15-30
               </div>
               <div
-                className="CaseFilter-caseFilterItem-9 CaseFilter-selectedItem-11"
+                className="CaseFilter-caseFilterItem-21 CaseFilter-selectedItem-23"
               >
                  $30-60
               </div>
               <div
-                className="CaseFilter-caseFilterItem-9"
+                className="CaseFilter-caseFilterItem-21"
               >
                 $60-90
               </div>
               <div
-                className="CaseFilter-caseFilterItem-9"
+                className="CaseFilter-caseFilterItem-21"
               >
                 less than $15&lt;
               </div>
             </div>
             <div
-              className="CaseFilter-caseFilterType-8"
+              className="CaseFilter-caseFilterType-20"
             >
               <div
-                className="CaseFilter-caseFilterItem-9"
+                className="CaseFilter-caseFilterItem-21"
               >
                 CS:GO
               </div>
               <div
-                className="CaseFilter-caseFilterItem-9"
+                className="CaseFilter-caseFilterItem-21"
               >
                 Dota 2
               </div>
               <div
-                className="CaseFilter-caseFilterItem-9 CaseFilter-selectedItem-11"
+                className="CaseFilter-caseFilterItem-21 CaseFilter-selectedItem-23"
               >
                 Starcraft 2
               </div>
               <div
-                className="CaseFilter-caseFilterItem-9"
+                className="CaseFilter-caseFilterItem-21"
               >
                  Maincraft
               </div>
               <div
-                className="CaseFilter-caseFilterItem-9"
+                className="CaseFilter-caseFilterItem-21"
               >
                 Rainbow Six
               </div>
             </div>
           </div>
           <div
-            className="CaseFilter-caseFilterBtn-12"
+            className="CaseFilter-caseFilterBtn-24"
           />
         </div>
         <div
-          className="CaseOpen-root-13"
+          className="CaseOpen-root-25"
         >
           <div
-            className="CaseOpen-caseOpenTop-14"
+            className="CaseOpen-caseOpenTop-26"
           >
             <div
-              className="CaseOpen-caseOpenBackBtn-15"
+              className="CaseOpen-caseOpenBackBtn-27"
             />
             <div
-              className="CaseOpen-caseOpenTopImg-16"
+              className="CaseOpen-caseOpenTopImg-28"
             >
               <img
                 alt=""
@@ -108,13 +222,13 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CaseOpen-caseOpenTopDescr-17"
+              className="CaseOpen-caseOpenTopDescr-29"
             >
               <div
-                className="CaseOpen-caseOpenTopMarker-18"
+                className="CaseOpen-caseOpenTopMarker-30"
               />
               <div
-                className="CaseOpen-caseOpenTopName-19"
+                className="CaseOpen-caseOpenTopName-31"
               >
                 Case: 
                 <span>
@@ -122,7 +236,7 @@ exports[`renders correctly 1`] = `
                 </span>
               </div>
               <div
-                className="CaseOpen-caseOpenTopPrice-20"
+                className="CaseOpen-caseOpenTopPrice-32"
               >
                 Open for 
                 <span>
@@ -130,7 +244,7 @@ exports[`renders correctly 1`] = `
                 </span>
               </div>
               <div
-                className="CaseOpen-caseOpenTopGame-21"
+                className="CaseOpen-caseOpenTopGame-33"
               >
                 Case: 
                 <span>
@@ -140,18 +254,18 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CaseOpen-caseOpenContent-22"
+            className="CaseOpen-caseOpenContent-34"
           >
             <div
-              className="CaseOpen-caseOpenTitle-23"
+              className="CaseOpen-caseOpenTitle-35"
             >
               This case cointains this stuff:
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -159,7 +273,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -168,10 +282,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -179,7 +293,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -188,10 +302,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -199,7 +313,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -208,10 +322,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -219,7 +333,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -228,10 +342,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -239,7 +353,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -248,10 +362,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -259,7 +373,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -268,10 +382,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -279,7 +393,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -288,10 +402,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -299,7 +413,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -308,10 +422,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -319,7 +433,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -328,10 +442,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -339,7 +453,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -348,10 +462,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -359,7 +473,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -368,10 +482,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -379,7 +493,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -388,10 +502,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -399,7 +513,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -408,10 +522,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -419,7 +533,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -428,10 +542,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -439,7 +553,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -448,10 +562,10 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="CaseOpen-caseOpenItem-24"
+              className="CaseOpen-caseOpenItem-36"
             >
               <div
-                className="CaseOpen-caseOpenItemImg-25"
+                className="CaseOpen-caseOpenItemImg-37"
               >
                 <img
                   alt=""
@@ -459,7 +573,7 @@ exports[`renders correctly 1`] = `
                 />
               </div>
               <div
-                className="CaseOpen-caseOpenItemName-26"
+                className="CaseOpen-caseOpenItemName-38"
               >
                 Gun: 
                 <span>
@@ -470,18 +584,18 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="CasesRelated-root-27"
+          className="CasesRelated-root-39"
         >
           <div
-            className="CasesRelated-casesRelatedTilte-28"
+            className="CasesRelated-casesRelatedTilte-40"
           >
             Related to this case:
           </div>
           <div
-            className="CasesRelated-casesRelatedItem-29"
+            className="CasesRelated-casesRelatedItem-41"
           >
             <div
-              className="CasesRelated-casesRelatedItemImg-30"
+              className="CasesRelated-casesRelatedItemImg-42"
             >
               <img
                 alt=""
@@ -489,7 +603,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesRelated-casesRelatedItemName-31"
+              className="CasesRelated-casesRelatedItemName-43"
             >
               Gun: 
               <span>
@@ -498,10 +612,10 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CasesRelated-casesRelatedItem-29"
+            className="CasesRelated-casesRelatedItem-41"
           >
             <div
-              className="CasesRelated-casesRelatedItemImg-30"
+              className="CasesRelated-casesRelatedItemImg-42"
             >
               <img
                 alt=""
@@ -509,7 +623,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesRelated-casesRelatedItemName-31"
+              className="CasesRelated-casesRelatedItemName-43"
             >
               Gun: 
               <span>
@@ -518,10 +632,10 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CasesRelated-casesRelatedItem-29"
+            className="CasesRelated-casesRelatedItem-41"
           >
             <div
-              className="CasesRelated-casesRelatedItemImg-30"
+              className="CasesRelated-casesRelatedItemImg-42"
             >
               <img
                 alt=""
@@ -529,7 +643,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesRelated-casesRelatedItemName-31"
+              className="CasesRelated-casesRelatedItemName-43"
             >
               Gun: 
               <span>
@@ -538,10 +652,10 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CasesRelated-casesRelatedItem-29"
+            className="CasesRelated-casesRelatedItem-41"
           >
             <div
-              className="CasesRelated-casesRelatedItemImg-30"
+              className="CasesRelated-casesRelatedItemImg-42"
             >
               <img
                 alt=""
@@ -549,7 +663,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesRelated-casesRelatedItemName-31"
+              className="CasesRelated-casesRelatedItemName-43"
             >
               Gun: 
               <span>
@@ -558,10 +672,10 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CasesRelated-casesRelatedItem-29"
+            className="CasesRelated-casesRelatedItem-41"
           >
             <div
-              className="CasesRelated-casesRelatedItemImg-30"
+              className="CasesRelated-casesRelatedItemImg-42"
             >
               <img
                 alt=""
@@ -569,7 +683,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesRelated-casesRelatedItemName-31"
+              className="CasesRelated-casesRelatedItemName-43"
             >
               Gun: 
               <span>
@@ -578,10 +692,10 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="CasesRelated-casesRelatedItem-29"
+            className="CasesRelated-casesRelatedItem-41"
           >
             <div
-              className="CasesRelated-casesRelatedItemImg-30"
+              className="CasesRelated-casesRelatedItemImg-42"
             >
               <img
                 alt=""
@@ -589,7 +703,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesRelated-casesRelatedItemName-31"
+              className="CasesRelated-casesRelatedItemName-43"
             >
               Gun: 
               <span>
@@ -602,14 +716,14 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <footer
-    className="Footer-root-32"
+    className="Footer-root-44"
   >
     <ul
-      className="Footer-footerNav-33"
+      className="Footer-footerNav-45"
     >
       <li>
         <a
-          className="Footer-footerNavItem-34"
+          className="Footer-footerNavItem-46"
           href="/"
           onClick={[Function]}
         >
@@ -618,7 +732,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-34"
+          className="Footer-footerNavItem-46"
           href="/"
           onClick={[Function]}
         >
@@ -627,7 +741,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-34"
+          className="Footer-footerNavItem-46"
           href="/"
           onClick={[Function]}
         >
@@ -636,7 +750,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-34"
+          className="Footer-footerNavItem-46"
           href="/games"
           onClick={[Function]}
         >
@@ -645,7 +759,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-34"
+          className="Footer-footerNavItem-46"
           href="/"
           onClick={[Function]}
         >
@@ -654,7 +768,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-34"
+          className="Footer-footerNavItem-46"
           href="/"
           onClick={[Function]}
         >

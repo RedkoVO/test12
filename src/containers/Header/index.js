@@ -7,7 +7,7 @@ import { getAllBalanceInfoSelector } from '../../selectors/balance'
 
 import { clearStorageForLogout } from '../../utils/localStorageUtils'
 
-import AsyncHeaderDesktop from '../../components/Header/Desktop'
+import HeaderDesktop from '../../components/Header/Desktop'
 
 const mapStateToProps = state => ({
   balance: getAllBalanceInfoSelector(state)
@@ -23,4 +23,4 @@ export default compose(
     }
   }),
   pure
-)(AsyncHeaderDesktop)
+)(HeaderDesktop)

@@ -7,7 +7,7 @@ import { getTransactionHistorySelector } from '../../selectors/history'
 import { getAllBalanceInfoSelector } from '../../selectors/balance'
 import { getTransactionHistory } from '../../redux/actions/history'
 
-import AsyncTransactionHistoryDesktop from '../../components/TransactionHistory/Desktop/AsyncTransactionHistoryDesktop'
+import TransactionHistoryDesktop from '../../components/TransactionHistory/Desktop'
 
 const mapStateToProps = state => ({
   transactionHistory: getTransactionHistorySelector(state),
@@ -35,4 +35,4 @@ export default compose(
     }
   }),
   pure
-)(AsyncTransactionHistoryDesktop)
+)(TransactionHistoryDesktop)

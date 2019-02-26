@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import Step1 from '../components/Step1/AsyncStep1'
-// import Step2 from '../components/Step2/AsyncStep2'
-// import Step3 from '../components/Step3/AsyncStep3'
+import Step1 from '../components/Step1'
+// import Step2 from '../components/Step2'
+// import Step3 from '../components/Step3'
 
 import styles from './styles'
 

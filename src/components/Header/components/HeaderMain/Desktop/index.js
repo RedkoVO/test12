@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../../../MenuNavigation/Desktop/AsyncMenuNavigation'
+import MenuNavigation from '../../../../MenuNavigation/Desktop'
 import UserBlock from '../components/UserBlock'
 
 import styles from './styles'

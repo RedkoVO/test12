@@ -6,21 +6,21 @@ import withConfigAndAllBalance from '../../../hocs/withConfigAndAllBalance'
 import secretKey from '../../../hocs/withSecretKey'
 
 import RoutePage from '../../../components/App/components/Routes/RoutePage'
-import AsyncAuthorization from '../../../containers/Auth/Authorization/AsyncAuthorization'
-import AsyncFinishRegistration from '../../../containers/Auth/FinishRegistration/AsyncFinishRegistration'
-import AsyncRegistration from '../../../containers/Auth/Registration/AsyncRegistration'
-import AsyncConfirmEmail from '../../../containers/Auth/ConfirmEmail/AsyncConfirmEmail'
+import Authorization from '../../../containers/Auth/Authorization'
+import FinishRegistration from '../../../containers/Auth/FinishRegistration'
+import Registration from '../../../containers/Auth/Registration'
+import ConfirmEmail from '../../../containers/Auth/ConfirmEmail'
 import AsyncDashboard from '../../../containers/Pages/Dashboard/AsyncDashboard'
-import AsyncShop from '../../../containers/Shop/AsyncShop'
+import AsyncShop from '../../../containers/Pages/Shop/AsyncShop'
 import AsyncGames from '../../../containers/Pages/Games/AsyncGames'
 import AsyncGame from '../../../containers/Pages/Game/AsyncGame'
-import AsyncStream from '../../../containers/Stream/AsyncStream'
-import AsyncSkins from '../../../containers/Skins/AsyncSkins'
-import AsyncVchange from '../../../containers/Vchange/AsyncVchange'
+import AsyncStream from '../../../containers/Pages/Stream/AsyncStream'
+import AsyncSkins from '../../../containers/Pages/Skins/AsyncSkins'
+import AsyncVchange from '../../../containers/Pages/Vchange/AsyncVchange'
 import AsyncCases from '../../../containers/Pages/Cases/AsyncCases'
 import AsyncCase from '../../../containers/Pages/Case/AsyncCase'
-import AsyncFriends from '../../../containers/Friends/AsyncFriends'
-import AsyncSettings from '../../../containers/Settings/AsyncSettings'
+import AsyncFriends from '../../../containers/Pages/Friends/AsyncFriends'
+import AsyncSettings from '../../../containers/Pages/Settings/AsyncSettings'
 
 // import whyDidYouUpdate from 'why-did-you-update'
 // whyDidYouUpdate(React)
@@ -36,21 +36,16 @@ const RootRoute = props => {
         <Redirect exact from="/" to="/login" />
       )}
 
-      {!secretKey && <Route path={`/login`} component={AsyncAuthorization} />}
+      {!secretKey && <Route path={`/login`} component={Authorization} />}
 
       {!secretKey && (
-        <Route
-          path={`/finish-registration`}
-          component={AsyncFinishRegistration}
-        />
+        <Route path={`/finish-registration`} component={FinishRegistration} />
       )}
 
-      {!secretKey && (
-        <Route path={`/registration`} component={AsyncRegistration} />
-      )}
+      {!secretKey && <Route path={`/registration`} component={Registration} />}
 
       {!secretKey && (
-        <Route path={`/confirmation-email`} component={AsyncConfirmEmail} />
+        <Route path={`/confirmation-email`} component={ConfirmEmail} />
       )}
 
       {secretKey && <RoutePage path={`/settings`} component={AsyncSettings} />}

@@ -8,7 +8,7 @@ import validate from './validate'
 
 // import { registrationEmail } from '../../../redux/actions/auth'
 
-import AsyncRegistrationDesktop from '../../../components/Auth/Registration/Desktop/AsyncRegistrationDesktop'
+import RegistrationDesktop from '../../../components/Auth/Registration/Desktop'
 
 const FORM_NAME = 'registration'
 
@@ -49,4 +49,4 @@ export default compose(
         //     })
       })
   })
-)(AsyncRegistrationDesktop)
+)(RegistrationDesktop)

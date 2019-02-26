@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../../MenuNavigation/Desktop/AsyncMenuNavigation'
+import MenuNavigation from '../../../MenuNavigation/Desktop'
 import RollTop from '../components/RollTop'
 import RollBottom from '../components/RollBottom'
 import RollMobile from '../components/RollMobile'
 import GameCounter from '../components/GameCounter'
 import GameComments from '../components/GameComments'
-import Footer from '../../../Footer/Desktop/AsyncFooterDesktop'
+import Footer from '../../../Footer/Desktop'
 
 import styles from './styles'
 

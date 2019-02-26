@@ -12,92 +12,206 @@ exports[`renders correctly 1`] = `
     >
       <header
         className="Cases-headerSkins-3"
-      />
+      >
+        <ul
+          className="MenuNavigation-root-5 dark"
+        >
+          <div
+            className="MenuNavigation-headerMenuItem-6 MenuNavigation-wrLogout-7"
+            onClick={[Function]}
+          >
+            <i
+              className="MenuNavigation-menuIcon-8 MenuNavigation-logout-9"
+            />
+            <br />
+             Logout
+          </div>
+          <li>
+            <a
+              aria-current="page"
+              className="MenuNavigation-headerMenuItem-6 active"
+              href="/"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-walletIcon-10"
+              />
+              <br />
+               Wallet
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/vchange"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-vexchange-11"
+              />
+              <br />
+               VChange
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/games"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-games-14"
+              />
+              <br />
+               Games
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/#apps"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-apps-12"
+              />
+              <br />
+               Apps
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/#shops"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-shop-13"
+              />
+              <br />
+               Shop
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/#contacts"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-friends-15"
+              />
+              <br />
+               Contacts
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={null}
+              className="MenuNavigation-headerMenuItem-6"
+              href="/#settings"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigation-menuIcon-8 MenuNavigation-settings-16"
+              />
+              <br />
+               Settings
+            </a>
+          </li>
+        </ul>
+      </header>
       <main
         className="Cases-cases-4"
       >
         <div
-          className="CasesFilter-root-5"
+          className="CasesFilter-root-17"
         >
           <input
-            className="CasesFilter-casesFilterSearch-6"
+            className="CasesFilter-casesFilterSearch-18"
             placeholder="Search"
             type="text"
           />
           <div
-            className="CasesFilter-casesFilterOptions-7"
+            className="CasesFilter-casesFilterOptions-19"
           >
             <div
-              className="CasesFilter-casesFilterType-8"
+              className="CasesFilter-casesFilterType-20"
             >
               <div
-                className="CasesFilter-casesFilterItem-9"
+                className="CasesFilter-casesFilterItem-21"
               >
                 less than $15&lt;
               </div>
               <div
-                className="CasesFilter-casesFilterItem-9"
+                className="CasesFilter-casesFilterItem-21"
               >
                 $15-30
               </div>
               <div
-                className="CasesFilter-casesFilterItem-9 CasesFilter-selectedItem-11"
+                className="CasesFilter-casesFilterItem-21 CasesFilter-selectedItem-23"
               >
                  $30-60
               </div>
               <div
-                className="CasesFilter-casesFilterItem-9"
+                className="CasesFilter-casesFilterItem-21"
               >
                 $60-90
               </div>
               <div
-                className="CasesFilter-casesFilterItem-9"
+                className="CasesFilter-casesFilterItem-21"
               >
                 less than $15&lt;
               </div>
             </div>
             <div
-              className="CasesFilter-casesFilterType-8"
+              className="CasesFilter-casesFilterType-20"
             >
               <div
-                className="CasesFilter-casesFilterItem-9"
+                className="CasesFilter-casesFilterItem-21"
               >
                 CS:GO
               </div>
               <div
-                className="CasesFilter-casesFilterItem-9"
+                className="CasesFilter-casesFilterItem-21"
               >
                 Dota 2
               </div>
               <div
-                className="CasesFilter-casesFilterItem-9 CasesFilter-selectedItem-11"
+                className="CasesFilter-casesFilterItem-21 CasesFilter-selectedItem-23"
               >
                 Starcraft 2
               </div>
               <div
-                className="CasesFilter-casesFilterItem-9"
+                className="CasesFilter-casesFilterItem-21"
               >
                  Maincraft
               </div>
               <div
-                className="CasesFilter-casesFilterItem-9"
+                className="CasesFilter-casesFilterItem-21"
               >
                 Rainbow Six
               </div>
             </div>
           </div>
           <div
-            className="CasesFilter-casesFilterBtn-12"
+            className="CasesFilter-casesFilterBtn-24"
           />
         </div>
         <div
-          className="CasesList-root-13"
+          className="CasesList-root-25"
         >
           <div
-            className="CasesList-casesListItem-14"
+            className="CasesList-casesListItem-26"
           >
             <div
-              className="CasesList-casesListItemImg-15"
+              className="CasesList-casesListItemImg-27"
             >
               <img
                 alt=""
@@ -105,7 +219,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesList-casesListItemName-16"
+              className="CasesList-casesListItemName-28"
             >
               Case: 
               <span>
@@ -113,7 +227,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemPrise-17"
+              className="CasesList-casesListItemPrise-29"
             >
               Open for 
               <span>
@@ -121,7 +235,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemGame-18"
+              className="CasesList-casesListItemGame-30"
             >
               Case: 
               <span>
@@ -129,14 +243,14 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemMarker-19"
+              className="CasesList-casesListItemMarker-31"
             />
           </div>
           <div
-            className="CasesList-casesListItem-14"
+            className="CasesList-casesListItem-26"
           >
             <div
-              className="CasesList-casesListItemImg-15"
+              className="CasesList-casesListItemImg-27"
             >
               <img
                 alt=""
@@ -144,7 +258,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesList-casesListItemName-16"
+              className="CasesList-casesListItemName-28"
             >
               Case: 
               <span>
@@ -152,7 +266,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemPrise-17"
+              className="CasesList-casesListItemPrise-29"
             >
               Open for 
               <span>
@@ -160,7 +274,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemGame-18"
+              className="CasesList-casesListItemGame-30"
             >
               Case: 
               <span>
@@ -168,14 +282,14 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemMarker-19"
+              className="CasesList-casesListItemMarker-31"
             />
           </div>
           <div
-            className="CasesList-casesListItem-14"
+            className="CasesList-casesListItem-26"
           >
             <div
-              className="CasesList-casesListItemImg-15"
+              className="CasesList-casesListItemImg-27"
             >
               <img
                 alt=""
@@ -183,7 +297,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesList-casesListItemName-16"
+              className="CasesList-casesListItemName-28"
             >
               Case: 
               <span>
@@ -191,7 +305,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemPrise-17"
+              className="CasesList-casesListItemPrise-29"
             >
               Open for 
               <span>
@@ -199,7 +313,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemGame-18"
+              className="CasesList-casesListItemGame-30"
             >
               Case: 
               <span>
@@ -207,14 +321,14 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemMarker-19"
+              className="CasesList-casesListItemMarker-31"
             />
           </div>
           <div
-            className="CasesList-casesListItem-14"
+            className="CasesList-casesListItem-26"
           >
             <div
-              className="CasesList-casesListItemImg-15"
+              className="CasesList-casesListItemImg-27"
             >
               <img
                 alt=""
@@ -222,7 +336,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="CasesList-casesListItemName-16"
+              className="CasesList-casesListItemName-28"
             >
               Case: 
               <span>
@@ -230,7 +344,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemPrise-17"
+              className="CasesList-casesListItemPrise-29"
             >
               Open for 
               <span>
@@ -238,7 +352,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemGame-18"
+              className="CasesList-casesListItemGame-30"
             >
               Case: 
               <span>
@@ -246,7 +360,7 @@ exports[`renders correctly 1`] = `
               </span>
             </div>
             <div
-              className="CasesList-casesListItemMarker-19"
+              className="CasesList-casesListItemMarker-31"
             />
           </div>
         </div>
@@ -254,14 +368,14 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <footer
-    className="Footer-root-20"
+    className="Footer-root-32"
   >
     <ul
-      className="Footer-footerNav-21"
+      className="Footer-footerNav-33"
     >
       <li>
         <a
-          className="Footer-footerNavItem-22"
+          className="Footer-footerNavItem-34"
           href="/"
           onClick={[Function]}
         >
@@ -270,7 +384,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-22"
+          className="Footer-footerNavItem-34"
           href="/"
           onClick={[Function]}
         >
@@ -279,7 +393,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-22"
+          className="Footer-footerNavItem-34"
           href="/"
           onClick={[Function]}
         >
@@ -288,7 +402,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-22"
+          className="Footer-footerNavItem-34"
           href="/games"
           onClick={[Function]}
         >
@@ -297,7 +411,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-22"
+          className="Footer-footerNavItem-34"
           href="/"
           onClick={[Function]}
         >
@@ -306,7 +420,7 @@ exports[`renders correctly 1`] = `
       </li>
       <li>
         <a
-          className="Footer-footerNavItem-22"
+          className="Footer-footerNavItem-34"
           href="/"
           onClick={[Function]}
         >

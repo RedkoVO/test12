@@ -6,7 +6,7 @@ import { createStore } from 'redux'
 
 import Cases from '../'
 
-import CaseXIcon from '../../../../assets/images/caseX.png'
+import CaseXIcon from '../../../../../assets/images/caseX.png'
 
 const tmpCases = [
   {

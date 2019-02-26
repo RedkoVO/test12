@@ -1,7 +1,7 @@
 import compose from 'recompose/compose'
 import { withProps, pure } from 'recompose'
 
-import AsyncCasesDesktop from '../../../components/Pages/Cases/Desktop/AsyncCasesDesktop'
+import CasesDesktop from '../../../components/Pages/Cases/Desktop'
 
 import CaseXIcon from '../../../assets/images/caseX.png'
 
@@ -95,4 +95,4 @@ const tmpCases = [
 export default compose(
   withProps(() => ({ cases: tmpCases })),
   pure
-)(AsyncCasesDesktop)
+)(CasesDesktop)

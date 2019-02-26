@@ -4,7 +4,7 @@ import { withHandlers, withProps, withState, pure, lifecycle } from 'recompose'
 import { clearStorageForLogout } from '../../../utils/localStorageUtils'
 import gC from '../../../constants'
 
-import AsyncGameDesktop from '../../../components/Pages/Game/Desktop/AsyncGameDesktop'
+import GameDesktop from '../../../components/Pages/Game/Desktop'
 
 import SliderItemImg1 from '../../../assets/images/sim_game_icon_4clover.png'
 import GameRollImg from '../../../assets/images/slider_slot_4clover_m.jpg'
@@ -113,4 +113,4 @@ export default compose(
     }
   }),
   pure
-)(AsyncGameDesktop)
+)(GameDesktop)

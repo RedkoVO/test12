@@ -12,22 +12,113 @@ exports[`renders correctly Desktop 1`] = `
     >
       <div
         className="Game-gameHeaderMain-3"
-      />
+      >
+        <ul
+          className="MenuNavigationGame-root-8 dark"
+        >
+          <li>
+            <div
+              className="MenuNavigationGame-logout-17"
+              onClick={[Function]}
+            >
+              Logout
+            </div>
+          </li>
+          <li>
+            <a
+              className="MenuNavigationGame-headerMenuItem-9"
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-dashboard-11"
+              />
+              <br />
+               Dashboard
+            </a>
+          </li>
+          <li>
+            <a
+              className="MenuNavigationGame-headerMenuItem-9"
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-walletIcon-12"
+              />
+              <br />
+               Wallet
+            </a>
+          </li>
+          <li>
+            <a
+              className="MenuNavigationGame-headerMenuItem-9"
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-shop-13"
+              />
+              <br />
+               Shop
+            </a>
+          </li>
+          <li>
+            <a
+              className="MenuNavigationGame-headerMenuItem-9"
+              href="/games"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-games-14"
+              />
+              <br />
+               Games
+            </a>
+          </li>
+          <li>
+            <a
+              className="MenuNavigationGame-headerMenuItem-9"
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-friends-15"
+              />
+              <br />
+               Friends
+            </a>
+          </li>
+          <li>
+            <a
+              className="MenuNavigationGame-headerMenuItem-9"
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-settings-16"
+              />
+              <br />
+               Settings
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main
       className="Game-gameMain-4"
     >
       <div
-        className="GameCounter-root-8"
+        className="GameCounter-root-18"
       >
         <div
-          className="GameCounter-counterWins-13"
+          className="GameCounter-counterWins-23"
         >
           <p
-            className="GameCounter-counterBiggestWin-14"
+            className="GameCounter-counterBiggestWin-24"
           >
             <span
-              className="GameCounter-counterValue-18"
+              className="GameCounter-counterValue-28"
             >
               4666.78 dcb
             </span>
@@ -39,13 +130,13 @@ exports[`renders correctly Desktop 1`] = `
           </p>
         </div>
         <div
-          className="GameCounter-counterHours-9"
+          className="GameCounter-counterHours-19"
         >
           <p
-            className="GameCounter-counterHoursVolume-15"
+            className="GameCounter-counterHoursVolume-25"
           >
             <span
-              className="GameCounter-counterValue-18"
+              className="GameCounter-counterValue-28"
             >
               167.12 dcb
             </span>
@@ -57,13 +148,13 @@ exports[`renders correctly Desktop 1`] = `
           </p>
         </div>
         <div
-          className="GameCounter-counterUsers-10"
+          className="GameCounter-counterUsers-20"
         >
           <p
-            className="GameCounter-counterUsersVolume-11"
+            className="GameCounter-counterUsersVolume-21"
           >
             <span
-              className="GameCounter-counterValue-18"
+              className="GameCounter-counterValue-28"
             >
               785
             </span>
@@ -75,13 +166,13 @@ exports[`renders correctly Desktop 1`] = `
           </p>
         </div>
         <div
-          className="GameCounter-counterContracts-12"
+          className="GameCounter-counterContracts-22"
         >
           <p
-            className="GameCounter-counterContractsVolume-16"
+            className="GameCounter-counterContractsVolume-26"
           >
             <span
-              className="GameCounter-counterValue-18"
+              className="GameCounter-counterValue-28"
             >
               20243.12 dcb
             </span>
@@ -93,7 +184,7 @@ exports[`renders correctly Desktop 1`] = `
           </p>
           <br />
           <a
-            className="GameCounter-counterContractsLink-17"
+            className="GameCounter-counterContractsLink-27"
             href="/"
             onClick={[Function]}
           >
@@ -102,33 +193,33 @@ exports[`renders correctly Desktop 1`] = `
         </div>
       </div>
       <div
-        className="GameComments-root-19"
+        className="GameComments-root-29"
       >
         <div
-          className="GameComments-commentItem-20 GameComments-comment1-21"
+          className="GameComments-commentItem-30 GameComments-comment1-31"
         >
           <a
-            className="GameComments-commentUser-22"
+            className="GameComments-commentUser-32"
             href="/"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="GameComments-commentUserPhoto-23"
+              className="GameComments-commentUserPhoto-33"
               src="UserImg"
             />
           </a>
           <div
-            className="GameComments-commentTitle-24"
+            className="GameComments-commentTitle-34"
           >
             <span
-              className="GameComments-commentTitleText-25"
+              className="GameComments-commentTitleText-35"
             >
               Ben F.
                says:
             </span>
             <time
-              className="GameComments-commentDate-26"
+              className="GameComments-commentDate-36"
               dateTime="2018-05-22 13:30"
             >
               22 May 2018 12:03
@@ -138,25 +229,25 @@ exports[`renders correctly Desktop 1`] = `
             Curabitur tincidunt orci quis odio aliquet placerat. Nullam laoreet justo eros, quis semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank. s semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank.
           </p>
           <a
-            className="GameComments-commentLike-28"
+            className="GameComments-commentLike-38"
             href="/"
             onClick={[Function]}
           >
              
             <span
-              className="GameComments-likeValue-29"
+              className="GameComments-likeValue-39"
             >
               5
             </span>
              Like
           </a>
           <a
-            className="GameComments-subComment-27"
+            className="GameComments-subComment-37"
             href="/"
             onClick={[Function]}
           >
             <span
-              className="GameComments-commentValue-30"
+              className="GameComments-commentValue-40"
             >
               7
             </span>
@@ -164,30 +255,30 @@ exports[`renders correctly Desktop 1`] = `
           </a>
         </div>
         <div
-          className="GameComments-commentItem-20 GameComments-comment2-31"
+          className="GameComments-commentItem-30 GameComments-comment2-41"
         >
           <a
-            className="GameComments-commentUser-22"
+            className="GameComments-commentUser-32"
             href="/"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="GameComments-commentUserPhoto-23"
+              className="GameComments-commentUserPhoto-33"
               src="UserImg"
             />
           </a>
           <div
-            className="GameComments-commentTitle-24"
+            className="GameComments-commentTitle-34"
           >
             <span
-              className="GameComments-commentTitleText-25"
+              className="GameComments-commentTitleText-35"
             >
               Thomas D.
                says:
             </span>
             <time
-              className="GameComments-commentDate-26"
+              className="GameComments-commentDate-36"
               dateTime="2018-05-22 13:30"
             >
               22 May 2018 12:03
@@ -197,25 +288,25 @@ exports[`renders correctly Desktop 1`] = `
             Nulla non pellentesque sem, sed aliquet justo. Praesent egestas purus et bibendum tempus.Interdum et malesuada fames ac ante ipsum primis in faucibus.
           </p>
           <a
-            className="GameComments-commentLike-28"
+            className="GameComments-commentLike-38"
             href="/"
             onClick={[Function]}
           >
              
             <span
-              className="GameComments-likeValue-29"
+              className="GameComments-likeValue-39"
             >
               5
             </span>
              Like
           </a>
           <a
-            className="GameComments-subComment-27"
+            className="GameComments-subComment-37"
             href="/"
             onClick={[Function]}
           >
             <span
-              className="GameComments-commentValue-30"
+              className="GameComments-commentValue-40"
             >
               7
             </span>
@@ -224,6 +315,71 @@ exports[`renders correctly Desktop 1`] = `
         </div>
       </div>
     </main>
+    <footer
+      className="Footer-root-43"
+    >
+      <ul
+        className="Footer-footerNav-44"
+      >
+        <li>
+          <a
+            className="Footer-footerNavItem-45"
+            href="/"
+            onClick={[Function]}
+          >
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a
+            className="Footer-footerNavItem-45"
+            href="/"
+            onClick={[Function]}
+          >
+            Wallet
+          </a>
+        </li>
+        <li>
+          <a
+            className="Footer-footerNavItem-45"
+            href="/"
+            onClick={[Function]}
+          >
+            Shop
+          </a>
+        </li>
+        <li>
+          <a
+            className="Footer-footerNavItem-45"
+            href="/games"
+            onClick={[Function]}
+          >
+            Games
+          </a>
+        </li>
+        <li>
+          <a
+            className="Footer-footerNavItem-45"
+            href="/"
+            onClick={[Function]}
+          >
+            Friends
+          </a>
+        </li>
+        <li>
+          <a
+            className="Footer-footerNavItem-45"
+            href="/"
+            onClick={[Function]}
+          >
+            Settings
+          </a>
+        </li>
+      </ul>
+      <span>
+        Vault. All Rights Reserved 2018
+      </span>
+    </footer>
   </div>
 </div>
 `;
@@ -242,11 +398,11 @@ exports[`renders correctly Mobile 1`] = `
         className="Game-gameHeaderMain-3"
       >
         <ul
-          className="MenuNavigationGame-root-33 dark"
+          className="MenuNavigationGame-root-8 dark"
         >
           <li>
             <div
-              className="MenuNavigationGame-logout-42"
+              className="MenuNavigationGame-logout-17"
               onClick={[Function]}
             >
               Logout
@@ -254,12 +410,12 @@ exports[`renders correctly Mobile 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigationGame-headerMenuItem-34"
+              className="MenuNavigationGame-headerMenuItem-9"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigationGame-menuIcon-35 MenuNavigationGame-dashboard-36"
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-dashboard-11"
               />
               <br />
                Dashboard
@@ -267,12 +423,12 @@ exports[`renders correctly Mobile 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigationGame-headerMenuItem-34"
+              className="MenuNavigationGame-headerMenuItem-9"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigationGame-menuIcon-35 MenuNavigationGame-walletIcon-37"
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-walletIcon-12"
               />
               <br />
                Wallet
@@ -280,12 +436,12 @@ exports[`renders correctly Mobile 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigationGame-headerMenuItem-34"
+              className="MenuNavigationGame-headerMenuItem-9"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigationGame-menuIcon-35 MenuNavigationGame-shop-38"
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-shop-13"
               />
               <br />
                Shop
@@ -293,12 +449,12 @@ exports[`renders correctly Mobile 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigationGame-headerMenuItem-34"
+              className="MenuNavigationGame-headerMenuItem-9"
               href="/games"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigationGame-menuIcon-35 MenuNavigationGame-games-39"
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-games-14"
               />
               <br />
                Games
@@ -306,12 +462,12 @@ exports[`renders correctly Mobile 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigationGame-headerMenuItem-34"
+              className="MenuNavigationGame-headerMenuItem-9"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigationGame-menuIcon-35 MenuNavigationGame-friends-40"
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-friends-15"
               />
               <br />
                Friends
@@ -319,12 +475,12 @@ exports[`renders correctly Mobile 1`] = `
           </li>
           <li>
             <a
-              className="MenuNavigationGame-headerMenuItem-34"
+              className="MenuNavigationGame-headerMenuItem-9"
               href="/"
               onClick={[Function]}
             >
               <i
-                className="MenuNavigationGame-menuIcon-35 MenuNavigationGame-settings-41"
+                className="MenuNavigationGame-menuIcon-10 MenuNavigationGame-settings-16"
               />
               <br />
                Settings
@@ -346,18 +502,18 @@ exports[`renders correctly Mobile 1`] = `
             className="RollTopDesktop-gameRollInf-48"
           >
             <div
-              className="HeaderGame-root-74"
+              className="HeaderGame-root-67"
             >
               <div
-                className="HeaderGame-gameUserBlock-75"
+                className="HeaderGame-gameUserBlock-68"
               >
                 <p
-                  className="HeaderGame-gameUserHello-76"
+                  className="HeaderGame-gameUserHello-69"
                 >
                   Hello, Ben A 
                   <br />
                   <a
-                    className="HeaderGame-gameUserVerification-77"
+                    className="HeaderGame-gameUserVerification-70"
                     href="/"
                     onClick={[Function]}
                   >
@@ -365,7 +521,7 @@ exports[`renders correctly Mobile 1`] = `
                   </a>
                 </p>
                 <div
-                  className="HeaderGame-gameUserPhoto-78"
+                  className="HeaderGame-gameUserPhoto-71"
                 >
                   <img
                     alt=""
@@ -465,19 +621,19 @@ exports[`renders correctly Mobile 1`] = `
           </div>
         </div>
         <div
-          className="RollBottomDesktop-root-67"
+          className="RollBottomDesktop-root-72"
         >
           <div
-            className="RollBottomDesktop-gameRollActions-68"
+            className="RollBottomDesktop-gameRollActions-73"
           >
             <div
-              className="RollBottomDesktop-playNowBtn-69"
+              className="RollBottomDesktop-playNowBtn-74"
               onClick={[Function]}
             >
               Play Now
             </div>
             <a
-              className="RollBottomDesktop-addBtn-70"
+              className="RollBottomDesktop-addBtn-75"
               href="/"
               onClick={[Function]}
             >
@@ -485,28 +641,28 @@ exports[`renders correctly Mobile 1`] = `
             </a>
           </div>
           <div
-            className="RollBottomDesktop-gameRollSlider-71"
+            className="RollBottomDesktop-gameRollSlider-76"
             id="scrollSlider"
             tabIndex="5000"
           >
             <a
-              className="RollBottomDesktop-sliderItem-72"
+              className="RollBottomDesktop-sliderItem-77"
               href="/"
               onClick={[Function]}
             >
               <img
                 alt=""
-                className="RollBottomDesktop-sliderItemPhoto-73"
+                className="RollBottomDesktop-sliderItemPhoto-78"
               />
             </a>
             <a
-              className="RollBottomDesktop-sliderItem-72"
+              className="RollBottomDesktop-sliderItem-77"
               href="/"
               onClick={[Function]}
             >
               <img
                 alt=""
-                className="RollBottomDesktop-sliderItemPhoto-73"
+                className="RollBottomDesktop-sliderItemPhoto-78"
               />
             </a>
           </div>
@@ -517,16 +673,16 @@ exports[`renders correctly Mobile 1`] = `
       className="Game-gameMain-4"
     >
       <div
-        className="GameCounter-root-8"
+        className="GameCounter-root-18"
       >
         <div
-          className="GameCounter-counterWins-13"
+          className="GameCounter-counterWins-23"
         >
           <p
-            className="GameCounter-counterBiggestWin-14"
+            className="GameCounter-counterBiggestWin-24"
           >
             <span
-              className="GameCounter-counterValue-18"
+              className="GameCounter-counterValue-28"
             >
               4666.78 dcb
             </span>
@@ -538,13 +694,13 @@ exports[`renders correctly Mobile 1`] = `
           </p>
         </div>
         <div
-          className="GameCounter-counterHours-9"
+          className="GameCounter-counterHours-19"
         >
           <p
-            className="GameCounter-counterHoursVolume-15"
+            className="GameCounter-counterHoursVolume-25"
           >
             <span
-              className="GameCounter-counterValue-18"
+              className="GameCounter-counterValue-28"
             >
               167.12 dcb
             </span>
@@ -556,13 +712,13 @@ exports[`renders correctly Mobile 1`] = `
           </p>
         </div>
         <div
-          className="GameCounter-counterUsers-10"
+          className="GameCounter-counterUsers-20"
         >
           <p
-            className="GameCounter-counterUsersVolume-11"
+            className="GameCounter-counterUsersVolume-21"
           >
             <span
-              className="GameCounter-counterValue-18"
+              className="GameCounter-counterValue-28"
             >
               785
             </span>
@@ -574,13 +730,13 @@ exports[`renders correctly Mobile 1`] = `
           </p>
         </div>
         <div
-          className="GameCounter-counterContracts-12"
+          className="GameCounter-counterContracts-22"
         >
           <p
-            className="GameCounter-counterContractsVolume-16"
+            className="GameCounter-counterContractsVolume-26"
           >
             <span
-              className="GameCounter-counterValue-18"
+              className="GameCounter-counterValue-28"
             >
               20243.12 dcb
             </span>
@@ -592,7 +748,7 @@ exports[`renders correctly Mobile 1`] = `
           </p>
           <br />
           <a
-            className="GameCounter-counterContractsLink-17"
+            className="GameCounter-counterContractsLink-27"
             href="/"
             onClick={[Function]}
           >
@@ -601,33 +757,33 @@ exports[`renders correctly Mobile 1`] = `
         </div>
       </div>
       <div
-        className="GameComments-root-19"
+        className="GameComments-root-29"
       >
         <div
-          className="GameComments-commentItem-20 GameComments-comment1-21"
+          className="GameComments-commentItem-30 GameComments-comment1-31"
         >
           <a
-            className="GameComments-commentUser-22"
+            className="GameComments-commentUser-32"
             href="/"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="GameComments-commentUserPhoto-23"
+              className="GameComments-commentUserPhoto-33"
               src="UserImg"
             />
           </a>
           <div
-            className="GameComments-commentTitle-24"
+            className="GameComments-commentTitle-34"
           >
             <span
-              className="GameComments-commentTitleText-25"
+              className="GameComments-commentTitleText-35"
             >
               Ben F.
                says:
             </span>
             <time
-              className="GameComments-commentDate-26"
+              className="GameComments-commentDate-36"
               dateTime="2018-05-22 13:30"
             >
               22 May 2018 12:03
@@ -637,25 +793,25 @@ exports[`renders correctly Mobile 1`] = `
             Curabitur tincidunt orci quis odio aliquet placerat. Nullam laoreet justo eros, quis semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank. s semper turpis gravida eget. Ut ullamcorper nibho a massa tincidunt malesuada. In nunc velit basank.
           </p>
           <a
-            className="GameComments-commentLike-28"
+            className="GameComments-commentLike-38"
             href="/"
             onClick={[Function]}
           >
              
             <span
-              className="GameComments-likeValue-29"
+              className="GameComments-likeValue-39"
             >
               5
             </span>
              Like
           </a>
           <a
-            className="GameComments-subComment-27"
+            className="GameComments-subComment-37"
             href="/"
             onClick={[Function]}
           >
             <span
-              className="GameComments-commentValue-30"
+              className="GameComments-commentValue-40"
             >
               7
             </span>
@@ -663,30 +819,30 @@ exports[`renders correctly Mobile 1`] = `
           </a>
         </div>
         <div
-          className="GameComments-commentItem-20 GameComments-comment2-31"
+          className="GameComments-commentItem-30 GameComments-comment2-41"
         >
           <a
-            className="GameComments-commentUser-22"
+            className="GameComments-commentUser-32"
             href="/"
             onClick={[Function]}
           >
             <img
               alt=""
-              className="GameComments-commentUserPhoto-23"
+              className="GameComments-commentUserPhoto-33"
               src="UserImg"
             />
           </a>
           <div
-            className="GameComments-commentTitle-24"
+            className="GameComments-commentTitle-34"
           >
             <span
-              className="GameComments-commentTitleText-25"
+              className="GameComments-commentTitleText-35"
             >
               Thomas D.
                says:
             </span>
             <time
-              className="GameComments-commentDate-26"
+              className="GameComments-commentDate-36"
               dateTime="2018-05-22 13:30"
             >
               22 May 2018 12:03
@@ -696,25 +852,25 @@ exports[`renders correctly Mobile 1`] = `
             Nulla non pellentesque sem, sed aliquet justo. Praesent egestas purus et bibendum tempus.Interdum et malesuada fames ac ante ipsum primis in faucibus.
           </p>
           <a
-            className="GameComments-commentLike-28"
+            className="GameComments-commentLike-38"
             href="/"
             onClick={[Function]}
           >
              
             <span
-              className="GameComments-likeValue-29"
+              className="GameComments-likeValue-39"
             >
               5
             </span>
              Like
           </a>
           <a
-            className="GameComments-subComment-27"
+            className="GameComments-subComment-37"
             href="/"
             onClick={[Function]}
           >
             <span
-              className="GameComments-commentValue-30"
+              className="GameComments-commentValue-40"
             >
               7
             </span>

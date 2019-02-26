@@ -6,6 +6,36 @@ exports[`renders correctly Mobile 1`] = `
 >
   <div
     className="RollTopMobile-gameRollInf-2"
-  />
+  >
+    <div
+      className="HeaderGame-root-3"
+    >
+      <div
+        className="HeaderGame-gameUserBlock-4"
+      >
+        <p
+          className="HeaderGame-gameUserHello-5"
+        >
+          Hello, Ben A 
+          <br />
+          <a
+            className="HeaderGame-gameUserVerification-6"
+            href="/"
+            onClick={[Function]}
+          >
+            KYC VERIFICATION
+          </a>
+        </p>
+        <div
+          className="HeaderGame-gameUserPhoto-7"
+        >
+          <img
+            alt=""
+            src="user.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

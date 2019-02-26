@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import MenuNavigation from '../../../MenuNavigation/Desktop/AsyncMenuNavigation'
+import MenuNavigation from '../../../MenuNavigation/Desktop'
 import Header from '../../../../containers/Header/AsyncHeader'
-import Footer from '../../../Footer/Desktop/'
+import Footer from '../../../Footer/Desktop'
 import CasesFilter from './components/CasesFilter'
 import CasesList from './components/CasesList'
 

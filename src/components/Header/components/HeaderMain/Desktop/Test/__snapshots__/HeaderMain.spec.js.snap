@@ -4,22 +4,135 @@ exports[`renders correctly 1`] = `
 <header
   className="HeaderMain-root-1"
 >
-  <div
-    className="UserBlock-root-2"
+  <ul
+    className="MenuNavigation-root-2"
   >
     <div
-      className="UserBlock-user-3"
+      className="MenuNavigation-headerMenuItem-3 MenuNavigation-wrLogout-4"
+      onClick={[Function]}
+    >
+      <i
+        className="MenuNavigation-menuIcon-5 MenuNavigation-logout-6"
+      />
+      <br />
+       Logout
+    </div>
+    <li>
+      <a
+        aria-current="page"
+        className="MenuNavigation-headerMenuItem-3 active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          className="MenuNavigation-menuIcon-5 MenuNavigation-walletIcon-7"
+        />
+        <br />
+         Wallet
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        className="MenuNavigation-headerMenuItem-3"
+        href="/vchange"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-5 MenuNavigation-vexchange-8"
+        />
+        <br />
+         VChange
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        className="MenuNavigation-headerMenuItem-3"
+        href="/games"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-5 MenuNavigation-games-11"
+        />
+        <br />
+         Games
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        className="MenuNavigation-headerMenuItem-3"
+        href="/#apps"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-5 MenuNavigation-apps-9"
+        />
+        <br />
+         Apps
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        className="MenuNavigation-headerMenuItem-3"
+        href="/#shops"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-5 MenuNavigation-shop-10"
+        />
+        <br />
+         Shop
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        className="MenuNavigation-headerMenuItem-3"
+        href="/#contacts"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-5 MenuNavigation-friends-12"
+        />
+        <br />
+         Contacts
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        className="MenuNavigation-headerMenuItem-3"
+        href="/#settings"
+        onClick={[Function]}
+      >
+        <i
+          className="MenuNavigation-menuIcon-5 MenuNavigation-settings-13"
+        />
+        <br />
+         Settings
+      </a>
+    </li>
+  </ul>
+  <div
+    className="UserBlock-root-14"
+  >
+    <div
+      className="UserBlock-user-15"
     >
       <div
-        className="UserBlock-userBlock-4"
+        className="UserBlock-userBlock-16"
       >
         <p
-          className="UserBlock-userHello-5"
+          className="UserBlock-userHello-17"
         >
           Hello, anonymous 
           <br />
           <a
-            className="UserBlock-userVerification-6"
+            className="UserBlock-userVerification-18"
             href="/"
             onClick={[Function]}
           >
@@ -27,7 +140,7 @@ exports[`renders correctly 1`] = `
           </a>
         </p>
         <div
-          className="UserBlock-userPhoto-7"
+          className="UserBlock-userPhoto-19"
         >
           <img
             alt=""

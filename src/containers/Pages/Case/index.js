@@ -2,7 +2,7 @@ import compose from 'recompose/compose'
 import { withProps, withHandlers, pure } from 'recompose'
 import { clearStorageForLogout } from '../../../utils/localStorageUtils'
 
-import AsyncCaseDesktop from '../../../components/Pages/Case/Desktop/AsyncCaseDesktop'
+import CaseDesktop from '../../../components/Pages/Case/Desktop'
 
 import GunCase from '../../../assets/images/GunCase.png'
 import CaseX from '../../../assets/images/caseX.png'
@@ -43,4 +43,4 @@ export default compose(
     }
   }),
   pure
-)(AsyncCaseDesktop)
+)(CaseDesktop)

@@ -3,7 +3,7 @@ import { withProps } from 'recompose'
 
 import withDeviceTarget from '../../../hocs/withDeviceTarget'
 
-import AsyncGamesDesktop from '../../../components/Pages/Games/Desktop/AsyncGamesDesktop'
+import GamesDesktop from '../../../components/Pages/Games/Desktop'
 
 const games = [
   {
@@ -83,4 +83,4 @@ const games = [
 export default compose(
   withDeviceTarget,
   withProps(() => ({ games }))
-)(AsyncGamesDesktop)
+)(GamesDesktop)

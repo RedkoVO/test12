@@ -16,6 +16,35 @@ exports[`renders correctly Desktop 1`] = `
     className="RollTopDesktop-gameRollInf-3"
   >
     <div
+      className="HeaderGame-root-22"
+    >
+      <div
+        className="HeaderGame-gameUserBlock-23"
+      >
+        <p
+          className="HeaderGame-gameUserHello-24"
+        >
+          Hello, Ben A 
+          <br />
+          <a
+            className="HeaderGame-gameUserVerification-25"
+            href="/"
+            onClick={[Function]}
+          >
+            KYC VERIFICATION
+          </a>
+        </p>
+        <div
+          className="HeaderGame-gameUserPhoto-26"
+        >
+          <img
+            alt=""
+            src="user.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
       className="RollTopDesktop-gameRollNext-4"
     >
       <p>
