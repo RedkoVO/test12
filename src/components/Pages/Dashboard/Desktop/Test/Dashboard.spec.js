@@ -101,20 +101,22 @@ const dataCategories = [
   }
 ]
 const dataAllBalance = {
-  result: [
-    {
+  result: {
+    ADA: {
       balance: '0',
-      currency: 'USD',
+      code: 262,
+      currency: 'ADA',
       lastBlock:
         '0000000000000000000000000000000000000000000000000000000000000000'
     },
-    {
-      balance: '1000000',
+    BTC: {
+      balance: '0',
+      code: 257,
       currency: 'BTC',
       lastBlock:
         '0000000000000000000000000000000000000000000000000000000000000000'
     }
-  ]
+  }
 }
 
 const Wrapper = reduxForm({ form: 'test' })(({ children }) => children)

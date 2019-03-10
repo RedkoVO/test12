@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 
 import CaseOpen from '../'
 
-import GunCase from '../../../../../../assets/images/GunCase.png'
+import GunCase from '../../../../../../../assets/images/GunCase.png'
 
 const caseItems = [
   { id: 1, title: 'Good Weapon2 1.2', img: GunCase },

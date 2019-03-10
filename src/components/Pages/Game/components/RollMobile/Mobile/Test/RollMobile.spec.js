@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom'
 
 import RollMobile from '../'
 
-import Img from '../../../../../../assets/images/sim_game_icon_4clover.png'
+import Img from '../../../../../../../assets/images/sim_game_icon_4clover.png'
 
 it('renders correctly', () => {
   const tree = renderer

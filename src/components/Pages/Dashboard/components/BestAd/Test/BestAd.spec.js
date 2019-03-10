@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom'
 
 import BestAd from '../'
 
-import BestGameLogo from '../../../../../assets/images/best-game.png'
+import BestGameLogo from '../../../../../../assets/images/best-game.png'
 
 const data = [
   {

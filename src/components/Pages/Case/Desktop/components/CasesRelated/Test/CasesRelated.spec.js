@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 
 import CasesRelated from '../'
 
-import GunCase from '../../../../../../assets/images/caseX.png'
+import GunCase from '../../../../../../../assets/images/caseX.png'
 
 const relaredItems = [
   { id: 1, title: 'Good Weapon2 1.2', img: GunCase },

@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 
 import CasesList from '../'
 
-import CaseXIcon from '../../../../../../assets/images/caseX.png'
+import CaseXIcon from '../../../../../../../assets/images/caseX.png'
 
 const tmpCases = [
   {
