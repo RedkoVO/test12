@@ -7,8 +7,8 @@ import gC from '../../constants'
 export const getConfig = () => {
   const data = { action: 'config' }
 
-  return dispatch => {
-    return axios({
+  return dispatch =>
+    axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
@@ -25,7 +25,6 @@ export const getConfig = () => {
       .catch(error => {
         console.log('GET_CONFIG error', error)
       })
-  }
 }
 
 export const createGetConfigSuccess = data => {

@@ -12,8 +12,8 @@ import gC from '../../constants'
 export const getAllBalanceInfo = data => {
   data.action = 'allBalanceInfo'
 
-  return (dispatch, getState) => {
-    return axios({
+  return (dispatch, getState) =>
+    axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
@@ -39,7 +39,6 @@ export const getAllBalanceInfo = data => {
       .catch(error => {
         console.log('GET_ALL_BALANCE_INFO error', error)
       })
-  }
 }
 
 export const createGetAllBalanceInfoSuccess = (data, { config }) => {
@@ -73,8 +72,8 @@ export const createGetAllBalanceInfoSuccess = (data, { config }) => {
 export const getWork = data => {
   data.action = 'work'
 
-  return dispatch => {
-    return axios({
+  return dispatch =>
+    axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
@@ -91,7 +90,6 @@ export const getWork = data => {
       .catch(error => {
         console.log('GET_WORK error', error)
       })
-  }
 }
 
 export const createGetWorkSuccess = data => {
@@ -109,8 +107,8 @@ export const createGetWorkSuccess = data => {
 export const postPending = data => {
   data.action = 'addressPending'
 
-  return dispatch => {
-    return axios({
+  return dispatch =>
+    axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
@@ -127,7 +125,6 @@ export const postPending = data => {
       .catch(error => {
         console.log('POST_PENDING error', error)
       })
-  }
 }
 
 export const createPostPendingSuccess = data => {
@@ -144,8 +141,8 @@ export const createPostPendingSuccess = data => {
 export const sendMoney = data => {
   data.action = 'blockPublish'
 
-  return dispatch => {
-    return axios({
+  return dispatch =>
+    axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
@@ -162,7 +159,6 @@ export const sendMoney = data => {
       .catch(error => {
         console.log('SEND_MONEY error', error)
       })
-  }
 }
 
 export const createSendMoneySuccess = data => {

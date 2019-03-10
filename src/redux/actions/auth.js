@@ -7,28 +7,27 @@ import gC from '../../constants'
 export const registrationEmail = data => {
   data.action = 'registration'
 
-  return (dispatch) => {
-    return axios({
+  return dispatch =>
+    axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       data: JSON.stringify(data),
       url: `${gC.API_REGISTRATION_URL}/registration/`
     })
-      .then((response) => {
+      .then(response => {
         dispatch(createRegistrationEmailSuccess(response.data))
 
         return response.data
       })
-      .catch((error) => {
+      .catch(error => {
         console.log('REGISTRATION_USER error', error)
       })
-  }
 }
 
-export const createRegistrationEmailSuccess = (data) => {
+export const createRegistrationEmailSuccess = data => {
   return {
     type: REGISTRATION_USER,
     payload: {

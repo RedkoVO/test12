@@ -13,8 +13,8 @@ export const getTransactionHistory = (currency, address, blockhash) => {
     limit: gC.TRANSACTION_HISTORY_LIMIT
   }
 
-  return dispatch => {
-    return axios({
+  return dispatch =>
+    axios({
       method: 'post',
       headers: {
         Accept: 'application/json',
@@ -31,7 +31,6 @@ export const getTransactionHistory = (currency, address, blockhash) => {
       .catch(error => {
         console.log('GET_TRANSACTION_HISTORY error', error)
       })
-  }
 }
 
 export const createGetTransactionHistorySuccess = data => {
