@@ -99,7 +99,7 @@ const Authorization = ({
 )
 
 Authorization.propTypes = {
-  classNamees: PropTypes.object,
+  classes: PropTypes.object,
   onSubmit: PropTypes.func,
   handleFileDropzone: PropTypes.func,
   isDisabledButton: PropTypes.bool,
